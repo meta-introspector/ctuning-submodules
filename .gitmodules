@@ -1,0 +1,63 @@
+[submodule "ck"]
+	path = ck
+	url = https://github.com/mlcommons/ck
+[submodule "medperf-website"]
+	path = medperf-website
+	url = https://github.com/mlcommons/medperf-website
+[submodule "GaNDLF"]
+	path = GaNDLF
+	url = https://github.com/mlcommons/GaNDLF
+[submodule "dynabench"]
+	path = dynabench
+	url = https://github.com/mlcommons/dynabench
+[submodule "croissant"]
+	path = croissant
+	url = https://github.com/mlcommons/croissant
+[submodule "chakra"]
+	path = chakra
+	url = https://github.com/mlcommons/chakra
+[submodule "algorithmic-efficiency"]
+	path = algorithmic-efficiency
+	url = https://github.com/mlcommons/algorithmic-efficiency
+[submodule "inference_policies"]
+	path = inference_policies
+	url = https://github.com/mlcommons/inference_policies
+[submodule "mobile_app_open"]
+	path = mobile_app_open
+	url = https://github.com/mlcommons/mobile_app_open
+[submodule "training"]
+	path = training
+	url = https://github.com/mlcommons/training
+[submodule "power-dev"]
+	path = power-dev
+	url = https://github.com/mlcommons/power-dev
+[submodule "inference"]
+	path = inference
+	url = https://github.com/mlcommons/inference
+[submodule "medperf"]
+	path = medperf
+	url = https://github.com/mlcommons/medperf
+[submodule "logging"]
+	path = logging
+	url = https://github.com/mlcommons/logging
+[submodule "inference_results_v3.1"]
+	path = inference_results_v3.1
+	url = https://github.com/mlcommons/inference_results_v3.1
+[submodule "policies"]
+	path = policies
+	url = https://github.com/mlcommons/policies
+[submodule "mobile_models"]
+	path = mobile_models
+	url = https://github.com/mlcommons/mobile_models
+[submodule "tiny"]
+	path = tiny
+	url = https://github.com/mlcommons/tiny
+[submodule "mobile_results_v3.1"]
+	path = mobile_results_v3.1
+	url = https://github.com/mlcommons/mobile_results_v3.1
+[submodule "training_policies"]
+	path = training_policies
+	url = https://github.com/mlcommons/training_policies
+[submodule "storage_results_v0.5"]
+	path = storage_results_v0.5
+	url = https://github.com/mlcommons/storage_results_v0.5
