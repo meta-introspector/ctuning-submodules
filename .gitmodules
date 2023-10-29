@@ -61,3 +61,30 @@
 [submodule "storage_results_v0.5"]
 	path = storage_results_v0.5
 	url = https://github.com/mlcommons/storage_results_v0.5
+[submodule "dataperf"]
+	path = dataperf
+	url = https://github.com/mlcommons/dataperf
+[submodule "ck_mlperf_results"]
+	path = ck_mlperf_results
+	url = https://github.com/mlcommons/ck_mlperf_results
+[submodule "peoples-speech"]
+	path = peoples-speech
+	url = https://github.com/mlcommons/peoples-speech
+[submodule "mobile_open"]
+	path = mobile_open
+	url = https://github.com/mlcommons/mobile_open
+[submodule "datasets_infra"]
+	path = datasets_infra
+	url = https://github.com/mlcommons/datasets_infra
+[submodule "mlcube"]
+	path = mlcube
+	url = https://github.com/mlcommons/mlcube
+[submodule "training_results_v3.0"]
+	path = training_results_v3.0
+	url = https://github.com/mlcommons/training_results_v3.0
+[submodule "training_results_v2.1"]
+	path = training_results_v2.1
+	url = https://github.com/mlcommons/training_results_v2.1
+[submodule "cla-bot"]
+	path = cla-bot
+	url = https://github.com/mlcommons/cla-bot
