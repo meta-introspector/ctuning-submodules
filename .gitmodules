@@ -88,3 +88,114 @@
 [submodule "cla-bot"]
 	path = cla-bot
 	url = https://github.com/mlcommons/cla-bot
+[submodule "triton-inference-server"]
+	path = triton-inference-server
+	url = https://github.com/triton-inference-server/server
+[submodule "TensorRT"]
+	path = TensorRT
+	url = https://github.com/NVIDIA/TensorRT
+[submodule "axs2qaic-docker"]
+	path = axs2qaic-docker
+	url = https://github.com/krai/axs2qaic-docker
+[submodule "axs2config"]
+	path = axs2config
+	url = https://github.com/krai/axs2config
+[submodule "mlperf-inference"]
+	path = mlperf-inference
+	url = https://github.com/mlperf/inference
+[submodule "axs"]
+	path = axs
+	url = https://github.com/krai/axs
+[submodule "SQuAD-explorer"]
+	path = SQuAD-explorer
+	url = https://github.com/rajpurkar/SQuAD-explorer
+[submodule "onnx"]
+	path = onnx
+	url = https://github.com/onnx/onnx
+[submodule "kits19"]
+	path = kits19
+	url = https://github.com/neheller/kits19
+[submodule "dlrm"]
+	path = dlrm
+	url = https://github.com/facebookresearch/dlrm
+[submodule "saxml"]
+	path = saxml
+	url = https://github.com/google/saxml
+[submodule "mlcommons-ck"]
+	path = mlcommons-ck
+	url = https://github.com/ctuning/mlcommons-ck
+[submodule "scc23-benchmarking"]
+	path = scc23-benchmarking
+	url = https://github.com/ctuning/scc23-benchmarking
+[submodule "cm-reproduce-research-projects"]
+	path = cm-reproduce-research-projects
+	url = https://github.com/ctuning/cm-reproduce-research-projects
+[submodule "ck-artifact-evaluation"]
+	path = ck-artifact-evaluation
+	url = https://github.com/ctuning/ck-artifact-evaluation
+[submodule "mlperf_inference_submissions_v4.0"]
+	path = mlperf_inference_submissions_v4.0
+	url = https://github.com/ctuning/mlperf_inference_submissions_v4.0
+[submodule "Victima"]
+	path = Victima
+	url = https://github.com/ctuning/Victima
+[submodule "mlperf_inference_submissions_v3.1"]
+	path = mlperf_inference_submissions_v3.1
+	url = https://github.com/ctuning/mlperf_inference_submissions_v3.1
+[submodule "mlperf_inference_submissions_v3.1b"]
+	path = mlperf_inference_submissions_v3.1b
+	url = https://github.com/ctuning/mlperf_inference_submissions_v3.1b
+[submodule "mlperf_inference_submissions_v3.1a"]
+	path = mlperf_inference_submissions_v3.1a
+	url = https://github.com/ctuning/mlperf_inference_submissions_v3.1a
+[submodule "mlperf_inference_submissions_v3.0"]
+	path = mlperf_inference_submissions_v3.0
+	url = https://github.com/ctuning/mlperf_inference_submissions_v3.0
+[submodule "inference_results_v3.0"]
+	path = inference_results_v3.0
+	url = https://github.com/ctuning/inference_results_v3.0
+[submodule "submissions_tiny_v1.1_by_taskforce_on_auto_and_repro"]
+	path = submissions_tiny_v1.1_by_taskforce_on_auto_and_repro
+	url = https://github.com/ctuning/submissions_tiny_v1.1_by_taskforce_on_auto_and_repro
+[submodule "ck-guide-images"]
+	path = ck-guide-images
+	url = https://github.com/ctuning/ck-guide-images
+[submodule "energyrunner"]
+	path = energyrunner
+	url = https://github.com/ctuning/energyrunner
+[submodule "ck-tbd-suite"]
+	path = ck-tbd-suite
+	url = https://github.com/ctuning/ck-tbd-suite
+[submodule "octoml-inference"]
+	path = octoml-inference
+	url = https://github.com/ctuning/octoml-inference
+[submodule "neuralmagic-inference"]
+	path = neuralmagic-inference
+	url = https://github.com/ctuning/neuralmagic-inference
+[submodule "ck-x"]
+	path = ck-x
+	url = https://github.com/ctuning/ck-x
+[submodule "ck-wa-extra"]
+	path = ck-wa-extra
+	url = https://github.com/ctuning/ck-wa-extra
+[submodule "ck-ml"]
+	path = ck-ml
+	url = https://github.com/ctuning/ck-ml
+[submodule "ck-website"]
+	path = ck-website
+	url = https://github.com/ctuning/ck-website
+[submodule "ck-env"]
+	path = ck-env
+	url = https://github.com/ctuning/ck-env
+[submodule "ck-mlperf"]
+	path = ck-mlperf
+	url = https://github.com/ctuning/ck-mlperf
+[submodule "ck-autotuning"]
+	path = ck-autotuning
+	url = https://github.com/ctuning/ck-autotuning
+[submodule "inference_results_v1.1"]
+	path = inference_results_v1.1
+	url = https://github.com/ctuning/inference_results_v1.1
+[submodule "ctuning-programs"]
+	path = ctuning-programs
+	url = https://github.com/ctuning/ctuning-programs

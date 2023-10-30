@@ -6,32 +6,13 @@
 :prev-line-count: 1
 :END:
 
-  Below you find your initial index table, which will grow over time.
-  You may start using it by adding some lines. Just
-  move to another heading within org, invoke `org-index' and
-  choose the command 'add'.  After adding a few nodes, try the
-  command 'occur' to search among them.
 
-  For more details. invoke org-index command 'help', or
-  read the same in the help of `org-index'.
-
-  This node needs not be a top level node; its name is completely
-  at your choice; it is found through its ID only.
-
-  Remark: These lines of explanation can be removed at any time.
-
-
-  | ref | category | keywords | tags | count | level | last-accessed          | created          | id                                   | yank |
-  |     |          |          |      |       |       |                        |                  | <4>                                  | <4>  |
-  |-----+----------+----------+------+-------+-------+------------------------+------------------+--------------------------------------+------|
-  | R1  |index|index|      |       |1| [2023-10-29 Sun 12:47] | [2023-10-29 Sun] |23d78832-af74-40b8-9062-0965a25053e6|      |
-
-
-
-
+Extracted some stats
+#+begin_src shell
+microfts info -grams index >grams.txt
+#+end_src
   
-Babel can generate Org code. Try evaluating a Babel block on export that generates the +#INCLUDE: statements for you.
-
+I used this to create index
 #+BEGIN_SRC sh :results raw drawer
 for f in $(find . -name "*.org"); do
     echo "#+INCLUDE: " $f
@@ -801,5 +782,29 @@ done
 #+INCLUDE:  ./ck/platform/register2.md.org
 #+INCLUDE:  ./ck/platform/get-started.md.org
 
+
+
+find -name \*.org | xargs grep -h . | sort -u > ulines.txt
+find -name \*.org | xargs grep -h . | sort |uniq -c | sort -n > lines.txt
+tr -s '[[:punct:][:space:]]' '\n'  < ulines.txt  > words.txt
+sort uwords.txt |uniq -c | sort -n >wordcounts.txt
+
+tflite https://www.tensorflow.org/litex
+
+
+@Article{2020,
+  author       = {Zaman, Faisal},
+  title	       = {Demo 1: Getting Started with TFLite},
+  journal      = {TensorFlow Lite for Mobile Development},
+  year	       = 2020,
+  doi	       = {10.1007/978-1-4842-6666-3_5},
+  url	       = {http://dx.doi.org/10.1007/978-1-4842-6666-3_5},
+  ISBN	       = 9781484266663,
+  publisher    = {Apress}
+}
+
+https://github.com/ARM-software/armnn
+
+@article{1, (B) second approach-ResNet50, (C) third approach-ResNet50, (D) third approach-ResNet101, (green–wall, blue–no-wall)., url={http://dx.doi.org/10.7717/peerj-cs.1565/fig-6}, DOI={10.7717/peerj-cs.1565/fig-6}, publisher={PeerJ} }
 
 
