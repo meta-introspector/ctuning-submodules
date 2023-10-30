@@ -199,3 +199,27 @@
 [submodule "ctuning-programs"]
 	path = ctuning-programs
 	url = https://github.com/ctuning/ctuning-programs
+[submodule "d3"]
+	path = d3
+	url = https://github.com/mbostock/d3/
+[submodule "nnUNet"]
+	path = nnUNet
+	url = https://github.com/MIC-DKFZ/nnUNet
+[submodule "nmt"]
+	path = nmt
+	url = https://github.com/tensorflow/nmt
+[submodule "mlperf_training"]
+	path = mlperf_training
+	url = https://github.com/mlperf/training
+[submodule "mlperf_logging"]
+	path = mlperf_logging
+	url = https://github.com/mlperf/logging
+[submodule "sdk-ng"]
+	path = sdk-ng
+	url = https://github.com/zephyrproject-rtos/sdk-ng
+[submodule "zenml"]
+	path = zenml
+	url = https://github.com/zenml-io/zenml
+[submodule "retraining-free-pruning"]
+	path = retraining-free-pruning
+	url = https://github.com/WoosukKwon/retraining-free-pruning
