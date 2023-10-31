@@ -8,12 +8,12 @@
 
 
 Extracted some stats
-#+begin_src shell
+#+begin_src shell :exports both
 microfts info -grams index >grams.txt
 #+end_src
   
 I used this to create index
-#+BEGIN_SRC sh :results raw drawer
+#+BEGIN_SRC sh :results raw drawer :exports both
 for f in $(find . -name "*.org"); do
     echo "#+INCLUDE: " $f
 done
@@ -787,7 +787,7 @@ done
 
 * some of the prep scripts
 
-#+begin_src sh
+#+begin_src sh :exports both
 
 find -name \*.org | xargs grep -h . | sort -u > ulines.txt
 find -name \*.org | xargs grep -h . | sort |uniq -c | sort -n > clines.txt
@@ -812,7 +812,7 @@ using emacs org babel mode, write an inline elisp script that traverses the curr
 finds the previous block of data and parses it.
 
 use python to sum the numbers in the following table.
-#+begin_src sh
+#+begin_src sh :exports both
 grep BEGIN_SRC clines.txt 
 #+end_src
 #+NAME: source-table
@@ -856,7 +856,7 @@ grep BEGIN_SRC clines.txt
 | sql      |      2 |
 | latex    |      1 |
 #+NAME: table-sum
-#+BEGIN_SRC python :var table=source-table :export both
+#+BEGIN_SRC python :var table=source-table :exports both
   from collections import  Counter
   total = Counter()
   for x in table:
@@ -867,60 +867,7 @@ grep BEGIN_SRC clines.txt
 #+END_SRC
 
 
-To traverse the current Org document in Emacs using Org Babel and find the previous block of data for parsing, you can create an inline Emacs Lisp code block within your Org document. Here's an example of how to do this:
-
-
-#+BEGIN_SRC emacs-lisp :var current-block="" :exports none
-  (let ((parsed-data ""))
-    (org-element-map (org-element-parse-buffer) 'src-block
-      (lambda (src-block)
-        (message (org-babel-lob-call src-block))
-        (when (string= "data" (org-element-property :name src-block))
-          (setq parsed-data (org-babel-lob-call src-block)))
-        ))
-    parsed-data)
-#+END_SRC
-
-#+RESULTS:
-
-
-Here's an explanation of what's happening in this code:
-
-1. We use an Emacs Lisp code block (`#+BEGIN_SRC emacs-lisp`) to define our inline script.
-
-2. Within the code block, we use `org-element-map` to traverse the parsed Org document.
-
-3. We look for `src-block` elements and check if they have the `:name` property set to "data." This indicates a block of data in the Org document.
-
-4. If we find a matching block, we use `org-babel-lob-call` to execute the code in that block and store the result in the `parsed-data` variable.
-
-5. Finally, we return the `parsed-data`.
-
-You can then use this inline script by inserting it into your Org document where you need to extract and parse data from the previous data block. You can customize the `:name` property and the code within your "data" block according to your specific needs.
-
-#+begin_src python
-from collections import Counter
-
-table = [
-    ("4513", 1),
-    ("136948", 2),
-    ("197555", 3),
-    ("222143", 11),
-    ("223266", 12),
-    ("225073", 17),
-    ("230650", 48),
-    ("231303", 77),
-    ("232241", 266),
-    ("232277", 299),
-    ("232466", 1059),
-    ("232633", 3167),
-    ("232769", 199711)
-]
-
-scores = Counter(row[1] for row in table)
-print(sum(scores.values()))
-#+end_src
-
+#+NAME end-src-data
 #+begin_src data
     999: 204161 #+END_SRC
  204949:      4 #+END_SRC
@@ -929,10 +876,9 @@ print(sum(scores.values()))
  232290:    319 #+END_SRC
  232313:    345 #+END_SRC
 #+end_src
-
-
  
-4. for variations ignoring whitespace or other changes replace one line with another to fill in missing.
+4. for variations ignoring whitespace, removed the whitespace differences in the data
+   or other changes replace one line with another to fill in missing.
 5. construct graph of lines as grammar, treat lines as tokens, tokenize and compare.
 6. create windows around lines, create ngrams of lines.
 7. tokenize in org mode, and construct json from pandoc.
