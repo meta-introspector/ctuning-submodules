@@ -223,3 +223,6 @@
 [submodule "retraining-free-pruning"]
 	path = retraining-free-pruning
 	url = https://github.com/WoosukKwon/retraining-free-pruning
+[submodule "armnn"]
+	path = armnn
+	url = https://github.com/ARM-software/armnn

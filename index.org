@@ -785,53 +785,22 @@ done
 
 
 
-tflite https://www.tensorflow.org/litex
+* some of the prep scripts
 
-
-@Article{2020,
-  author       = {Zaman, Faisal},
-  title	       = {Demo 1: Getting Started with TFLite},
-  journal      = {TensorFlow Lite for Mobile Development},
-  year	       = 2020,
-  doi	       = {10.1007/978-1-4842-6666-3_5},
-  url	       = {http://dx.doi.org/10.1007/978-1-4842-6666-3_5},
-  ISBN	       = 9781484266663,
-  publisher    = {Apress}
-}
-
-https://github.com/ARM-software/armnn
-
-@article{1, (B) second approach-ResNet50, (C) third approach-ResNet50, (D) third approach-ResNet101, (green–wall, blue–no-wall)., url={http://dx.doi.org/10.7717/peerj-cs.1565/fig-6}, DOI={10.7717/peerj-cs.1565/fig-6}, publisher={PeerJ} }
+#+begin_src sh
 
 find -name \*.org | xargs grep -h . | sort -u > ulines.txt
 find -name \*.org | xargs grep -h . | sort |uniq -c | sort -n > clines.txt
 tr -s '[[:punct:][:space:]]' '\n'  < ulines.txt  > words.txt
 sort uwords.txt |uniq -c | sort -n >wordcounts.txt
-
-
 find  > files.txt
 cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n 
-
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n > 3.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >4.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >5.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >6.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >7.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >8.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >9.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >12.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >13.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >14.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >15.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >16.txt
-cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >18.txt
-
 cat files.txt  | grep -o "\.[^\/\.]*$"  | sort |uniq -c | sort -n > all.txt
 cat files.txt  | grep "\.md$"  >markdown.txt
 
+#+end_src
 
-
-* approach
+* Approach
 
 1. vectorize all unique lines, load into postgres. line and vector.
 2. count line occurance, add to table. line and count.
@@ -969,3 +938,24 @@ print(sum(scores.values()))
 7. tokenize in org mode, and construct json from pandoc.
 
 
+* Bibliography
+
+@Article{2020,
+  author       = {Zaman, Faisal},
+  title	       = {Demo 1: Getting Started with TFLite},
+  journal      = {TensorFlow Lite for Mobile Development},
+  year	       = 2020,
+  doi	       = {10.1007/978-1-4842-6666-3_5},
+  url	       = {http://dx.doi.org/10.1007/978-1-4842-6666-3_5},
+  ISBN	       = 9781484266663,
+  publisher    = {Apress}
+}
+
+@article{1, (B) second approach-ResNet50, (C) third approach-ResNet50, (D) third approach-ResNet101, (green–wall, blue–no-wall)., url={http://dx.doi.org/10.7717/peerj-cs.1565/fig-6}, DOI={10.7717/peerj-cs.1565/fig-6}, publisher={PeerJ} }
+
+
+tflite https://www.tensorflow.org/litex
+
+
+
+https://github.com/ARM-software/armnn
