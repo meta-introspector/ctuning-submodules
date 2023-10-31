@@ -6,7 +6,7 @@ files = [os.path.join(dirpath, filename)
     for filename in (dirs + files)]
 for f  in files:
     if f.endswith(".md"):
-        out = f + ".org"
+        out = f + ".json"
         if not os.path.exists(out):
             dd = subprocess.run([
                 "pandoc", "-i", f,  "-o", out

@@ -803,6 +803,11 @@ https://github.com/ARM-software/armnn
 
 @article{1, (B) second approach-ResNet50, (C) third approach-ResNet50, (D) third approach-ResNet101, (green–wall, blue–no-wall)., url={http://dx.doi.org/10.7717/peerj-cs.1565/fig-6}, DOI={10.7717/peerj-cs.1565/fig-6}, publisher={PeerJ} }
 
+find -name \*.org | xargs grep -h . | sort -u > ulines.txt
+find -name \*.org | xargs grep -h . | sort |uniq -c | sort -n > clines.txt
+tr -s '[[:punct:][:space:]]' '\n'  < ulines.txt  > words.txt
+sort uwords.txt |uniq -c | sort -n >wordcounts.txt
+
 
 find  > files.txt
 cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n 
@@ -823,3 +828,144 @@ cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Z
 
 cat files.txt  | grep -o "\.[^\/\.]*$"  | sort |uniq -c | sort -n > all.txt
 cat files.txt  | grep "\.md$"  >markdown.txt
+
+
+
+* approach
+
+1. vectorize all unique lines, load into postgres. line and vector.
+2. count line occurance, add to table. line and count.
+3. for similar counts find co ccurances.  for count >N, find ones in a range of +/- %
+   
+So take begin_src end_src babel blocks
+
+using emacs org babel mode, write an inline elisp script that traverses the current document and
+finds the previous block of data and parses it.
+
+use python to sum the numbers in the following table.
+#+begin_src sh
+grep BEGIN_SRC clines.txt 
+#+end_src
+#+NAME: source-table
+#+RESULTS:
+|      1 | #+BEGIN_SRC | latex    |          |     |        |
+|      1 | #+BEGIN_SRC | sh       | :results | raw | drawer |
+|      2 | #+BEGIN_SRC | css      |          |     |        |
+|      2 | #+BEGIN_SRC | dot      |          |     |        |
+|      2 | #+BEGIN_SRC | python   |          |     |        |
+|      2 | #+BEGIN_SRC | sql      |          |     |        |
+|      3 | #+BEGIN_SRC | C++      |          |     |        |
+|      4 | #+BEGIN_SRC | sh       |          |     |        |
+|      8 | #+BEGIN_SRC | sh       |          |     |        |
+|      8 | #+BEGIN_SRC | sh       |          |     |        |
+|     11 | #+BEGIN_SRC | ruby     |          |     |        |
+|     12 | #+BEGIN_SRC | C        |          |     |        |
+|     17 | #+BEGIN_SRC | python   |          |     |        |
+|     36 | #+BEGIN_SRC | plantuml |          |     |        |
+|     48 | #+BEGIN_SRC | java     |          |     |        |
+|     77 | #+BEGIN_SRC | sh       |          |     |        |
+|    111 | #+BEGIN_SRC | C++      |          |     |        |
+|    266 | #+BEGIN_SRC | python   |          |     |        |
+|    299 | #+BEGIN_SRC | sh       |          |     |        |
+|   1059 | #+BEGIN_SRC | js       |          |     |        |
+|   3167 | #+BEGIN_SRC | python   |          |     |        |
+| 199711 | #+BEGIN_SRC | sh       |          |     |        |
+
+
+#+NAME: table-sum
+#+BEGIN_SRC python :var table=source-table
+  from collections import  Counter
+  total = Counter()
+  for x in table:
+      count=x[0]
+      name=x[2]
+      total[name] += count
+  return total.most_common()
+#+END_SRC
+
+#+RESULTS: table-sum
+| sh       | 200108 |
+| python   |   3452 |
+| js       |   1059 |
+| C++      |    114 |
+| java     |     48 |
+| plantuml |     36 |
+| C        |     12 |
+| ruby     |     11 |
+| css      |      2 |
+| dot      |      2 |
+| sql      |      2 |
+| latex    |      1 |
+
+
+To traverse the current Org document in Emacs using Org Babel and find the previous block of data for parsing, you can create an inline Emacs Lisp code block within your Org document. Here's an example of how to do this:
+
+
+#+BEGIN_SRC emacs-lisp :var current-block="" :exports none
+  (let ((parsed-data ""))
+    (org-element-map (org-element-parse-buffer) 'src-block
+      (lambda (src-block)
+        (message (org-babel-lob-call src-block))
+        (when (string= "data" (org-element-property :name src-block))
+          (setq parsed-data (org-babel-lob-call src-block)))
+        ))
+    parsed-data)
+#+END_SRC
+
+#+RESULTS:
+
+
+Here's an explanation of what's happening in this code:
+
+1. We use an Emacs Lisp code block (`#+BEGIN_SRC emacs-lisp`) to define our inline script.
+
+2. Within the code block, we use `org-element-map` to traverse the parsed Org document.
+
+3. We look for `src-block` elements and check if they have the `:name` property set to "data." This indicates a block of data in the Org document.
+
+4. If we find a matching block, we use `org-babel-lob-call` to execute the code in that block and store the result in the `parsed-data` variable.
+
+5. Finally, we return the `parsed-data`.
+
+You can then use this inline script by inserting it into your Org document where you need to extract and parse data from the previous data block. You can customize the `:name` property and the code within your "data" block according to your specific needs.
+
+#+begin_src python
+from collections import Counter
+
+table = [
+    ("4513", 1),
+    ("136948", 2),
+    ("197555", 3),
+    ("222143", 11),
+    ("223266", 12),
+    ("225073", 17),
+    ("230650", 48),
+    ("231303", 77),
+    ("232241", 266),
+    ("232277", 299),
+    ("232466", 1059),
+    ("232633", 3167),
+    ("232769", 199711)
+]
+
+scores = Counter(row[1] for row in table)
+print(sum(scores.values()))
+#+end_src
+
+#+begin_src data
+    999: 204161 #+END_SRC
+ 204949:      4 #+END_SRC
+ 218872:      8 #+END_SRC
+ 221571:     10 #+END_SRC
+ 232290:    319 #+END_SRC
+ 232313:    345 #+END_SRC
+#+end_src
+
+
+ 
+4. for variations ignoring whitespace or other changes replace one line with another to fill in missing.
+5. construct graph of lines as grammar, treat lines as tokens, tokenize and compare.
+6. create windows around lines, create ngrams of lines.
+7. tokenize in org mode, and construct json from pandoc.
+
+
