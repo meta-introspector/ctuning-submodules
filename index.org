@@ -811,8 +811,9 @@ So take begin_src end_src babel blocks
 using emacs org babel mode, write an inline elisp script that traverses the current document and
 finds the previous block of data and parses it.
 
+** programming languages
 use python to sum the numbers in the following table.
-#+begin_src sh :exports code
+#+begin_src sh :exports both
 grep BEGIN_SRC clines.txt 
 #+end_src
 #+NAME: source-table
@@ -840,7 +841,7 @@ grep BEGIN_SRC clines.txt
 |   3167 | #+BEGIN_SRC | python   |          |     |        |
 | 199711 | #+BEGIN_SRC | sh       |          |     |        |
 
-** programming languages
+
 #+NAME: programming-language-table
 #+RESULTS: table-sum
 | sh       | 200108 |
@@ -855,6 +856,7 @@ grep BEGIN_SRC clines.txt
 | dot      |      2 |
 | sql      |      2 |
 | latex    |      1 |
+
 #+NAME: table-sum
 #+BEGIN_SRC python :var table=source-table :exports both
   from collections import  Counter
