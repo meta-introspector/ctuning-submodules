@@ -1,5 +1,6 @@
 IFS="\n"
-MARKDOWN=$(shell find . -iname "*.md")
+#MARKDOWN=$(shell find . -iname "*.md")
+MARKDOWN=$(shell cat markdown.txt)
 
 # Form all 'html' counterparts
 ORG=$(MARKDOWN:.md.org=.org)

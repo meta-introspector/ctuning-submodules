@@ -784,10 +784,6 @@ done
 
 
 
-find -name \*.org | xargs grep -h . | sort -u > ulines.txt
-find -name \*.org | xargs grep -h . | sort |uniq -c | sort -n > lines.txt
-tr -s '[[:punct:][:space:]]' '\n'  < ulines.txt  > words.txt
-sort uwords.txt |uniq -c | sort -n >wordcounts.txt
 
 tflite https://www.tensorflow.org/litex
 
@@ -808,3 +804,22 @@ https://github.com/ARM-software/armnn
 @article{1, (B) second approach-ResNet50, (C) third approach-ResNet50, (D) third approach-ResNet101, (green–wall, blue–no-wall)., url={http://dx.doi.org/10.7717/peerj-cs.1565/fig-6}, DOI={10.7717/peerj-cs.1565/fig-6}, publisher={PeerJ} }
 
 
+find  > files.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n 
+
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n > 3.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >4.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >5.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >6.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >7.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >8.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >9.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >12.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >13.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >14.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >15.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >16.txt
+cat files.txt  | grep -o "\.[A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z][A-Za-z]$"  | sort |uniq -c | sort -n >18.txt
+
+cat files.txt  | grep -o "\.[^\/\.]*$"  | sort |uniq -c | sort -n > all.txt
+cat files.txt  | grep "\.md$"  >markdown.txt
