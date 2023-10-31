@@ -872,17 +872,7 @@ grep BEGIN_SRC clines.txt
 | 199711 | #+BEGIN_SRC | sh       |          |     |        |
 
 
-#+NAME: table-sum
-#+BEGIN_SRC python :var table=source-table
-  from collections import  Counter
-  total = Counter()
-  for x in table:
-      count=x[0]
-      name=x[2]
-      total[name] += count
-  return total.most_common()
-#+END_SRC
-
+#+NAME: programming-language-table
 #+RESULTS: table-sum
 | sh       | 200108 |
 | python   |   3452 |
@@ -896,6 +886,16 @@ grep BEGIN_SRC clines.txt
 | dot      |      2 |
 | sql      |      2 |
 | latex    |      1 |
+#+NAME: table-sum
+#+BEGIN_SRC python :var table=source-table :export both
+  from collections import  Counter
+  total = Counter()
+  for x in table:
+      count=x[0]
+      name=x[2]
+      total[name] += count
+  return total.most_common()
+#+END_SRC
 
 
 To traverse the current Org document in Emacs using Org Babel and find the previous block of data for parsing, you can create an inline Emacs Lisp code block within your Org document. Here's an example of how to do this:
