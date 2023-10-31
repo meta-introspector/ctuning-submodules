@@ -813,7 +813,7 @@ finds the previous block of data and parses it.
 
 ** programming languages
 use python to sum the numbers in the following table.
-#+begin_src sh :exports both
+#+begin_src sh
 grep BEGIN_SRC clines.txt 
 #+end_src
 #+NAME: source-table
@@ -841,7 +841,17 @@ grep BEGIN_SRC clines.txt
 |   3167 | #+BEGIN_SRC | python   |          |     |        |
 | 199711 | #+BEGIN_SRC | sh       |          |     |        |
 
-
+** Programming language sum
+#+NAME: table-sum
+#+BEGIN_SRC python :var table=source-table :exports both
+  from collections import  Counter
+  total = Counter()
+  for x in table:
+      count=x[0]
+      name=x[2]
+      total[name] += count
+  return total.most_common()
+#+END_SRC
 #+NAME: programming-language-table
 #+RESULTS: table-sum
 | sh       | 200108 |
@@ -856,17 +866,6 @@ grep BEGIN_SRC clines.txt
 | dot      |      2 |
 | sql      |      2 |
 | latex    |      1 |
-
-#+NAME: table-sum
-#+BEGIN_SRC python :var table=source-table :exports both
-  from collections import  Counter
-  total = Counter()
-  for x in table:
-      count=x[0]
-      name=x[2]
-      total[name] += count
-  return total.most_common()
-#+END_SRC
 
 
 #+NAME end-src-data
