@@ -812,7 +812,7 @@ using emacs org babel mode, write an inline elisp script that traverses the curr
 finds the previous block of data and parses it.
 
 use python to sum the numbers in the following table.
-#+begin_src sh :exports both
+#+begin_src sh :exports code
 grep BEGIN_SRC clines.txt 
 #+end_src
 #+NAME: source-table
@@ -840,7 +840,7 @@ grep BEGIN_SRC clines.txt
 |   3167 | #+BEGIN_SRC | python   |          |     |        |
 | 199711 | #+BEGIN_SRC | sh       |          |     |        |
 
-
+** programming languages
 #+NAME: programming-language-table
 #+RESULTS: table-sum
 | sh       | 200108 |
