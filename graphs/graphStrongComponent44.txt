@@ -1,7 +1,2 @@
-This is a DOT (Directed Acyclic Graph) representation of a system configuration for a CPU with multiple NUMA domains. The nodes represent different options or components of the system, and the edges connect them to indicate relationships between them.
-
-The "CPU_Common_Options" node represents the common options available for the CPU, such as the number of cores, cache size, and memory speed. It is connected to the "ACPI_SRAT_L3_Cche_As_NUMA_Domain_=_Disabled" node, which indicates that SRAT (Speculative Random Access Translation) is disabled for the L3 cache across all NUMA domains.
-
-The "CPU_Common_Options" node is also connected to two nodes representing the number of NUMA nodes per socket: "NUMA_nodes_per_socket__NPS1" and "NUMA_nodes_per_socket__NPS4". These nodes indicate that there are four NUMA nodes per socket, with two NUMA domains for each socket.
-
-The "CPU_Common_Options" node is also connected to the "ACPI_SRAT_L3_Cche_As_NUMA_Domain__Disabled" node, which indicates that SRAT is disabled for the L3 cache across all NUMA domains.
+Once upon a time, in a far-off land, there was a powerful computer that had the ability to perform incredible feats of computational magic. This computer was built with advanced hardware and software components that allowed it to process information at lightning speeds.
+At the heart of this computer were NUMA nodes, which were responsible for distributing data and tasks across multiple CPU sockets. These NUM

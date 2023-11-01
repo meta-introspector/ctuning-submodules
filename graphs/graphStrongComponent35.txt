@@ -1,17 +1,6 @@
-```less
-digraph G {
-  rankdir=LR;
-  node[shape=dot];
-  Building_TensorRT-OSS[color="#97c2fc", id="Building_TensorRT-OSS", label="Building_TensorRT-OSS"];
-  References[color="#97c2fc", id="References", label="References"];
-  Transform_unstructured_sparsity_to_structured_sparsity_(as_in_Figure)[color="#97c2fc", id="Transform_unstructured_sparsity_to_structured_sparsity_(as_in_Figure)", label="Transform_unstructured_sparsity_to_structured_sparsity_(as_in_Figure)"];
-  Appendix[color="#97c2fc", id="Appendix", label="Appendix"];
-  Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be[color="#97c2fc", id="Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be", label="Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be"];
-  Common_Pitfalls[color="#97c2fc", id="Common_Pitfalls", label="Common_Pitfalls"];
-  Building_TensorRT-OSS -> References;
-  References -> Transform_unstructured_sparsity_to_structured_sparsity_(as_in_Figure);
-  References -> Appendix;
-  References -> Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be;
-  Common_Pitfalls -> Appendix;
-}
-```
+Once upon a time, there was a team of developers working on building an AI system that could analyze and understand data from various sources. They knew that the success of their project would depend on how well they were able to manage the complexity and diversity of data they would be dealing with.
+To overcome these challenges, the team decided to use a powerful tool called TensorRT-OSS, which was specifically designed for building fast and efficient machine learning models. But before they could start building their model, they needed to understand the underlying principles and techniques used in tensor processing.
+The first step was to read through the appendix provided by TensorRT-OSS, which contained detailed information about how to use the tool effectively. They also referenced other relevant sources on common pitfalls that often arise when working with data, such as overfitting or underfitting.
+As they delved deeper into the material, they realized that one of the key challenges they would face was managing the sparsity of their data, which is a common problem in many real-world datasets. To overcome this challenge, they decided to use a technique called "transform_unstructured_sparsity_to_structured_sparsity_(as_in_Figure)", which would allow them to convert their unstructured data into a more organized and manageable format.
+Armed with this knowledge, the team began building their model using TensorRT-OSS. They faced many challenges along the way, but through trial and error, they were able to overcome them and create a powerful tool that could analyze and understand complex data.
+In the end, their project was a huge success, and they were hailed as pioneers in the field of machine learning. Their work inspired many others to follow in their footsteps and continue to push the boundaries of what is possible with AI.

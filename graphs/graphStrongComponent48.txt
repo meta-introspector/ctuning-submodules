@@ -1,17 +1,6 @@
-```javascript
-const graph = {
-  nodes: [
-    { id: '2._EfficientNet_V2', label: '2._EfficientNet_V2', color: '#97c2fc', shape: 'dot' },
-    { id: 'Create_ONNX_Graph', label: 'Create_ONNX_Graph', color: '#97c2fc', shape: 'dot' },
-    { id: '3._TFHub_Models', label: '3._TFHub_Models', color: '#97c2fc', shape: 'dot' },
-    { id: 'TFOD_EfficientDet_models_will_have_a_slightly_reduced_throughput', label: 'TFOD_EfficientDet_models_will_have_a_slightly_reduced_throughput', color: '#97c2fc', shape: 'dot' },
-    { id: 'In_order_to_proceed,_you_need_to_re-export_the_saved_model._If', label: 'In_order_to_proceed,_you_need_to_re-export_the_saved_model._If', color: '#97c2fc', shape: 'dot' }
-  ],
-  edges: [
-    { id: '2._EfficientNet_V2_to_Create_ONNX_Graph', from: '2._EfficientNet_V2', to: 'Create_ONNX_Graph' },
-    { id: '3._TFHub_Models_to_TFOD_EfficientDet_models_will_have_a_slightly_reduced_throughput', from: '3._TFHub_Models', to: 'TFOD_EfficientDet_models_will_have_a_slightly_reduced_throughput' },
-    { id: '3._TFHub_Models_to_Create_ONNX_Graph', from: '3._TFHub_Models', to: 'Create_ONNX_Graph' },
-    { id: 'In_order_to_proceed,_you_need_to_re-export_the_saved_model._If_to_Create_ONNX_Graph', from: 'In_order_to_proceed,_you_need_to_re-export_the_saved_model._If', to: 'Create_ONNX_Graph' }
-  ]
-};
-```
+Once upon a time, in the world of computer vision, there was a powerful and efficient model named EfficientNet V2. It was a cutting-edge model that had been trained on an enormous dataset and optimized for performance. However, despite its many strengths, it still needed to be exported in a format that could be easily integrated into other applications.
+One day, a brilliant programmer decided to create a Graph that would allow the efficientNet V2 model to be exported in the ONNX (Open Neural Network Exchange) format. This Graph would take in the EfficientNet V2 model and output it in the ONNX format, making it easy for other developers to use it in their own projects.
+However, there was one small catch. In order to proceed with this task, the programmer needed to re-export the saved model in a different format first. This was necessary because the current format of the model was not compatible with the ONNX Graph.
+Despite this minor inconvenience, the programmer set to work on the task with determination and courage. With careful attention to detail and a deep understanding of the inner workings of both the EfficientNet V2 model and the ONNX Graph, they were able to successfully export the model in the required format.
+As a result, developers all over the world were able to harness the power of the efficientNet V2 model in their own projects, thanks to the work of this brave and creative programmer. The ONNX Graph had made it possible to integrate this cutting-edge model into a wide range of applications, opening up new possibilities for computer vision and machine learning.
+And so, the story of the ONNX Graph and the efficientNet V2 model serves as a reminder that with determination, creativity, and wisdom, even the most challenging tasks can be overcome.

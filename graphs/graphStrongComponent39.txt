@@ -1,16 +1,5 @@
-
-This appears to be a network diagram with 5 nodes (colored in blue) and 6 edges connecting them. The nodes represent entities or components, while the edges represent relationships between those entities. Here is a brief summary of each node and edge:
-
-* "that\_on\_Windows\_you\_also\_need\_to\_install\_/ctuning@ck-win*" (id=1): A node representing that Windows users need to install a specific tool for tuning.
-* "Docker" (id=2): A node representing Docker, a containerization platform used in software development and deployment.
-* "Further\_info" (id=3): A node representing further information about the use of Docker and the tool for tuning.
-* "9.\_run" (id=4): A node representing an action to perform with Docker, likely related to running a container or application.
-* "10.\_run" (id=5): Another node representing an action to perform with Docker.
-* "Edge_-\_Q1\_Pro" (id=6): A node representing a specific instance of Docker use, possibly a project or team that uses Docker in their workflow.
-
-The edges represent the relationships between these nodes:
-
-* Edge 1 connects the tool installation requirement to Docker, suggesting that Docker is used as part of the tuning process.
-* Edge 2 and 3 connect Docker to further information, indicating that more details about Docker usage can be found.
-* Edges 4-6 connect Docker to the actions of running containers, possibly implying that Docker is a key component of these processes.
-* Edge 7 connects the specific instance of Docker use (Edge_-\_Q1\_Pro) to further information, suggesting that more details about this project or team's Docker usage can be found.
+The graph represents a flowchart of the steps required to run an application on the Edge cloud platform. To begin with, one needs to install a software package called ctuning@ck-win* on their Windows machine. This is represented by the blue dot labeled "that_on_Windows_you_also_need_to_install_/ctuning@ck-win*". The next step is to install Docker, which is shown as another blue dot labeled "Docker".
+From here, one can run their application in either of two ways. They can choose the 10th node labeled "10._run" or the 9th node labeled "9._run". Both these nodes lead to the blue dot labeled "Docker", indicating that they both require Docker to be installed on the system.
+Once the application is running, one can access further information about it by clicking on the blue dot labeled "Further_info". This node is connected to both the 10th and 9th nodes through edges, indicating that the information is available to all users regardless of which method they used to run their application.
+Finally, one can also use the Edge cloud platform to access additional features and functionalities not available in the ctuning@ck-win* software package. This is represented by the blue dot labeled "Edge_-_Q1_Pro". This node is connected to the "Further_info" node through an edge, indicating that users can access this information while running their application on the Edge cloud platform.
+Overall, this flowchart represents a simple yet effective way for users to run their applications on the Edge cloud platform and access additional features and functionalities as needed. With the right software package installed and a clear understanding of the steps required, users can easily navigate the flowchart and achieve their desired outcomes.
