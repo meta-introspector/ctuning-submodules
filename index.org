@@ -1224,6 +1224,7 @@ see [[process_json.py]]
 tiktoken
 https://github.com/openai/tiktoken
 
+
 * html index
 #+begin_src sh
   tree -L 2 -H https://meta-introspector.github.io/ctuning-submodules > index.html
@@ -1241,140 +1242,39 @@ https://github.com/openai/tiktoken
 #+end_src
 
 #+RESULTS:
-| [master | da838c2]                           | updating | from                               | org            | mode |              |
-| 204     | files                              | changed, | 5076                               | insertions(+), | 2374 | deletions(-) |
-| rewrite | graphs/graphComponent0.html        | (82%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent0.json        | (88%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent1.html        | (79%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent1.json        | (96%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent10.json       | (98%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent11.json       | (93%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent12.json       | (98%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent13.json       | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent14.json       | (97%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent15.json       | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent16.json       | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent17.json       | (78%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent18.json       | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent19.json       | (97%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent2.html        | (65%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent2.json        | (98%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent20.json       | (98%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent21.json       | (93%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent22.json       | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent23.json       | (83%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent24.json       | (91%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent25.json       | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent26.json       | (95%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent27.json       | (97%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent28.json       | (82%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent29.json       | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent3.html        | (72%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent3.json        | (98%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent30.json       | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent31.json       | (68%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent32.json       | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent34.json       | (94%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent35.json       | (68%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent36.json       | (94%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent37.json       | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent38.json       | (77%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent39.json       | (81%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent4.html        | (72%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent4.json        | (93%)    |                                    |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent40.html       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent40.json       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent41.html       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent41.json       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent42.html       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent42.json       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent43.html       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent43.json       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent44.html       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent44.json       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent45.html       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent45.json       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent46.html       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent46.json       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent47.html       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent47.json       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent48.html       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent48.json       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent49.html       |                |      |              |
-| create  | mode                               | 100644   | graphs/graphComponent49.json       |                |      |              |
-| rewrite | graphs/graphComponent5.html        | (64%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent5.json        | (97%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent6.html        | (63%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent6.json        | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent7.json        | (91%)    |                                    |                |      |              |
-| rewrite | graphs/graphComponent8.json        | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphComponent9.json        | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent0.html  | (82%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent0.json  | (88%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent1.html  | (79%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent1.json  | (96%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent10.json | (98%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent11.json | (93%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent12.json | (98%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent13.json | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent14.json | (97%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent15.json | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent16.json | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent17.json | (78%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent18.json | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent19.json | (97%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent2.html  | (65%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent2.json  | (98%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent20.json | (98%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent21.json | (93%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent22.json | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent23.json | (83%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent24.json | (91%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent25.json | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent26.json | (95%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent27.json | (97%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent28.json | (82%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent29.json | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent3.html  | (72%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent3.json  | (98%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent30.json | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent31.json | (68%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent32.json | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent34.json | (94%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent35.json | (68%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent36.json | (94%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent37.json | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent38.json | (77%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent39.json | (81%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent4.html  | (72%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent4.json  | (93%)    |                                    |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent40.html |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent40.json |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent41.html |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent41.json |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent42.html |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent42.json |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent43.html |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent43.json |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent44.html |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent44.json |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent45.html |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent45.json |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent46.html |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent46.json |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent47.html |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent47.json |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent48.html |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent48.json |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent49.html |                |      |              |
-| create  | mode                               | 100644   | graphs/graphStrongComponent49.json |                |      |              |
-| rewrite | graphs/graphStrongComponent5.html  | (64%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent5.json  | (97%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent6.html  | (63%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent6.json  | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent7.json  | (91%)    |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent8.json  | (100%)   |                                    |                |      |              |
-| rewrite | graphs/graphStrongComponent9.json  | (100%)   |                                    |                |      |              |
+| [master | 6eb16dd]                           | updating | from | org            | mode |              |
+| 55      | files                              | changed, |  178 | insertions(+), |  257 | deletions(-) |
+| rewrite | graphs/graphStrongComponent32.json | (86%)    |      |                |      |              |
+| rewrite | graphs/graphStrongComponent32.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent33.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent34.json | (87%)    |      |                |      |              |
+| rewrite | graphs/graphStrongComponent34.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent35.json | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent35.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent36.json | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent36.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent37.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent38.json | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent38.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent39.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent40.json | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent40.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent41.json | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent41.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent42.json | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent42.txt  | (99%)    |      |                |      |              |
+| rewrite | graphs/graphStrongComponent43.json | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent43.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent44.json | (63%)    |      |                |      |              |
+| rewrite | graphs/graphStrongComponent44.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent45.json | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent45.txt  | (99%)    |      |                |      |              |
+| rewrite | graphs/graphStrongComponent46.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent47.json | (88%)    |      |                |      |              |
+| rewrite | graphs/graphStrongComponent47.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent48.json | (90%)    |      |                |      |              |
+| rewrite | graphs/graphStrongComponent48.txt  | (100%)   |      |                |      |              |
+| rewrite | graphs/graphStrongComponent49.txt  | (100%)   |      |                |      |              |
 
 
 * Bibliography
