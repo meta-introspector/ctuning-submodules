@@ -51,10 +51,10 @@ with open("outline.txt") as fi:
         last_stars    = len(stars)
         last_content  = content
 
-nx.write_gml(g,"graph.gml")
-nx.write_adjlist(g, "graph.adjlist")
-nx.write_multiline_adjlist(g, "graph.adjlist2")
-nx.write_weighted_edgelist(g, "graph.edeelist")
+nx.write_gml(g,"graphs/graph.gml")
+nx.write_adjlist(g, "graphs/graph.adjlist")
+nx.write_multiline_adjlist(g, "graphs/graph.adjlist2")
+nx.write_weighted_edgelist(g, "graphs/graph.edgelist")
 #pos = nx_agraph.graphviz_layout(g)
 #pos = nx.nx_agraph.graphviz_layout(G)
 #nx.draw(G, pos=pos)
