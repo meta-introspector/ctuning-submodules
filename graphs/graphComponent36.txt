@@ -1,7 +1,5 @@
-This is a diagram of workflows related to the Single Stream model for Auto Encoder with Discriminator (AEDK). The workflows include:
-
-1. Compile and install models to 20W AEDK: This involves compiling the models using the 20W AEDK development kit (AEDK) and installing them onto the 20W platform.
-2. Compile and install models to 16NSP AEDK: This involves compiling the models using the 16NSP AEDK development kit (AEDK) and installing them onto the 16NSP platform.
-3. SingleStream: This is the main workflow where the input images are passed through the encoder and decoder networks to generate high-quality images.
-4. Info: This involves providing information about the workflows, such as the different AEDKs available and how to install them.
-5. Deprecated workloads: This is a legacy workflow that may no longer be supported or used.
+Once upon a time, in a world of technology and innovation, there was a journey towards creating an efficient and powerful system. This system required the use of several workloads that were carefully compiled and installed into different kits for testing and optimization. However, as time passed, some of these workloads became outdated and deprecated.
+The journey began with "Offline," where all the workloads were stored and prepared for testing. From there, it moved to "SingleStream," which was the primary location for running tests and optimizing the system's performance. The workloads that were deemed too old or outdated were redirected to "Deprecated_workloads."
+But fear not, as the journey continued with the installation of new workloads into the AEDK kits, specifically for the 16 NSP and 20W systems. These new workloads were compiled and installed with precision, allowing them to be tested and optimized in SingleStream.
+As the journey progressed, it became clear that information was key to understanding the system's performance. This led to the creation of "Info," a central location for storing all important data and insights.
+In conclusion, this graph shows us that even though some workloads may become outdated, the journey towards creating an efficient and powerful system must continue with precision and determination. By carefully compiling and installing new workloads and optimizing their performance in SingleStream, we can ensure that our system remains at the forefront of innovation.

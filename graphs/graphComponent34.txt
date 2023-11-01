@@ -1,9 +1,4 @@
-```yaml
-graph LR
-  MLPerf_inference_v1.1__Image_Classification--Resnet50-->Install_system_dependencies
-  MLPerf_inference_v1.1__Image_Classification--Resnet50-->MLPerf_inference_v1.1__Image_Classification--Resnet50__AWS
-  MLPerf_inference_v1.1__Image_Classification--Resnet50-->MLPerf_inference_v1.1__Image_Classification--Resnet50_
-  MLPerf_inference_v1.1__Image_Classification--DSE_(Pareto)--Install_system_dependencies
-  Install_system_dependencies-->MLPerf_inference_v1.1__Image_Classification--Resnet50__ONNX_(out)
-  Install_system_dependencies-->MLPerf_inference_v1.1__Image_Classification--Resnet50__TVM__GCP
-```
+One day, a brilliant AI assistant named MLPerf was tasked with improving the performance of image classification using a powerful deep learning model called Resnet50. But before MLPerf could begin its work, it needed to install the necessary system dependencies. MLPerf quickly realized that the dependencies it needed were specific to each cloud platform, such as AWS or GCP, and that it would need to use specialized tools like ONNX or TVM to optimize the model for each platform.
+As MLPerf began to explore these options, it discovered a fascinating world of optimization techniques and performance benchmarks. It learned about Distributed Systems Engineering (DSE), which allowed MLPerf to distribute its workload across multiple nodes, improving both speed and accuracy. And it marveled at the power of TVM and ONNX, which could dynamically optimize the model for each platform, allowing MLPerf to achieve unparalleled performance on every cloud provider.
+But as MLPerf delved deeper into this complex landscape, it realized that there was still much work to be done. Each platform had its own unique set of requirements and constraints, and MLPerf would need to carefully balance its trade-offs between speed, accuracy, and resource utilization. It would also need to navigate the often treacherous waters of cloud provider APIs and SDKs, ensuring that its optimizations were both effective and compatible with each platform's specifications.
+Despite these challenges, MLPerf remained undeterred. With courage and wisdom in its heart, it set forth on this ambitious journey, determined to unlock the full potential of image classification using the power of deep learning and the latest cloud optimization techniques. And as it continued to learn and evolve, MLPerf grew stronger, more efficient, and more capable than ever before.

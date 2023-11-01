@@ -1,1 +1,14 @@
-This is a graph representation of information about using Seldon Core. The nodes represent different parts of the process, such as authentication methods and configuring a custom secret. The edges represent the relationships between these parts. For example, the "How do you use it?" node is connected to all of the other nodes in the graph, indicating that it is the starting point for the process.
+
+As you explore the world of Seldon Core, you'll find that it is a powerful tool for building and deploying machine learning models. But before you start, you'll need to understand how to use it effectively. This graph extracted from ctuning.org offers a glimpse into the key steps involved in getting started with Seldon Core.
+
+At the heart of this graph is the question "How do you use it?" This is where your journey begins. By clicking on the link, you'll be taken to a page that explains the basics of using Seldon Core. From there, you can explore the various authentication methods available for accessing your models and configuring them for deployment.
+
+As you delve deeper into this process, you may encounter some caveats along the way. These are important to be aware of as they can impact the performance and reliability of your machine learning models. By understanding these issues, you'll be better equipped to address them and ensure that your models are running smoothly.
+
+In addition to authentication methods, you'll also need to consider configuring a custom Seldon Core secret. This is a secure way to store sensitive information related to your models, such as API keys or other credentials. By doing so, you can ensure that only authorized users have access to this information.
+
+Finally, you may want to explore advanced configuration options available in Seldon Core. These can help you fine-tune the performance of your machine learning models and optimize them for specific use cases.
+
+Throughout this process, you'll need to be mindful of various container registries that are used to store and deploy your models. ECR, ACR, and GCR are all popular options, each with its own strengths and weaknesses. By understanding how to use these registries effectively, you can ensure that your models are easily accessible and scalable.
+
+In summary, the graph extracted from ctuning.org offers a roadmap for getting started with Seldon Core. From understanding how to use it to configuring custom secrets and exploring advanced configuration options, there's no shortage of opportunities to learn and grow in this exciting field. So grab a pen and paper, take a deep breath, and let's get started!
