@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "the_datasets_for_inferences*_described_in", "label": "the_datasets_for_inferences*_described_in", "shape": "dot"}, {"color": "#97c2fc", "id": "Running_a_Benchmark", "label": "Running_a_Benchmark", "shape": "dot"}, {"color": "#97c2fc", "id": "Apply_Perf/W_Optmization_for_NX", "label": "Apply_Perf/W_Optmization_for_NX", "shape": "dot"}, {"color": "#97c2fc", "id": "USB-C_Power_Adapters", "label": "USB-C_Power_Adapters", "shape": "dot"}, {"color": "#97c2fc", "id": "Apply_Perf/W_Optmization_(only_AGX_applicable)", "label": "Apply_Perf/W_Optmization_(only_AGX_applicable)", "shape": "dot"}, {"color": "#97c2fc", "id": "Download_Data,_Model_and_Preprocess_the_data", "label": "Download_Data,_Model_and_Preprocess_the_data", "shape": "dot"}, {"color": "#97c2fc", "id": "Apply_Perf/W_Optmization_for_AGX", "label": "Apply_Perf/W_Optmization_for_AGX", "shape": "dot"}, {"color": "#97c2fc", "id": "Orin_NX_NVME_ASPM", "label": "Orin_NX_NVME_ASPM", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"from": "the_datasets_for_inferences*_described_in", "id": "the_datasets_for_inferences*_described_in_to_Running_a_Benchmark", "to": "Running_a_Benchmark"}, {"from": "Apply_Perf/W_Optmization_for_NX", "id": "Apply_Perf/W_Optmization_for_NX_to_USB-C_Power_Adapters", "to": "USB-C_Power_Adapters"}, {"from": "Apply_Perf/W_Optmization_(only_AGX_applicable)", "id": "Apply_Perf/W_Optmization_(only_AGX_applicable)_to_USB-C_Power_Adapters", "to": "USB-C_Power_Adapters"}, {"from": "USB-C_Power_Adapters", "id": "USB-C_Power_Adapters_to_Download_Data,_Model_and_Preprocess_the_data", "to": "Download_Data,_Model_and_Preprocess_the_data"}, {"from": "USB-C_Power_Adapters", "id": "USB-C_Power_Adapters_to_Running_a_Benchmark", "to": "Running_a_Benchmark"}, {"from": "USB-C_Power_Adapters", "id": "USB-C_Power_Adapters_to_Apply_Perf/W_Optmization_for_AGX", "to": "Apply_Perf/W_Optmization_for_AGX"}, {"from": "Download_Data,_Model_and_Preprocess_the_data", "id": "Download_Data,_Model_and_Preprocess_the_data_to_Orin_NX_NVME_ASPM", "to": "Orin_NX_NVME_ASPM"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"font": {"size": 12, "color": "black"}, "shapeProperties": {"useBorderWithImage": true}}, "edges": {"length": 1050}, "physics": {"stabilization": {"enabled": true, "iterations": 1000}, "hierarchicalRepulsion": {"centralGravity": 0.0, "springLength": 700, "springConstant": 0.01, "nodeDistance": 750, "damping": 0.09}, "solver": "hierarchicalRepulsion", "timestep": 0.5}, "layout": {"hierarchical": {"enabled": true, "blockShifting": true, "parentCentralization": true, "sortMethod": "directed"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
