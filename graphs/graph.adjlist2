@@ -1,5 +1,5 @@
-#./parse_structure.py
-# GMT Wed Nov  1 21:01:05 2023
+#./parse_structure_ollama.py
+# GMT Wed Nov  1 21:35:17 2023
 # test
 we_have_moved_the_main_AE_pages 1
 Description {'weight': 1}

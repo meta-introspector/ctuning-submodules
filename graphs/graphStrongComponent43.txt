@@ -1,0 +1,5 @@
+The flowchart depicts a process that involves setting up Docker, creating a Conda environment, running benchmarks, and noting the scenario on the server. The process starts with running a command for the server and offline mode, followed by setting up with Docker, and then creating a Conda environment and building dependencies. After that, the benchmark is run, and finally, the scenario is noted on the server.
+
+The nodes in the flowchart are labeled with their respective steps, and each node has a unique color and ID. The edges connect the nodes in the order they occur in the process. For example, the edge from "4._Run_command_for_server_and_offline_mode" to "Setup_with_Docker" indicates that after running the command for the server and offline mode, setting up with Docker is the next step.
+
+Overall, this flowchart provides a clear visual representation of the process involved in deploying a machine learning model on a server, which can be helpful for understanding the workflow and identifying potential bottlenecks or areas for improvement.

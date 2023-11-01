@@ -1,0 +1,7 @@
+It looks like you have provided a GraphViz DOT file for a flowchart. The flowchart shows the process of setting up a server and running benchmarks, with a few notes on the scenario. Here's what the flowchart represents:
+1. "4._Run_command_for_server_and_offline_mode" - Run command for server and offline mode
+2. "Setup_with_Docker" - Setup with Docker
+3. "Setup_Conda_Environment_and_Build_Dependencies" - Setup Conda environment and build dependencies
+4. "Run_Benchmark" - Run benchmarks
+5. "Note_on_Server_scenario" - Note on server scenario
+The flowchart shows that setting up with Docker is a prerequisite for running benchmarks and also setting up the Conda environment and building dependencies. Additionally, setting up with Docker is also a prerequisite for the server to be in offline mode.

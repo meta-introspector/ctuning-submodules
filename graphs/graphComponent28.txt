@@ -1,0 +1,12 @@
+```
+digraph G {
+    node[color="#97c2fc", shape="dot"]
+    Script_flags_mapped_to_environment -> CLI_flags_can_be_used_in_the_Python_CM_API_as_follows_*
+    Default_variations -> Script_workflow,_dependencies_and_native_scripts
+    Versions -> Script_workflow,_dependencies_and_native_scripts
+    Versions -> Script_output
+    CLI_flags_can_be_used_in_the_Python_CM_API_as_follows_* -> Default_environment
+    Script_workflow,_dependencies_and_native_scripts -> Default_environment
+    Script_workflow,_dependencies_and_native_scripts -> Valid_variation_combinations_checked_by_the_community
+}
+```

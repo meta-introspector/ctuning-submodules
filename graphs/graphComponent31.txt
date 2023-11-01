@@ -1,0 +1,12 @@
+This is a graph representation of a flow for using NVIDIA GPUs with Orin NX NVME ASPM. The nodes represent different parts of the process, and the edges represent the connections between them.
+
+* "Orin\_NX\_NVME\_ASPM" represents the NVIDIA GPU with Orin NX NVME ASPM capabilities.
+* "Download\_Data\_,Model\_and\_Preprocess\_the\_data" represents the process of downloading data, modeling and preprocessing it for use with the GPU.
+* "Apply\_Perf/W\_Optmization\_(only\_AGX\_applicable)" represents applying performance optimization specifically for AGX-enabled GPUs.
+* "USB-C\_Power\_Adapters" represents providing power to the GPU using USB-C adapters.
+* "Apply\_Perf/W\_Optmization\_for\_AGX" represents applying general-purpose performance optimization for AGX-enabled GPUs.
+* "Running\_a\_Benchmark" represents running benchmarks to evaluate the performance of the GPU.
+* "the\_datasets\_for\_inferences\*\_described\_in" represents the datasets used for inference with the GPU.
+* "Apply\_Perf/W\_Optmization\_for\_NX" represents applying performance optimization specifically for NVIDIA GPUs with Orin NX NVME ASPM capabilities.
+
+The graph shows that the process starts with downloading data, modeling and preprocessing it for use with the GPU, and providing power to the GPU using USB-C adapters. From there, general-purpose performance optimization is applied to the GPU for AGX-enabled use cases, followed by running benchmarks to evaluate its performance. Finally, performance optimization specifically for NVIDIA GPUs with Orin NX NVME ASPM capabilities is applied.

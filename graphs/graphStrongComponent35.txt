@@ -1,0 +1,17 @@
+```less
+digraph G {
+  rankdir=LR;
+  node[shape=dot];
+  Building_TensorRT-OSS[color="#97c2fc", id="Building_TensorRT-OSS", label="Building_TensorRT-OSS"];
+  References[color="#97c2fc", id="References", label="References"];
+  Transform_unstructured_sparsity_to_structured_sparsity_(as_in_Figure)[color="#97c2fc", id="Transform_unstructured_sparsity_to_structured_sparsity_(as_in_Figure)", label="Transform_unstructured_sparsity_to_structured_sparsity_(as_in_Figure)"];
+  Appendix[color="#97c2fc", id="Appendix", label="Appendix"];
+  Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be[color="#97c2fc", id="Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be", label="Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be"];
+  Common_Pitfalls[color="#97c2fc", id="Common_Pitfalls", label="Common_Pitfalls"];
+  Building_TensorRT-OSS -> References;
+  References -> Transform_unstructured_sparsity_to_structured_sparsity_(as_in_Figure);
+  References -> Appendix;
+  References -> Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be;
+  Common_Pitfalls -> Appendix;
+}
+```

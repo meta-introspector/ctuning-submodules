@@ -1,0 +1,8 @@
+This is a graph representation of some information related to training an image classification model on the COCO dataset. The nodes represent different aspects or considerations, and the edges show relationships between them. The colors are used for visualization purposes only.
+
+* "Since\_the\_preprocessed\_=1200x1200\_=_COCO\_dataset\_takes\_up\_21G,_you" (blue) represents a fact about the size of the preprocessed COCO dataset, which is 21GB when processed at 1200x1200 resolution.
+* "Calibrate\_on\_your\_own" (purple) suggests calibrating the model on your own device instead of using a precalibrated profile.
+* "Use\_precalibrated\_profiles" (orange) recommends using a precalibrated profile for better performance.
+* "Compilation\_for\_15w\_AEDKs_(edge\_category)" (red) refers to the compilation process for 15-week AEDKs in a specific edge category.
+* "For\_more\_information,_please\_see\_the" (green) directs you to more information about the topic being discussed, which is not clear from this representation alone.
+* "1\_sample\_per\_batch_(for\_the\_Single\_Stream\_scenario)" (pink) specifies that training should be done with one sample per batch in the Single Stream scenario.

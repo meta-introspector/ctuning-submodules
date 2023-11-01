@@ -1,0 +1,8 @@
+
+This graph, extracted from ctuning.org, is a map of the steps required to create and deploy an experiment tracking system using several different components. The system is designed to be flexible and adaptable, allowing for different combinations of components based on specific needs.
+
+The first step in this process is to determine the registry URI, which will be used as a central location for storing information about the experiments being run. Once this URI has been established, it can be used to configure role-based access control (RBAC), ensuring that only authorized personnel have access to the data and systems needed to perform their tasks.
+
+Next, once RBAC has been set up, users can begin using the system by configuring it for a specific experiment or set of experiments. This involves selecting the appropriate flavors for each component of the system, such as the experiment tracker, model registry, artifact store, and data validator. Each flavor is designed to optimize the performance and functionality of the corresponding component for different types of experiments.
+
+Finally, once the system has been configured, it can be deployed and put into use. Users will then be able to manage their experiments, track progress, and analyze results all within a single, centralized platform.

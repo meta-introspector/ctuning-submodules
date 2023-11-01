@@ -1,0 +1,7 @@
+This is a diagram of workflows related to the Single Stream model for Auto Encoder with Discriminator (AEDK). The workflows include:
+
+1. Compile and install models to 20W AEDK: This involves compiling the models using the 20W AEDK development kit (AEDK) and installing them onto the 20W platform.
+2. Compile and install models to 16NSP AEDK: This involves compiling the models using the 16NSP AEDK development kit (AEDK) and installing them onto the 16NSP platform.
+3. SingleStream: This is the main workflow where the input images are passed through the encoder and decoder networks to generate high-quality images.
+4. Info: This involves providing information about the workflows, such as the different AEDKs available and how to install them.
+5. Deprecated workloads: This is a legacy workflow that may no longer be supported or used.

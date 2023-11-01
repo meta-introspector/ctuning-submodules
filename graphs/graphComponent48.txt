@@ -1,0 +1,7 @@
+The given text describes a flowchart for exporting an EfficientNet V2 model to ONNX format and then re-exporting it with reduced throughput. Here is the interpretation of the flowchart:
+
+1. First, you need to have an EfficientNet V2 model saved in TensorFlow Hub (TFHub). This can be done by following the instructions on the TensorFlow website.
+2. You also need to create a new ONNX graph that will hold the exported model. This can be done using the Create_ONNX_Graph node.
+3. To proceed, you need to re-export the saved EfficientNet V2 model as an ONNX file by connecting it to the Create_ONNX_Graph node with a directed edge.
+4. The TFOD_EfficientDet_models_will_have_a_slightly_reduced_throughput node shows that the exported model will have reduced throughput compared to the original model.
+5. Finally, you can re-export the ONNX file using the In_order_to_proceed,_you_need_to_re-export_the_saved_model._If node and connect it to the Create_ONNX_Graph node with a directed edge.

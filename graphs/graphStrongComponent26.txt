@@ -1,0 +1,11 @@
+This is a graph representation of the steps involved in running a benchmark for DLRMv2. The nodes represent the individual steps, and the edges connect them to show the flow of the process.
+
+The starting point is "Download_the_Datasets", which involves downloading all the necessary data, models, and other resources required for running the benchmark. This is followed by setting up a scratch space, where all the data and models will be stored during the benchmark. The edge connecting "Download_the_Datasets" to "that_once_the_scratch_space_is_setup_and_all_the_data,_models,_and" represents this step.
+
+The next recommended step is "for_DLRMv2*,_the_dataset_is_quite_large._We_recommend_to_that_once_the_scratch_space_is_setup_and_all_the_data,_models,_and", which involves downloading the dataset and setting up the scratch space before running the benchmark. This is shown by the edge connecting "for_DLRMv2*,_the_dataset_is_quite_large._We_recommend" to "that_once_the_scratch_space_is_setup_and_all_the_data,_models,_and".
+
+After setting up the scratch space and downloading the necessary data, the next step is to download the dataset and the model, which is shown by the edge connecting "that_once_the_scratch_space_is_setup_and_all_the_data,_models,_and" to "Download_the_datasets".
+
+Once the dataset and model have been downloaded, the next step is to run your first benchmark. This is shown by the edge connecting "Download_the_dataset_and_the_model" to "Running_your_first_benchmark".
+
+Finally, if your system is not listed above or in the recommended list of systems, you must add it to our system list. This is shown by the edges connecting "your_system_is_not_listed_above,_you_must_add_your_system_to_our" and "your_system_is_not_listed_above_or_in" to "Download_the_datasets".

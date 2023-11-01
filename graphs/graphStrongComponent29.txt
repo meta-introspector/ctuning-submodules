@@ -1,0 +1,8 @@
+
+This is a graph representation of the Seldon Core system with its different components and how they interact. The nodes represent the different components of the system, such as authentication methods, configuring a custom Seldon Core secret, advanced configuration, GCR container registry, ACR container registry, ECR container registry, caveats, and how to use it. Each node has a unique identifier (id), color, label, and shape.
+
+The edges represent the relationships between the different components of the system. For example, the "How_do_you_use_it?" node is connected to the "Authentication_Methods" node with an edge labeled "How_do_you_use_it?_to_Authentication_Methods". This indicates that when a user clicks on "How do you use it?", they will be directed to the "Authentication_Methods" page.
+
+Similarly, the "Authentication_Methods" node is connected to the "GCR_container_registry" and "Caveats" nodes with edges labeled "Authentication_Methods_to_GCR_container_registry" and "Authentication_Methods_to_Caveats", respectively. This indicates that when a user selects an authentication method, they will be directed to the appropriate container registry or caveat page.
+
+Overall, this graph representation provides a visualization of how the different components of the Seldon Core system interact and are used by users.

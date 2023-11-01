@@ -1,0 +1,11 @@
+
+This is a network graph with 5 nodes and 6 edges. The nodes represent entities or concepts, while the edges represent relationships between these entities. In this case, the entities are:
+
+1. Compile\_and\_install\_the\_models\_to\_the\_20W\_AEDK - This represents the process of compiling and installing models to the 20W AEDK platform.
+2. SingleStream - This likely refers to a type of workload or application that can be run on the AEDK platform.
+3. Offline - This suggests a mode of operation for the workloads or applications running on the AEDK platform.
+4. Compile\_and\_install\_the\_models\_to\_the\_16\_NSP\_AEDK - This is similar to the first node, but refers to compiling and installing models to a different version of the AEDK platform (16NSP).
+5. Info - This likely represents some type of information or metadata related to the workloads or applications running on the AEDK platform.
+6. Deprecated\_workloads - This suggests a type of workload or application that is no longer supported or recommended for use with the AEDK platform.
+
+The edges represent the relationships between these entities, specifically which workloads can be run on which versions of the AEDK platform and how information about the workloads is related to the workloads themselves and their configuration.

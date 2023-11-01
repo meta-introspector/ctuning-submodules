@@ -1,0 +1,1 @@
+This is a graph data structure representing a flow of actions in an automated process. The nodes represent the actions themselves, and the edges represent the connections between them. The color of each node represents its category, and the labels provide information about each action. The edges have unique IDs that can be used to reference them later.

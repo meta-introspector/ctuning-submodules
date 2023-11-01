@@ -1,0 +1,9 @@
+```yaml
+graph LR
+  MLPerf_inference_v1.1__Image_Classification--Resnet50-->Install_system_dependencies
+  MLPerf_inference_v1.1__Image_Classification--Resnet50-->MLPerf_inference_v1.1__Image_Classification--Resnet50__AWS
+  MLPerf_inference_v1.1__Image_Classification--Resnet50-->MLPerf_inference_v1.1__Image_Classification--Resnet50_
+  MLPerf_inference_v1.1__Image_Classification--DSE_(Pareto)--Install_system_dependencies
+  Install_system_dependencies-->MLPerf_inference_v1.1__Image_Classification--Resnet50__ONNX_(out)
+  Install_system_dependencies-->MLPerf_inference_v1.1__Image_Classification--Resnet50__TVM__GCP
+```

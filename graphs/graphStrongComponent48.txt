@@ -1,0 +1,17 @@
+```javascript
+const graph = {
+  nodes: [
+    { id: '2._EfficientNet_V2', label: '2._EfficientNet_V2', color: '#97c2fc', shape: 'dot' },
+    { id: 'Create_ONNX_Graph', label: 'Create_ONNX_Graph', color: '#97c2fc', shape: 'dot' },
+    { id: '3._TFHub_Models', label: '3._TFHub_Models', color: '#97c2fc', shape: 'dot' },
+    { id: 'TFOD_EfficientDet_models_will_have_a_slightly_reduced_throughput', label: 'TFOD_EfficientDet_models_will_have_a_slightly_reduced_throughput', color: '#97c2fc', shape: 'dot' },
+    { id: 'In_order_to_proceed,_you_need_to_re-export_the_saved_model._If', label: 'In_order_to_proceed,_you_need_to_re-export_the_saved_model._If', color: '#97c2fc', shape: 'dot' }
+  ],
+  edges: [
+    { id: '2._EfficientNet_V2_to_Create_ONNX_Graph', from: '2._EfficientNet_V2', to: 'Create_ONNX_Graph' },
+    { id: '3._TFHub_Models_to_TFOD_EfficientDet_models_will_have_a_slightly_reduced_throughput', from: '3._TFHub_Models', to: 'TFOD_EfficientDet_models_will_have_a_slightly_reduced_throughput' },
+    { id: '3._TFHub_Models_to_Create_ONNX_Graph', from: '3._TFHub_Models', to: 'Create_ONNX_Graph' },
+    { id: 'In_order_to_proceed,_you_need_to_re-export_the_saved_model._If_to_Create_ONNX_Graph', from: 'In_order_to_proceed,_you_need_to_re-export_the_saved_model._If', to: 'Create_ONNX_Graph' }
+  ]
+};
+```
