@@ -1,41 +1,11 @@
-```json
-{
-  "nodes": [
-    {
-      "color": "#97c2fc",
-      "id": "Getting_Started",
-      "label": "Getting_Started",
-      "shape": "dot"
-    },
-    {
-      "color": "#97c2fc",
-      "id": "Table_of_Contents",
-      "label": "Table_of_Contents",
-      "shape": "dot"
-    },
-    {
-      "color": "#97c2fc",
-      "id": "Using_Singularity/Apptainer_instead_of_Docker",
-      "label": "Using_Singularity/Apptainer_instead_of_Docker",
-      "shape": "dot"
-    },
-    {
-      "color": "#97c2fc",
-      "id": "Of_Contents*_-",
-      "label": "Of_Contents*_-",
-      "shape": "dot"
-    },
-    {
-      "color": "#97c2fc",
-      "id": "Description",
-      "label": "Description",
-      "shape": "dot"
-    },
-    {
-      "color": "#97c2fc",
-      "id": "Of_Contents*_,",
-      "label": "Of_Contents*_,",
-      "shape": "dot"
-    }, {"id": "[[https://github.com/d3/d3-array/blob/master/README.md#description][Arrays]", "from": "[[https://github.com/d3/d3-array/blob/master/README.md#description]", "to": "System_dependencies"}, {"id": "Of_Contents*_-_to_TensorRT", "from": "Of_Contents*_-_[[#tensorrt-command-line-wrapper-trtexec][TensorRT", "to": "Of_Contents*_-_[[#coordconvacplugin][coordConvACPlugin]]_-"}, {"id": "Description_to_Managing_the_configuration_files", "from": "Description", "to": "Managing_the_configuration_files"}, {"id": "Description_to_Setup_for_Google_Cloud_Instances", "from": "Description", "to": "Setup_for_Google_Cloud_Instances"}, {"id": "Description_to_System_dependencies", "from": "Description", "to": "System_dependencies"}, {"id": "Download_the_needed_files_to_Of_Contents*_-_[[#description][Description]]_-", "from": "Download_the_needed_files", "to": "Of_Contents*_-_[[#description][Description]]_-"}, {"id": "Of_Contents*_-_to_Arrays", "from": "Of_Contents*_-", "to": "Arrays"}, {"id": "Of_Contents*_-_to_Detect_CUDA_on_Windows", "from": "Of_Contents*_-", "to": "Detect_CUDA_on_Windows"}, {"id": "Of_Contents*_-_to_Managing_the_configuration_files", "from": "Of_Contents*_-", "to": "Managing_the_configuration_files"}, {"id": "Of_Contents*_-_to_Setup_for_Google_Cloud_Instances", "from": "Of_Contents*_-", "to": "Setup_for_Google_Cloud_Instances"}, {"id": "Of_Contents*_-_to_System_dependencies", "from": "Of_Contents*_-", "to": "System_dependencies"}, {"id": "Of_Contents*_-_to_Set_up", "from": "Of_Contents*_-", "to": "Set_up"}, {"id": "Of_Contents*_-_to_Download_the_needed_files", "from": "Of_Contents*_-", "to": "Download_the_needed_files"}, {"id": "Of_Contents*_-_to_Table_of_Contents", "from": "Of_Contents*_-", "to": "Table_of_Contents"}, {"id": "Description_to_we_have_moved_the_main_AE_pages", "from": "Description", "to": "we_have_moved_the_main_AE_pages"}, {"id": "Description_to_Managing_the_configuration_files", "from": "Description", "to": "Managing_the_configuration_files"}, {"id": "Description_to_Setup_for_Google_Cloud_Instances", "from": "Description", "to": "Setup_for_Google_Cloud_Instances"}, {"id": "Description_to_System_dependencies", "from": "Description", "to": "System_dependencies"}, {"id": "Description_to_Set_up", "from": "Description", "to": "Set_up"}, {"id": "Description_to_Download_the_needed_files", "from": "Description", "to": "Download_the_needed_files"}, {"id": "Of_Contents*_-_to_Description", "from": "Of_Contents*_-", "to": "Description"}, {"id": "Of_Contents*_-_[[#description][Description]]_-", "from": "Of_Contents*
+As you take a look at this graph, it's important to remember that the journey of learning something new is like building a bridge. Each step takes time and effort, and without each one, the foundation may not be strong enough to hold up the entire structure.
+The "Setup_for_Google_Cloud_Instances" is the first step in the process, laying the foundation for everything that will follow. From there, the "Description" provides important information about what lies ahead, giving you a sense of where you're going.
+The "Below_we_give_an_/essential/_sequence_of_steps_that_should_result_to_Table_of_Contents" outlines the specific steps needed to reach your destination, while the "Getting_Started" provides a general overview of what's to come.
+As you progress, the "Using_Singularity/Apptainer_instead_of_Docker" section explains an alternative approach that may be more suitable for certain tasks.
+The "Of_Contents*_-_[[#description][Description]]_-_to_Description", "Description_to_we_have_moved_the_main_AE_pages", "Description_to_Managing_the_configuration_files", "Description_to_System_dependencies", "Description_to_Set_up", "Description_to_Download_the_needed_files", and "Description_to_Table_of_Contents" edges represent the sequence of steps that should result in the proper execution of the instructions.
 
-"
+The graph provided by ctuning.org depicts a comprehensive guide for setting up Google Cloud Instances, including installing necessary dependencies, managing configuration files, and running programs on the instances. It starts with the essential setup process, followed by a detailed description of each step and its purpose. The guide also includes a table of contents to help users navigate through the instructions easily.
+
+The guide emphasizes the importance of using Singularity/Apptainer instead of Docker, as it provides better performance and stability on Google Cloud Instances. It also explains how to detect CUDA on Windows and how to download the necessary files. The guide includes examples of how to use these tools effectively.
+
+Overall, this graph represents a comprehensive and detailed guide for setting up Google Cloud Instances for AI applications using Singularity/Apptainer and other essential components. With its clear instructions and visual representation, it is an excellent resource for developers, researchers, and anyone looking to get started with AI on the cloud.

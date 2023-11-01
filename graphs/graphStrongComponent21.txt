@@ -1,1 +1,2 @@
-}
+
+The above graph illustrates the interconnectedness of the MLPerf_Inference_v1.0_-_Image_Classification_-_TFLite_
