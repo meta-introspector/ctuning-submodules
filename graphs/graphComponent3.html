@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "*ai.onnx.ml.CastMap-1*", "label": "*ai.onnx.ml.CastMap-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "Type_Constraints", "label": "Type_Constraints", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.Binarizer-1*", "label": "*ai.onnx.ml.Binarizer-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.CategoryMapper*", "label": "*ai.onnx.ml.CategoryMapper*", "shape": "dot"}, {"color": "#97c2fc", "id": "*LpPool*", "label": "*LpPool*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.LabelEncoder*", "label": "*ai.onnx.ml.LabelEncoder*", "shape": "dot"}, {"color": "#97c2fc", "id": "*RandomUniformLike*", "label": "*RandomUniformLike*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.SVMRegressor*", "label": "*ai.onnx.ml.SVMRegressor*", "shape": "dot"}, {"color": "#97c2fc", "id": "*SequenceMap*", "label": "*SequenceMap*", "shape": "dot"}, {"color": "#97c2fc", "id": "*RandomUniform*", "label": "*RandomUniform*", "shape": "dot"}, {"color": "#97c2fc", "id": "*Constant*", "label": "*Constant*", "shape": "dot"}, {"color": "#97c2fc", "id": "Version_2_of_the_\u0027ai.onnx.ml\u0027_operator_set", "label": "Version_2_of_the_\u0027ai.onnx.ml\u0027_operator_set", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.Normalizer*", "label": "*ai.onnx.ml.Normalizer*", "shape": "dot"}, {"color": "#97c2fc", "id": "*OptionalHasElement*", "label": "*OptionalHasElement*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.ZipMap-1*", "label": "*ai.onnx.ml.ZipMap-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "Version_3_of_the_\u0027ai.onnx.ml\u0027_operator_set", "label": "Version_3_of_the_\u0027ai.onnx.ml\u0027_operator_set", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.LinearClassifier-1*", "label": "*ai.onnx.ml.LinearClassifier-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.LinearRegressor*", "label": "*ai.onnx.ml.LinearRegressor*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.DictVectorizer*", "label": "*ai.onnx.ml.DictVectorizer*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.FeatureVectorizer*", "label": "*ai.onnx.ml.FeatureVectorizer*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.Imputer*", "label": "*ai.onnx.ml.Imputer*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.OneHotEncoder*", "label": "*ai.onnx.ml.OneHotEncoder*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.SVMClassifier*", "label": "*ai.onnx.ml.SVMClassifier*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.Scaler*", "label": "*ai.onnx.ml.Scaler*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.TreeEnsembleClassifier*", "label": "*ai.onnx.ml.TreeEnsembleClassifier*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.TreeEnsembleRegressor*", "label": "*ai.onnx.ml.TreeEnsembleRegressor*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.ZipMap*", "label": "*ai.onnx.ml.ZipMap*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.CategoryMapper-1*", "label": "*ai.onnx.ml.CategoryMapper-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.DictVectorizer-1*", "label": "*ai.onnx.ml.DictVectorizer-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.FeatureVectorizer-1*", "label": "*ai.onnx.ml.FeatureVectorizer-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.Imputer-1*", "label": "*ai.onnx.ml.Imputer-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.LabelEncoder-1*", "label": "*ai.onnx.ml.LabelEncoder-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.LinearRegressor-1*", "label": "*ai.onnx.ml.LinearRegressor-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.Normalizer-1*", "label": "*ai.onnx.ml.Normalizer-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.OneHotEncoder-1*", "label": "*ai.onnx.ml.OneHotEncoder-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.SVMClassifier-1*", "label": "*ai.onnx.ml.SVMClassifier-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.SVMRegressor-1*", "label": "*ai.onnx.ml.SVMRegressor-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.Scaler-1*", "label": "*ai.onnx.ml.Scaler-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.TreeEnsembleClassifier-1*", "label": "*ai.onnx.ml.TreeEnsembleClassifier-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.TreeEnsembleRegressor-1*", "label": "*ai.onnx.ml.TreeEnsembleRegressor-1*", "shape": "dot"}, {"color": "#97c2fc", "id": "*ai.onnx.ml.TreeEnsembleRegressor-3*", "label": "*ai.onnx.ml.TreeEnsembleRegressor-3*", "shape": "dot"}, {"color": "#97c2fc", "id": "Version_4_of_the_\u0027ai.onnx.ml\u0027_operator_set", "label": "Version_4_of_the_\u0027ai.onnx.ml\u0027_operator_set", "shape": "dot"}, {"color": "#97c2fc", "id": "*GlobalMaxPool*", "label": "*GlobalMaxPool*", "shape": "dot"}, {"color": "#97c2fc", "id": "*GridSample*", "label": "*GridSample*", "shape": "dot"}, {"color": "#97c2fc", "id": "*Log*", "label": "*Log*", "shape": "dot"}, {"color": "#97c2fc", "id": "*MaxUnpool*", "label": "*MaxUnpool*", "shape": "dot"}, {"color": "#97c2fc", "id": "*Neg*", "label": "*Neg*", "shape": "dot"}, {"color": "#97c2fc", "id": "*OptionalGetElement*", "label": "*OptionalGetElement*", "shape": "dot"}, {"color": "#97c2fc", "id": "*RandomNormalLike*", "label": "*RandomNormalLike*", "shape": "dot"}, {"color": "#97c2fc", "id": "*Range*", "label": "*Range*", "shape": "dot"}, {"color": "#97c2fc", "id": "*SequenceConstruct*", "label": "*SequenceConstruct*", "shape": "dot"}, {"color": "#97c2fc", "id": "*SequenceEmpty*", "label": "*SequenceEmpty*", "shape": "dot"}, {"color": "#97c2fc", "id": "*SequenceErase*", "label": "*SequenceErase*", "shape": "dot"}, {"color": "#97c2fc", "id": "*SequenceInsert*", "label": "*SequenceInsert*", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"from": "*ai.onnx.ml.CastMap-1*", "id": "*ai.onnx.ml.CastMap-1*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*ai.onnx.ml.Binarizer-1*", "id": "*ai.onnx.ml.Binarizer-1*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*ai.onnx.ml.CategoryMapper*", "id": "*ai.onnx.ml.CategoryMapper*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*LpPool*", "id": "*LpPool*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*ai.onnx.ml.LabelEncoder*", "id": "*ai.onnx.ml.LabelEncoder*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*RandomUniformLike*", "id": "*RandomUniformLike*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*ai.onnx.ml.SVMRegressor*", "id": "*ai.onnx.ml.SVMRegressor*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*SequenceMap*", "id": "*SequenceMap*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*RandomUniform*", "id": "*RandomUniform*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*Constant*", "id": "*Constant*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "Version_2_of_the_\u0027ai.onnx.ml\u0027_operator_set", "id": "Version_2_of_the_\u0027ai.onnx.ml\u0027_operator_set_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*ai.onnx.ml.Normalizer*", "id": "*ai.onnx.ml.Normalizer*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*OptionalHasElement*", "id": "*OptionalHasElement*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*ai.onnx.ml.ZipMap-1*", "id": "*ai.onnx.ml.ZipMap-1*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "Version_3_of_the_\u0027ai.onnx.ml\u0027_operator_set", "id": "Version_3_of_the_\u0027ai.onnx.ml\u0027_operator_set_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*ai.onnx.ml.LinearClassifier-1*", "id": "*ai.onnx.ml.LinearClassifier-1*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "*ai.onnx.ml.LinearRegressor*", "id": "*ai.onnx.ml.LinearRegressor*_to_Type_Constraints", "to": "Type_Constraints"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.DictVectorizer*", "to": "*ai.onnx.ml.DictVectorizer*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.FeatureVectorizer*", "to": "*ai.onnx.ml.FeatureVectorizer*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.Imputer*", "to": "*ai.onnx.ml.Imputer*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.OneHotEncoder*", "to": "*ai.onnx.ml.OneHotEncoder*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.SVMClassifier*", "to": "*ai.onnx.ml.SVMClassifier*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.Scaler*", "to": "*ai.onnx.ml.Scaler*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.TreeEnsembleClassifier*", "to": "*ai.onnx.ml.TreeEnsembleClassifier*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.TreeEnsembleRegressor*", "to": "*ai.onnx.ml.TreeEnsembleRegressor*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.ZipMap*", "to": "*ai.onnx.ml.ZipMap*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.CategoryMapper-1*", "to": "*ai.onnx.ml.CategoryMapper-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.DictVectorizer-1*", "to": "*ai.onnx.ml.DictVectorizer-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.FeatureVectorizer-1*", "to": "*ai.onnx.ml.FeatureVectorizer-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.Imputer-1*", "to": "*ai.onnx.ml.Imputer-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.LabelEncoder-1*", "to": "*ai.onnx.ml.LabelEncoder-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.LinearRegressor-1*", "to": "*ai.onnx.ml.LinearRegressor-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.Normalizer-1*", "to": "*ai.onnx.ml.Normalizer-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.OneHotEncoder-1*", "to": "*ai.onnx.ml.OneHotEncoder-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.SVMClassifier-1*", "to": "*ai.onnx.ml.SVMClassifier-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.SVMRegressor-1*", "to": "*ai.onnx.ml.SVMRegressor-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.Scaler-1*", "to": "*ai.onnx.ml.Scaler-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.TreeEnsembleClassifier-1*", "to": "*ai.onnx.ml.TreeEnsembleClassifier-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.TreeEnsembleRegressor-1*", "to": "*ai.onnx.ml.TreeEnsembleRegressor-1*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*ai.onnx.ml.TreeEnsembleRegressor-3*", "to": "*ai.onnx.ml.TreeEnsembleRegressor-3*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_Version_4_of_the_\u0027ai.onnx.ml\u0027_operator_set", "to": "Version_4_of_the_\u0027ai.onnx.ml\u0027_operator_set"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*GlobalMaxPool*", "to": "*GlobalMaxPool*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*GridSample*", "to": "*GridSample*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*Log*", "to": "*Log*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*MaxUnpool*", "to": "*MaxUnpool*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*Neg*", "to": "*Neg*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*OptionalGetElement*", "to": "*OptionalGetElement*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*RandomNormalLike*", "to": "*RandomNormalLike*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*Range*", "to": "*Range*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*SequenceConstruct*", "to": "*SequenceConstruct*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*SequenceEmpty*", "to": "*SequenceEmpty*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*SequenceErase*", "to": "*SequenceErase*"}, {"from": "Type_Constraints", "id": "Type_Constraints_to_*SequenceInsert*", "to": "*SequenceInsert*"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"font": {"size": 12, "color": "black"}, "shapeProperties": {"useBorderWithImage": true}}, "edges": {"length": 1050}, "physics": {"stabilization": {"enabled": true, "iterations": 1000}, "hierarchicalRepulsion": {"centralGravity": 0.0, "springLength": 700, "springConstant": 0.01, "nodeDistance": 750, "damping": 0.09}, "solver": "hierarchicalRepulsion", "timestep": 0.5}, "layout": {"hierarchical": {"enabled": true, "blockShifting": true, "parentCentralization": true, "sortMethod": "directed"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

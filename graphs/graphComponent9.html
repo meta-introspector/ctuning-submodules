@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "Compile_the_TensorFlow_(C++)_Image_Classification_client", "label": "Compile_the_TensorFlow_(C++)_Image_Classification_client", "shape": "dot"}, {"color": "#97c2fc", "id": "Bonus__other_MobileNets_models", "label": "Bonus__other_MobileNets_models", "shape": "dot"}, {"color": "#97c2fc", "id": "MobileNet_quantized", "label": "MobileNet_quantized", "shape": "dot"}, {"color": "#97c2fc", "id": "Compile_the_TFLite_Image_Classification_client", "label": "Compile_the_TFLite_Image_Classification_client", "shape": "dot"}, {"color": "#97c2fc", "id": "Benchmark_the_accuracy", "label": "Benchmark_the_accuracy", "shape": "dot"}, {"color": "#97c2fc", "id": "Example__OpenCV_preprocessing_(default),_MobileNet_non-quantized", "label": "Example__OpenCV_preprocessing_(default),_MobileNet_non-quantized", "shape": "dot"}, {"color": "#97c2fc", "id": "Example__universal_OpenCV_preprocessing_(default),_MobileNet", "label": "Example__universal_OpenCV_preprocessing_(default),_MobileNet", "shape": "dot"}, {"color": "#97c2fc", "id": "OpenCV_preprocessing", "label": "OpenCV_preprocessing", "shape": "dot"}, {"color": "#97c2fc", "id": "TensorFlow_preprocessing_(*NOT_APPLICABLE!*)", "label": "TensorFlow_preprocessing_(*NOT_APPLICABLE!*)", "shape": "dot"}, {"color": "#97c2fc", "id": "Benchmark_the_performance", "label": "Benchmark_the_performance", "shape": "dot"}, {"color": "#97c2fc", "id": "ResNet", "label": "ResNet", "shape": "dot"}, {"color": "#97c2fc", "id": "When_using_the_batch_count_of_*N*,_the_program_classifies_*N*", "label": "When_using_the_batch_count_of_*N*,_the_program_classifies_*N*", "shape": "dot"}, {"color": "#97c2fc", "id": "For_the_=imagenet-2012-val-min=_dataset,_change", "label": "For_the_=imagenet-2012-val-min=_dataset,_change", "shape": "dot"}, {"color": "#97c2fc", "id": "The_prediction_from_=tflite=_differs_from_that_from_=tf-cpp=.", "label": "The_prediction_from_=tflite=_differs_from_that_from_=tf-cpp=.", "shape": "dot"}, {"color": "#97c2fc", "id": "MobileNet,_NCHW", "label": "MobileNet,_NCHW", "shape": "dot"}, {"color": "#97c2fc", "id": "We_are_working_on_resolving_the_difference_in_mAP_between_the_TF", "label": "We_are_working_on_resolving_the_difference_in_mAP_between_the_TF", "shape": "dot"}, {"color": "#97c2fc", "id": "Using_Collective_Knowledge", "label": "Using_Collective_Knowledge", "shape": "dot"}, {"color": "#97c2fc", "id": "MobileNet_non-quantized", "label": "MobileNet_non-quantized", "shape": "dot"}, {"color": "#97c2fc", "id": "When_using_the_batch_count_of_*N*,_the_program_runs_object", "label": "When_using_the_batch_count_of_*N*,_the_program_runs_object", "shape": "dot"}, {"color": "#97c2fc", "id": "TensorFlow_preprocessing", "label": "TensorFlow_preprocessing", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"from": "Compile_the_TensorFlow_(C++)_Image_Classification_client", "id": "Compile_the_TensorFlow_(C++)_Image_Classification_client_to_Bonus__other_MobileNets_models", "to": "Bonus__other_MobileNets_models"}, {"from": "Bonus__other_MobileNets_models", "id": "Bonus__other_MobileNets_models_to_MobileNet_quantized", "to": "MobileNet_quantized"}, {"from": "Bonus__other_MobileNets_models", "id": "Bonus__other_MobileNets_models_to_Compile_the_TFLite_Image_Classification_client", "to": "Compile_the_TFLite_Image_Classification_client"}, {"from": "MobileNet_quantized", "id": "MobileNet_quantized_to_Benchmark_the_accuracy", "to": "Benchmark_the_accuracy"}, {"from": "MobileNet_quantized", "id": "MobileNet_quantized_to_Example__OpenCV_preprocessing_(default),_MobileNet_non-quantized", "to": "Example__OpenCV_preprocessing_(default),_MobileNet_non-quantized"}, {"from": "MobileNet_quantized", "id": "MobileNet_quantized_to_Example__universal_OpenCV_preprocessing_(default),_MobileNet", "to": "Example__universal_OpenCV_preprocessing_(default),_MobileNet"}, {"from": "MobileNet_quantized", "id": "MobileNet_quantized_to_OpenCV_preprocessing", "to": "OpenCV_preprocessing"}, {"from": "MobileNet_quantized", "id": "MobileNet_quantized_to_TensorFlow_preprocessing_(*NOT_APPLICABLE!*)", "to": "TensorFlow_preprocessing_(*NOT_APPLICABLE!*)"}, {"from": "TensorFlow_preprocessing_(*NOT_APPLICABLE!*)", "id": "TensorFlow_preprocessing_(*NOT_APPLICABLE!*)_to_Benchmark_the_performance", "to": "Benchmark_the_performance"}, {"from": "ResNet", "id": "ResNet_to_When_using_the_batch_count_of_*N*,_the_program_classifies_*N*", "to": "When_using_the_batch_count_of_*N*,_the_program_classifies_*N*"}, {"from": "ResNet", "id": "ResNet_to_For_the_=imagenet-2012-val-min=_dataset,_change", "to": "For_the_=imagenet-2012-val-min=_dataset,_change"}, {"from": "Benchmark_the_performance", "id": "Benchmark_the_performance_to_The_prediction_from_=tflite=_differs_from_that_from_=tf-cpp=.", "to": "The_prediction_from_=tflite=_differs_from_that_from_=tf-cpp=."}, {"from": "Benchmark_the_performance", "id": "Benchmark_the_performance_to_MobileNet,_NCHW", "to": "MobileNet,_NCHW"}, {"from": "Benchmark_the_performance", "id": "Benchmark_the_performance_to_We_are_working_on_resolving_the_difference_in_mAP_between_the_TF", "to": "We_are_working_on_resolving_the_difference_in_mAP_between_the_TF"}, {"from": "When_using_the_batch_count_of_*N*,_the_program_classifies_*N*", "id": "When_using_the_batch_count_of_*N*,_the_program_classifies_*N*_to_Benchmark_the_accuracy", "to": "Benchmark_the_accuracy"}, {"from": "For_the_=imagenet-2012-val-min=_dataset,_change", "id": "For_the_=imagenet-2012-val-min=_dataset,_change_to_Using_Collective_Knowledge", "to": "Using_Collective_Knowledge"}, {"from": "OpenCV_preprocessing", "id": "OpenCV_preprocessing_to_MobileNet_non-quantized", "to": "MobileNet_non-quantized"}, {"from": "Benchmark_the_accuracy", "id": "Benchmark_the_accuracy_to_When_using_the_batch_count_of_*N*,_the_program_runs_object", "to": "When_using_the_batch_count_of_*N*,_the_program_runs_object"}, {"from": "Using_Collective_Knowledge", "id": "Using_Collective_Knowledge_to_We_are_working_on_resolving_the_difference_in_mAP_between_the_TF", "to": "We_are_working_on_resolving_the_difference_in_mAP_between_the_TF"}, {"from": "TensorFlow_preprocessing", "id": "TensorFlow_preprocessing_to_MobileNet_non-quantized", "to": "MobileNet_non-quantized"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"font": {"size": 12, "color": "black"}, "shapeProperties": {"useBorderWithImage": true}}, "edges": {"length": 1050}, "physics": {"stabilization": {"enabled": true, "iterations": 1000}, "hierarchicalRepulsion": {"centralGravity": 0.0, "springLength": 700, "springConstant": 0.01, "nodeDistance": 750, "damping": 0.09}, "solver": "hierarchicalRepulsion", "timestep": 0.5}, "layout": {"hierarchical": {"enabled": true, "blockShifting": true, "parentCentralization": true, "sortMethod": "directed"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "Weights_package", "label": "Weights_package", "shape": "dot"}, {"color": "#97c2fc", "id": "Use_=--target_os=android23-arm64=_to_build_for_Android_API_23", "label": "Use_=--target_os=android23-arm64=_to_build_for_Android_API_23", "shape": "dot"}, {"color": "#97c2fc", "id": "Build", "label": "Build", "shape": "dot"}, {"color": "#97c2fc", "id": "Compile", "label": "Compile", "shape": "dot"}, {"color": "#97c2fc", "id": "For_some_reason_only_debug_version_of_the_library_can_be_used", "label": "For_some_reason_only_debug_version_of_the_library_can_be_used", "shape": "dot"}, {"color": "#97c2fc", "id": "Latest", "label": "Latest", "shape": "dot"}, {"color": "#97c2fc", "id": "Refresh_all_CK_repositories_after_any_updates_(e.g.\u00a0bug_fixes)_", "label": "Refresh_all_CK_repositories_after_any_updates_(e.g.\u00a0bug_fixes)_", "shape": "dot"}, {"color": "#97c2fc", "id": "Record_benchmarking_results_to_the_CK_repository", "label": "Record_benchmarking_results_to_the_CK_repository", "shape": "dot"}, {"color": "#97c2fc", "id": "Analyze_experimental_results", "label": "Analyze_experimental_results", "shape": "dot"}, {"color": "#97c2fc", "id": "Benchmark", "label": "Benchmark", "shape": "dot"}, {"color": "#97c2fc", "id": "Setup_Instructions_-_Docker", "label": "Setup_Instructions_-_Docker", "shape": "dot"}, {"color": "#97c2fc", "id": "ImageNet_dataset", "label": "ImageNet_dataset", "shape": "dot"}, {"color": "#97c2fc", "id": "If_you_wish_to_place_the_models_in_your_assets_manually,", "label": "If_you_wish_to_place_the_models_in_your_assets_manually,", "shape": "dot"}, {"color": "#97c2fc", "id": "This_only_updates_CK_repositories_on_the_host_system._To_update", "label": "This_only_updates_CK_repositories_on_the_host_system._To_update", "shape": "dot"}, {"color": "#97c2fc", "id": "Set_up_environment_variables", "label": "Set_up_environment_variables", "shape": "dot"}, {"color": "#97c2fc", "id": "Install_SSD-ResNet34_1200x1200_non-quantized_fp32_for_ONNX_opset-8", "label": "Install_SSD-ResNet34_1200x1200_non-quantized_fp32_for_ONNX_opset-8", "shape": "dot"}, {"color": "#97c2fc", "id": "TensorFlow_models", "label": "TensorFlow_models", "shape": "dot"}, {"color": "#97c2fc", "id": "Build_(Linux_or_Windows)", "label": "Build_(Linux_or_Windows)", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"from": "Weights_package", "id": "Weights_package_to_Use_=--target_os=android23-arm64=_to_build_for_Android_API_23", "to": "Use_=--target_os=android23-arm64=_to_build_for_Android_API_23"}, {"from": "Weights_package", "id": "Weights_package_to_Build", "to": "Build"}, {"from": "Weights_package", "id": "Weights_package_to_Compile", "to": "Compile"}, {"from": "Weights_package", "id": "Weights_package_to_For_some_reason_only_debug_version_of_the_library_can_be_used", "to": "For_some_reason_only_debug_version_of_the_library_can_be_used"}, {"from": "Latest", "id": "Latest_to_Refresh_all_CK_repositories_after_any_updates_(e.g.\u00a0bug_fixes)_", "to": "Refresh_all_CK_repositories_after_any_updates_(e.g.\u00a0bug_fixes)_"}, {"from": "Record_benchmarking_results_to_the_CK_repository", "id": "Record_benchmarking_results_to_the_CK_repository_to_Analyze_experimental_results", "to": "Analyze_experimental_results"}, {"from": "Analyze_experimental_results", "id": "Analyze_experimental_results_to_Benchmark", "to": "Benchmark"}, {"from": "Build", "id": "Build_to_Setup_Instructions_-_Docker", "to": "Setup_Instructions_-_Docker"}, {"from": "Build", "id": "Build_to_Refresh_all_CK_repositories_after_any_updates_(e.g.\u00a0bug_fixes)_", "to": "Refresh_all_CK_repositories_after_any_updates_(e.g.\u00a0bug_fixes)_"}, {"from": "Build", "id": "Build_to_ImageNet_dataset", "to": "ImageNet_dataset"}, {"from": "Build", "id": "Build_to_If_you_wish_to_place_the_models_in_your_assets_manually,", "to": "If_you_wish_to_place_the_models_in_your_assets_manually,"}, {"from": "This_only_updates_CK_repositories_on_the_host_system._To_update", "id": "This_only_updates_CK_repositories_on_the_host_system._To_update_to_Set_up_environment_variables", "to": "Set_up_environment_variables"}, {"from": "Benchmark", "id": "Benchmark_to_Install_SSD-ResNet34_1200x1200_non-quantized_fp32_for_ONNX_opset-8", "to": "Install_SSD-ResNet34_1200x1200_non-quantized_fp32_for_ONNX_opset-8"}, {"from": "Benchmark", "id": "Benchmark_to_ImageNet_dataset", "to": "ImageNet_dataset"}, {"from": "TensorFlow_models", "id": "TensorFlow_models_to_Use_=--target_os=android23-arm64=_to_build_for_Android_API_23", "to": "Use_=--target_os=android23-arm64=_to_build_for_Android_API_23"}, {"from": "Build_(Linux_or_Windows)", "id": "Build_(Linux_or_Windows)_to_Refresh_all_CK_repositories_after_any_updates_(e.g.\u00a0bug_fixes)_", "to": "Refresh_all_CK_repositories_after_any_updates_(e.g.\u00a0bug_fixes)_"}, {"from": "Set_up_environment_variables", "id": "Set_up_environment_variables_to_Refresh_all_CK_repositories_after_any_updates_(e.g.\u00a0bug_fixes)_", "to": "Refresh_all_CK_repositories_after_any_updates_(e.g.\u00a0bug_fixes)_"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"font": {"size": 12, "color": "black"}, "shapeProperties": {"useBorderWithImage": true}}, "edges": {"length": 1050}, "physics": {"stabilization": {"enabled": true, "iterations": 1000}, "hierarchicalRepulsion": {"centralGravity": 0.0, "springLength": 700, "springConstant": 0.01, "nodeDistance": 750, "damping": 0.09}, "solver": "hierarchicalRepulsion", "timestep": 0.5}, "layout": {"hierarchical": {"enabled": true, "blockShifting": true, "parentCentralization": true, "sortMethod": "directed"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
