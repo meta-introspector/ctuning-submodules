@@ -1235,9 +1235,151 @@ https://github.com/openai/tiktoken
 
 
 #+begin_src sh
-  git commit -m 'update'
+  git add graphs
+  git commit -m 'updating from org mode' -a
   git push
 #+end_src
+
+#+RESULTS:
+| [master | 993714c]                     | updating | from                               | org            | mode |              |
+| 163     | files                        | changed, | 7820                               | insertions(+), | 1158 | deletions(-) |
+| rewrite | graphs/graphComponent0.html  |    (81%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent0.json  |    (88%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent1.html  |    (79%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent1.json  |    (97%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent10.json |    (96%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent11.json |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent12.json |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent13.json |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent14.json |    (74%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent15.json |    (92%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent16.json |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent17.json |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent18.json |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent19.json |    (97%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent2.html  |    (63%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent2.json  |    (96%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent20.json |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent21.json |    (98%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent22.json |    (84%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent23.json |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent24.json |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent25.json |    (95%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent26.json |    (92%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent27.json |    (82%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent28.json |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent29.json |    (77%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent3.html  |    (66%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent3.json  |    (99%) |                                    |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent30.html       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent30.json       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent31.html       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent31.json       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent32.html       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent32.json       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent33.html       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent33.json       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent34.html       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent34.json       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent35.html       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent35.json       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent36.html       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent36.json       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent37.html       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent37.json       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent38.html       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent38.json       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent39.html       |                |      |              |
+| create  | mode                         |   100644 | graphs/graphComponent39.json       |                |      |              |
+| rewrite | graphs/graphComponent4.html  |    (71%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent4.json  |    (92%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent5.html  |    (68%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent5.json  |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent6.html  |    (62%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent6.json  |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent7.json  |    (86%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent8.json  |   (100%) |                                    |                |      |              |
+| rewrite | graphs/graphComponent9.json  |   (100%) |                                    |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent0.html  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent0.json  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent1.html  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent1.json  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent10.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent10.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent11.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent11.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent12.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent12.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent13.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent13.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent14.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent14.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent15.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent15.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent16.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent16.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent17.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent17.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent18.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent18.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent19.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent19.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent2.html  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent2.json  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent20.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent20.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent21.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent21.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent22.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent22.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent23.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent23.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent24.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent24.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent25.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent25.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent26.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent26.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent27.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent27.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent28.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent28.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent29.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent29.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent3.html  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent3.json  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent30.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent30.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent31.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent31.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent32.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent32.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent33.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent33.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent34.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent34.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent35.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent35.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent36.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent36.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent37.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent37.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent38.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent38.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent39.html |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent39.json |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent4.html  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent4.json  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent5.html  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent5.json  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent6.html  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent6.json  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent7.html  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent7.json  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent8.html  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent8.json  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent9.html  |                |      |              |
+| create  | mode                         |   100644 | graphs/graphStrongComponent9.json  |                |      |              |
 
 
 * Bibliography

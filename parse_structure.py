@@ -119,7 +119,7 @@ with open(f"graphs/graph.json", "w") as f:
     nt.show(f"graphs/graph.html")
 
 if True:
-    size = 40
+    size = 50
     dag = g.to_undirected()
     #largest_components = sorted(nx.strongly_connected_components(dag), key=len, reverse=True)[:size]
     largest_components = sorted(nx.connected_components(dag), key=len, reverse=True)[:size]
@@ -192,9 +192,9 @@ if True:
     # now lets split
     # nx.
     #largest_components = sorted(nx.connected_components(dag), key=len, reverse=True)[:n]
-    size = 40
-    #dag = dag.to_undirected()
 
+    #dag = dag.to_undirected()
+    dag = g.to_undirected()
     largest_components = sorted(nx.connected_components(dag), key=len, reverse=True)[:size]
     for index in range(size):
         name= f'StrongComponent{index}'
