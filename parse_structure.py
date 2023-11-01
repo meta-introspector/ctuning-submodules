@@ -1,3 +1,9 @@
+import networkx as nx
+import networkx.drawing.nx_agraph as nx_agraph
+#from networkx.drawing.nx_pydot import write_dot
+
+
+g = nx.DiGraph(name="test")
 
 data="""write python script
 read in lines of outline, has : separating filename from content
@@ -22,8 +28,7 @@ with open("outline.txt") as fi:
         stars=parts[0]
         #lines.append(l)
 
-
-        content = " ".join(parts[1:])
+        content = " ".join(parts[1:]).replace(":","_").replace(";","_").replace("\n","_").replace("\t","_").replace(" ","_")
 
         changed= 0
         if filename != last_filename :
@@ -31,31 +36,24 @@ with open("outline.txt") as fi:
         elif len(stars) < last_stars :
             changed = 1
         if changed:
-            print("|".join([str(last_stars), str(len(stars)),  last_content, content]))
+            #print("|".join([str(last_stars), str(len(stars)),  last_content, content]))
+            
+            if (last_content, content) in g.edges():
+                data = g.get_edge_data(last_content, content)
+                g.add_edge(last_content, content,  weight=data['weight']+1)
+            else:
+                g.add_edge(last_content, content,  weight=1)                
+
 
         last_filename = filename
         last_stars    = len(stars)
         last_content  = content
-        
-# file_name_pairs = []
-# current_filename = None
-# current_number_of_stars = 0
-# for line in lines:
-#     if current_filename is None or line != current_filename:
-#         # check for filename, split by ':' character and store filename and content separately
-#         filename_content = line.split(':')
-#         if len(filename_content) == 2:
-#             current_filename = filename_content[0].strip()
-#             if current_number_of_stars > int(filename_content[1].strip()):
-#                 file_name_pairs.append((current_filename, current_number_of_stars))
-#         current_number_of_stars = None
-#     elif line.startswith('*') and current_number_of_stars is not None:
-#         # check if number of stars changes, break loop if it does
-#         if int(line.strip()[1:]) > current_number_of_stars:
-#             break
-#     else:
-#         current_number_of_stars = None
-# if len(file_name_pairs) == 0:
-#     print("No file names found in the outline.")
-# else:
-#     print(file_name_pairs)
+
+nx.write_gml(g,"graph.gml")
+nx.write_adjlist(g, "graph.adjlist")
+nx.write_multiline_adjlist(g, "graph.adjlist2")
+nx.write_weighted_edgelist(g, "graph.edeelist")
+#pos = nx_agraph.graphviz_layout(g)
+#pos = nx.nx_agraph.graphviz_layout(G)
+#nx.draw(G, pos=pos)
+#write_dot(G, 'file.dot')
