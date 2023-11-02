@@ -1,0 +1,32 @@
+['Optimization', 'Run_Resnet50', 'The_following_commands_rely_on_the_content_of_this_folder,', '2._JPQD-BERT-large-99', 'and_*99*__We_dialed_JPQD_pruning_intensity_to_target', '*BERT-base-99*__JPQD_was_configured_to_optimize_BERT-base_to_meet_99%', 'We_initialized_pretrained_MobileBERT_with_15', 'Run_Benchmarks', 'NEUCHIPS_Submissions', 'Build_and_deploy_HabanaLabs_MLPERF_training_2.1_container_in_the', 'Training_data_packing', 'Please_note_that_we_use_the_same_optimizers_and_hyperparameters', 'Configuration_details', 'Software_Packages', 'Repository_Contents', 'Run_DLRM', 'Run_benchmark_with_SLURM_-_single-node/multi-node_training.', 'information_as_self_contained*_as_possible_in_this_section.]', 'Proposed_API_Change_(s)', 'API_Freeze_Consequences', 'Caveat_Emptor']```
+:Optimization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Run_Resnet50 a owl:NamedIndividual ;
+    hasBenchmark owl:NamedIndividual ( mlperfInferencev1.0 ) ;
+    belongsTo Optimization .
+
+:JPQD-BERT-large-99 a owl:NamedIndividual ;
+    belongsTo Run_Resnet50 ;
+    isConfiguredFor :Optimization ( BERT-base-99 ).
+
+:15 a owl:NamedIndividual ;
+    belongsTo Run_Resnet50 ;
+    initializedPretrainedMobileBERT_with :Initialization ( 15 ).
+
+:NEUCHIPS_Submissions a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:HabanaLabs_MLPERF_training_2.1_container_in_the a owl:NamedIndividual ;
+    belongsTo NEUCHIPS_Submissions ;
+    isTrainingWith :Training_data_packing ( self ).
+
+:information_as_self_contained*_as_possible_in_this_section a owl:Class ;
+    rdfs:subClassOf :Information .
+
+:API_Freeze_Consequences a owl:Class ;
+    rdfs:subClassOf :Error .
+
+:Caveat_Emptor a owl:Class ;
+    rdfs:subClassOf :Warning .
+```

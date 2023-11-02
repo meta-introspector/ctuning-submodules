@@ -1,0 +1,86 @@
+['Handling_in_Triton_Core', 'Currently,_Triton_core_does_not_detect_cancellation_status_of_a', 'Handling_in_Backend', 'Initializing_State_from_File', 'Scheduling_Strategies', 'Oldest', 'Ensemble_Models', 'the_following_flags_are_*deprecated*_', 'Supported_Trace_Level_Option', '3._Build_with_Debug_Flags*', 'Specific_Issues', 'Symbols*', 'Server_Issues', 'Deadlock', 'Client_Issues', 'Performance_Profiling', 'Submitting_an_Issue', 'Custom_Cache', 'Deprecation_Notes', 'There_is_no_synchronization_between_when_Triton_polls_the', 'Modifying_the_Model_Repository']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:Handling_in_Triton_Core a :Benchmark ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Handling in Triton Core" .
+
+:Currently,_Triton_core_does_not_detect_cancellation_status_of_a a :Report ;
+    hasReport reproducibilityReportMLPerfInferencev1.1 ;
+    rdfs:label "Currently, Triton core does not detect cancellation status of a" .
+
+:Initializing_State_from_File a :Process ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Initializing state from file" .
+
+:Scheduling_Strategies a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Scheduling Strategies" .
+
+:Oldest a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Oldest" .
+
+:Ensemble_Models a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Ensemble Models" .
+
+:the_following_flags_are_*deprecated*_ a :Report ;
+    hasReport reproducibilityReportMLPerfInferencev1.1 ;
+    rdfs:label "The following flags are deprecated" .
+
+:Supported_Trace_Level_Option a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Supported trace level option" .
+
+:3._Build_with_Debug_Flags* a :Report ;
+    hasReport reproducibilityReportMLPerfInferencev1.1 ;
+    rdfs:label "3. Build with debug flags" .
+
+:Specific_Issues a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Specific Issues" .
+
+:Symbols* a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Symbols" .
+
+:Server_Issues a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Server Issues" .
+
+:Deadlock a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Deadlock" .
+
+:Client_Issues a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Client Issues" .
+
+:Performance_Profiling a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Performance Profiling" .
+
+:Submitting_an_Issue a :Report ;
+    hasReport reproducibilityReportMLPerfInferencev1.1 ;
+    rdfs:label "Submitting an issue" .
+
+:Custom_Cache a :MLPerfInference ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Custom Cache" .
+
+:Deprecation_Notes a :Report ;
+    hasReport reproducibilityReportMLPerfInferencev1.1 ;
+    rdfs:label "Deprecation Notes" .
+
+:There_is_no_synchronization_between_when_Triton_polls_the a :Report ;
+    hasReport reproducibilityReportMLPerfInferencev1.1 ;
+    rdfs:label "There is no synchronization between when Triton polls the" .
+
+:Modifying_the_Model_Repository a :Process ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdfs:label "Modifying the Model Repository" .
+```

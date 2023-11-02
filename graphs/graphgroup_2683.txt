@@ -1,0 +1,191 @@
+['Please_consider_the', 'Classification', 'Regression', 'Install_from_Sources', 'Docker_Installation', 'We_cannot_provide_support_for_the_Windows_Insider_program_or_for', 'Building_your_own_GaNDLF_Docker_Image', 'is_a_package_that_is_worked_on_by_the_MLCommons_community_in', 'Issues', 'the_bug*_A_clear_and_concise_description_of_what_the_bug_is.', "Reproduce*_Steps_to_reproduce_the_behavior__1._Go_to_'...'_2._Click", 'If_applicable,_add_screenshots_to_help_explain_your', 'Version*_Version_information_of_the_GaNDLF_package_in_the', '(please_complete_the_following_information)_*_-_OS_', 'did_you_install_GaNDLF*_Please_provide_all_steps_followed_during', 'Weekly_Meeting', 'Markdown_based_tutorials', 'Questions?', 'Update_all_packages_and_repositories', '3._Install_CUDNN_on_Ubuntu_22.04', 'Workflow_to_Test_Patches_with_Zephyr_SDK']```turtle
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:GaNDLF_Docker_Image a :MLPerfInference.
+@prefix ndlf: <http://ctuning.org/ml-benchmark-ontology#ndlf>.
+@prefix issues: <http://ctuning.org/ml-benchmark-ontology#issues>.
+@prefix bug: <http://ctuning.org/ml-benchmark-ontology#bug>.
+@prefix steps: <http://ctuning.org/ml-benchmark-ontology#steps>.
+@prefix version: <http://ctuning.org/ml-benchmark-ontology#version>.
+
+:Issues a owl:Class ;
+    rdfs:subClassOf :Problem .
+
+:Bug a owl:Class ;
+    rdfs:subClassOf :Issue .
+
+:Steps a owl:Class ;
+    rdfs:subClassOf :Solution .
+
+:Version a owl:Class ;
+    rdfs:subClassOf :Information .
+
+:OS a ndlf:OperatingSystem ;
+    ndlf:hasProperty ndlf:name "OS" ;
+    ndlf:hasProperty ndlf:version "1" ;
+    rdfs:subClassOf owl:NamedIndividual .
+
+@prefix os: <http://ctuning.org/ml-benchmark-ontology#os>.
+
+:DidYouInstallGaNDLF a owl:Class ;
+    rdfs:subClassOf :Action .
+
+:StepsToFollow a owl:Class ;
+    rdfs:subClassOf :Sequence .
+
+:AddScreenshots a owl:Class ;
+    rdfs:subClassOf :Action .
+
+:VersionInformation a ndlf:VersionInformation ;
+    ndlf:hasProperty ndlf:name "Version" ;
+    ndlf:hasProperty ndlf:version "1" ;
+    rdfs:subClassOf owl:NamedIndividual .
+
+@prefix vi: <http://ctuning.org/ml-benchmark-ontology#vi>.
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:HasBenchmark a owl:ObjectProperty ;
+    rdfs:domain ndlf:Package ;
+    rdfs:range ndlf:Benchmark .
+
+:MLPerfInferencev1.0 a ndlf:MLPerfInference,
+        owl:NamedIndividual .
+
+:ReproducibilityReportMLPerfInferencev1.1 a ndlf:ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:GaNDLF_Docker_Image a ndlf:MLPerfInference.
+@prefix docker: <http://ctuning.org/ml-benchmark-ontology#docker>.
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:HasBenchmark a owl:ObjectProperty ;
+    rdfs:domain ndlf:Package ;
+    rdfs:range ndlf:Benchmark .
+
+:MLPerfInferencev1.0 a ndlf:MLPerfInference,
+        owl:NamedIndividual .
+
+:ReproducibilityReportMLPerfInferencev1.1 a ndlf:ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:GaNDLF_Docker_Image a ndlf:MLPerfInference.
+@prefix docker-image: <http://ctuning.org/ml-benchmark-ontology#docker-image>.
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:HasBenchmark a owl:ObjectProperty ;
+    rdfs:domain ndlf:Package ;
+    rdfs:range ndlf:Benchmark .
+
+:MLPerfInferencev1.0 a ndlf:MLPerfInference,
+        owl:NamedIndividual .
+
+:ReproducibilityReportMLPerfInferencev1.1 a ndlf:ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:GaNDLF_Docker_Image a ndlf:MLPerfInference.

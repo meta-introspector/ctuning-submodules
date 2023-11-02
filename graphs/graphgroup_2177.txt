@@ -1,0 +1,53 @@
+['Maximum_Batch_Size', 'of_Tensors_as_Input_/*', 'Auto-Generated_Model_Configuration', 'Default_Max_Batch_Size_and_Dynamic_Batcher', 'Datatypes', 'Priority', 'Ensemble_Model_Instance_Groups', 'CUDA_Compute_Capability', 'Custom_Batching', 'Sequence_Batcher', 'Ensemble_Scheduler', 'Optimization_Policy', 'When_building_Triton_on_Jetson,_you_will_require_a_recent', 'Runtime_Dependencies_for_Triton', 'Model_Instances', 'Framework-Specific_Optimization', 'TensorFlow_Automatic_FP16_Optimization', 'NUMA_Optimization', 'Other_Areas_of_Interest', 'End-to-end_Example', 'gRPC_Endpoint']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:Maximum_Batch_Size a :MLPerfParameter ;
+    rdfs:label "Maximum batch size"@en .
+
+:of_Tensors_as_Input_* a :MLPerfParameter ;
+    rdfs:label "Tensor shapes as input"@en .
+
+:Auto_Generated_Model_Configuration a :MLPerfFeature ;
+    rdfs:label "Automatically generated model configuration"@en .
+
+:Default_Max_Batch_Size_and_Dynamic_Batcher a :MLPerfParameter ;
+    rdfs:label "Default batch size and dynamic batcher"@en .
+
+:Datatypes a :MLPerfParameter ;
+    rdfs:label "Input data types"@en .
+
+:Priority a :MLPerfParameter ;
+    rdfs:label "Execution priority"@en .
+
+:Ensemble_Model_Instance_Groups a :MLPerfParameter ;
+    rdfs:label "Model instance groups"@en .
+
+:CUDA_Compute_Capability a :MLPerfParameter ;
+    rdfs:label "CUDA compute capability"@en .
+
+:Custom_Batching a :MLPerfFeature ;
+    rdfs:label "Custom batching"@en .
+
+:Sequence_Batcher a :MLPerfFeature ;
+    rdfs:label "Sequence batcher"@en .
+
+:Ensemble_Scheduler a :MLPerfParameter ;
+    rdfs:label "Model ensemble scheduler"@en .
+
+:Optimization_Policy a :MLPerfParameter ;
+    rdfs:label "Optimization policy"@en .
+
+:When_building_Triton_on_Jetson,_you_will_require_a_recent a :MLPerfRequirement ;
+    rdfs:label "Require recent Triton build on Jetson"@en .
+
+:Runtime_Dependencies_for_Triton a :MLPerfRequirement ;
+    rdfs:label "Triton runtime dependencies"@en .
+
+:Model_Instances a :MLPerfParameter ;
+    rdfs:label "Model instance IDs"@en .
+
+:Framework-Specific_Optimization a :MLPerfFeature ;
+    rdfs:label "Frame

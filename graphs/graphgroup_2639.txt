@@ -1,0 +1,106 @@
+['training*', 'Mixed_Precision_(AMP)*', 'rate_decay*', 'logger*', 'Repository_content', 'Abstractions', 'Note_', 'Finetuning_from_Detectron_weights_on_custom_datasets', 'Steps_to_run_benchmark.', '2*', 'note_that_all_command_instructions_provided_in_this_README_are', 'note_that_all_the_commands_in_the_following_sections_are', 'Downloading_the_dataset', 'COCO-2014', 'Downloading_the_checkpoints', 'Multi-node_(with_SLURM)', 'Benchmark_details', 'COCO_2014', 'The_Model', 'CLIP', 'Reference_runs']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:training_step a owl:NamedIndividual ;
+    owl:hasType :TrainingStep .
+
+:training_batch a owl:NamedIndividual ;
+    owl:hasType :TrainingBatch .
+
+:Mixed_Precision_(AMP) a owl:Class ;
+    rdfs:subClassOf :TrainingBatch .
+
+:rate_decay a owl:NamedIndividual ;
+    owl:hasType :RateDecay .
+
+:logger a owl:NamedIndividual ;
+    owl:hasType :Logger .
+
+:Repository_content a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:Abstractions a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:Note_ a owl:NamedIndividual ;
+    owl:hasType :Note .
+
+:Finetuning_from_Detectron_weights_on_custom_datasets a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Steps_to_run_benchmark. a owl:NamedIndividual ;
+    owl:hasType :Benchmark .
+
+:2 a owl:NamedIndividual ;
+    owl:hasType :Integer .
+
+:note_that_all_command_instructions_provided_in_this_README_are a owl:Class ;
+    rdfs:subClassOf :Note .
+
+:note_that_all_the_commands_in_the_following_sections_are a owl:Class ;
+    rdfs:subClassOf :Note .
+
+:Downloading_the_dataset a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:COCO-2014 a owl:NamedIndividual ;
+    owl:hasType :Dataset .
+
+:Downloading_the_checkpoints a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Multi-node_(with_SLURM) a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Benchmark_details a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:COCO_2014 a owl:NamedIndividual ;
+    owl:hasType :Dataset .
+
+:The_Model a owl:NamedIndividual ;
+    owl:hasType :Model .
+
+:CLIP a owl:NamedIndividual ;
+    owl:hasType :Architecture .
+
+:Reference_runs a owl:Class ;
+    rdfs:subClassOf :Analysis .
+```

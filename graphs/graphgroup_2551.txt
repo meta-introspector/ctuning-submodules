@@ -1,0 +1,96 @@
+['CPU', 'Amazon_Linux_2', 'Set_up_user-space_dependencies', 'Download_URLs_for_a_particular_category', 'Download_images_for_a_given_category', 'Program-specific_preprocessing', 'Images_dataset', 'Neon_backend', '224', 'Currently_only_TensorFlow_packages_provide_env_variable_giving', 'Program_parameters', 'Initial_checkpoint', '4._Quality', 'Evaluation_frequency', '5._Steps_to_run_the_model', 'On_Google_Cloud_TPU', '6._Software_versions', 'Steps_to_run_and_time', 'Preprocessed_data_download', 'BF16_training', 'Checkpoint_Parameters']```css
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:CPU a rdfs:Datatype;
+    rdfs:datatype rdfs:xsd:decimal.
+
+:Amazon_Linux_2 a owl:NamedIndividual .
+
+:Set_up_user-space_dependencies a owl:Class ;
+    rdfs:subClassOf :Setup .
+
+:Download_URLs_for_a_particular_category a owl:Class ;
+    rdfs:subClassOf :DataAccess.
+
+:Download_images_for_a_given_category a owl:Class ;
+    rdfs:subClassOf :DataAccess.
+
+:Program-specific_preprocessing a owl:Class ;
+    rdfs:subClassOf :Preprocessing .
+
+:Images_dataset a owl:Class ;
+    rdfs:subClassOf :Dataset .
+
+:Neon_backend a owl:NamedIndividual .
+
+:224 a rdfs:Datatype;
+    rdfs:datatype rdfs:xsd:integer.
+
+:Currently_only_TensorFlow_packages_provide_env_variable_giving a owl:Class ;
+    rdfs:subClassOf :PackageSupport .
+
+:Program_parameters a owl:Class ;
+    rdfs:subClassOf :Configuration.
+
+:Initial_checkpoint a owl:Class ;
+    rdfs:subClassOf :Checkpointing .
+
+:4._Quality a owl:NamedIndividual .
+
+:Evaluation_frequency a owl:Class ;
+    rdfs:subClassOf :Frequency.
+
+:5._Steps_to_run_the_model a owl:NamedIndividual .
+
+:On_Google_Cloud_TPU a owl:NamedIndividual .
+
+:6._Software_versions a owl:Class ;
+    rdfs:subClassOf :Versioning.
+
+:Steps_to_run_and_time a owl:Class ;
+    rdfs:subClassOf :Execution .
+
+:Preprocessed_data_download a owl:NamedIndividual .
+
+:BF16_training a owl:NamedIndividual .
+
+:Checkpoint_Parameters a owl:Class ;
+    rdfs:subClassOf :Parameter.
+```

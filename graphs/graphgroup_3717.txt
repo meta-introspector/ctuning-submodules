@@ -1,0 +1,57 @@
+['distribution_verification*_*_Test_the_source_distribution_by', 'Upload_to_official_PyPI', '*_Windows/Linux_x86_64/Linux_aarch64/Mac_*_Create_a_new_API', 'Distribution*_*_Follow_the_same_process_in_TestPyPI_to_produce', 'After_PyPI_Release', '*_Announce_in_slack,_for_instance,_=onnx-general=_channel._*', 'conda-forge_package_with_the_new_ONNX_version*_*_Conda_builds_of', 'into_main_branch*_*_After_everything_above_is_done,_merge_the', 'old_onnx-weekly_packages_on_PyPI*_*_Once_ONNX_has_been_released', 'opset_version_for_ai.onnx*_*_Bump_opset_version_for_ai.onnx_domain', 'Large_models_>2GB', 'TensorProto__data_location_and_external_data_fields', 'Xor', 'SequenceLength_(call_for_test_cases)', 'zfnet512', 'Overall_Test_Coverage', 'Non-goals', 'Proposal', 'Symbol_generation_and_propagation', 'Partial_data_computation_and_propagation', 'Special_Cases']`@prefix : <http://ctuning.org/ml-benchmark-ontology#> .`
+
+`:AutomatedDesignSpaceExploration a owl:Class ;`
+`rdfs:subClassOf :Exploration .`
+
+`:Standardization a owl:Class ;`
+`rdfs:subClassOf :Process .`
+
+`:Workflow a owl:Class ;`
+`rdfs:subClassOf :Process .`
+
+`:hasBenchmark a owl:ObjectProperty ;`
+`rdfs:domain :Model ;`
+`rdfs:range :Benchmark .`
+
+`:mlperfInferencev1.0 a :MLPerfInference,`
+`owl:NamedIndividual .`
+
+`:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,`
+`owl:NamedIndividual .`
+
+`:Exploration a owl:Class ;`
+`rdfs:subClassOf :Analysis .`
+
+`:MLPerfInference a owl:Class ;`
+`rdfs:subClassOf :Benchmark .`
+
+`:Report a owl:Class ;`
+`rdfs:subClassOf :Documentation .`
+
+`:ReproducibilityReport a owl:Class ;`
+`rdfs:subClassOf :Report .`
+
+`:Benchmark a owl:Class ;`
+`rdfs:subClassOf :Evaluation .`
+
+`distribution_verification*_*_Test_the_source_distribution_by "Distribution verification test"` .
+`Upload_to_official_PyPI "Release distribution to official PyPI"` .
+`*_Windows/Linux_x86_64/Linux_aarch64/Mac_*_Create_a_new_API` "Create a new API on Windows/Linux/Mac platforms" .
+`Distribution*_*_Follow_the_same_process_in_TestPyPI_to_produce` "Produce the distribution by following the process in TestPyPI" .
+`After_PyPI_Release "Perform actions after PyPI release"` .
+`*_Announce_in_slack,_for_instance,_=onnx-general=_channel._*` "Announce in Slack, for example, onnx-general channel" .
+`conda-forge_package_with_the_new_ONNX_version*_*_Conda_builds_of` "Create a new Conda package with the new ONNX version" .
+`into_main_branch*_*_After_everything_above_is_done,_merge_the` "Merge the changes into main branch after everything is done" .
+`old_onnx-weekly_packages_on_PyPI*_*_Once_ONNX_has_been_released` "Release old ONNX weekly packages on PyPI after ONNX release" .
+`opset_version_for_ai.onnx*_*_Bump_opset_version_for_ai.onnx_domain` "Bump opset version for ai.onnx domain" .
+`Large_models>2GB` "Large models greater than 2GB" .
+`TensorProto__data_location_and_external_data_fields` "Data location and external data fields in TensorProto" .
+`Xor` "Xor operation" .
+`SequenceLength_(call_for_test_cases)` "Sequence length for test cases" .
+`zfnet512` "ZFNet512 model" .
+`Overall_Test_Coverage` "Overall test coverage" .
+`Non-goals` "Non-goal tasks" .
+`Proposal` "Model proposal" .
+`Symbol_generation_and_propagation` "Symbol generation and propagation" .
+`Partial_data_computation_and_propagation` "Partial data computation and propagation" .
+`Special_Cases` "Special cases" .

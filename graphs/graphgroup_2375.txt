@@ -1,0 +1,73 @@
+['Allocation_management_for_input_or_output_data,_inclusive', 'This_method_readies_input_data_for_inference,_involving', 'DeviceGptJ__Specialized_Device', 'This_function_primarily_focuses_on_processing', 'This_method_spearheads_batch-based_inference,_utilizing', 'Steps_to_calibrate_GPT-J', 'Dell_Technologies_Open_Submission_Systems', 'INT8_Quantization', 'Benchmarks*._Implementation_of_DLRM_benchmarks_in_./bench', 'How_to_run_dlrm_code?', 'Other_operations', 'Tested_software_versions', 'Arguments', 'Result_Summarizer_-_Computing_power_metric', 'Computing_the_power_result', 'Step_by_step_examples', 'Check/clean_CM_cache', 'Add_CM_interface_for_new_projects_and_papers', 'Reusability_using_MLCommons_CM_automation_language', 'Install_Python_virtual_environment_via_CM', 'About']```
+# Define classes
+:Model a owl:Class ;
+    rdfs:subClassOf :System .
+
+:DataInput a owl:Class ;
+    rdfs:subClassOf :Element .
+
+:Device a owl:Class ;
+    rdfs:subClassOf :Component .
+
+# Define properties
+:Model hasDataInput a owl:ObjectProperty ;
+    rdfs:domain :System ;
+    rdfs:range :DataInput .
+
+:Device hasProcessing a owl:ObjectProperty ;
+    rdfs:domain :Component ;
+    rdfs:range :Process .
+
+# Define instances
+@prefix mlperf: <http://ctuning.org/ml-benchmark-ontology#>
+@prefix mlperf_v1: <http://ctuning.org/ml-benchmark-ontology/mlperf/inference/v1.0#>
+@prefix mlperf_v1_1: <http://ctuning.org/ml-benchmark-ontology/mlperf/inference/v1.1#>
+@prefix mlperf_dlrm: <http://ctuning.org/ml-benchmark-ontology/mlperf/dlrm#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix wikimediacommons: <https://commons.wikimedia.org/wiki/>
+@prefix ctuning: <http://ctuning.org/ml-benchmark-ontology/>
+
+<mlperf_dlrm:DLRM Benchmarks> a mlperf_v1:MLPerfInference,
+                                rdfs:NamedIndividual .
+
+<mlperf_dlrm:DeviceGptJ> a ctuning:Device,
+                             mlperf_v1:Device.
+
+<ctuning:System> a mlperf:Model,
+                     rdfs:NamedIndividual ;
+    hasDataInput <ctuning:DataInput> .
+    hasProcessing <mlperf_dlrm:DeviceGptJ> .
+
+<ctuning:DataInput> a mlperf_v1:DataInput,
+                       xsd:Element ;
+    name "Allocation_management_for_input_or_output_data,_inclusive" .
+
+<ctuning:MLCommonsInterface> a ctuning:Component,
+                              mlperf_v1:Process ;
+    name "Add_CM_interface_for_new_projects_and_papers" .
+
+<ctuning:AutomatedDesignSpaceExploration> a ctuning:AutomatedDesignSpaceExploration,
+                                   owl:NamedIndividual ;
+    hasBenchmark <mlperf_dlrm:DLRM Benchmarks>.
+
+<ctuning:Standardization> a ctuning:Standardization,
+                             owl:NamedIndividual ;
+    hasBenchmark <mlperf_dlrm:DLRM Benchmarks>.
+
+<ctuning:Workflow> a ctuning:Workflow,
+                       owl:NamedIndividual ;
+    hasBenchmark <mlperf_dlrm:DLRM Benchmarks>.
+
+<mlperf_dlrm:TestedSoftwareVersions> a mlperf_v1:MLPerfInference,
+                                        rdfs:NamedIndividual ;
+    name "Tested_software_versions" .
+
+<ctuning:ResultSummarizer> a ctuning:Component,
+                            mlperf_v1:Process ;
+    hasBenchmark <mlperf_dlrm:DLRM Benchmarks>.
+
+<ctuning:CheckCleanCMCache> a ctuning:Component,
+                              mlperf_v1:Process ;
+    name "Check/clean_CM_cache" .
+```

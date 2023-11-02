@@ -1,0 +1,42 @@
+['Other_types', 'What_is_an_opset_version?', 'Loop', 'Extensibility', 'Operator_as_function', 'Tricks_learned_from_experience', 'Build_the_markdown_documentation', 'Data_Serialization', 'Initializer,_default_value', 'Scan', 'Functions', 'A_function_with_attributes', 'Parsing', 'Evaluate_a_custom_node', 'LabelEncoder', '💔No_Cover_Common_Operators', 'ZipMap_(call_for_test_cases)', '💚Covered_Experimental_Operators', '💔No_Cover_Experimental_Operators', 'Model_Test_Coverage', 'Listing_and_inspecting_Models_']1. Other\_types a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+2. Opset\_version a owl:Class ;
+	rdfs:subClassOf :Other\_types .
+3. Loop a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+4. Extensibility a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+5. Operator\_as\_function a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+6. Tricks\_learned\_from\_experience a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+7. Build\_the\_markdown\_documentation a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+8. Data\_Serialization a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+9. Initializer\_default\_value a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+10. Scan a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+11. Functions a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+12. A\_function\_with\_attributes a owl:Class ;
+	rdfs:subClassOf :Functions .
+13. Parsing a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+14. Evaluate\_a\_custom\_node a owl:Class ;
+	rdfs:subClassOf :Parsing .
+15. LabelEncoder a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+16. No\_Cover\_Common\_Operators a owl:Class ;
+	rdfs:subClassOf :LabelEncoder .
+17. ZipMap_(call\_for\_test\_cases) a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+18. Covered\_Experimental\_Operators a owl:Class ;
+	rdfs:subClassOf :ZipMap_(call\_for\_test\_cases).
+19. No\_Cover\_Experimental\_Operators a owl:Class ;
+	rdfs:subClassOf :Covered\_Experimental\_Operators .
+20. Model\_Test\_Coverage a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .
+21. Listing\_and\_inspecting\_Models\_ a owl:Class ;
+	rdfs:subClassOf :ML\_PerfInference .

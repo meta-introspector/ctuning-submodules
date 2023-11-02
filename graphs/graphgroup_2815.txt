@@ -1,0 +1,64 @@
+['AMD_(Asynchronous_Module_Definition)', 'displayInput___default=true_|_false=hide_input._*_displayPrevious__', 'MLPerf_training_benchmark_results', 'How_to_update_this_repository_with_new_results', 'Using_CM_script', 'PyTorch_Execution_Graphs', 'Execution_Trace_Generator_(et_generator)', 'This_only_updates_CK_repositories_on_the_host_system._To_update', 'Add_the_=--no-cache=_flag_to_rebuild_the_image_from_scratch.', 'Accuracy_mode', 'ResNet,_int8,_15_samples_per_batch', 'MobileNet,_int8', 'Performance_mode', 'MobileNet,_int8,_250_samples_per_batch', '=--volume_${CK_EXPERIMENTS_DIR}_/home/dvdt/CK_REPOS/local/experiment=', 'Prepare_a_CK_repository_with_the_experimental_results', 'Currently,_this_downloads_the_COCO_2017_validation_dataset,_etc.,', 'Locate_the_dashboard_plugin', 'From_a_local_machine', 'Open_the_dashboard', 'Collective_Knowledge_workflows_for_MLPerf']`@prefix : <http://ctuning.org/ml-benchmark-ontology#> .`
+
+`:AutomatedDesignSpaceExploration a owl:Class ;`
+	`rdfs:subClassOf :Exploration .`
+
+`:Standardization a owl:Class ;`
+	`rdfs:subClassOf :Process .`
+
+`:Workflow a owl:Class ;`
+	`rdfs:subClassOf :Process .`
+
+`:hasBenchmark a owl:ObjectProperty ;`
+	`rdfs:domain :Model ;`
+	`rdfs:range :Benchmark .`
+
+`:mlperfInferencev1.0 a :MLPerfInference,`
+	`owl:NamedIndividual .`
+
+`:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,`
+	`owl:NamedIndividual .`
+
+`:Exploration a owl:Class ;`
+	`rdfs:subClassOf :Analysis .`
+
+`:MLPerfInference a owl:Class ;`
+	`rdfs:subClassOf :Benchmark .`
+
+`:Report a owl:Class ;`
+	`rdfs:subClassOf :Documentation .`
+
+`:ReproducibilityReport a owl:Class ;`
+	`rdfs:subClassOf :Report .`
+
+`:Benchmark a owl:Class ;`
+	`rdfs:subClassOf :Evaluation .`
+`Model` has `benchmark` property.
+`AutomatedDesignSpaceExploration` is subclass of `Exploration`.
+`Standardization` and `Workflow` are also subclasses of `Process`.
+`MLPerfInferencev1.0` is an individual named MLPerfInferencev1.0, which belongs to both MLPerfInference and NamedIndividual.
+`reproducibilityReportMLPerfInferencev1.1` is also an individual named ReproducibilityReport, which belongs to both ReproducibilityReport and NamedIndividual.
+`Exploration` is subclass of `Analysis`.
+`MLPerfInference` is subclass of `Benchmark`.
+`Report`, `ReproducibilityReport`, `Benchmark` are all subclasses of `Documentation` and `Evaluation` respectively.
+
+`AMD_(Asynchronous_Module_Definition)` is a variable that represents the type of architecture used for the model.
+`displayInput___default=true_|_false=hide_input._*_displayPrevious__` is an input property that controls whether the input data is displayed or not. It can take one of the values: `true`, `false`, and a variable like `*`.
+`MLPerf_training_benchmark_results` is a benchmark result that measures the performance of the model during training.
+`How_to_update_this_repository_with_new_results` provides instructions on how to update the repository with new results.
+`Using_CM_script` is a script that can be used for updating the repository.
+`PyTorch_Execution_Graphs` is a feature of PyTorch that allows for more efficient execution of the model.
+`Execution_Trace_Generator_(et_generator)` is a generator that generates execution traces for the model, which can be useful for debugging and profiling purposes.
+`This_only_updates_CK_repositories_on_the_host_system._To_update` is a note that indicates that this script only updates the repositories on the host system. It also provides instructions on how to update the repository.
+`Add_the=--no-cache=_flag_to_rebuild_the_image_from_scratch.` is an instruction to add the --no-cache flag to the command used for building the image from scratch.
+`Accuracy_mode` specifies the mode used for accuracy calculation during inference.
+`ResNet,_int8,_15_samples_per_batch` and `MobileNet,_int8` are two examples of models that can be used with the specified accuracy mode.
+`Performance_mode` specifies the mode used for performance calculation during inference.
+`MobileNet,_int8,_250_samples_per_batch` is an example of a model that can be used with the specified performance mode.
+`=--volume_${CK_EXPERIMENTS_DIR}_/home/dvdt/CK_REPOS/local/experiment=` is an instruction to set the volume for the CK\_EXPERIMENTS\_DIR directory.
+`Prepare_a_CK_repository_with_the_experimental_results` provides instructions on how to prepare a CK repository with the experimental results.
+`Currently,_this_downloads_the_COCO_2017_validation_dataset,_etc.,` is a note that indicates the current behavior of the script.
+`Locate_the_dashboard_plugin` provides instructions on how to locate the dashboard plugin.
+`From_a_local_machine` is an instruction on how to use the script from a local machine.
+`Open_the_dashboard` provides instructions on how to open the dashboard.
+`Collective_Knowledge_workflows_for_MLPerf` is a topic related to using MLPerf in workflow contexts.

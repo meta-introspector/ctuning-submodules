@@ -1,0 +1,47 @@
+['How_do_I_test_that_a_TensorFlow_Lite_model_behaves_the_same_as_the', 'Defining_the_kernel_in_the_TensorFlow_Lite_runtime', 'Best_Practices', 'Converting_TensorFlow_models_to_convert_graphs', 'TF_Graph_Attributes', 'Models_from_other_sources', 'Re-train_a_model_(transfer_learning)', 'Train_a_custom_model', '2._Convert_the_model', 'Ops_compatibility', '3._Run_inference_with_the_model', 'Operations', '4._Optimize_your_model', 'Model_Optimization_Toolkit', 'Next_steps', 'Exporting_a_tf.keras_File', 'Complex_examples', 'Exporting_a_quantized_GraphDef', 'Additional_instructions', 'Converting_models_prior_to_TensorFlow_1.9', 'Basic_examples']
+```turtle
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+# Add new classes and objects for the model
+
+:Test a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:TensorFlowLiteModel a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:ConvertingFromTensorFlow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:ConvertToConvertGraphs a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:MLPerfInferencev1.0a a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1a a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:TestingTensorFlowLite a owl:Class ;
+    rdfs:subClassOf :Test .
+
+:DefiningKernel a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:ExportingModel a owl:Class ;
+    rdfs:subClassOf :Process .
+
+# Add relationships between the classes and objects
+
+:TensorFlowLiteModel hasBenchmark MLPerfInferencev1.0a .
+:ConvertingFromTensorFlow hasBenchmark MLPerfInferencev1.0a .
+:ConvertToConvertGraphs hasBenchmark MLPerfInferencev1.0a .
+
+:TestingTensorFlowLite hasExploration TestingTensorFlowLitea .
+:DefiningKernel hasExploration DefiningKernela .
+
+:ExportingModel hasWorkflow ExportingModela .
+```

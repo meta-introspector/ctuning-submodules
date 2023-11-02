@@ -1,0 +1,77 @@
+['attribute(s)_targeted_in_the_images_*', 'Contact_the_organizers', 'Benchmarks_for_Data-Centric_AI_Development*,', 'Contributing_to_the_DataPerf_Benchmark_Suite', 'Adversarial_Nibbler', 'Participating_in_the_DataPerf_Challenges', '*Current_version_*_beta', 'MLCube_execution', 'Execute_complete_pipeline', 'Guidelines_v0.5', 'Closed_Division__Offline_evaluation_of_a_submission', 'Baselines', 'Started_*_Jump_to_[[#getting-started][our_introductory_colab', 'Evaluation_Metric', '/M/_is_user_defined,_but_Dynabench_will_host_two_leaderboards_per', 'Submission', 'Files', 'Optional_Files', 'Using_.wav_Files_for_Selection', 'Optional_MLCube_Workflow', 'Imagenet_for_resnet50']```
+:hasImageData a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :ImageData .
+
+:hasLabel a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Label .
+
+:hasClassification a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Classification .
+
+:hasDetection a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Detection .
+
+:hasFeatureExtraction a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :FeatureExtraction .
+
+:hasSegmentation a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Segmentation .
+
+:targetImages a owl:Class ;
+    rdfs:subClassOf :ImageData .
+
+:label a owl:Class ;
+    rdfs:subClassOf :Label .
+
+:classification a owl:Class ;
+    rdfs:subClassOf :Classification .
+
+:detection a owl:Class ;
+    rdfs:subClassOf :Detection .
+
+:featureExtraction a owl:Class ;
+    rdfs:subClassOf :FeatureExtraction .
+
+:segmentation a owl:Class ;
+    rdfs:subClassOf :Segmentation .
+```
+
+Additionally, you could add the following to capture the concepts related to the benchmark and its evaluation metrics:
+```
+:hasBenchmarkMetric a owl:ObjectProperty ;
+    rdfs:domain :Evaluation .
+    rdfs:range :Metric .
+
+:accuracy a owl:NamedIndividual ;
+    rdfs:label "Accuracy" .
+
+:precision a owl:NamedIndividual ;
+    rdfs:label "Precision" .
+
+:recall a owl:NamedIndividual ;
+    rdfs:label "Recall" .
+
+:f1Score a owl:NamedIndividual ;
+    rdfs:label "F1 Score" .
+
+:meanAuCpr a owl:NamedIndividual ;
+    rdfs:label "Mean AUC-PR" .
+```
+You could also add relationships for the different versions of the benchmark, as well as information about the data used in each version. For example:
+```
+:currentVersion a owl:NamedIndividual ;
+    rdfs:label "Current Version" .
+
+:beta a owl:NamedIndividual ;
+    rdfs:label "Beta Version" .
+
+:dataUsedInVersion a owl:NamedIndividual ;
+    rdfs:label "Data Used in Version" .
+```
+These statements can be used to describe the different components and aspects of the benchmark, as well as its relationships with other concepts such as models and data.

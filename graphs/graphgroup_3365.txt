@@ -1,0 +1,27 @@
+['[[./d3-geo/stream.md][Streams]]', '[[./d3-geo/math.md][Spherical_math]]', '[[./d3-hierarchy.md][d3-hierarchy]]', '[[./d3-interpolate/zoom.md][Zoom_interpolation]]', '[[./d3-path.md][d3-path]]', '[[./d3-scale/point.md][Point_scales]]', '[[./d3-scale-chromatic.md][d3-scale-chromatic]]', '[[./d3-scale-chromatic/sequential.md][Sequential]]', '[[./d3-selection.md][d3-selection]]', '[[./d3-selection/namespaces.md][Namespaces]]', '[[./d3-shape.md][d3-shape]]', '[[./d3-shape/stack.md][Stacks]]', '[[./d3-time.md][d3-time]]', '/pack/(/root/)_{#_pack}', '/pack/.radius(/radius/)', '/delaunay/.inedges', 'Delaunay.from(/points/,_/fx/,_/fy/,_/that/)', '/voronoi/.xmin/voronoi/.ymin/voronoi/.xmax/voronoi/.ymax', '/voronoi/.contains(/i/,_/x/,_/y/)', "(based_on_Vladimir_Agafonkin's_excellent", 'd3-array']`@prefix : <http://ctuning.org/ml-benchmark-ontology#> .`
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+<http://ctuning.org/ml-benchmark-ontology/#d3-geo/streams> a :Streams .
+<http://ctuning.org/ml-benchmark-ontology/#d3-geo/math> a :Spherical\_math .
+<http://ctuning.org/ml-benchmark-ontology/#d3-hierarchy> a :d3-hierarchy .
+<http://ctuning.org/ml-benchmark-ontology/#d3-interpolate/zoom> a :Zoom\_interpolation .
+<http://ctuning.org/ml-benchmark-ontology/#d3-path> a :d3-path .
+<http://ctuning.org/ml-benchmark-ontology/#d3-scale/point> a :Point\_scales .
+<http://ctuning.org/ml-benchmark-ontology/#d3-scale-chromatic> a :d3-scale-chromatic .
+<http://ctuning.org/ml-benchmark-ontology/#d3-scale-chromatic/sequential> a :Sequential .
+<http://ctuning.org/ml-benchmark-ontology/#d3-selection> a :d3-selection .
+<http://ctuning.org/ml-benchmark-ontology/#d3-selection/namespaces> a :Namespaces .
+<http://ctuning.org/ml-benchmark-ontology/#d3-shape> a :d3-shape .
+<http://ctuning.org/ml-benchmark-ontology/#d3-shape/stack> a :Stacks .
+<http://ctuning.org/ml-benchmark-ontology/#d3-time> a :d3-time .
+<http://ctuning.org/ml-benchmark-ontology/#pack/root\_#{#_pack}> a :d3-pack/root\_#{#_pack} .
+<http://ctuning.org/ml-benchmark-ontology/#pack/radius\_/{radius}> a :d3-pack/radius\_{radius} .
+<http://ctuning.org/ml-benchmark-ontology/#delaunay/inedges> a :delaunay/inedges .
+<http://ctuning.org/ml-benchmark-ontology/#Delaunay.from/{points}/{_,fx/}, {_,fy/}, {_,that/>}> a :Delaunay/from/{points}/{_,fx/}, {_,fy/}, {_,that/>} .
+<http://ctuning.org/ml-benchmark-ontology/#voronoi/xmin/voronoi/ymin/voronoi/xmax/voronoi/ymax> a :voronoi/xmin/voronoi/ymin/voronoi/xmax/voronoi/ymax .
+<http://ctuning.org/ml-benchmark-ontology/#voronoi/contains/{i}/{x}/{y}/>> a :voronoi/contains/{i}/{x}/{y}/*> .
+<http://ctuning.org/ml-benchmark-ontology/#"(based\_on\_Vladimir\_Agafonkin's\_excellent", 'd3-array']>> a :mlperfInference .
+`

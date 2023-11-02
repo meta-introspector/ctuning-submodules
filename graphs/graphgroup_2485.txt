@@ -1,0 +1,110 @@
+['Hyperparameters', 'Batching', 'Building_the_Model', 'Walkthrough', 'are_all_standardized_on_=TFRecord=_files_with', 'Problems_and_Modalities', 'define_training-time_hyperparameters_for_the_dataset_and', 'define_the_core_tensor-to-tensor_transformation,', 'Hyperparameter_Sets', 'sets*_are_defined_and_registered_in_code_with', 'Trainer', 'Adding_your_own_components', 'CK_will_use_the_latest_ArmCL_instance_compiled_with_=ck_compile=.', 'Benchmarking_ArmCL-OpenCL_examples_(from_ArmCL_v18.0x)', 'CK_will_only_run_the_executable_once_(=--repetitions=1=)', 'Running_ArmCL-OpenCL_examples_(before_ArmCL_v18.0x)', 'You_may_want_to_install_the_profiler_from_the_following_package_', 'Printing_help_messages', 'Extract', 'Tags', 'Use_=--target_os=android23-arm64=_to_build_for_Android_API_23']```diff
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:Hyperparameters a owl:Class ;
+    rdfs:subClassOf :DesignSpaceExploration .
+
+:Batching a owl:Class ;
+    rdfs:subClassOf :DataProcessing .
+
+:Building_the_Model a owl:Class ;
+    rdfs:subClassOf :ModelDefinition .
+
+:Walkthrough a owl:Class ;
+    rdfs:subClassOf :InstructionalMaterial .
+
+:are_all_standardized_on_=TFRecord=_files_with a owl:ObjectProperty ;
+    rdfs:domain :Dataset ;
+    rdfs:range :Standardization .
+
+:Problems_and_Modalities a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:define_training-time_hyperparameters_for_the_dataset_and a owl:ObjectProperty ;
+    rdfs:domain :HyperparameterSet ;
+    rdfs:range :TrainingTime .
+
+:define_the_core_tensor-to-tensor_transformation, a owl:ObjectProperty ;
+    rdfs:domain :TensorTransformation ;
+    rdfs:range :TensorTransformer .
+
+:Hyperparameter_Sets a owl:Class ;
+    rdfs:subClassOf :DesignSpaceExploration .
+
+:Trainer a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Adding_your_own_components a owl:ObjectProperty ;
+    rdfs:domain :Customization ;
+    rdfs:range :ModelComponent .
+
+:CK_will_use_the_latest_ArmCL_instance_compiled_with_=ck_compile=. a owl:ObjectProperty ;
+    rdfs:domain :CompilationConfiguration ;
+    rdfs:range :ArmCLInstance .
+
+:Benchmarking_ArmCL-OpenCL_examples_(from_ArmCL_v18.0x) a owl:NamedIndividual .
+
+:CK_will_only_run_the_executable_once_(=--repetitions=1=) a owl:ObjectProperty ;
+    rdfs:domain :ExecutionConfiguration ;
+    rdfs:range :Executable .
+
+:Running_ArmCL-OpenCL_examples_(before_ArmCL_v18.0x) a owl:NamedIndividual .
+
+:You_may_want_to_install_the_profiler_from_the_following_package_ a owl:ObjectProperty ;
+    rdfs:domain :ProfilingConfiguration ;
+    rdfs:range :ProfilerInstaller .
+
+:Printing_help_messages a owl:ObjectProperty ;
+    rdfs:domain :DocumentationConfiguration ;
+    rdfs:range :HelpGenerator .
+
+:Extract a owl:Class ;
+    rdfs:subClassOf :DataProcessing .
+
+:Tags a owl:Class ;
+    rdfs:subClassOf :DesignSpaceExploration .
+
+:Use_=--target_os=android23-arm64=_to_build_for_Android_API_23 a owl:ObjectProperty ;
+    rdfs:domain :BuildConfiguration ;
+    rdfs:range :BuildTarget .
+```

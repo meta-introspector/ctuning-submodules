@@ -1,0 +1,127 @@
+["Version_4_of_the_'ai.onnx.ml'_operator_set", 'on_model_validation*', 'on_language_in_this_and_all_related_documents*_', 'Exploring_an_ONNX_file*', 'Model_Semantics', 'As_of_the_publication_of_this_document,_no_ONNX_implementation_is', 'Operators', 'Version_and_Later*', 'External_Tensor_Data', 'Standard_data_types', 'Representation', 'Tensor_Element_Types', 'Static_tensor_shapes', 'Attribute_Types', 'Training_Related_Information', 'Adding_Experimental_Operators_[Deprecated_-_as_of_v1.5_experimental', 'Submit_an_Issue_with_a_proposal_explaining_the_motivation_and_plan._It', 'graph*.', 'Input,_Output,_Node,_Initializer,_Attributes', 'can_be_defined_as_a_set_of_operators._A_few_operators_in_this', 'Supported_Types']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# Version_4_of_the_'ai.onnx.ml'_operator_set
+@prefix model: <http://ctuning.org/ml-benchmark-ontology/model> .
+:Version4 a owl:NamedIndividual ;
+    hasBenchmark model:MLPerfInferencev1.0 .
+
+# on_model_validation*
+@prefix benchmark: <http://ctuning.org/ml-benchmark-ontology/benchmark> .
+:ModelValidation a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# on_language_in_this_and_all_related_documents*_
+@prefix document: <http://ctuning.org/ml-benchmark-ontology/document> .
+:LanguageInDocuments a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+# Exploring_an_ONNX_file*
+@prefix exploration: <http://ctuning.org/ml-benchmark-ontology/exploration> .
+:Explore annotation (
+    type :Exploration ;
+    modelRef model:Model;
+    benchmarkReference benchmark:MLPerfInferencev1.0 ;
+) .
+
+# Model_Semantics
+@prefix semantic: <http://ctuning.org/ml-benchmark-ontology/semantic> .
+:ModelSemantics a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# As_of_the_publication_of_this_document,_no_ONNX_implementation_is
+@prefix publication: <http://ctuning.org/ml-benchmark-ontology/publication> .
+:Publication a owl:NamedIndividual ;
+    hasBenchmark model:MLPerfInferencev1.0 .
+
+# Operators
+@prefix operator: <http://ctuning.org/ml-benchmark-ontology/operator> .
+:Operator a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# Version_and_Later*
+@prefix version: <http://ctuning.org/ml-benchmark-ontology/version> .
+:Version a owl:NamedIndividual ;
+    hasBenchmark model:MLPerfInferencev1.0 .
+
+# External_Tensor_Data
+@prefix tensor: <http://ctuning.org/ml-benchmark-ontology/tensor> .
+:ExternalTensorData a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# Standard_data_types
+@prefix dataType: <http://ctuning.org/ml-benchmark-ontology/datatype> .
+:StandardDataTypes a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# Representation
+@prefix representation: <http://ctuning.org/ml-benchmark-ontology/representation> .
+:Representation a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# Tensor_Element_Types
+@prefix tensorElementType: <http://ctuning.org/ml-benchmark-ontology/tensorElementType> .
+:TensorElementTypes a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# Static_tensor_shapes
+@prefix tensorShape: <http://ctuning.org/ml-benchmark-ontology/tensorShape> .
+:StaticTensorShapes a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# Attribute_Types
+@prefix attributeType: <http://ctuning.org/ml-benchmark-ontology/attributeType> .
+:AttributeTypes a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# Training_Related_Information
+@prefix trainingInfo: <http://ctuning.org/ml-benchmark-ontology/trainingInfo> .
+:TrainingRelatedInformation a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# can_be_defined_as_a_set_of_operators._A_few_operators_in_this
+@prefix defineOperators: <http://ctuning.org/ml-benchmark-ontology/defineOperators> .
+:CanBeDefinedAsSetOfOperators a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# Supported_Types
+@prefix supportedType: <http://ctuning.org/ml-benchmark-ontology/supportedType> .
+:SupportedTypes a owl:Class ;
+    rdfs:subClassOf :Analysis .

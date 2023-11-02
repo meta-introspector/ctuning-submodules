@@ -1,0 +1,68 @@
+['Authentication_for_Google_Cloud_Container_Registry', 'Trigger_build_and_push_of_images_on_other_branch', 'GCP_Data_and_Experiment_Integration', 'Saving_Experiments_to_GCP', 'Getting_Information_from_a_Container', 'Mounting_Local_Repository', 'Submitting_PRs', 'Other_Info', 'ToDo', 'for_NVIDIA_GPU_set_up*__You_may_have_to_install_the', 'Building_Docker_Image', 'Using_Singularity/Apptainer_instead_of_Docker', 'Getting_Started', 'Rules', 'Shared_data_pipelines_between_JAX_and_PyTorch', 'FAQS', 'How_do_I_run_this_on_my_SLURM_cluster?', 'Submissions', 'Can_submission_be_structured_using_multiple_files?', 'Citing_AlgoPerf_Benchmark', 'Start_tmux_session_(Recommended)']Here are some additional Turtle OWL statements and relationships that can be added to the ontology based on the extracted headings:
+```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+:AuthenticationForGoogleCloudContainerRegistry a :Benchmark ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:TriggerBuildAndPushOfImagesOnOtherBranch a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:GCPDataAndExperimentIntegration a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:SavingExperimentsToGCP a :Analysis ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:GettingInformationFromAContainer a :Analysis ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:MountingLocalRepository a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:SubmittingPRs a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:OtherInfo a :Analysis ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:ToDo a :Analysis ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:ForNVIDIAGPUSetUp_YouMayHaveToInstallThe a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:BuildingDockerImage a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:UsingSingularityApptainerInsteadOfDocker a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:GettingStarted a :Analysis ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:Rules a :Analysis ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:SharedDataPipelinesBetweenJAXandPyTorch a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:FAQs a :Analysis ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:HowDoIRunThisOnMySLURMCluster? a :Analysis ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:Submissions a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:CanSubmissionBeStructuredUsingMultipleFiles? a :Analysis ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:CitingAlgoPerfBenchmark a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+
+:StartTMuxSessionRecommended a :Process ;
+    hasBenchmark :MLPerfInferencev1.0 .
+```
+Note that the above statements assume that each heading corresponds to an individual benchmark or analysis, and that these can be linked to the MLPerfInference benchmark using the `hasBenchmark` object property. If there are multiple benchmarks or analyses associated with each heading, then additional relationships would need to be defined.

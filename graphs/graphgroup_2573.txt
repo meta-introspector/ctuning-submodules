@@ -1,0 +1,63 @@
+['Checkpoint_Zarr_format', 'How_to_run', '6._Other', 'Access_details', 'Model_conversion_from_Paxml_checkpoints', 'Supervised_finetuning', 'Reader_Training', 'Files_in_./results_directory_', 'Generate_the_TFRecords_for_Wiki_dataset', 'It_is_extremely_critical_to_set_the_value_of_=random_seed=_to', 'TFRecord_Features', 'Some_stats_of_the_generated_tfrecords_', 'Stopping_criteria', 'Example_evaluation_frequency', 'MD5sums_of_provided_files_', 'WikiExtractor.py_replaces_some_of_the_tags_present_in_XML_such', 'Clean_up_and_dataset_seperation', 'From_Source', '3._Model', 'study_mode_currently_requires_the_C++_Minigo_engine.*', 'Vs_mode']`@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+:Checkpoint_Zarr_format a :Exploration ;
+    rdfs:subClassOf :Standardization .
+
+:How_to_run a :Workflow ;
+    rdfs:subClassOf :AutomatedDesignSpaceExploration .
+
+:6._Other a :Process ;
+    rdfs:subClassOf :AutomatedDesignSpaceExploration .
+
+:Access_details a :Analysis ;
+    rdfs:subClassOf :Standardization .
+
+:Model_conversion_from_Paxml_checkpoints a :Benchmark ;
+    rdfs:subClassOf :Workflow .
+
+:Supervised_finetuning a :Benchmark ;
+    rdfs:subClassOf :Workflow .
+
+:Reader_Training a :Benchmark ;
+    rdfs:subClassOf :Workflow .
+
+:Files_in_./results\_directory\_ a :Documentation ;
+    rdfs:subClassOf :Standardization .
+
+:Generate_the_TFRecords\_for\_Wiki\_dataset a :Benchmark ;
+    rdfs:subClassOf :Workflow .
+
+:It_is_extremely_critical_to_set_the_value_of=random\_seed=_to a :MLPerfInference ;
+    rdfs:subClassOf :Exploration .
+
+:TFRecord_Features a :ReproducibilityReport ;
+    rdfs:subClassOf :Benchmark .
+
+:Some_stats_of_the_generated_tfrecords\_ a :ReproducibilityReport ;
+    rdfs:subClassOf :Exploration .
+
+:Stopping_criteria a :MLPerfInference ;
+    rdfs:subClassOf :Benchmark .
+
+:Example_evaluation_frequency a :MLPerfInference ;
+    rdfs:subClassOf :Exploration .
+
+:MD5sums_of_provided_files\_ a :ReproducibilityReport ;
+    rdfs:subClassOf :Benchmark .
+
+:WikiExtractor.py\_replaces\_some\_of\_the\_tags\_present\_in\_XML\_such a :MLPerfInference ;
+    rdfs:subClassOf :Exploration .
+
+:Clean_up_and_dataset_seperation a :Benchmark ;
+    rdfs:subClassOf :Workflow .
+
+:From_Source a :Exploration ;
+    rdfs:subClassOf :Standardization .
+
+:3._Other a :Process ;
+    rdfs:subClassOf :AutomatedDesignSpaceExploration .
+
+:Study_mode\_currently\_requires\_the\_C++\_Minigo\_engine.* a :MLPerfInference ;
+    rdfs:subClassOf :Exploration .
+
+:Vs\_mode a :Benchmark ;
+    rdfs:subClassOf :Workflow .`

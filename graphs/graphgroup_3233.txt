@@ -1,0 +1,62 @@
+['Exporting_TF.learn_models', 'Importing_(C++_code)', 'Recovering_signatures', 'Generic_Signatures_(custom_or_advanced_usage)', 'Custom_Initialization', 'Assets', 'Exporter_Usage', 'why_we_have_that_policy*__TensorFlow_developers_respond_to', 'System_information', 'Loading_and_processing_traces', 'Installing_on_Linux', 'for_timing*_-_you_will_not_be_able_to_get_function_times_from_this!', 'Preparing_Your_Code', 'Use_Final_Output_(with_names_on)', 'Install_the_tracing-framework_Tools', 'Reload_Your_Page', 'Capturing_Call_Traces', 'Chrome_Web_Store_.zip', 'Platform_Notes', 'Actions', 'App_Addons']```turtle
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+    
+:Exporting_TF.learn_models a :Workflow .
+:Importing_(C++_code) a :Workflow .
+:Recovering_signatures a :MLPerfInference .
+:Generic_Signatures_(custom_or_advanced_usage) a :Exploration .
+:Custom_Initialization a :Workflow .
+:Assets a :Report .
+:Exporter_Usage a :Workflow .
+:why_we_have_that_policy*__TensorFlow_developers_respond_to a :Standardization .
+:System_information a :Report .
+:Loading_and_processing_traces a :MLPerfInference .
+:Installing_on_Linux a :System_information .
+:for_timing*_-_you_will_not_be_able_to_get_function_times_from_this! a :Standardization .
+:Preparing_Your_Code a :Workflow .
+:Use_Final_Output_(with_names_on) a :Exploration .
+:Install_the_tracing-framework_Tools a :System_information .
+:Reload_Your_Page a :Report .
+:Capturing_Call_Traces a :MLPerfInference .
+:Chrome_Web_Store_.zip a :Assets .
+:Platform_Notes a :Standardization .
+:Actions a :Workflow .
+:App_Addons a :Exploration .
+```

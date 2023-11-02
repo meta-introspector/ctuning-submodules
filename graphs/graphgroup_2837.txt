@@ -1,0 +1,65 @@
+['MobileNet-v1', 'MobileNet-v3', 'EfficientNet', 'SMT_Control__Enable', 'Global_C-state_Control__Disabled', 'Log_out_and_log_back_in_for_the_necessary_group_permissions_to', 'Host_OS_independent', 'Set_up_Collective_Knowledge_environment', 'Target_OS_dependent,_SDK_dependent', 'Make_sure_to_have_copied_the_required_datasets_(e.g.\xa0ImageNet)_and', 'Test_Docker_images', 'Edge_-_Q1_Pro', 'Deprecated_workloads', 'The_full_installation_can_take_more_than_50G._If_the_space_on_the', 'B._Initial_device_setup_under_the_=root=_user', '=[D1S]=_Set_user_password', 'C._Initial_device_setup_under_the_=krai=_user', '=[D1]=_Run', 'D._Set_up_ImageNet_and_other_datasets', '=[D1]=_Extract_and_preprocess_ImageNet_on_the_device', 'E._Set_up_QAIC_SDKs']To represent the given nodes in the ontology, we can use OWL classes and object properties as follows:
+```scss
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+:MobileNet-v1 a :Model ;
+    hasBenchmark :MobileNet-v1Benchmark .
+
+:MobileNet-v3 a :Model ;
+    hasBenchmark :MobileNet-v3Benchmark .
+
+:EfficientNet a :Model ;
+    hasBenchmark :EfficientNetBenchmark .
+
+:SMT_Control__Enable a :Feature ;
+    rdfs:subClassOf :Configuration .
+
+:Global_C-state_Control__Disabled a :Feature ;
+    rdfs:subClassOf :Configuration .
+
+:Log_out_and_log_back_in_for_the_necessary_group_permissions_to a :Workflow ;
+    hasBenchmark :LogOutAndLogBackIn .
+
+:Host_OS_independent a :Feature ;
+    rdfs:subClassOf :Configuration .
+
+:Set_up_Collective_Knowledge_environment a :Workflow ;
+    hasBenchmark :SetUpCollectiveKnowledgeEnvironment .
+
+:Target_OS_dependent,_SDK_dependent a :Standardization ;
+    rdfs:subClassOf :Configuration .
+
+:Make_sure_to_have_copied_the_required_datasets_(e.g.\xa0ImageNet)_and a :Standardization ;
+    rdfs:subClassOf :Configuration .
+
+:Test_Docker_images a :Workflow ;
+    hasBenchmark :TestDockerImages .
+
+:Edge_-_Q1_Pro a :Standardization ;
+    rdfs:subClassOf :Configuration .
+
+:Deprecated_workloads a :Standardization ;
+    rdfs:subClassOf :Configuration .
+
+:The_full_installation_can_take_more_than_50G._If_the_space_on_the B _Initial_device_setup_under_the_=root=_user a :Standardization ;
+    rdfs:subClassOf :Configuration .
+
+:=[D1S]=_Set_user_password a :Standardization ;
+    rdfs:subClassOf :Configuration .
+
+:C._Initial_device_setup_under_the_=krai=_user a :Standardization ;
+    rdfs:subClassOf :Configuration .
+
+:=[D1]=_Run a :Standardization ;
+    rdfs:subClassOf :Configuration .
+
+:D._Set_up_ImageNet_and_other_datasets a :Workflow ;
+    hasBenchmark :SetupImageNetAndOtherDatasets .
+
+:=[D1]=_Extract_and_preprocess_ImageNet_on_the_device a :Standardization ;
+    rdfs:subClassOf :Configuration .
+
+:E._Set_up_QAIC_SDKs a :Standardization ;
+    rdfs:subClassOf :Configuration .
+```
+Note that we have assumed that each feature and standardization can be further split into sub-features and sub-standardizations if necessary, based on the details in the corresponding readme sections. Also note that we have added object properties such as `hasBenchmark` to relate each model, feature, and standardization to a benchmark.

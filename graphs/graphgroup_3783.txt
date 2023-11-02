@@ -1,0 +1,89 @@
+['How_to_get_started?', 'What_happened_to_the_old_nnU-Net?', 'Acknowledgements', 'Stats_(On_the_development_set)', 'Minimal_CK_installation', 'Install_or_detect_ImageNet_dataset', 'Install_TF', 'example_is_currently_not_compatible_with_the_latest_MedPerf', 'data_prep', 'Get_the_data', 'Run_cube_on_a_local_machine_with_Docker_runner', 'prep__Data_Preparation_MLCube', 'Supported_=.json=_File_Structure_', 'Task_=sanity_check=', "a_csv_file_doesn't_have_a_corresponding_folder_in_the_=frames=_folder,", 'surg_prep', 'Task_=infer=', 'An_output_folder_is_created_(=predictions=)_*_For_each_video,_a_csv', 'to_the_Broad_Community_*', 'What_is_a_benchmark_in_the_MedPerf_perspective?', '=additional_files.tar.gz=_(Optional)']
+First, we can define classes for the readme headings as follows:
+```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+<http://ctuning.org/ml-benchmark-ontology>#How_to_get_started? a :Workflow ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#What_happened_to_the_old_nnU-Net? a :Exploration ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#Acknowledgements a :Report .
+
+<http://ctuning.org/ml-benchmark-ontology>#Stats_(On_the_development_set) a :Analysis ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#Minimal_CK_installation a :Standardization ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#Install_or_detect_ImageNet_dataset a :Exploration ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#Install_TF a :Workflow ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#example_is_currently_not_compatible_with_the_latest_MedPerf a :Exploration ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#data_prep a :Standardization ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#Get_the_data a :Exploration ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#Run_cube_on_a_local_machine_with_Docker_runner a :Workflow ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#prep__Data_Preparation_MLCube a :Exploration ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#Supported_=.json=_File_Structure_ a :Exploration ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#Task_=sanity_check= a :Exploration ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#An_output_folder_is_created_(=predictions=)_*_For_each_video,_a_csv a :Exploration ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#to_the_Broad_Community_* a :ReproducibilityReport ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .
+
+<http://ctuning.org/ml-benchmark-ontology>#What_is_a_benchmark_in_the_MedPerf_perspective? a :Exploration ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#mlperfInferencev1.0 .

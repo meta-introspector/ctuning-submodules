@@ -1,0 +1,168 @@
+['to_Triton_Inference_Server_and_want_do_just_deploy_your_model', 'Create_A_Model_Repository', 'Verify_Triton_Is_Running_Correctly', 'Send_an_Inference_Request', 'A_clear_and_concise_description_of_what_the_bug_is.', 'Information*_What_version_of_Triton_are_you_using?', 'Reproduce*_Steps_to_reproduce_the_behavior.', 'RELEASE__You_are_currently_on_the_main_branch_which_tracks', 'Serve_a_Model_in_3_Easy_Steps', 'Client_Support_and_Examples', 'Extend_Triton', 'Additional_Documentation', 'Contributing', 'A_demo_to_query_inception_model', 'Helm_v3', 'Model_Repository', 'Helm_v2', 'GCS_Permissions', 'Deploy_Prometheus_and_Grafana', 'AWS_Model_Repository', 'Supported_flavors']Based on the given nodes, we can make the following additional OWL statements:
+```lua
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:deployModelToTritonInferenceServer a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Deployment .
+
+:createModelRepository a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Repository .
+
+:verifyTritonIsRunningCorrectly a owl:ObjectProperty ;
+    rdfs:domain :InferenceServer ;
+    rdfs:range :Status .
+
+:sendInferenceRequest a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Request .
+
+:describeBug a owl:ObjectProperty ;
+    rdfs:domain :Report ;
+    rdfs:range :Description .
+
+:informationWhatVersionOfTritonAreYouUsing a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Version .
+
+:reproduceStepsToReproduceTheBehavior a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Steps .
+
+:releaseYouAreCurrentlyOnTheMainBranchWhichTracks a owl:ObjectProperty ;
+    rdfs:domain :Deployment ;
+    rdfs:range :Status .
+
+:serveModelInThreeEasySteps a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Steps .
+
+:clientSupportAndExamples a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Topic .
+
+:extendTriton a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Improvement .
+
+:additionalDocumentation a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Topic .
+
+:contributing a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Topic .
+
+:demoQueryInceptionModel a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Topics .
+
+:helmV3 a owl:NamedIndividual ;
+    owl:sameAs <https://github.com/tritonml/inference-server#helm> .
+
+:modelRepository a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Topic .
+
+:helmV2 a owl:NamedIndividual ;
+    owl:sameAs <https://github.com/tritonml/inference-server#helm> .
+
+:gcsPermissions a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Topic .
+
+:deployPrometheusAndGrafana a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Topic .
+
+:awsModelRepository a owl:NamedIndividual ;
+    owl:sameAs <https://github.com/tritonml/inference-server#aws> .
+
+:supportedFlavors a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Topic .
+```
+In addition to the OWL statements, we can also create an example inference workflow using Triton Inference Server and Prometheus for monitoring. The example workflow would involve deploying a model repository to the Triton Inference Server, sending inference requests to the server, and using Prometheus to monitor the performance of the server. The workflow can be represented as follows:
+```lua
+{
+    "@context": "<http://ctuning.org/ml-benchmark-ontology#>",
+    "@type": "Workflow",
+    "name": "Triton Inference Workflow",
+    "description": "Example workflow using Triton Inference Server and Prometheus for monitoring",
+    "hasBenchmark": {
+        "@type": "MLPerfInference",
+        "mlperfInferencev1.0": "example-model"
+    },
+    "processes": [
+        {
+            "@type": "Process",
+            "name": "Model Deployment",
+            "description": "Deploy the model repository to the Triton Inference Server",
+            "output": {
+                "@id": "modelRepository",
+                "@type": "ModelRepository"
+            }
+        },
+        {
+            "@type": "Process",
+            "name": "Inference Request Sending",
+            "description": "Send inference requests to the Triton Inference Server",
+            "input": {
+                "@id": "modelRepository",
+                "@type": "ModelRepository"
+            },
+            "output": {
+                "@id": "inferenceResults",
+                "@type": "InferenceResult"
+            }
+        },
+        {
+            "@type": "Process",
+            "name": "Prometheus Monitoring",
+            "description": "Monitor the performance of the Triton Inference Server using Prometheus",
+            "input": {
+                "@id": "inferenceResults",
+                "@type": "InferenceResult"
+            }
+        }
+    ]
+}
+```

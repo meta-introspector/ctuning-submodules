@@ -1,0 +1,41 @@
+['=<Tensor-Type>_setRandom()=', 'Data_Access', '=Scalar*_data()=_and_=const_Scalar*_data()_const=', 'Tensor_Operations', '=<Operation>_random()=', 'Unary_Element_Wise_Operations', '=<Operation>__unaryExpr(const_CustomUnaryOp&_func)=', 'Binary_Element_Wise_Operations', '=<Operation>_Logical_operators=', 'Selection_(select(const_ThenDerived&_thenTensor,_const_ElseDerived&', 'Reduction_along_all_dimensions', '=<Operation>_sum(const_Dimensions&_new_dims)=', '=<Operation>_reduce(const_Dimensions&_new_dims,_const_Reducer&_reducer)=', 'Trace', '=<Operation>_trace()=', 'Scan_Operations', '=<Operation>_cumprod(const_Index&_axis)=', 'Convolutions', '=<Operation>_convolve(const_Kernel&_kernel,_const_Dimensions&_dims)=', 'Geometrical_Operations', '=<Operation>__extract_image_patches(const_Index_patch_rows,_const_Index_patch_cols,_const_Index_row_stride,_const_Index_col_stride,_const_PaddingType_padding_type)=']```
+:TensorType a owl:Class ;
+    rdfs:subClassOf :Scalar .
+
+:Random() a :Operation ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:UnaryElementWiseOperations a owl:Class ;
+    rdfs:subClassOf :Operation .
+
+:UnaryExpr a owl:ObjectProperty ;
+    rdfs:domain :CustomUnaryOp ;
+    rdfs:range :Tensor .
+
+:BinaryElementWiseOperations a owl:Class ;
+    rdfs:subClassOf :Operation .
+
+:LogicalOperators a owl:Class ;
+    rdfs:subClassOf :Operation .
+
+:Selection a owl:Class ;
+    rdfs:subClassOf :Operation .
+
+:Reduction a owl:Class ;
+    rdfs:subClassOf :Operation .
+
+:Trace a owl:Class ;
+    rdfs:subClassOf :Operation .
+
+:ScanOperations a owl:Class ;
+    rdfs:subClassOf :Operation .
+
+:Cumprod a owl:Class ;
+    rdfs:subClassOf :Operation .
+
+:Convolve a owl:Class ;
+    rdfs:subClassOf :Operation .
+
+:ExtractImagePatches a owl:Class ;
+    rdfs:subClassOf :Operation .
+```

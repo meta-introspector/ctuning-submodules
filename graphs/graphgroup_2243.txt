@@ -1,0 +1,103 @@
+['Triton_flavor', 'Deploy_models_tracked_in_MLflow_to_Triton', 'Perform_inference', 'MLflow_Deployments', 'Deploy_the_Triton_Inference_Server', 'Prometheus_ServiceMonitor_Support', 'Using_Triton_Inference_Server', 'Known_Issues', 'Of_Contents*_-_[[#models][Models]]_-', 'Status', 'Only_original_source_code_from_you_and_other_people_that_have', 'Contributing_code', 'Client_side', 'bert-99.9', 'the_MLPerf_Inference_container*,_launch_a_Python_console_and_run', 'NVIDIA_DGX_Stations,_this_method_will_fail*,_since_the_Mellanox_NICs', 'stopping*__under_the_new_rules,_/min_query_count/_is_no_longer_a', 'refer_to_/closed/NVIDIA_for_detailed_instructions_for_NVIDIA_GPU', 'H3C_Submission_Systems', 'contains_RetinaNetNMS_PVA_kernel', 'NMSPVAPlugin___Sample_application_to_demonstrate_how_to_use_this']```vbnet
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# Triton_flavor
+:Triton_flavor a :Model .
+
+# Deploy_models_tracked_in_MLflow_to_Triton
+:Deploy_models_tracked_in_MLflow_to_Triton a :Process .
+
+# Perform_inference
+:Perform_inference a :Benchmark .
+
+# MLflow_Deployments
+:MLflow_Deployments a :Workflow .
+
+# Deploy_the_Triton_Inference_Server
+:Deploy_the_Triton_Inference_Server a :Process .
+
+# Prometheus_ServiceMonitor_Support
+:Prometheus_ServiceMonitor_Support a :Standardization .
+
+# Using_Triton_Inference_Server
+:Using_Triton_Inference_Server a :Workflow .
+
+# Known_Issues
+:Known_Issues a :Analysis .
+
+# Of_Contents*_-_[[#models][Models]]_-
+:Of_Contents*_-_[[#models][Models]]_- a :Report .
+
+# Status
+:Status a :Documentation .
+
+# Only_original_source_code_from_you_and_other_people_that_have
+:Only_original_source_code_from_you_and_other_people_that_have a :Standardization .
+
+# Contributing_code
+:Contributing_code a :Process .
+
+# Client_side
+:Client_side a :Standardization .
+
+# bert-99.9
+:bert-99.9 a :Model .
+
+# the_MLPerf_Inference_container*,_launch_a_Python_console_and_run
+:the_MLPerf_Inference_container*,_launch_a_Python_console_and_run a :Workflow .
+
+# NVIDIA_DGX_Stations,_this_method_will_fail*,_since_the_Mellanox_NICs
+:NVIDIA_DGX_Stations,_this_method_will_fail*,_since_the_Mellanox_NICs a :Standardization .
+
+# stopping*__under_the_new_rules,_/min_query_count/_is_no_longer_a
+:stopping*__under_the_new_rules,_/min_query_count/_is_no_longer_a a :Benchmark .
+
+# refer_to_/closed/NVIDIA_for_detailed_instructions_for_NVIDIA_GPU
+:refer_to_/closed/NVIDIA_for_detailed_instructions_for_NVIDIA_GPU a :ReproducibilityReport .
+
+# H3C_Submission_Systems
+:H3C_Submission_Systems a :Model .
+
+# contains_RetinaNetNMS_PVA_kernel
+:contains_RetinaNetNMS_PVA_kernel a :MLPerfInference .
+
+# NMSPVAPlugin___Sample_application_to_demonstrate_how_to_use_this
+:NMSPVAPlugin___Sample_application_to_demonstrate_how_to_use_this a :Analysis .
+```

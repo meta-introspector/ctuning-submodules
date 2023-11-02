@@ -1,0 +1,97 @@
+['Transform_Reference', 'strip_unused_nodes', 'Writing_Your_Own_Transforms', '=tf_upgrade_v2=_is_installed_automatically_as_a_script_by_the_pip', 'Report', '*NOTE*', 'ToDense', 'Note__See_[[file_profile_model_architecture.md#caveats][Caveats]]', 'Time_and_Memory', 'On_CPU', 'Profile_by_Python_Code', 'Option_Semantics_In_Different_View', 'Times', 'Press_enter_to_show_the_default_options', 'Test_Bench', 'Speech_Model_Architectures', 'TensorFlow_Lite_LSTM_op_("fused_ops")', 'Simple_example_diff_for_using_original_TF_code_VS._TensorFlow_Lite', 'Why_introduce_another_set_of_LSTM_APIs?', 'Ophinted_Customized_Graph', 'Simple_Tutorial']
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+*===============================================*
+
+:Transform_Reference a owl:NamedIndividual,
+        owl:sameAs :mlperfInferencev1.0 .
+
+:strip\_unused\_nodes a owl:NamedIndividual,
+        owl:sameAs :transform\_reference.
+
+:Writing\_Your\_Own\_Transforms a owl:NamedIndividual,
+        owl:sameAs :mlperfInferencev1.0 .
+
+:tf\_upgrade\_v2 a owl:NamedIndividual,
+        owl:sameAs :writing\_your\_own\_transforms.
+
+*===============================================*
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:Test\_Bench a owl:Class ;
+    rdfs:subClassOf :Test .
+
+:Simple\_example\_diff\_for\_using\_original\_TF\_code\_VS._TensorFlow\_Lite a owl:NamedIndividual,
+        owl:sameAs :test\_bench.
+
+*===============================================*
+
+:Speech\_Model\_Architectures a owl:Class ;
+    rdfs:subClassOf :Model .
+
+:TensorFlow\_Lite\_LSTM\_op_(fused\_ops) a owl:NamedIndividual,
+        owl:sameAs :speech\_model\_architectures.
+
+*===============================================*
+
+:Profile\_by\_Python\_Code a owl:NamedIndividual,
+        owl:sameAs :tf\_upgrade\_v2 .
+
+:Option\_Semantics\_In\_Different\_View a owl:NamedIndividual,
+        owl:sameAs :profile\_by\_python\_code.
+
+*===============================================*
+
+:Caveats a owl:Class ;
+    rdfs:subClassOf :Note .
+
+*===============================================*
+
+:Times a owl:NamedIndividual,
+        owl:sameAs :times.
+
+*===============================================*
+
+:Test\_Bench\_a\_TensorFlow\_Lite\_Model a owl:NamedIndividual,
+        owl:sameAs :test\_bench.
+
+*===============================================*
+
+:Dense

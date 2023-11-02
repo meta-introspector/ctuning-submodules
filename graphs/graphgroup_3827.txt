@@ -1,0 +1,138 @@
+['Build_your_MLCube', 'Add_model_weights', 'Modify_=mlcube.py=', 'Run_your_MLCube', 'Using_the_Example_with_GPUs', 'FeTS_Challenge', 'Pilot_Studies', 'institutions*', 'POC_2_-_Pancreas_Segmentation', 'POC_3_-_Surgical_Workflow_Phase_Recognition', 'POC_4_-_Cloud_Experiments', 'How_to_Use_MedPerf', 'Prepare_checkpoints', 'Prune_models_and_test_the_accuracy_on_GLUE/SQuAD_benchmarks', 'Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be', 'or_*eval_data//train/*._Note_that_in_MLPerf_Tiny_we', 'Detailed_Usage', 'Dependency', '10*.', 'Software_packages', 'Push_the_datatsets_to_the_device']
+From the given nodes, we can extract the following concepts:
+
+* `:Build_your_MLCube`: A process of building an ML Cube.
+* `:Add_model_weights`: A process of adding model weights to the ML Cube.
+* `:Modify_mlcube.py`: A process of modifying the `mlcube.py` file.
+* `:Run_your_MLCube`: A process of running the ML Cube.
+* `:Using_the_Example_with_GPUs`: A process of using the example with GPUs.
+* `:FeTS_Challenge`: A challenge related to FeTS.
+* `:Pilot_Studies`: Studies related to pilot projects.
+* `:institutions*`: Institutions related to ML Cube.
+* `:POC_2_-_Pancreas_Segmentation`: Proof of concept related to pancreas segmentation.
+* `:POC_3_-_Surgical_Workflow_Phase_Recognition`: Proof of concept related to surgical workflow phase recognition.
+* `:POC_4_-_Cloud_Experiments`: Proof of concept related to cloud experiments.
+* `:How_to_Use_MedPerf`: Information on how to use MedPerf.
+* `:Prepare_checkpoints`: A process of preparing checkpoints.
+* `:Prune_models_and_test_the_accuracy_on_GLUE/SQuAD_benchmarks`: A process of pruning models and testing accuracy on GLUE/SQuAD benchmarks.
+* `:Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be`: Information about long-term restrictions on devices that can be used.
+* `:or_*eval_data//train/*._Note_that_in_MLPerf_Tiny_we`: Note that in MLPerf Tiny we use or \* eval data // train / \*.
+* `:Detailed_Usage`: Detailed usage information.
+* `:Dependency`: Dependency information.
+* `:10*.`: A placeholder for a number.
+* `:Software_packages`: Information about software packages.
+* `:Push_the_datatsets_to_the_device`: A process of pushing datasets to the device.
+
+We can create the following turtle OWL statements and relationships based on these concepts:
+```sql
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:Build_your_MLCube a owl:Process ;
+    rdfs:subClassOf :AutomatedDesignSpaceExploration .
+
+:Add_model_weights a owl:Process ;
+    rdfs:subClassOf :Standardization .
+
+:Modify_mlcube.py a owl:Process ;
+    rdfs:subClassOf :Standardization .
+
+:Run_your_MLCube a owl:Process ;
+    rdfs:subClassOf :Workflow .
+
+:Using_the_Example_with_GPUs a owl:Process ;
+    rdfs:subClassOf :Workflow .
+
+:FeTS_Challenge a owl:Process ;
+    rdfs:subClassOf :Standardization .
+
+:Pilot_Studies a owl:Process ;
+    rdfs:subClassOf :Standardization .
+
+:institutions* a owl:Individual ;
+    owl:sameAs <http://ctuning.org/ml-benchmark-ontology#institution1> .
+
+:POC_2_-_Pancreas_Segmentation a owl:Process ;
+    rdfs:subClassOf :Standardization .
+
+:POC_3_-_Surgical_Workflow_Phase_Recognition a owl:Process ;
+    rdfs:subClassOf :Standardization .
+
+:POC_4_-_Cloud_Experiments a owl:Process ;
+    rdfs:subClassOf :Standardization .
+
+:How_to_Use_MedPerf a owl:Process ;
+    rdfs:subClassOf :Standardization .
+
+:Prepare_checkpoints a owl:Process ;
+    rdfs:subClassOf :Standardization .
+
+:Prune_models_and_test_the_accuracy_on_GLUE/SQuAD_benchmarks a owl:Process ;
+    rdfs:subClassOf :Standardization .
+
+:Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be a owl:NamedIndividual .
+
+:mlperfInferencev1.0 hasBenchmark :POC_2_-_Pancreas_Segmentation .
+
+:reproducibilityReportMLPerfInferencev1.1 hasBenchmark :POC_3_-_Surgical_Workflow_Phase_Recognition .
+
+:mlperfInferencev1.0 hasBenchmark :POC_4_-_Cloud_Experiments .
+
+:ReproducibilityReportMLPerfInferencev1.1 hasBenchmark :How_to_Use_MedPerf .
+
+:mlperfInferencev1.0 hasBenchmark :Prepare_checkpoints .
+
+:mlperfInferencev1.0 hasBenchmark :Prune_models_and_test_the_accuracy_on_GLUE/SQuAD_benchmarks .
+
+:mlperfInferencev1.0 hasBenchmark :Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:mlperfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .

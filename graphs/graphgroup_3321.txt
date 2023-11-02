@@ -1,0 +1,158 @@
+['ColMajor_1st_dimension__channels_(of_size_d)_2nd_dimension__rows_(of', '=<Operation>_____eval()=', 'Representation_of_scalar_values', 'Run_benchmark_with_SLURM_for_NVIDIA_DGXA100_(_8_nodes_)', 'Run_benchmark_with_SLURM_for_NVIDIA_DGXA100', 'Run_benchmark_with_SLURM_for_NVIDIA_DGXA100_(_224_nodes_)', 'output_metric*', 'work*', 'BERT', 'OPEN', 'Submission_Rules', 'Bare_metal_installation', 'Container', 'easePoly.exponent(/e/)', 'easeQuad', 'easeQuadInOut', 'easeCubic', 'easeCubicInOut', 'easeSin', 'easeSinInOut', 'easeExp']
+Given:
+```swift
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+```
+Explanation of the nodes extracted from headings of readmes from ctuning.org:
+
+* `ColMajor_1st_dimension__channels_(of_size_d)_2nd_dimension__rows_(of<n>)`: These are attributes that describe the input data format for a benchmark. The first part refers to the data representation, while the second part refers to the number of rows and columns in the input data.
+* `=<Operation>_____eval()=`: This is a placeholder that refers to an operation that will be performed on the input data during the evaluation process. It may contain various operators such as addition, subtraction, multiplication, division, etc.
+* `Representation_of_scalar_values`: This attribute describes how scalar values are represented in the input data.
+* `Run_benchmark_with_SLURM_for_NVIDIA_DGXA100_(<n>)`: This attribute specifies the hardware and software environment used for running the benchmark. It includes the number of nodes (`<n>`) in an NVIDIA DGX A100 cluster.
+* `Run_benchmark_with_SLURM_for_NVIDIA_DGXA100`: This attribute specifies the hardware and software environment used for running the benchmark, but without specifying the number of nodes.
+* `Run_benchmark_with_SLURM_for_NVIDIA_DGXA100_(_<n>)`: This attribute specifies the hardware and software environment used for running the benchmark on an NVIDIA DGX A100 cluster with a specific number of nodes (`<n>`).
+* `output_metric*`: This attribute specifies the metrics that will be output by the benchmark. It may include various performance measures such as throughput, latency, accuracy, etc.
+* `work*`: This attribute refers to the workload that will be used for evaluation.
+* `BERT`: This attribute specifies the model architecture that will be used for evaluation. In this case, it refers to the Bidirectional Encoder Representations from Transformers (BERT) model.
+* `OPEN`: This attribute refers to the open-source software license under which the code is released.
+* `Submission_Rules`: This attribute specifies the rules and guidelines for submitting a benchmark result.
+* `Bare_metal_installation`: This attribute specifies that the benchmark requires a bare-metal installation of the necessary software components.
+* `Container`: This attribute specifies that the benchmark can be run in a containerized environment.
+* `easePoly.exponent(/e/)`: This is an example of a hyperparameter that will be tuned during the exploration process. It refers to the exponent used in the ease function, which is applied to the input data during the evaluation process.
+* `easeQuad`, `easeQuadInOut`, `easeCubic`, `easeCubicInOut`, `easeSin`, `easeSinInOut`, `easeExp`: These are examples of operations that will be applied to the input data during the evaluation process. They include various ease functions such as quadratic, cubic, sine, and exponential.
+
+Based on these nodes, we can create additional OWL statements and relationships for the model as follows:
+```yaml
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:ColMajor_1st_dimension__channels_(of_size_d)_2nd_dimension__rows_(of_type_t) a :DataStructure ;
+    rdfs:subPropertyOf :hasBenchmark .
+
+:Operation a owl:Class ;
+    rdfs:subClassOf :EvaluationOperation .
+
+:eval() a :Operation ;
+    rdfs:domain :Model .
+
+:Representation_of_scalar_values a :DataStructure ;
+    rdfs:subPropertyOf :hasBenchmark .
+
+:Run_benchmark_with_SLURM_for_NVIDIA_DGXA100_(8_nodes_) a :Workflow ;
+    rdfs:subClassOf :Process .
+
+:Run_benchmark_with_SLURM_for_NVIDIA_DGXA100 a :Workflow ;
+    rdfs:subPropertyOf :hasBenchmark .
+
+:Run_benchmark_with_SLURM_for_NVIDIA_DGXA100_(224_nodes_) a :Workflow ;
+    rdfs:subClassOf :Process .
+
+:output_metric* a :EvaluationMetric .
+
+:work* a :DataStructure ;
+    rdfs:subPropertyOf :hasBenchmark .
+
+:BERT a :Model ;
+    rdfs:subClassOf :MLPerfInference .
+
+:OPEN a :License .
+
+:Submission_Rules a :Guideline .
+
+:Bare_metal_installation a :InstallationMethod .
+
+:Container a :Environment .
+
+:easePoly.exponent(/e/) a :Hyperparameter .
+
+:easeQuad a :EvaluationOperation ;
+    rdfs:domain :MLPerfInference .
+
+:easeCubic a :EvaluationOperation ;
+    rdfs:domain :MLPerfInference .
+
+:easeSin a :EvaluationOperation ;
+    rdfs:domain :MLPerfInference .
+
+:easeExp a :EvaluationOperation ;
+    rdfs:domain :MLPerfInference .
+
+:ReproducibilityReport a owl:NamedIndividual ;
+    rdfs:subClassOf :ReproducibilityReport .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual ,
+        rdfs:subPropertyOf :hasBenchmark .

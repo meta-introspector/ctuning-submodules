@@ -1,0 +1,78 @@
+['Preparing_an_MLCube_for_hosting', 'Direct_download_links_of_files_on_GitHub', 'Synapse_hosting', 'Docker_or_Singularity', 'Install_MedPerf', 'Submit_the_MLCube', '3._Request_Participation', 'How_to_proceed_after_requesting_association', '4._Execute_the_Benchmark', 'Metrics_MLCube', '5._Host_the_Demo_Dataset', 'Choose_the_Container_Runner', "What's_Next?", 'Model_MLCube*,_and_the_*Metrics_MLCube*._Each_type_has_a_specific', 'Data_Preparator_MLCube', 'Download_the_Necessary_files', '1._Train_a_GaNDLF_Model', 'Prepare_your_Dockerfile', 'The_=mlcube=_folder', 'model_weights', 'Configure_your_MLCube']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:PrepareMLCubeForHosting a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :MLCube .
+
+:DirectDownloadLinksOnGitHub a owl:NamedIndividual ;
+    rdfs:subClassOf :Workflow .
+
+:SynapseHosting a owl:NamedIndividual ;
+    rdfs:subClassOf :Workflow .
+
+:DockerOrSingularity a owl:NamedIndividual ;
+    rdfs:subClassOf :Workflow .
+
+:InstallMedPerf a owl:NamedIndividual ;
+    rdfs:subClassOf :Workflow .
+
+:SubmitMLCube a owl:NamedIndividual ;
+    rdfs:subClassOf :Workflow .
+
+:RequestParticipation a owl:NamedIndividual ;
+    rdfs:subClassOf :Exploration .
+
+:ProceedAfterRequestingAssociation a owl:ObjectProperty ;
+    rdfs:domain :Association ;
+    rdfs:range :Workflow .
+
+:ExecuteTheBenchmark a owl:NamedIndividual ;
+    rdfs:subClassOf :Exploration .
+
+:MetricsMLCube a owl:NamedIndividual ;
+    rdfs:subClassOf :Benchmark .
+
+:HostDemoDataset a owl:NamedIndividual ;
+    rdfs:subClassOf :Workflow .
+
+:ChooseContainerRunner a owl:NamedIndividual ;
+    rdfs:subClassOf :Exploration .
+```

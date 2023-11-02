@@ -1,0 +1,43 @@
+['Development_Build_of_Backend_or_Repository_Agent', 'Building_with_Debug_Symbols', 'The_repository_agent_API_is_beta_quality_and_is_subject_to', 'Using_a_Repository_Agent', 'to_Triton_Inference_Server?*_Make_use_of', '*Installation*', 'Inference_Request/Response_Cache', 'Model_Pipeline', '*Resources*', 'Example_Request', 'Generate_Response_JSON_Object', 'Example_Response', 'Generate_Response_JSON_Error_Object', 'Example_Usage', 'GRPC', 'Statistics_Response_JSON_Error_Object', 'Unregister', 'CUDA_Shared_Memory', 'Trace_Setting_Request_JSON_Object', 'Raw_Binary_Request', 'Unload']
+* Development\_Build\_of\_Backend\_or\_Repository\_Agent a :Process ;
+hasBenchmark mlperfInferencev1.0 .
+* Building\_with\_Debug\_Symbols a :Exploration ;
+hasBenchmark mlperfInferencev1.0 .
+* The\_repository\_agent\_API\_is\_beta\_quality\_and\_is\_subject\_to a :Standardization ;
+hasBenchmark mlperfInferencev1.0 .
+* Using\_a\_Repository\_Agent a :Exploration ;
+hasBenchmark mlperfInferencev1.0 .
+* to\_Triton\_Inference\_Server?*\_Make\_use\_of a :Workflow ;
+hasBenchmark mlperfInferencev1.0 .
+* Installation a :Process ;
+hasBenchmark mlperfInferencev1.0 .
+* Inference\_Request/Response\_Cache a :Model ;
+hasBenchmark mlperfInferencev1.0 .
+* Model\_Pipeline a :Workflow ;
+hasBenchmark mlperfInferencev1.0 .
+* Resources a :Workflow ;
+hasBenchmark mlperfInferencev1.0 .
+* Example\_Request a :Exploration ;
+hasBenchmark mlperfInferencev1.0 .
+* Generate\_Response\_JSON\_Object a :Process ;
+hasBenchmark mlperfInferencev1.0 .
+* Example\_Response a :Exploration ;
+hasBenchmark mlperfInferencev1.0 .
+* Generate\_Response\_JSON\_Error\_Object a :Process ;
+hasBenchmark mlperfInferencev1.0 .
+* Example\_Usage a :Workflow ;
+hasBenchmark mlperfInferencev1.0 .
+* GRPC a :Protocol ;
+hasBenchmark mlperfInferencev1.0 .
+* Statistics\_Response\_JSON\_Error\_Object a :Model ;
+hasBenchmark mlperfInferencev1.0 .
+* Unregister a :Process ;
+hasBenchmark mlperfInferencev1.0 .
+* CUDA\_Shared\_Memory a :Resource ;
+hasBenchmark mlperfInferencev1.0 .
+* Trace\_Setting\_Request\_JSON\_Object a :Model ;
+hasBenchmark mlperfInferencev1.0 .
+* Raw\_Binary\_Request a :Exploration ;
+hasBenchmark mlperfInferencev1.0 .
+* Unload a :Process ;
+hasBenchmark mlperfInferencev1.0 .

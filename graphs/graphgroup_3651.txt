@@ -1,0 +1,69 @@
+['*ReduceSumSquare*', '*RegexFullMatch*', '*Relu*', '*Reshape*', '*Resize*', '*ReverseSequence*', '*RoiAlign*', '*Round*', '*STFT*', '*Scan*', '*Scatter*_(deprecated)', '*ScatterElements*', '*ScatterND*', '*Selu*', '*SequenceAt*', '*SequenceConstruct*', '*SequenceEmpty*', '*SequenceErase*', '*SequenceInsert*', '*SequenceLength*', '*SequenceMap*']```scss
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+*ReduceSumSquare* a :Function ;
+    rdfs:subClassOf :ElementaryFunction .
+
+*RegexFullMatch* a :Function ;
+    rdfs:subClassOf :ElementaryFunction .
+
+*Relu* a :ActivationFunction ;
+    rdfs:subClassOf :Function.
+
+*Reshape* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*Resize* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*ReverseSequence* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*RoiAlign* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*Round* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*STFT* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*Scan* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*Scatter*_(deprecated) a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*ScatterElements* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*ScatterND* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*Selu* a :ActivationFunction ;
+    rdfs:subClassOf :Function.
+
+*SequenceAt* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*SequenceConstruct* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*SequenceEmpty* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*SequenceErase* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*SequenceInsert* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*SequenceLength* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+
+*SequenceMap* a :Function ;
+    rdfs:subClassOf :ElementaryFunction.
+```

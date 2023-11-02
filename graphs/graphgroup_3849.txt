@@ -1,0 +1,125 @@
+['Now_you_can_launch_the_app,_select_submission_mode_and_press_GO', 'Calibration_Datasets', '-_Updated_NodeJS_from_v12_to_v16', '[[https_//github.com/cla-assistant/github-action/tree/v2.0.1-alpha][v2.0.1-alpha]]', 'Bugs_*_-_Skip_CLA_comment_if_already_commented', '[[https_//github.com/cla-assistant/github-action/tree/v2.0.0-alpha][v2.0.0-alpha]]', '-_complete_refactoring_of_all_the_files_to_make_the_bot', 'Bugs_*_-_CLA_check_not_updated_to_success_when_all_the', 'Issue_Reporting_Disclaimer', 'Contribute_Code', 'Reproduce*_Steps_to_reproduce_the_behavior_', 'Configure_Contributor_License_Agreement_within_two_minutes', 'You_do_not_need_to_create_this_file_manually._Our_workflow_will', '5._Users_and_bots_in_allowlist', 'Environmental_Variables__', 'Inputs_Description__', 'Credits', 'License.*_You_hereby_grant,_and_agree_to_grant,_to_SAP_a', 'Rights.*_To_the_fullest_extent_permitted_under_applicable_law,', 'You_represent_that,_other_than_the_Third_Party', 'To_the_fullest_extent_permitted_under_applicable_law,_your']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:launchApp a owl:Function .
+:launchApp(:app) :AutomatedDesignSpaceExploration(?app) .
+
+:selectSubmissionMode a owl:Function .
+:selectSubmissionMode(:submissionMode) :AutomatedDesignSpaceExploration(?app) .
+
+:pressGo a owl:Function .
+:pressGo() :Workflow(?app) .
+
+:calibrationDatasets a owl:Class ;
+    rdfs:subClassOf :Data .
+
+:v12ToV16Update a owl:Object .
+:v12ToV16Update(?nodejsVersion, ?nodejsVersion) :CalibrationDatasets(?app) .
+
+:githubActionTree a owl:NamedIndividual .
+:githubActionTree(?) :v12ToV16Update(?,?) .
+
+:githubActionTreeV201a a owl:NamedIndividual .
+:githubActionTreeV201a(?) :githubActionTree(?,?) .
+
+:skipCLACommentIfAlreadyCommented a owl:ObjectProperty ;
+    rdfs:domain :Script ;
+    rdfs:range :Bool .
+
+:skipCLACommentIfAlreadyCommented(?script, ?nodejsVersion) :Bugs_(*) :GitHubActions(?) .
+
+:v2001a a owl:NamedIndividual .
+:v2001a(?) :githubActionTreeV201a(?,?) .
+
+:completeRefactoringOfAllFilesToMakeTheBot a owl:Object .
+:completeRefactoringOfAllFilesToMakeTheBot(?file) :GitHubActions(?) .
+
+:claCheckNotUpdatedToSuccessWhenAllThe a owl:ObjectProperty ;
+    rdfs:domain :Script ;
+    rdfs:range :Bool .
+
+:claCheckNotUpdatedToSuccessWhenAllThe(?script, ?nodejsVersion) :Bugs_(*) :GitHubActions(?) .
+
+:issueReportingDisclaimer a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:contributeCode a owl:Function .
+:contributeCode() :IssueReportingDisclaimer(?app) .
+
+:reproduceStepsToReproduceTheBehavior_ a owl:Class ;
+    rdfs:subClassOf :Instructions .
+
+:reproduceStepsToReproduceTheBehavior_(?) :ContributeCode(?,?) .
+
+:configureContributorLicenseAgreementWithinTwoMinutes a owl:Function .
+:configureContributorLicenseAgreementWithinTwoMinutes() :IssueReportingDisclaimer(?app) .
+
+:youDoNotNeedToCreateThisFileManually_OurWorkflowWill a owl:ObjectProperty ;
+    rdfs:domain :Instruction ;
+    rdfs:range :Bool .
+
+:youDoNotNeedToCreateThisFileManually_OurWorkflowWill(?instruction, ?app) :reproduceStepsToReproduceTheBehavior_(?) .
+
+:usersAndBotsInAllowlist a owl:Class ;
+    rdfs:subClassOf :Constraints .
+
+:environmentalVariables__ a owl:NamedIndividual .
+:environmentalVariables__(?) :UsersAndBotsInAllowlist(?,?) .
+
+:inputsDescription__ a owl:NamedIndividual .
+:inputsDescription__(?) :UsersAndBotsInAllowlist(?,?) .
+
+:credits a owl:Class ;
+    rdfs:subClassOf :Contribution .
+
+:licenseYouHerebyGrant_AndAgreeToGrant_ToSAP_A a owl:NamedIndividual .
+:licenseYouHerebyGrant_AndAgreeToGrant_ToSAP_A(?) :credits(?,?) .
+
+:rightsToTheFullestExtentPermittedUnderApplicableLaw_ a owl:Class ;
+    rdfs:subClassOf :Contribution .
+
+:toTheFullestExtentPermittedUnderApplicableLaw_A a owl:NamedIndividual .
+:toTheFullestExtentPermittedUnderApplicableLaw_A(?) :credits(?,?) .
+
+:youRepresentThatOtherThanTheThirdParty_ a owl:Class ;
+    rdfs:subClassOf :Contribution .
+
+:toTheFullestExtentPermittedUnderApplicableLaw_B a owl:NamedIndividual .
+:toTheFullestExtentPermittedUnderApplicableLaw_B(?) :credits(?,?) .

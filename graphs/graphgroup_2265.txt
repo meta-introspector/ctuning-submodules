@@ -1,0 +1,70 @@
+['Aarch64-Linux_or_Tegra-Linux_Specific_Paths', 'Steps_to_build_the_standalone_plugin', 'MACROS_in_the_NMSPVAPlugin', 'for_DLRMv2*,_the_dataset_is_quite_large._We_recommend', 'Download_the_datasets', 'Downloading_the_model_files', 'the_above_steps_(/Download_the_datasets,_Downloading_the_model', 'Setting_up_the_DLRMv2_Scratch_Space', 'Launching_the_environment_on_datacenter/desktop_systems', 'Launching_the_environment_on_Jetson_Orin_systems', 'measurements,_and_systems_directories_in_your_submission*_for', 'later,_you_wish_to_remove_a_system*,_simply_edit_this_file_and', 'this_webpage_has_not_yet_been_finalized,_so_the', 'you_proceed_to_try_to_build_and_run_from_this_directory,_it_is', 'Running', 'Power_Regulator_Settings__OS_Control_Mode', 'Fans', 'Thermal_Configuration__Optimal_Cooling', 'Maximum_Frequency', 'Setup_with_docker_image', 'option_2__pull_docker']```arduino
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:Aarch64-Linux_or_Tegra-Linux_Specific_Paths a :Path ;
+    owl:sameAs <https://ctuning.org/ml-benchmark-ontology#aarch64-linux_or_tegra-linux_specific_paths> .
+
+:Steps_to_build_the_standalone_plugin a :Step ;
+    owl:sameAs <https://ctuning.org/ml-benchmark-ontology#steps_to_build_the_standalone_plugin> .
+
+:MACROS_in_the_NMSPVAPlugin a :Macro ;
+    owl:sameAs <https://ctuning.org/ml-benchmark-ontology#macros_in_the_nmspva_plugin> .
+
+:for_DLRMv2*,_the_dataset_is_quite_large._We_recommend a :Dataset ;
+    owl:sameAs <https://ctuning.org/ml-benchmark-ontology#for_dlrmv2_,the_dataset_is_quite_large._we_recommend> .
+
+:Download_the_datasets a :Step ;
+    owl:sameAs <https://ctuning.org/ml-benchmark-ontology#download_the_datasets> .
+
+:Downloading_the_model_files a :Step ;
+    owl:sameAs <https://ctuning.org/ml-benchmark-ontology#downloading_the_model_files> .
+
+:the_above_steps_(/Download_the_datasets,_Downloading_the_model_files) a :Process ;
+    owl:sameAs <https://ctuning.org/ml-benchmark-ontology#the_above_steps_(download_the_datasets,_download_the_model_files)> .
+
+:Setting_up_the_DLRMv2_Scratch_Space a :Step ;
+    owl:sameAs <https://ctuning.org/ml-benchmark-ontology#setting_up_the_dlrmv2_scratch_space> .
+
+:Launching_the_environment_on_datacenter/desktop_systems a :Process ;
+    owl:sameAs <https://ctuning.org/ml-benchmark-ontology#launching_the_environment_on_datacenter_desktop_systems> .
+
+:Launching_the_environment_on_Jetson_Orin_systems a :Process ;
+    owl:sameAs <https://ctuning.org/ml-benchmark-ontology#launching_the_environment_on_jetson_orin_systems> .
+```

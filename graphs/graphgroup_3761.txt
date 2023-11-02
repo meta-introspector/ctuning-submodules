@@ -1,0 +1,27 @@
+['that_not_all_U-Net_configurations_are_created_for_all_datasets._In', '2D_U-Net', 'that_the_3D_full_resolution_U-Net_of_the_cascade_requires_the_five', 'Using_multiple_GPUs_for_training', 'The_first_time_a_training_is_run_nnU-Net_will_extract_the', 'Automatically_determine_the_best_configuration', 'Apply_postprocessing', 'How_to_run_inference_with_pretrained_models', 'Verify_that_environment_parameters_are_set', 'Run_trainings', 'How_to_make_predictions_with_pretrained_weights', 'Local_settings', 'must_share_the_same_geometry_with_their_corresponding', 'Supported_file_formats', 'How_to_update_an_existing_dataset', 'Example_dataset_conversion_scripts', 'Pretraining_on_the_source_dataset', "The_nnU-Net_default_is_to_perform_'CT'_normalization_for_CT", 'How_to_implement_custom_normalization_strategies?', 'is_a_semantic_segmentation_method_that_automatically_adapts_to', 'What_can_nnU-Net_do_for_you?']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+:AutomaticAdaptation a owl:Class ;
+    rdfs:subClassOf :Method .
+
+:CTNormalization a owl:Class ;
+    rdfs:subClassOf :NormalizationStrategy .
+
+:nnU-Net a owl:Class ;
+    rdfs:subClassOf :Model,
+    owl:hasBenchmark [rdfs:label "NNUNet"] .
+
+:nnU-NetDefault a owl:NamedIndividual ;
+    rdfs:type :nnU-Net ;
+    hasBenchmark [rdfs:value "CT normalization"] .
+
+:PretrainedInference a owl:Class ;
+    rdfs:subClassOf :Task.
+
+:PretrainedModel a owl:NamedIndividual ;
+    rdfs:type :nnU-Net ;
+    hasBenchmark [rdfs:label "Pretrained model"] .
+
+:Environment a owl:NamedIndividual ;
+    rdfs:type :Environment.
+```

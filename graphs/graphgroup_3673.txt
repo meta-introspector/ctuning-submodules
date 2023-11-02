@@ -1,0 +1,124 @@
+['*Shape*', '*Shrink*', '*Sigmoid*', '*Sign*', '*Sin*', '*Sinh*', '*Size*', '*Slice*', '*Softmax*', '*SoftmaxCrossEntropyLoss*', '*Softplus*', '*Softsign*', '*SpaceToDepth*', '*Split*', '*SplitToSequence*', '*Sqrt*', '*Squeeze*', '*StringConcat*', '*StringNormalizer*', '*StringSplit*', '*Sub*']```vbnet
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+@prefix shape: <http://ctuning.org/ml-benchmark-ontology#shape> .
+@prefix shrink: <http://ctuning.org/ml-benchmark-ontology#shrink> .
+@prefix sigmoid: <http://ctuning.org/ml-benchmark-ontology#sigmoid> .
+@prefix sign: <http://ctuning.org/ml-benchmark-ontology#sign> .
+@prefix sin: <http://ctuning.org/ml-benchmark-ontology#sin> .
+@prefix sinh: <http://ctuning.org/ml-benchmark-ontology#sinh> .
+@prefix size: <http://ctuning.org/ml-benchmark-ontology#size> .
+@prefix slice: <http://ctuning.org/ml-benchmark-ontology#slice> .
+@prefix softmax: <http://ctuning.org/ml-benchmark-ontology#softmax> .
+@prefix softmaxCrossEntropyLoss: <http://ctuning.org/ml-benchmark-ontology#softmaxCrossEntropyLoss> .
+@prefix softplus: <http://ctuning.org/ml-benchmark-ontology#softplus> .
+@prefix softsign: <http://ctuning.org/ml-benchmark-ontology#softsign> .
+@prefix spaceToDepth: <http://ctuning.org/ml-benchmark-ontology#spaceToDepth> .
+@prefix split: <http://ctuning.org/ml-benchmark-ontology#split> .
+@prefix splitToSequence: <http://ctuning.org/ml-benchmark-ontology#splitToSequence> .
+@prefix sqrt: <http://ctuning.org/ml-benchmark-ontology#sqrt> .
+@prefix squeeze: <http://ctuning.org/ml-benchmark-ontology#squeeze> .
+@prefix stringConcat: <http://ctuning.org/ml-benchmark-ontology#stringConcat> .
+@prefix stringNormalizer: <http://ctuning.org/ml-benchmark-ontology#stringNormalizer> .
+@prefix stringSplit: <http://ctuning.org/ml-benchmark-ontology#stringSplit> .
+@prefix sub: <http://ctuning.org/ml-benchmark-ontology#sub> .
+
+:Shape a shape:Shape ;
+    rdfs:label '*Shape*'^^xsd:string .
+
+:Shrink a shrink:Shrink ;
+    rdfs:label '*Shrink*'^^xsd:string .
+
+:Sigmoid a sigmoid:Sigmoid ;
+    rdfs:label '*Sigmoid*'^^xsd:string .
+
+:Sign a sign:Sign ;
+    rdfs:label '*Sign*'^^xsd:string .
+
+:Sin a sin:Sin ;
+    rdfs:label '*Sin*'^^xsd:string .
+
+:Sinh a sinh:Sinh ;
+    rdfs:label '*Sinh*'^^xsd:string .
+
+:Size a size:Size ;
+    rdfs:label '*Size*'^^xsd:string .
+
+:Slice a slice:Slice ;
+    rdfs:label '*Slice*'^^xsd:string .
+
+:Softmax a softmax:Softmax ;
+    rdfs:label '*Softmax*'^^xsd:string .
+
+:SoftmaxCrossEntropyLoss a softmaxCrossEntropyLoss:SoftmaxCrossEntropyLoss ;
+    rdfs:label '*SoftmaxCrossEntropyLoss*'^^xsd:string .
+
+:Softplus a softplus:Softplus ;
+    rdfs:label '*Softplus*'^^xsd:string .
+
+:Softsign a softsign:Softsign ;
+    rdfs:label '*Softsign*'^^xsd:string .
+
+:SpaceToDepth a spaceToDepth:SpaceToDepth ;
+    rdfs:label '*SpaceToDepth*'^^xsd:string .
+
+:Split a split:Split ;
+    rdfs:label '*Split*'^^xsd:string .
+
+:SplitToSequence a splitToSequence:SplitToSequence ;
+    rdfs:label '*SplitToSequence*'^^xsd:string .
+
+:Sqrt a sqrt:Sqrt ;
+    rdfs:label '*Sqrt*'^^xsd:string .
+
+:Squeeze a squeeze:Squeeze ;
+    rdfs:label '*Squeeze*'^^xsd:string .
+
+:StringConcat a stringConcat:StringConcat ;
+    rdfs:label '*StringConcat*'^^xsd:string .
+
+:StringNormalizer a stringNormalizer:StringNormalizer ;
+    rdfs:label '*StringNormalizer*'^^xsd:string .
+
+:StringSplit a stringSplit:StringSplit ;
+    rdfs:label '*StringSplit*'^^xsd:string .
+
+:Sub a sub:Sub ;
+    rdfs:label '*Sub*'^^xsd:string .

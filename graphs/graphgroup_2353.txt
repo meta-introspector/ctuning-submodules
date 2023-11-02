@@ -1,0 +1,124 @@
+['Quantization_in_the_Open_Division_Submissions', 'enter_closed/ConnectTechInc*._From_now_on,_all_of_the_commands', 'enter_closed/IEI*._From_now_on,_all_of_the_commands_detailed_in', 'Complinace_Test', 'refer_to_/closed/Intel_for_detailed_instructions_for_Intel_CPU', 'enter_closed/Dell*._From_now_on,_all_of_the_commands_detailed_in', 'Fujitsu_Submission_Systems', 'your_system_is_not_listed_above_or_in', 'enter_closed/Nutanix*._From_now_on,_all_of_the_commands_detailed', 'Adding_a_New_or_Custom_System', 'Setup_the_Jetson_Orin_NX_System', 'Flash_the_board', 'Apply_Perf_Optmization_for_AGX/NX', 'Apply_Perf/W_Optmization_for_AGX', 'Apply_Perf/W_Optmization_for_NX', 'Orin_NX_NVME_ASPM', 'This_method_augments_a_sample_library_to_a_device,', 'Configuring_the_server_is_facilitated_by_this_method,_which', 'A_pivotal_function_responsible_for_forwarding_queries_to', 'Device_Management', 'This_virtual_method_necessitates_subclass_overrides_for']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# Quantization in Open Division Submissions
+<Quantization_in_the_Open_Division_Submissions> a owl:NamedIndividual .
+
+<Enter_closed/ConnectTechInc\_\*._From_now_on,_all_of_the_commands> 
+    a :Workflow ;
+    rdf:type :Process .
+
+# Enter Closed Division Submissions
+<Enter_closed/IEI\*\_.From_now_on,_all_of_the_commands_detailed_in> 
+    a :Workflow ;
+    rdf:type :Process .
+
+# Compliance Test
+<Compliance_Test> a :Workflow ;
+    rdf:type :Process .
+
+# Refer to Intel CPU for detailed instructions
+<Refer_to/closed/Intel_for_detailed_instructions_for_Intel_CPU> 
+    a owl:NamedIndividual .
+
+<Enter_closed/Dell\*\_.From_now_on,_all_of_the_commands_detailed_in> 
+    a :Workflow ;
+    rdf:type :Process .
+
+# Fujitsu Submission Systems
+<Fujitsu_Submission_Systems> a owl:NamedIndividual .
+
+<Your_system_is_not_listed_above_or_in> 
+    a owl:NamedIndividual .
+
+<Enter_closed/Nutanix\*\_.From_now_on,_all_of_the_commands_detailed_in> 
+    a :Workflow ;
+    rdf:type :Process .
+
+# Adding a New or Custom System
+<Adding_a_New_or_Custom_System> 
+    a owl:NamedIndividual .
+
+# Setup the Jetson Orin NX System
+<Setup_the_Jetson_Orin_NX_System> 
+    a owl:NamedIndividual .
+
+# Flash the board
+<Flash_the_board> 
+    a owl:NamedIndividual .
+
+# Apply Perf Optimization for AGX/NX
+<Apply_Perf_Optimization_for_AGX\/\_NX> 
+    a :Workflow ;
+    rdf:type :Process .
+
+# Apply Perf Optimization for W
+<Apply_Perf_Optimization_for_W> 
+    a owl:NamedIndividual .
+
+# Apply Perf Optimization for NX
+<Apply_Perf_Optimization_for_NX> 
+    a owl:NamedIndividual .
+
+# Orin NX NVME ASPM
+<Orin_NX_NVME_ASPM> 
+    a :MLPerfInference ;
+    hasBenchmark <mlperfInferencev1.0> ;
+    rdf:type owl:NamedIndividual .
+
+# This method augments a sample library to a device, and then
+<This_method_augments_a_sample_library_to_a_device,_> 
+    a owl:NamedIndividual ;
+    hasBenchmark <mlperfInferencev1.0> .
+
+# Configuring the server is facilitated by this method, which subclasses overrides for
+<Configuring_the_server_is_facilitated_by_this_method,_which> 
+    a owl:NamedIndividual ;
+    hasBenchmark <mlperfInferencev1.0> .
+
+# A pivotal function responsible for forwarding queries to the appropriate model, and is
+<A_pivotal_function_responsible_for_forwarding_queries_to> 
+    a owl:NamedIndividual ;
+    hasBenchmark <mlperfInferencev1.0> .
+
+# Device Management
+<Device_Management> 
+    a :MLPerfInference ;
+    hasBenchmark <mlperfInferencev1.0> ;
+    rdf:type owl:NamedIndividual .

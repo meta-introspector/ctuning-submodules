@@ -1,0 +1,101 @@
+['Kiosk_mode', 'Technical_discussion', 'Update_messages', 'Synchronizing_stdout_and_stderr', 'Steps_to_download_and_verify_data', 'Observations', 'Third_run,_Minigo,_model_250-...,_Jan_20th-Feb_1st_(ish)', 'v5_changelog_', 'v7a,_first_week_of_May', 'This_is_NOT_an_official_version_of_AlphaGo', 'Goals_of_the_Project', 'Automated_Tests', 'Basics', 'Playing_Against_Minigo', 'Training_Minigo', 'Validating_on_a_different_set_of_data', 'Retraining_a_model', "this_is_a_one-way_operation._Once_you_=eject=,_you_can't_go", '=npm_run_build=_fails_to_minify', 'cc_gtp', 'Running_the_unit_tests']
+Here are some further OWL statements and relationships for the given model nodes:
+```scss
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+<http://ctuning.org/ml-benchmark-ontology#Kiosk_mode> owl:NamedIndividual ;
+    rdfs:label "Kiosk mode"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Technical_discussion> owl:NamedIndividual ;
+    rdfs:label "Technical discussion"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Update_messages> owl:NamedIndividual ;
+    rdfs:label "Update messages"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Synchronizing_stdout_and_stderr> owl:NamedIndividual ;
+    rdfs:label "Synchronizing stdout and stderr"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Steps_to_download_and_verify_data> owl:NamedIndividual ;
+    rdfs:label "Steps to download and verify data"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Observations> owl:NamedIndividual ;
+    rdfs:label "Observations"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Third_run,_Minigo,_model_250-...,_Jan_20th-Feb_1st_(ish)> owl:NamedIndividual ;
+    rdfs:label "Third run, Minigo model 250-..."@en.
+
+<http://ctuning.org/ml-benchmark-ontology#v5_changelog_> owl:NamedIndividual ;
+    rdfs:label "v5 changelog"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#v7a,_first_week_of_May> owl:NamedIndividual ;
+    rdfs:label "v7a, first week of May"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#This_is_NOT_an_official_version_of_AlphaGo> owl:NamedIndividual ;
+    rdfs:label "This is NOT an official version of AlphaGo"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Goals_of_the_Project> owl:NamedIndividual ;
+    rdfs:label "Goals of the Project"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Automated_Tests> owl:NamedIndividual ;
+    rdfs:label "Automated Tests"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Basics> owl:NamedIndividual ;
+    rdfs:label "Basics"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Playing_Against_Minigo> owl:NamedIndividual ;
+    rdfs:label "Playing Against Minigo"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Training_Minigo> owl:NamedIndividual ;
+    rdfs:label "Training Minigo"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Validating_on_a_different_set_of_data> owl:NamedIndividual ;
+    rdfs:label "Validating on a different set of data"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Retraining_a_model> owl:NamedIndividual ;
+    rdfs:label "Retraining a model"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#this_is_a_one-way_operation._Once_you_=eject=,_you_can't_go> owl:NamedIndividual ;
+    rdfs:label "this is a one-way operation. Once you eject, you can't go"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#=npm_run_build=_fails_to_minify> owl:NamedIndividual ;
+    rdfs:label "=npm\_run\_build fails to minify"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#cc_gtp> owl:NamedIndividual ;
+    rdfs:label "cc\_gtp"@en.
+
+<http://ctuning.org/ml-benchmark-ontology#Running_the_unit_tests> owl:NamedIndividual ;
+    rdfs:label "Running the unit tests"@en.

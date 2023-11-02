@@ -1,0 +1,23 @@
+['Local_Caching', 'Additional_cache_details', 'Hosting_your_own_ONNX_Model_Hub', 'Raise_issue_if_any', 'Serializing_SemVer_version_numbers_in_protobuf', 'IR_versioning', 'Model_versioning', 'Accuracy_or_performance_changes', 'Released_Versions', 'Checking_a_Large_ONNX_Model_>2GB', 'Running_Shape_Inference_on_an_ONNX_Model', 'Shape_inference_a_Large_ONNX_Model_>2GB', 'Running_Type_Inference_on_an_ONNX_Function', 'ONNX_Compose', 'Tools', 'Updating_Model"s_Inputs_Outputs_Dimension_Sizes_with_Variable_Length', 'ONNX_Parser', 'Example_to_Follow', 'Step_3__PR_Review_by_Operators_SIG', 'Sign-off', 'Step_4__ONNX_release']
+* `:Model` - a subclass of `:Benchmark` and `:Exploration`, it is the main entity representing a machine learning model in this ontology.
+* `:Local_Caching` - an attribute of `:Model` that describes how the model is cached locally for faster inference.
+* `:Additional_cache_details` - an attribute of `:Model` that provides additional information about the caching mechanism used.
+* `:Hosting_your_own_ONNX_Model_Hub` - a guide on how to set up your own ONNX Model Hub for hosting and serving models.
+* `:Raise_issue_if_any` - an instruction to raise any issues encountered during the use of this ontology.
+* `:Serializing_SemVer_version_numbers_in_protobuf` - a best practice for versioning and serializing machine learning models using ONNX format.
+* `:IR_versioning` - a guide on how to version inference engines used with the ontology.
+* `:Model_versioning` - a guide on how to version machine learning models used with the ontology.
+* `:Accuracy_or_performance_changes` - an attribute of `:Model` that describes any changes made to the accuracy or performance of the model since its last release.
+* `:Released_Versions` - a list of all released versions of the machine learning models used with the ontology.
+* `:Checking_a_Large_ONNX_Model_>2GB` - a guide on how to check the size and memory usage of large ONNX models.
+* `:Running_Shape_Inference_on_an_ONNX_Model` - a guide on how to run shape inference on an ONNX model.
+* `:Shape_inference_a_Large_ONNX_Model_>2GB` - a specific example of running shape inference on a large ONNX model with more than 2GB of memory usage.
+* `:Running_Type_Inference_on_an_ONNX_Function` - a guide on how to run type inference on an ONNX function.
+* `:ONNX_Compose` - a feature of the ontology that allows for the composition of multiple models into a single, more complex model for improved performance and accuracy.
+* `:Tools` - a list of tools and libraries used to work with the machine learning models in the ontology.
+* `:Updating_Model"s_Inputs_Outputs_Dimension_Sizes_with_Variable_Length` - a guide on how to update the dimension sizes of inputs, outputs, and other variables in the models to accommodate variable-length data.
+* `:ONNX_Parser` - a tool used for parsing ONNX models into a format that can be used by the ontology.
+* `:Example_to_Follow` - an example of how to use the ontology to work with machine learning models.
+* `:Step_3__PR_Review_by_Operators_SIG` - a step in the process of using the ontology for machine learning model development and deployment, involving peer review by operators from the Operator SIG.
+* `:Sign-off` - a sign-off message indicating approval and acceptance of the use of the ontology for machine learning model development and deployment.
+* `:Step_4__ONNX_release` - the final step in the process of using the ontology for machine learning model development and deployment, involving releasing the models to the public domain for use by others.

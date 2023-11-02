@@ -1,0 +1,103 @@
+['Both_1.5.2._and_1.5.3_can_be_installed_but_fail_to_convert_ResNet', 'Convert_TF_to_ONNX', 'SSD-MobileNet-v1', 'Using_OpenCV_gives_better_accuracy_than_using_Pillow.', 'SSD-ResNet34', '=CK_SKIP_IMAGES=', '5,000_images', 'It_uses_TensorFlow_Lite', 'If_you_have_previously_installed_the_=coco=_datasets,_you_should', 'The_tool_does_not_update_a_remote_repo,_so_after_execution_you', 'Including_Python_modules_into_respective_package_listed_above_we', 'Validation', '=CK_IMAGE_COUNT=', 'Detection_result_file_format', 'Since_the_preprocessed_COCO_dataset_takes_up_21G,_you_may_wish_to', 'Download_the_SSD_ResNet34_model', 'Use_precalibrated_profile', 'by_[[https_//cKnowledge.io/@gfursin][Grigori_Fursin]]_on', 'MLPerf_Inference_v1.0_-_Object_Detection_-_TFLite_(with_Coral_EdgeTPU', 'Install_common_CK_packages', 'Setup_for_EdgeTPU']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# Adding nodes from headings
+@prefix ctuning: <http://ctuning.org/>
+@prefix repo: <https://github.com/c-tuning>
+@prefix ck: <http://www.c-knowledge.io/>
+@prefix edgetpu: <https://edgetpu.withgoogle.com/model_zoo/tag/1.0>
+
+:Both_1.5.2._and_1.5.3_can_be_installed_but_fail_to_convert_ResNet ctuning:Model ;
+    rdfs:subClassOf :SSD-MobileNet-v1 .
+
+:Convert_TF_to_ONNX ctuning:Model .
+
+:SSD-MobileNet-v1 ctuning:Model ;
+    rdfs:subClassOf :SSD-ResNet34 .
+
+:Using_OpenCV_gives_better_accuracy_than_using_Pillow. ctuning:Model ;
+    rdfs:subClassOf :SSD-ResNet34 .
+
+:SSD-ResNet34 ctuning:Model ;
+    rdfs:subClassOf :SSD-MobileNet-v1 .
+
+:=CK_SKIP_IMAGES= ck:Parameter ;
+    rdfs:subClassOf :MLPerfInference .
+
+:5,000_images ctuning:Model ;
+    rdfs:subClassOf :SSD-MobileNet-v1 .
+
+:It_uses_TensorFlow_Lite ctuning:Model ;
+    rdfs:subClassOf :SSD-MobileNet-v1 .
+
+:If_you_have_previously_installed_the_coco_datasets,_you_should ck:Parameter ;
+    rdfs:subClassOf :SSD-MobileNet-v1 .
+
+:The_tool_does_not_update_a_remote_repo,_so_after_execution_you ctuning:Model ;
+    rdfs:subClassOf :MLPerfInference .
+
+:Including_Python_modules_into_respective_package_listed_above_we ck:Parameter ;
+    rdfs:subClassOf :SSD-MobileNet-v1 .
+
+:Validation ctuning:Model ;
+    rdfs:subClassOf :MLPerfInference .
+
+:=CK_IMAGE_COUNT= ck:Parameter ;
+    rdfs:subClassOf :SSD-MobileNet-v1 .
+
+:Detection_result_file_format ctuning:Model ;
+    rdfs:subClassOf :MLPerfInference .
+
+:Since_the_preprocessed_COCO_dataset_takes_up_21G,_you_may_wish_to ck:Parameter ;
+    rdfs:subClassOf :SSD-MobileNet-v1 .
+
+:Download_the_SSD_ResNet34_model ctuning:Model ;
+    rdfs:subClassOf :MLPerfInference .
+
+:Use_precalibrated_profile by_[[https_//cKnowledge.io/@gfursin][Grigori_Fursin]] ck:Parameter ;
+    rdfs:subClassOf :SSD-MobileNet-v1 .
+
+:MLPerf_Inference_v1.0_-_Object_Detection_-_TFLite_(with_Coral_EdgeTPU) ctuning:Model ;
+    rdfs:subClassOf :MLPerfInference .
+
+:Install_common_CK_packages ck:Parameter ;
+    rdfs:subClassOf :SSD-MobileNet-v1 .
+
+:Setup_for_EdgeTPU ctuning:Model ;
+    rdfs:subClassOf :MLPerfInference .

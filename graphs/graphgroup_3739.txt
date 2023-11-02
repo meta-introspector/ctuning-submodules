@@ -1,0 +1,74 @@
+['DCO', 'CI_Pipelines', 'Mac', 'Verify_Installation', 'CMake_variables', 'Common_Errors', 'Testing', 'Eligibility_for_voting', 'Candidacy_process', 'Voting_platform', 'Election_officers_and_Steering_Committee_emeritus_members', 'Member_Companies', 'Organizational_Structure', 'SIG_-_Special_Interest_Groups', 'Decision_making', 'WG_-_Working_Groups', 'Repository_Guidelines', 'Setting_the_correct_number_of_Workers_for_data_augmentation', 'Installation_instructions', 'from_nnU-Net_v1_can_be_converted_to_V2_by_running', 'Experiment_planning_and_preprocessing']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+# Adding new classes
+:DCO a owl:Class ;
+    rdfs:subClassOf :AutomatedDesignSpaceExploration .
+
+:CI_Pipelines a owl:Class ;
+    rdfs:subClassOf :Standardization .
+
+:Mac a owl:Class ;
+    rdfs:subClassOf :Workflow .
+
+:Verify_Installation a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:CMake_variables a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Common_Errors a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:Testing a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:Eligibility_for_voting a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Candidacy_process a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Voting_platform a owl:Class ;
+    rdfs:subClassOf :Standardization .
+
+:Election_officers_and_Steering_Committee_emeritus_members a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Member_Companies a owl:Class ;
+    rdfs:subClassOf :Workflow .
+
+:Organizational_Structure a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:SIG_-_Special_Interest_Groups a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Decision_making a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:WG_-_Working_Groups a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Repository_Guidelines a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+# Adding new properties
+:DCO hasBenchmark :Verify_Installation .
+:CI_Pipelines hasBenchmark :Testing .
+:Mac hasBenchmark :Installation_instructions .
+:Verify_Installation hasBenchmark :Voting_platform .
+:CMake_variables hasBenchmark :Election_officers_and_Steering_Committee_emeritus_members .
+:Common_Errors hasBenchmark :Member_Companies .
+:Testing hasBenchmark :Organizational_Structure .
+:Eligibility_for_voting hasBenchmark :SIG_-_Special_Interest_Groups .
+:Candidacy_process hasBenchmark :Decision_making .
+:Voting_platform hasBenchmark :WG_-_Working_Groups .
+:Election_officers_and_Steering_Committee_emeritus_members hasBenchmark :Repository_Guidelines .
+
+# Adding new individual
+:mlperfInferencev1.0 a owl:NamedIndividual .
+```

@@ -1,0 +1,66 @@
+['On_desktop_', 'Reducing_variance_between_runs_on_Android.', 'Load_and_run_a_model_in_C++', 'Load_and_run_a_model_in_Python', 'Python_pip_Package', 'Metrics', 'Binary_Size', 'Machine_learning_at_the_edge', 'Get_started', 'March_6th,_2019*', 'Usability', 'AutoML_mobile_models', 'Object_detection', 'Pose_estimation', 'Image_segmentation', 'Smart_reply', 'Objective-C', 'Bazel_developers', 'Import_the_library', 'How_do_I_inspect_a_=.tflite=_file?', 'Models_&_Operations']```bash
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+# Desktop
+:On_desktop_ a :AutomatedDesignSpaceExploration .
+
+# Android
+:Reducing_variance_between_runs_on_Android_ a :Standardization .
+
+# C++
+:Load_and_run_a_model_in_C++_ a :Workflow .
+
+# Python
+:Load_and_run_a_model_in_Python_ a :Workflow .
+
+# Pip Package
+:Python_pip_Package_ a :Standardization .
+
+# Metrics
+:Metrics_ a :Benchmark .
+
+# Binary Size
+:Binary_Size_ a :Benchmark .
+
+# Machine Learning at the Edge
+:Machine_learning_at_the_edge_ a :Workflow .
+
+# Get Started
+:Get_started_ a :AutomatedDesignSpaceExploration .
+
+# Usability
+:Usability_ a :Standardization .
+
+# AutoML Mobile Models
+:AutoML_mobile_models_ a :Workflow .
+
+# Object Detection
+:Object_detection_ a :Benchmark .
+
+# Pose Estimation
+:Pose_estimation_ a :Benchmark .
+
+# Image Segmentation
+:Image_segmentation_ a :Benchmark .
+
+# Smart Reply
+:Smart_reply_ a :Workflow .
+
+# Objective-C
+:Objective-C_ a :Standardization .
+
+# Bazel Developers
+:Bazel_developers_ a :Standardization .
+
+# Import Library
+:Import_the_library_ a :Workflow .
+
+# Inspect tflite File
+:How_do_I_inspect_a=_.tflite=_file?_ a :Benchmark .
+
+# Models & Operations
+:Models_&_Operations_ a :Benchmark .
+```

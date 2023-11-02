@@ -1,0 +1,90 @@
+['GCS_for_simple_task_signaling', 'versions*_of_the_official_models_targeting_releases_of', 'Running_the_models', 'Pre-trained_model', 'Compute_Devices', 'From_Docker', 'The_current_data_generation_pipeline_is_run_on_CPU_and_is', 'Training_data_order', 'Evaluation_results', 'Detailed_instructions', 'Model_Definition', '[[file_model/attention_layer.py][attention_layer.py]]__Defines_the', 'BLEU_computation', 'Term_definitions', 'Recommended_setup', 'one_can_control_which_GPUs_are_used_with_the_NV_GPU_variable', 'Learning_rate_schedule', '4._Dataset/Environment', 'Run_and_Time', 'Steps_to_launch_training', 'MLCommons_Inference']Here are some OWL statements and relationships that can be added to the ontology based on the extracted nodes from the headings:
+```sql
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:GCS_for_simple_task_signaling a :Standardization ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:versions*_of_the_official_models_targeting_releases_of a :Exploration ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Running_the_models a :Workflow ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Pre_trained_model a owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Compute_Devices a :Exploration ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:From_Docker a :Standardization ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:The_current_data_generation_pipeline_is_run_on_CPU_and_is a :Workflow ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Training_data_order a :Exploration ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Evaluation_results a :Report ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Detailed_instructions a :Report ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Model_Definition a :Exploration ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+[[file_model/attention_layer.py][attention_layer.py]]__Defines_the a :Exploration ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:BLEU_computation a :Term_definitions ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Recommended_setup a :Exploration ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+one_can_control_which_GPUs_are_used_with_the_NV_GPU_variable a :MLPerfInference ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Learning_rate_schedule a :Exploration ;
+    hasBenchmark :mlperfInferencev1.0 .
+```
+Note that the above OWL statements assume that each node represents a class, object or individual that can be related to others in the ontology using

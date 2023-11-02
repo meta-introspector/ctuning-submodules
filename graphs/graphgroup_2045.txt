@@ -1,0 +1,31 @@
+['0.5.3', '0.5.2', '0.5.1', 'Overview', '0.5.0', 'What_to_expect_in_the_next_weeks_and_the_new_ZenML', '0.5.0rc2', '0.3.7.1', 'Bug_Fixes_+_Refactor', '0.3.7', '0.3.6', '0.3.5', '0.3.4', '👭_4._Start_the_Dashboard', '🗺_Roadmap', 'Install_dependencies', 'Import_in_all_the_right_places', 'Step_4__Create_a_PR_and_celebrate__tada_', 'Install_the_Chart', 'Advanced_Options', 'Telemetry']```
+:Release a owl:Class ;
+    rdfs:subClassOf :Version .
+
+:Version a owl:NamedIndividual ;
+    owl:sameAs <http://ctuning.org/ml-benchmark-ontology#0.5.3> .
+
+:ReleaseName a owl:NamedIndividual ;
+    rdfs:subProperty rdf:label .
+
+:ReleaseName1 a owl:NamedIndividual ;
+    owl:sameAs <http://ctuning.org/ml-benchmark-ontology#0.5.3> .
+
+:Overview a owl:Class ;
+    rdfs:subClassOf :Introduction .
+
+:IntroductoryParagraph1 a owl:NamedIndividual ;
+    rdfs:subProperty rdf:text .
+
+:DevelopmentTeam a owl:Class ;
+    rdfs:subClassOf :Organization .
+
+:ReleaseNotes a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:NextWeeksAndNewZenML a owl:NamedIndividual ;
+    rdfs:sameAs <http://ctuning.org/ml-benchmark-ontology#What_to_expect_in_the_next_weeks_and_the_new_ZenML> .
+
+:ReleaseNote1 a owl:NamedIndividual ;
+    rdfs:sameAs <http://ctuning.org/ml-benchmark-ontology#What_to_expect_in_the_next_weeks_and_the_new_ZenML> .
+```

@@ -1,0 +1,65 @@
+['(i.e.,_Numpy-style)_broadcasting*__for_more_details', 'Version', '*BitwiseAnd*', '*BitwiseNot*', '*BitwiseOr*', '*BitwiseXor*', '*BlackmanWindow*', '*Cast*', '*CastLike*', '*Ceil*', '*Celu*', '*CenterCropPad*', '*Clip*', '*Col2Im*', '*Compress*', '*Concat*', '*ConcatFromSequence*', '*Constant*', '*ConstantOfShape*', '*Conv*', '*ConvInteger*']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:Broadcasting a owl:Class ;
+    rdfs:subClassOf :NumpyStyleFeatureTransform .
+
+:BitwiseAnd a owl:Class ;
+    rdfs:subClassOf :ElementaryMathOperation .
+
+:BitwiseNot a owl:Class ;
+    rdfs:subClassOf :ElementaryMathOperation .
+
+:BitwiseOr a owl:Class ;
+    rdfs:subClassOf :ElementaryMathOperation .
+
+:BitwiseXor a owl:Class ;
+    rdfs:subClassOf :ElementaryMathOperation .
+
+:BlackmanWindow a owl:Class ;
+    rdfs:subClassOf :FilteringFunction .
+
+:Cast a owl:Class ;
+    rdfs:subClassOf :TypeConversionOperator .
+
+:CastLike a owl:Class ;
+    rdfs:subClassOf :ElementaryMathOperation .
+
+:Ceil a owl:Class ;
+    rdfs:subClassOf :RoundingFunction .
+
+:Cellu a owl:Class ;
+    rdfs:subClassOf :ActivationFunction .
+
+:CenterCropPad a owl:Class ;
+    rdfs:subClassOf :PaddingOperation .
+
+:Clip a owl:Class ;
+    rdfs:subClassOf :ElementaryMathOperation .
+
+:Col2Im a owl:Class ;
+    rdfs:subClassOf :FeatureExtractor .
+
+:Compress a owl:Class ;
+    rdfs:subClassOf :FeatureExtractor .
+
+:Concat a owl:Class ;
+    rdfs:subClassOf :FeatureExtractor .
+
+:ConcatFromSequence a owl:Class ;
+    rdfs:subClassOf :FeatureExtractor .
+
+:Constant a owl:Class ;
+    rdfs:subClassOf :ElementaryMathOperation .
+
+:ConstantOfShape a owl:Class ;
+    rdfs:subClassOf :ElementaryMathOperation .
+
+:Conv a owl:Class ;
+    rdfs:subClassOf :FeatureExtractor .
+
+:ConvInteger a owl:Class ;
+    rdfs:subClassOf :FilteringFunction .
+```

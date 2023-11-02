@@ -1,0 +1,70 @@
+['Padding', 'array_to_match_with_the_*lower-rank*_array.', 'Formal_definition', 'Broadcasting_similar-rank_arrays_with_degenerate_dimensions', 'Implementation_details', 'Gather', 'Informal_Description_and_Examples', 'GetDimensionSize', 'Variadic_Reduce', 'ReducePrecision', 'Linear_index_formulas_for_tiling_given_a_shape_and_a_tile', 'Tiling_as_pad-reshape-transpose', 'Skip_deploying_to_a_repository', 'The_overall_flow', 'Generate_wrapper_functions_for_ops', 'Support', 'NOT_EDIT_THE_DOCKERFILES/_DIRECTORY_MANUALLY!*_The_files_within_are', 'Building', 'Run_TensorFlow_CI_Scripts_Natively_on_your_Machine', 'TensorFlow_Continuous_Integration', 'Eight-bit_Calculations']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+:MLPerfInferenceV10 a :MLPerfInference,
+        owl:NamedIndividual;
+    hasBenchmark :reproducibilityReportMLPerfInferencev1.1 .
+
+:Padding a :Analysis ;
+    rdfs:subClassOf :Exploration .
+
+:array_to_match_with_the_*lower-rank*_array.* a :Parameter;
+    rdfs:hasType owl:xsd:string .
+
+:Formal_definition a :Method ;
+    rdfs:subClassOf :Information .
+
+:Broadcasting_similar-rank_arrays_with_degenerate_dimensions a :Analysis;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Implementation_details a :Method;
+    rdfs:subClassOf :Information .
+
+:Gather a :Function ;
+    rdfs:subClassOf :Operator .
+
+:Informal_Description_and_Examples a :Analysis;
+    rdfs:subClassOf :Documentation .
+
+:GetDimensionSize a :Function ;
+    rdfs:subClassOf :Operator .
+
+:Variadic_Reduce a :Function ;
+    rdfs:subClassOf :Operator .
+
+:ReducePrecision a :Function ;
+    rdfs:subClassOf :Operator .
+
+:Linear_index_formulas_for_tiling_given_a_shape_and_a_tile a :Method ;
+    rdfs:subClassOf :Information .
+
+:Tiling_as_pad-reshape-transpose a :Function ;
+    rdfs:subClassOf :Operator .
+
+:Skip_deploying_to_a_repository a :Parameter;
+    rdfs:hasType owl:xsd:boolean .
+
+:The_overall_flow a :Process ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Generate_wrapper_functions_for_ops a :Method ;
+    rdfs:subClassOf :Information .
+
+:Support a :Function ;
+    rdfs:subClassOf :Operator .
+
+:NOT_EDIT_THE_DOCKERFILES/_DIRECTORY_MANUALLY!*_The_files_within_are a :Parameter;
+    rdfs:hasType owl:xsd:string .
+
+:Building a :Process ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Run_TensorFlow_CI_Scripts_Natively_on_your_Machine a :Method ;
+    rdfs:subClassOf :Information .
+
+:TensorFlow_Continuous_Integration a :Function ;
+    rdfs:subClassOf :Operator .
+
+:Eight-bit_Calculations a :Function ;
+    rdfs:subClassOf :Operator .
+```

@@ -1,0 +1,24 @@
+['Components', 'TensorFlow_Makefile', 'Before_you_start_(all_platforms)', 'Building_the_CUDA-enabled_Android_demo_with_gradle/Android_Studio_', 'Raspberry_Pi', 'Other_notes', 'Windows_Support', 'Try_it_out', 'IGFS', 'Makefile', 'AssetManagerFileSystem', 'Run_inception_model_by_building_all_from_the_source_code', 'Building_libraries', 'Qualcomm_SDK_Linux_installation_fails_with_"Malformed', 'We_provide_Linux_build_instructions_primarily_for_the_purpose_of', 'Current_Status', 'Current_known_limitations', 'Building_with_CMake', 'CMake_GUI_build_(all_platforms)', 'Start_a_Tensorflow_C++_project_with_CMake', 'Step-by-step_Windows_build_(command_prompt)']
+Based on the provided readme headings, I have extracted the following nodes:
+
+* Components: a class representing the components of a system.
+* TensorFlow\_Makefile: an individual that is a file used to build TensorFlow.
+* Before\_you\_start\_(all\_platforms): an individual that provides instructions for setting up a development environment on all platforms.
+* Building\_the\_CUDA-enabled\_Android\_demo\_with\_gradle/Android\_Studio\_: a class representing the process of building a CUDA-enabled Android demo using Gradle and Android Studio.
+* Raspberry\_Pi: an individual that represents a specific hardware platform.
+* Other\_notes: a class representing additional notes related to the system.
+* Windows\_Support: a class representing the support for Windows platforms.
+* Try\_it\_out: an individual that provides instructions for trying out the system.
+* IGFS: an individual that represents a file system used in some instances.
+* Makefile: a class representing a build script for a specific project or component.
+* AssetManagerFileSystem: an individual that represents a file system used by the Android operating system's AssetManager.
+* Run\_inception\_model\_by\_building\_all\_from\_the\_source\_code: an individual that provides instructions for running an inception model by building all components from source code.
+* Building\_libraries: a class representing the process of building required libraries for a system.
+* Qualcomm\_SDK\_Linux\_installation\_fails\_with\_"Malformed": an individual that represents an issue with installing the Qualcomm SDK on Linux platforms.
+* We\_provide\_Linux\_build\_instructions\_primarily\_for\_the\_purpose\_of: a class representing the purpose of providing Linux build instructions.
+* Current\_Status: an individual that provides information about the current status of a system.
+* Current\_known\_limitations: a class representing known limitations in the system.
+* Building\_with\_CMake: a class representing the process of building a system using CMake.
+* CMake\_GUI\_build\_(all\_platforms): an individual that provides instructions for building a system using CMake's graphical user interface on all platforms.
+* Start\_a\_Tensorflow\_C++\_project\_with\_CMake: an individual that provides instructions for starting a TensorFlow project with CMake.
+* Step-by-step\_Windows\_build\_(command\_prompt): a class representing the process of building a system using the command prompt on Windows platforms.

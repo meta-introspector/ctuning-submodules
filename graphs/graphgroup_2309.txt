@@ -1,0 +1,31 @@
+['Get_Started_with_ResNet50', 'Get_Started_with_Retinanet', 'Get_the_results', 'Get_Started_with_RNNT', 'Steps_to_run_GPT-J', '9._run', 'Launching_the_environment_on_Jetson_Orin_AGX/NX', 'power_measurement*_with_VF_configuration,_you_need_to_allow', 'Run_performance', 'Download_dataset', 'Reproduce_results', 'generate_results_for_accuracy_and_performance_separately_add', 'FP8_flow', 'refer_to_/closed/NVIDIA/README.md_for_detailed_instructions_for', 'Dell_Technologies_Submission_Systems', 'Alternative_cross_compile_option', 'Apply_Perf_Optmization_(AGX_and_NX_applicable)', 'USB-C_Power_Adapters', 'Apply_Perf/W_Optmization_(only_AGX_applicable)', 'Download_Data,_Model_and_Preprocess_the_data', 'the_datasets_for_inferences*_described_in']```less
+:ResNet50 a :MLPerfInference,
+        owl:NamedIndividual ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology#resnet50>.
+
+:Retinanet a :MLPerfInference,
+        owl:NamedIndividual ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology#retinanet>.
+
+:RNNT a :MLPerfInference,
+        owl:NamedIndividual ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology#rnnteacher>.
+
+:GPTJ a :MLPerfInference,
+        owl:NamedIndividual ;
+    hasBenchmark <http://ctuning.org/ml-benchmark-ontology#gptj>.
+```
+Additionally, we can create the following relationships:
+```css
+:ResNet50 a :MLPerfInference ;
+    isStandardized true .
+
+:Retinanet a :MLPerfInference ;
+    isStandardized true .
+
+:RNNT a :MLPerfInference ;
+    isStandardized true .
+
+:GPTJ a :MLPerfInference ;
+    isStandardized true .
+```

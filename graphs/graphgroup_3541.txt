@@ -1,0 +1,30 @@
+['*ConvTranspose*', '*Cos*', '*Cosh*', '*CumSum*', '*DFT*', '*DeformConv*', '*DepthToSpace*', '*DequantizeLinear*', '*Det*', '*Div*', '*Dropout*', '*DynamicQuantizeLinear*', '*Einsum*', '*Elu*', '*Equal*', '*Erf*', '*Exp*', '*Expand*', '*EyeLike*', '*Flatten*', '*Floor*']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+*ConvTranspose*, *Cos*, *Cosh*, *CumSum*, *DFT*, *DeformConv*, *DepthToSpace*, *DequantizeLinear*, *Det*, *Div*, *Dropout*, *DynamicQuantizeLinear*, *Einsum*, *Elu*, *Equal*, *Erf*, *Exp*, *Expand*, *EyeLike*, *Flatten*, *Floor* a owl:NamedIndividual .
+
+*ConvTranspose* hasBenchmark :mlperfInferencev1.0 .
+*Cos* hasBenchmark :mlperfInferencev1.0 .
+*Cosh* hasBenchmark :mlperfInferencev1.0 .
+*CumSum* hasBenchmark :mlperfInferencev1.0 .
+*DFT* hasBenchmark :mlperfInferencev1.0 .
+*DeformConv* hasBenchmark :mlperfInferencev1.0 .
+*DepthToSpace* hasBenchmark :mlperfInferencev1.0 .
+*DequantizeLinear* hasBenchmark :mlperfInferencev1.0 .
+*Det* hasBenchmark :mlperfInferencev1.0 .
+*Div* hasBenchmark :mlperfInferencev1.0 .
+*Dropout* hasBenchmark :mlperfInferencev1.0 .
+*DynamicQuantizeLinear* hasBenchmark :mlperfInferencev1.0 .
+*Einsum* hasBenchmark :mlperfInferencev1.0 .
+*Elu* hasBenchmark :mlperfInferencev1.0 .
+*Equal* hasBenchmark :mlperfInferencev1.0 .
+*Erf* hasBenchmark :mlperfInferencev1.0 .
+*Exp* hasBenchmark :mlperfInferencev1.0 .
+*Expand* hasBenchmark :mlperfInferencev1.0 .
+*EyeLike* hasBenchmark :mlperfInferencev1.0 .
+*Flatten* hasBenchmark :mlperfInferencev1.0 .
+*Floor* hasBenchmark :mlperfInferencev1.0 .
+```

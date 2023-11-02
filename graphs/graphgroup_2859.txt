@@ -1,0 +1,122 @@
+['=[HR]=_Compile_the_workloads_on_the_host_and_copy_to_the_device', 'F._Expected_Results_from_Set_up_QAIC_SDKs', '=[D]=_Verify_with_a_quick_run', 'Appendix__Arguments', '=DOCKER_DEVICE_TYPE=', 'Appendix__Info', 'Launch_a_Docker_container_on_the_client_side_(=pf002=)', 'Scenarios', 'BERT-99', 'Run_the_client_program_(=pf002=)', 'BERT-99.9', 'The_final_tarball_should_not_include_hidden_files._This_can', 'Submit_your_submission', 'MLPerf_Quantization', 'Apply_Perf_Optmization', '10._run', 'Get_started_with_DLRM', 'This_mode_is_supported_only_with_CK_≤_v1.17.0_or_≥_v2.6.0_', '"All-in-one"', 'Note_that_unlike_[[#mobilenet_v1][MobileNet-v1]],', 'prepare_env']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# New nodes extracted from headings of readmes from ctuning.org
+:CompileAndCopyWorkloads a owl:NamedIndividual .
+:ExpectedResultsFromSetUpQAICSDKs a owl:NamedIndividual .
+:VerifyWithQuickRun a owl:NamedIndividual .
+:Arguments a owl:NamedIndividual .
+:DockerDeviceType a owl:NamedIndividual .
+:ClientSideContainerLaunch a owl:NamedIndividual .
+:Scenarios a owl:NamedIndividual .
+:Bert99 a owl:NamedIndividual .
+:ClientProgramRunWithPf002 a owl:NamedIndividual .
+:Bert999 a owl:NamedIndividual .
+:FinalTarballNoHiddenFiles a owl:NamedIndividual .
+:SubmitSubmission a owl:NamedIndividual .
+:MLPerfQuantization a owl:NamedIndividual .
+:ApplyPerfOptimization a owl:NamedIndividual .
+:Run10 a owl:NamedIndividual .
+:GetStartedWithDLRM a owl:NamedIndividual .
+:CKLe17OrGreater260 a owl:NamedIndividual .
+:AllInOneMode a owl:NamedIndividual .
+:NoteUnlikeMobileNetV1 a owl:NamedIndividual .
+:PrepareEnv a owl:NamedIndividual .
+
+# New relationships
+:CompileAndCopyWorkloads rdfs:type :AutomatedDesignSpaceExploration ;
+    hasBenchmark :Bert99.9 .
+
+:ExpectedResultsFromSetUpQAICSDKs rdfs:type :Standardization ;
+    hasBenchmark :Bert99.9 .
+
+:VerifyWithQuickRun rdfs:type :Workflow ;
+    hasBenchmark :Bert99.9 .
+
+:Arguments rdfs:type :Report ;
+    hasBenchmark :Bert99.9 .
+
+:DockerDeviceType rdfs:type :Standardization ;
+    hasBenchmark :Bert99.9 .
+
+:ClientSideContainerLaunch rdfs:type :Workflow ;
+    hasBenchmark :Bert99.9 .
+
+:Scenarios rdfs:type :Report ;
+    hasBenchmark :Bert99.9 .
+
+:Bert99 a owl:NamedIndividual ;
+    hasBenchmark :Bert99.9 .
+
+:ClientProgramRunWithPf002 rdfs:type :Standardization ;
+    hasBenchmark :Bert99.9 .
+
+:Bert999 a owl:NamedIndividual ;
+    hasBenchmark :Bert99.9 .
+
+:FinalTarballNoHiddenFiles rdfs:type :Workflow ;
+    hasBenchmark :Bert99.9 .
+
+:SubmitSubmission rdfs:type :Standardization ;
+    hasBenchmark :Bert99.9 .
+
+:MLPerfQuantization rdfs:type :Process .
+    hasBenchmark :Bert99.9 .
+
+:ApplyPerfOptimization rdfs:type :Process .
+    hasBenchmark :Bert99.9 .
+
+:Run10 a owl:NamedIndividual ;
+    hasBenchmark :Bert99.9 .
+
+:GetStartedWithDLRM rdfs:type :Standardization ;
+    hasBenchmark :Bert99.9 .
+
+:CKLe17OrGreater260 a owl:NamedIndividual ;
+    hasBenchmark :Bert99.9 .
+
+:AllInOneMode a owl:NamedIndividual ;
+    hasBenchmark :Bert99.9 .
+
+:NoteUnlikeMobileNetV1 a owl:NamedIndividual ;
+    hasBenchmark :Bert99.9 .
+
+:PrepareEnv rdfs:type :Standardization ;
+    hasBenchmark :Bert99.9

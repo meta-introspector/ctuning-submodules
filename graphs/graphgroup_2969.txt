@@ -1,0 +1,67 @@
+['Release_0.11.0', 'Release_0.10.0', 'Release_0.9.0', 'Release_0.8.0', 'Release_0.7.1', 'Release_0.7.0', 'Release_0.6.0', 'Backwards-Incompatible_Changes', 'Release_0.5.0', '/Try_your_first_TensorFlow_program/', 'Contribution_guidelines', 'use_[[https_//github.com/tensorflow/tensorflow/issues][GitHub', 'Continuous_build_status', 'Community_Supported_Builds', 'Compiler_infrastructure', 'Getting_started_with_MLIR', 'Creating_Your_own_App', 'Building_the_TensorFlow_iOS_libraries_from_source', 'If_you_wish_to_place_the_models_in_your_assets_manually,', 'Install', 'Android_Studio_with_Bazel']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:Release_0.11.0 a owl:NamedIndividual ;
+    rdfs:label "CTuning 0.11.0" .
+
+:Release_0.10.0 a owl:NamedIndividual ;
+    rdfs:label "CTuning 0.10.0" .
+
+:Release_0.9.0 a owl:NamedIndividual ;
+    rdfs:label "CTuning 0.9.0" .
+
+:Release_0.8.0 a owl:NamedIndividual ;
+    rdfs:label "CTuning 0.8.0" .
+
+:Release_0.7.1 a owl:NamedIndividual ;
+    rdfs:label "CTuning 0.7.1" .
+
+:Release_0.7.0 a owl:NamedIndividual ;
+    rdfs:label "CTuning 0.7.0" .
+
+:Release_0.6.0 a owl:NamedIndividual ;
+    rdfs:label "CTuning 0.6.0" .
+
+:Backwards-Incompatible_Changes a owl:NamedIndividual ;
+    rdfs:label "Backwards incompatibilities in CTuning version 0.7.1" .
+
+:Release_0.5.0 a owl:NamedIndividual ;
+    rdfs:label "CTuning 0.5.0" .
+
+:/Try_your_first_TensorFlow_program/ a :MLPerfInferencev1.0 ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Contribution_guidelines a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:use_[[https://github.com/tensorflow/tensorflow/issues](https://github.com/tensorflow/tensorflow/issues)] a :Standardization .
+
+:Continuous_build_status a owl:NamedIndividual ;
+    rdfs:label "Continuous build status for TensorFlow" .
+
+:Community_Supported_Builds a owl:NamedIndividual ;
+    rdfs:label "Community supported builds for TensorFlow" .
+
+:Compiler_infrastructure a owl:Class ;
+    rdfs:subClassOf :MLPerfInferencev1.0 .
+
+:Getting_started_with_MLIR a owl:NamedIndividual ;
+    rdfs:label "Getting started with MLIR" .
+
+:Creating_Your_own_App a owl:NamedIndividual ;
+    rdfs:label "Creating your own app using TensorFlow" .
+
+:Building_the_TensorFlow_iOS_libraries_from_source a owl:NamedIndividual ;
+    rdfs:label "Building the TensorFlow iOS libraries from source" .
+
+:If_you_wish_to_place_the_models_in_your_assets_manually, a owl:NamedIndividual ;
+    rdfs:label "Placing models in assets manually" .
+
+:Install a owl:NamedIndividual ;
+    rdfs:label "Installing TensorFlow" .
+
+:Android_Studio_with_Bazel a owl:NamedIndividual ;
+    rdfs:label "Using Android Studio with Bazel" .
+```

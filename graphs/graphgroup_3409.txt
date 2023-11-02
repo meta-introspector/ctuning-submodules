@@ -1,0 +1,123 @@
+['Operator_Changelog', '*ai.onnx.ml.Binarizer-1*', '*ai.onnx.ml.CastMap-1*', '*ai.onnx.ml.CategoryMapper-1*', '*ai.onnx.ml.DictVectorizer-1*', '*ai.onnx.ml.FeatureVectorizer-1*', '*ai.onnx.ml.Imputer-1*', '*ai.onnx.ml.LabelEncoder-1*', '*ai.onnx.ml.LinearClassifier-1*', '*ai.onnx.ml.LinearRegressor-1*', '*ai.onnx.ml.Normalizer-1*', '*ai.onnx.ml.OneHotEncoder-1*', '*ai.onnx.ml.SVMClassifier-1*', '*ai.onnx.ml.SVMRegressor-1*', '*ai.onnx.ml.Scaler-1*', '*ai.onnx.ml.TreeEnsembleClassifier-1*', '*ai.onnx.ml.TreeEnsembleRegressor-1*', '*ai.onnx.ml.ZipMap-1*', "Version_2_of_the_'ai.onnx.ml'_operator_set", "Version_3_of_the_'ai.onnx.ml'_operator_set", '*ai.onnx.ml.TreeEnsembleRegressor-3*']
+Here are some additional OWL statements that could be added to the ontology based on the information provided:
+```vbnet
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:Operator a owl:Class ;
+    rdfs:subClassOf :ModelPart .
+
+:Changelog a owl:ObjectProperty ;
+    rdfs:domain :Operator ;
+    rdfs:range :String .
+
+:Version a owl:NamedIndividual .
+    rdfs:type :String .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+*ai.onnx.ml.Binarizer-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.Binarizer"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.CastMap-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.CastMap"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.CategoryMapper-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.CategoryMapper"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.DictVectorizer-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.DictVectorizer"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.FeatureVectorizer-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.FeatureVectorizer"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.Imputer-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.Imputer"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.LabelEncoder-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.LabelEncoder"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.LinearClassifier-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.LinearClassifier"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.LinearRegressor-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.LinearRegressor"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.Normalizer-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.Normalizer"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.OneHotEncoder-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.OneHotEncoder"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.SVMClassifier-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.SVMClassifier"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.SVMRegressor-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.SVMRegressor"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.Scaler-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.Scaler"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.TreeEnsembleClassifier-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.TreeEnsembleClassifier"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.TreeEnsembleRegressor-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.TreeEnsembleRegressor"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .
+
+*ai.onnx.ml.ZipMap-1* a :Operator ;
+    rdfs:label "ai.onnx.ml.ZipMap"@en ;
+    :changelog "[Added Version 2]"@en .
+    :version "Version_2_of_the_'ai.onnx.ml'_operator_set" .

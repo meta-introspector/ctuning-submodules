@@ -1,0 +1,38 @@
+['Weights_package', 'If_you_have_installed_the_COCO_or_KITTI_datasets_a_while_ago,_you', 'Run_the_program', '=OID=_(*TBD*)', '=CK_TF_GPU_MEMORY_PERCENT=', 'Run_once_(classical_CK_interface)', '=CK_TEST_INTERVAL=', 'SciPy', 'Install_via_CK', 'ImageNet_dataset', 'module._Data_iterators_are_flexible,_easy_to_reason', 'TODO(rzhao)__add_URL_for_English-Vietnamese_trained_model.', 'TODO(rzhao)__add_URL_for_German-English_trained_model.', 'TensorFlow_models', '=CK_RECREATE_CACHE=', 'Input_preprocessing_parameters', 'If_=CK_TMP_IMAGE_SIZE=_is_set_and_valid,_this_parameter_is_not', '=CK_SUBTRACT_MEAN=', 'If_you_have_previously_installed_the_=coco=_dataset,_you_should', 'For_some_reason_only_debug_version_of_the_library_can_be_used', 'Compile']```turtle
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+:Weights_package a :MLPerfInference ;
+    :hasBenchmark :mlperfInferencev1.0 .
+
+:ImageNet_dataset a :MLPerfInference ;
+    :hasBenchmark :mlperfInferencev1.0 .
+
+:TODO(rzhao)__add_URL_for_English-Vietnamese_trained_model. a :Task ;
+    :hasSubject :ImageNet_dataset .
+
+:TODO(rzhao)__add_URL_for_German-English_trained_model. a :Task ;
+    :hasSubject :ImageNet_dataset .
+
+:TensorFlow_models a :MLPerfInference ;
+    :hasBenchmark :mlperfInferencev1.0 .
+
+:CK_TEST_INTERVAL a :MLPerfInference ;
+    :hasBenchmark :mlperfInferencev1.0 .
+
+:Run_once_(classical_CK_interface) a :Process ;
+    :hasDuration 3600s ;
+    :hasOutput_file "run_once.log" .
+
+:If_you_have_installed_the_COCO_or_KITTI_datasets_a_while_ago,_you a :Standardization ;
+    :hasProcess :Run_once_(classical_CK_interface) .
+
+:Input_preprocessing_parameters a :MLPerfInference ;
+    :hasBenchmark :mlperfInferencev1.0 .
+
+:For_some_reason_only_debug_version_of_the_library_can_be_used a :Standardization ;
+    :hasProcess :Compile .
+
+:Compile a :AutomatedDesignSpaceExploration ;
+    :hasDuration 3600s ;
+    :hasOutput_file "compile.log" .
+```

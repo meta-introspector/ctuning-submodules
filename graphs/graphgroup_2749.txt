@@ -1,0 +1,53 @@
+['Build_benchmark_images', 'Create_TFRecord_for_ADE20K', 'Train', 'Evaluate_pb', 'Evaluate_TFLite', 'Run_TFLite_evaluation', 'Quantization-aware_training', 'Generate_data_for_post-training_quantization', 'Run_post-training_quantization', 'Mobilenet_EdgeTPU_latency', 'Pretrained_models', 'Edge_TPU_checkpoints_', 'Mobilenet_V2_Imagenet_Checkpoints', 'V2', 'accuracy_target', 'Evaluate_accuracy_on_Android_devices', '[[file_models_and_code/checkpoints/mobilenet_edgetpu_224_1.0][mobilenet_edgetpu_224_1.0]]', 'Generating_non-TFLite_specific_files_(export_inference_graph.py)', 'of_the_repo_*_1._*Hardware_Requirements*_-_Container_images,', 'Hardware_requirements', 'The_jobfile_should_look_like_']```less
+# Create a new ontology for the ctuning.org model
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+# Define the classes for the model
+:Model a owl:Class ;
+    rdfs:subClassOf :DataModel .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:TrainingProcess a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:AccuracyTarget a owl:Class ;
+    rdfs:subClassOf :Parameter .
+
+:FileExport a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+# Define the properties for the model
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:hasTrainingProcess a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :TrainingProcess .
+
+:hasAccuracyTarget a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :AccuracyTarget .
+
+:generatesNonTFLiteSpecificFiles a owl:FunctionalProperty ;
+    rdfs:propertyName 'Generating_non-TFLite_specific_files' ;
+    rdfs:domain :FileExport ;
+    rdfs:range :FileExport .
+
+# Define the individuals for the model
+@prefix foaf: <http://xmlns.com/foaf/0.1/>
+:Model1 a :Model, foaf:knows [ foaf:knows <http://ctuning.org/ml-benchmark-ontology/reproducibilityReportMLPerfInferencev1.1> ] .
+:TrainingProcess1 a :TrainingProcess, foaf:knows [ foaf:knows <http://ctuning.org/ml-benchmark-ontology/mlperfInferencev1.0> ] .
+:AccuracyTarget1 a :AccuracyTarget, foaf:knows [ foaf:knows <http://ctuning.org/ml-benchmark-ontology/mlperfInferencev1.0> ] .
+:FileExport1 a :FileExport, foaf:knows [ foaf:knows <http://ctuning.org/ml-benchmark-ontology/reproducibilityReportMLPerfInferencev1.1> ] .
+:Model1 a owl:NamedIndividual.
+
+# Define the relationships for the model
+:Model1 hasBenchmark :TrainingProcess1 hasAccuracyTarget1 .
+:TrainingProcess1 generatesNonTFLiteSpecificFiles :FileExport1.
+```

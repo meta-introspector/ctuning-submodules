@@ -1,0 +1,72 @@
+['Examples_', 'ImageNet_validation_dataset_(required_for_calibration)', 'Using_Python_3_is_recommended.', 'We_now_have_=ck-env_package_lib-python-cython=_but_it_does_not', 'Build_warning', 'Refresh_all_CK_repositories_after_any_updates_(e.g.\xa0bug_fixes)_', 'See_the_quotes_magic_explained', 'Run_the_default_command', 'Set_up_environment_variables', 'This_is_equivalent_to_the_default_run_command_', 'Gory_details', 'Copy_the_results_to_a_machine_for_analysis', 'You_may_need_to_run_commands_below_with_=sudo=,_unless_you', 'Prepare_repository', 'Build_(Linux_or_Windows)', 'Latest', 'Other_Dependencies', 'Programs', 'target_space_id,_is_character_level,', 'Data_', 'Putting_it_all_together']
+:AutomatedDesignSpaceExploration a owl:Class ;
+hasBenchmark mlperfInferencev1.0 .
+
+:Standardization a owl:Class ;
+hasBenchmark mlperfInferencev1.0 .
+
+:Workflow a owl:Class ;
+hasBenchmark mlperfInferencev1.0 .
+
+:Examples_ a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:ImageNet\_validation\_dataset_(required\_for\_calibration) a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:Using\_Python\_3\_is\_recommended. a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:We\_now\_have\_ck-env\_package\_lib-python-cython\_=but\_it\_does\_not\_a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:Build\_warning a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:Refresh\_all\_CK\_repositories\_after\_any\_updates_(e.g.\xa0bug\_fixes)_a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:See\_the\_quotes\_magic\_explained a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:Run\_the\_default\_command a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:Set\_up\_environment\_variables a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:This\_is\_equivalent\_to\_the\_default\_run\_command\_a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:Gory\_details a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:Copy\_the\_results\_to\_a\_machine\_for\_analysis a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:You\_may\_need\_to\_run\_commands\_below\_with=sudo=_unless\_you\_are\_root\_or\_have\_permission\_a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:Prepare\_repository a owl:NamedIndividual ;
+hasBenchmark mlperfInferencev1.0 .
+
+:Build_(Linux\_or\_Windows) a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:Latest a owl:NamedIndividual ;
+hasBenchmark mlperfInferencev1.0 .
+
+:Other\_Dependencies a owl:NamedIndividual ;
+hasBenchmark mlperfInferencev1.0 .
+
+:Programs a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:target\_space\_id,_is\_character\_level, a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:Data\_ a owl:NamedIndividual ;
+hasBenchmark mlperfInferencev1.0 .
+
+:Putting\_it\_all\_together a owl:NamedIndividual ;
+hasBenchmark mlperfInferencev1.0 .

@@ -1,0 +1,68 @@
+['Running_a_Benchmark', 'DF_Cstates__Auto', 'NUMA_nodes_per_socket__NPS1', 'SMT_Control__Disable', 'Prefetcher_Settings', 'L2_Up/Down_Prefetcher__Auto', 'Core_Performance_Boost__Disable', 'ResNet50_(6,900_RPM)', 'Power_Consumption_Settings', 'ResNet50_Server__Disabled', 'Redirect_scrubber_control__Auto', 'Memory_Addressing', 'NUMA_nodes_per_socket__NPS4', 'Redirect_scrubber_control__Disabled', 'ACPI_SRAT_L3_Cche_As_NUMA_Domain__Disabled', 'Global_C-state_Control__Enabled', 'BERT-99.9_and_ResNet50_(6,900_RPM)', 'Download_the_dataset_and_the_model', 'enter_closed/Azure*._From_now_on,_all_of_the_commands_detailed', 'Further_reading', 'that_the_same_scale_factor_is_used_for_the_Q,_K,_and_V_output']```css
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:RunCommand a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Command> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#Command>.
+
+<http://ctuning.org/ml-benchmark-ontology#Download_the_dataset_and_the_model> a :Benchmark .
+<http://ctuning.org/ml-benchmark-ontology#enter_closed/Azure*._From_now_on,_all_of_the_commands_detailed> a :Command ;
+    rdfs:subClassOf :RunCommand .
+
+<http://ctuning.org/ml-benchmark-ontology#BERT-99.9_and_ResNet50_(6,900_RPM)> a :MLPerfInference .
+
+<http://ctuning.org/ml-benchmark-ontology#ResNet50_(6,900_RPM)> a :Benchmark ;
+    rdfs:subClassOf <http://ctuning.org/ml-benchmark-ontology#MLPerfInference> .
+
+<http://ctuning.org/ml-benchmark-ontology#Power_Consumption_Settings> a :Command ;
+    rdfs:subClassOf :RunCommand .
+
+<http://ctuning.org/ml-benchmark-ontology#ResNet50_Server__Disabled> a :Command ;
+    rdfs:subClassOf :RunCommand .
+
+<http://ctuning.org/ml-benchmark-ontology#Redirect_scrubber_control__Auto> a :Command ;
+    rdfs:subClassOf :RunCommand .
+
+<http://ctuning.org/ml-benchmark-ontology#Memory_Addressing> a :Command ;
+    rdfs:subClassOf :RunCommand .
+
+<http://ctuning.org/ml-benchmark-ontology#NUMA_nodes_per_socket__NPS4> a :Command ;
+    rdfs:subClassOf :RunCommand .
+```
