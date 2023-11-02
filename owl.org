@@ -1,0 +1,134 @@
+
+#+NAME: rdfxml
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ctuning.org/ml-benchmark-ontology#"
+     xml:base="http://ctuning.org/ml-benchmark-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="http://ctuning.org/ml-benchmark-ontology"/>
+  <!-- Added Superclasses -->
+  <owl:Class rdf:about="http://ctuning.org/ml-benchmark-ontology#Workflow">
+    <rdfs:subClassOf rdf:resource="http://ctuning.org/ml-benchmark-ontology#Process"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://ctuning.org/ml-benchmark-ontology#Exploration">
+    <rdfs:subClassOf rdf:resource="http://ctuning.org/ml-benchmark-ontology#Analysis"/>  
+  </owl:Class>
+  <owl:Class rdf:about="http://ctuning.org/ml-benchmark-ontology#Benchmark">
+    <rdfs:subClassOf rdf:resource="http://ctuning.org/ml-benchmark-ontology#Evaluation"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://ctuning.org/ml-benchmark-ontology#Report">
+    <rdfs:subClassOf rdf:resource="http://ctuning.org/ml-benchmark-ontology#Documentation"/>
+  </owl:Class>
+  <!-- Added Subclasses -->
+  <owl:Class rdf:about="http://ctuning.org/ml-benchmark-ontology#AutomatedDesignSpaceExploration">
+    <rdfs:subClassOf rdf:resource="http://ctuning.org/ml-benchmark-ontology#Exploration"/>
+  </owl:Class>  
+  <owl:Class rdf:about="http://ctuning.org/ml-benchmark-ontology#Standardization">
+    <rdfs:subClassOf rdf:resource="http://ctuning.org/ml-benchmark-ontology#Process"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://ctuning.org/ml-benchmark-ontology#MLPerfInference">
+    <rdfs:subClassOf rdf:resource="http://ctuning.org/ml-benchmark-ontology#Benchmark"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://ctuning.org/ml-benchmark-ontology#ReproducibilityReport">
+    <rdfs:subClassOf rdf:resource="http://ctuning.org/ml-benchmark-ontology#Report"/>
+  </owl:Class>
+  <!-- Object Properties -->
+  <owl:ObjectProperty rdf:about="http://ctuning.org/ml-benchmark-ontology#hasBenchmark">
+    <rdfs:domain rdf:resource="http://ctuning.org/ml-benchmark-ontology#Model"/>
+    <rdfs:range rdf:resource="http://ctuning.org/ml-benchmark-ontology#Benchmark"/>
+  </owl:ObjectProperty>  
+  <!-- Added individuals -->
+  <owl:NamedIndividual rdf:about="http://ctuning.org/ml-benchmark-ontology#mlperfInferencev1.0">
+    <rdf:type rdf:resource="http://ctuning.org/ml-benchmark-ontology#MLPerfInference"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://ctuning.org/ml-benchmark-ontology#reproducibilityReportMLPerfInferencev1.1">
+    <rdf:type rdf:resource="http://ctuning.org/ml-benchmark-ontology#ReproducibilityReport"/>
+  </owl:NamedIndividual>
+</rdf:RDF>
+
+
+modify this org bable block to parse the rdfxml and produce turtle
+
+#+BEGIN_SRC sh
+  pip install rdflib
+#+END_SRC
+
+#+RESULTS:
+| Looking                                  | in                                     | indexes:     | https://pypi.org/simple, | https://pypi.ngc.nvidia.com |                                                                   |                                                                                                                                                   |                                |          |
+| Collecting                               | rdflib                                 |              |                          |                             |                                                                   |                                                                                                                                                   |                                |          |
+| Obtaining                                | dependency                             | information  | for                      | rdflib                      | from                                                              | https://files.pythonhosted.org/packages/d4/b0/7b7d8b5b0d01f1a0b12cc2e5038a868ef3a15825731b8a0d776cf47566c0/rdflib-7.0.0-py3-none-any.whl.metadata |                                |          |
+| Downloading                              | rdflib-7.0.0-py3-none-any.whl.metadata | (11          | kB)                      |                             |                                                                   |                                                                                                                                                   |                                |          |
+| Requirement                              | already                                | satisfied:   | isodate<0.7.0,>=0.6.0    | in                          | /home/mdupont/.pyenv/versions/3.11.4/lib/python3.11/site-packages | (from                                                                                                                                             | rdflib)                        | (0.6.1)  |
+| Requirement                              | already                                | satisfied:   | pyparsing<4,>=2.1.0      | in                          | /home/mdupont/.pyenv/versions/3.11.4/lib/python3.11/site-packages | (from                                                                                                                                             | rdflib)                        | (3.1.1)  |
+| Requirement                              | already                                | satisfied:   | six                      | in                          | /home/mdupont/.pyenv/versions/3.11.4/lib/python3.11/site-packages | (from                                                                                                                                             | isodate<0.7.0,>=0.6.0->rdflib) | (1.16.0) |
+| Downloading                              | rdflib-7.0.0-py3-none-any.whl          | (531         | kB)                      |                             |                                                                   |                                                                                                                                                   |                                |          |
+| ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ | 531.9/531.9                            | kB           | 8.4                      | MB/s                        | eta                                                               | 0:00:00                                                                                                                                           |                                |          |
+| Installing                               | collected                              | packages:    | rdflib                   |                             |                                                                   |                                                                                                                                                   |                                |          |
+| Successfully                             | installed                              | rdflib-7.0.0 |                          |                             |                                                                   |                                                                                                                                                   |                                |          |
+  
+#+BEGIN_SRC python :var rdf=rdfxml :exports both
+  from rdflib import Graph
+  g = Graph()
+  #return len(rdf)
+  #print(rdf)
+  g.parse(data=rdf,format='application/rdf+xml')
+  return g.serialize()
+
+
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+#+end_example
+
+
+
+The ontology above describes a set of concepts and relationships for the field of machine learning benchmarks. The ontology is organized around four main classes: Exploration, Process, Workflow, and Benchmark. The Exploration class represents an analysis of the design space for a given problem, while the Process class encompasses all of the various steps involved in creating a benchmark. Workflow is a subclass of Process that specifically focuses on the creation of automated design spaces. Finally, Benchmark is a subclass of Evaluation that describes a standardized method for measuring the performance of machine learning models.
+
+The ontology also includes several object properties, such as hasBenchmark, which links a model to its corresponding benchmark. Additionally, there are two named individuals in the ontology: mlperfInferencev1.0, which represents a specific version of the MLPerf inference benchmark, and reproducibilityReportMLPerfInferencev1.1, which represents a report on the reproducibility of that benchmark.
+
+Overall, this ontology provides a structured framework for describing the various components and relationships involved in creating and using machine learning benchmarks. By using this ontology, researchers can more easily communicate their findings and collaborate with others in the field.
+
