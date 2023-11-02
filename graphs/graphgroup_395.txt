@@ -1,0 +1,27 @@
+['Q__Can_I_make_local_modifications_to_the_LoadGen_for_submission?', 'No.\xa0To_keep_the_playing_field_level,_please_upstream_any_local', 'Q__Where_can_I_find_the_results_of_a_test?', 'By_default,_the_loadgen_will_output_an_/mlperf_log_summary.txt/', 'Q__The_reference_implementation_for_</some_model/>_prints_out_results', 'They_are_not._The_LoadGen_results_are_the_ground_truth_for', "Q__I'm_getting_linker_errors_for_LoadgenVersion_definitions._Where_is", 'If_you_have_a_custom_build_setup,_make_sure_you_run_the', 'Q__What_is_this_/version_generator.py/_script?', 'The_LoadGen_records_git_stats_(if_available)_and_the_SHA1_of_all', 'Q__How_do_I_view_the_/mlperf_log_trace.json/_file?', 'This_file_uses_the_[Trace_Event_Format]', 'Q__Why_is_the_code_littered_with_so_many_lambdas?_My_eyes_hurt.', 'Lambdas_are_a_convenient_and_efficient_way_to_ship_arbitrary_data_+', 'Q__What_C++_version_does_the_LoadGen_target?', 'It_currently_targets_and_requires_C++14._It_should_compile_with', 'Q__What_dependencies_does_the_LoadGen_code_have?', "aware_of_how_to_score_the_accuracy_of_a_model's_outputs._*_*NOT*", 'Submission_Considerations', 'Choose_your_TestSettings_carefully!', 'Responsibilities_of_a_LoadGen_User']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+:Model a :Exploration ;
+    rdfs:subClassOf :Standardization .
+
+:MLPerfInferencev1.0 a :Benchmark ;
+    hasBenchmark :LoadGen .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport ;
+    hasReproducibilityReport :mlperfInferencev1.0 .
+
+:LoadGen a :MLPerfInference ;
+    rdfs:subClassOf :Exploration ;
+    hasBenchmark :LoadGenVersion .
+
+:LoadGenVersion a :MLPerfInference ;
+    rdfs:subClassOf :ReferenceImplementation ;
+    hasBenchmark :LoadGen .
+
+:ReferenceImplementation a :MLPerfInference ;
+    hasBenchmark :LoadGenVersion .
+
+:Benchmark a :Evaluation ;
+    rdfs:subClassOf :Standardization.
+```
+Note that this is just one possible way to represent the model and its components based on the information provided in the readmes. Depending on the specific requirements of the model, additional nodes and relationships may be necessary.

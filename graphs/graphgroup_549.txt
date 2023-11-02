@@ -1,0 +1,21 @@
+['CK_can_normally_detect_compilers_automatically,_but_we_are_playing', 'These_dependencies_are_/explicit/,_i.e.\xa0CK_will_try_to_satisfy', 'Compile_the_Server/Offline_model_for_the_PCIe_server_cards', 'SingleStream', 'Compile_and_install_the_models_to_the_16_NSP_AEDK', 'Info', 'Please_detect_only_one_Python_interpreter._Python_3.6,_the_default', 'Python_v3.6_(default)', 'Hint', 'Since_the_preprocessed_=1200x1200=_COCO_dataset_takes_up_21G,_you', 'Calibrate_on_your_own', 'For_more_information,_please_see_the', 'Use_precalibrated_profiles', 'Compile_and_install_the_models_to_the_20W_AEDK', 'Offline', 'Since_the_preprocessed_ImageNet_dataset_takes_up_7.1G,_you_may', 'Download_the_MLPerf_TensorFlow_model', 'The_input_tensor\'s_shape_gets_updated_("fixed")_from_=?x224x224x3=', 'Obtain_a_profile_using', '1_sample_per_batch_(for_the_Single_Stream_scenario)', '1_sample_per_batch_(for_the_SingleStream_scenario)']
+:CK\_can\_normally\_detect\_compilers\_automatically, rdfs:label "CK can normally detect compilers automatically".
+:These\_dependencies\_are\_explicit,_i.e.\xa0CK\_will\_try\_to\_satisfy, rdfs:label "These dependencies are explicit (CK will try to satisfy)".
+:Compile\_the\_Server/Offline\_model\_for\_the\_PCIe\_server\_cards, rdfs:label "Compile the Server/Offline model for the PCIe server cards".
+:SingleStream, rdfs:label "Single Stream".
+:Compile\_and\_install\_the\_models\_to\_the\_16\_NSP\_AEDK, rdfs:label "Compile and install the models to the 16 NSP AEDK".
+:Info, rdfs:label "Info".
+:Please\_detect\_only\_one\_Python\_interpreter._Python\_3.6,_the\_default, rdfs:label "Please detect only one Python interpreter (Python 3.6, the default)".
+:Python\_v3.6_(default), rdfs:label "Python v3.6 (default)".
+:Hint, rdfs:label "Hint".
+:Since\_the\_preprocessed\_=1200x1200=_COCO\_dataset\_takes\_up\_21G,_you, rdfs:label "Since the preprocessed ImageNet dataset takes up 7.1G, you may consider calibrating on your own".
+:Calibrate\_on\_your\_own, rdfs:label "Calibrate on your own".
+:For\_more\_information,_please\_see\_the, rdfs:label "For more information, please see the documentation".
+:Use\_precalibrated\_profiles, rdfs:label "Use precalibrated profiles".
+:Compile\_and\_install\_the\_models\_to\_the\_20W\_AEDK, rdfs:label "Compile and install the models to the 20W AEDK".
+:Offline, rdfs:label "Offline".
+:Since\_the\_preprocessed\_ImageNet\_dataset\_takes\_up\_7.1G,_you\_may, rdfs:label "Since the preprocessed ImageNet dataset takes up 7.1G, you may consider downloading a pre-trained model".
+:Download\_the\_MLPerf\_TensorFlow\_model, rdfs:label "Download the MLPerf TensorFlow model".
+:The\_input\_tensor\'s\_shape\_gets\_updated\_("fixed")\_from=?x224x224x3=, rdfs:label "The input tensor's shape gets updated (fixed) from 224x224x3".
+:Obtain\_a\_profile\_using, rdfs:label "Obtain a profile using".
+:1\_sample\_per\_batch_(for\_the\_Single\_Stream\_scenario), rdfs:label "1 sample per batch (for the Single Stream scenario)".

@@ -1,0 +1,98 @@
+['based_technologies*__For_most_training_scenarios,_ZeRO_offer', 'Understanding_performance_tradeoff_between_ZeRO_and_3D_Parallelism', 'Eigenvalue_Parameters', 'How_to_Use_MoQ_for_GLUE_Training_Tasks', 'Example__Megatron-LM', 'Usage_Outside_the_DeepSpeed_Runtime', 'Example__Bert', 'In_Model_Training_Workflow', 'This_tutorial_was_updated_on_10/29/2021._Changes_include__1)_A', '1._Configurations_and_tuning_strategy', '1.3_fixed_discrete_schedule', '2._Curriculum_learning_for_Megatron-LM_GPT-2_pre-training', 'out!*_After_the_update_on_10/29/2021,_now_there_are_two', '2.1_Training_data_truncation', 'that_CUDA_profiling_incurs_non-negligible_overhead.', 'Profile_memory_consumption', '1.2_Challenges_in_applying_error-compensation_to_Adam', '2._Compressing_communication_with_1-bit_Adam', '2.2_Addressing_system_challenges_for_1-bit_Adam', '3._Benefits_of_1-bit_Adam_on_communication-constrained_systems', 'in_model_size*_as_well_as_*increase_in_number_of_GPUs*._As']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:BasedTechnologiesForTrainingScenarios zeROOffer a :BasedTechnologies ;
+    rdfs:label "ZeRO" .
+
+:UnderstandingPerformanceTradeoffBetweenZeROAnd3DParallelism a :TradeoffAnalysis ;
+    rdfs:subClassOf :Analysis .
+    
+:EigenvalueParameters a :ParameterAnalysis ;
+    rdfs:subClassOf :Analysis .
+
+:HowToUseMoQForGLUETrainingTasks a :TrainingTaskAnalysis ;
+    rdfs:subClassOf :Analysis .
+
+:ExampleMegatronLMMegatron-LM a :ExampleModel .
+    
+:UsageOutsideTheDeepSpeedRuntime a :UsageInstructions .
+    
+:ExampleBertBERT a :ExampleModel .
+    
+:InModelTrainingWorkflow a :TrainingWorkflow ;
+    rdfs:subClassOf :Process .
+    
+:ThisTutorialWasUpdatedOn10292021ChangesInclude1 a :ChangeLog ;
+    rdfs:label "10/29/2021" .
+    
+:ConfigurationsAndTuningStrategy a :ConfigurationAnalysis ;
+    rdfs:subClassOf :Analysis .
+    
+:FixedDiscreteSchedule a :SchedulingStrategy ;
+    rdfs:subPropertyOf :ConfigurationAnalysis .
+    
+:CurriculumLearningForMegatronLMGPT2PreTraining a :TrainingTaskAnalysis ;
+    rdfs:subClassOf :TrainingTaskAnalysis ;
+    rdfs:subPropertyOf :ConfigurationsAndTuningStrategy .
+    
+:TrainingDataTruncation a :DataPreprocessingStrategy ;
+    rdfs:subPropertyOf :TrainingTaskAnalysis .
+    
+:CUDAProfilingIncursNonNegligibleOverhead a :PerformanceIssue ;
+    rdfs:subClassOf :PerformanceIssue .
+
+:ProfileMemoryConsumption a :MemoryProfilingStrategy ;
+    rdfs:subPropertyOf :TrainingTaskAnalysis .
+    
+:ChallengesInApplyingErrorCompensationToAdam a :TrainingIssue ;
+    rdfs:subClassOf :TrainingIssue .
+    
+:CompressingCommunicationWith1BitAdam a :CommunicationStrategy ;
+    rdfs:subPropertyOf :TrainingTaskAnalysis .
+    
+:AddressingSystemChallengesFor1BitAdam a :SystemConstraintsStrategy ;
+    rdfs:subPropertyOf :CompressingCommunicationWith1BitAdam .
+    
+:BenefitsOf1BitAdamOnCommunicationConstrainedSystems a :PerformanceBenefit ;
+    rdfs:subClassOf :PerformanceBenefit .
+    
+:IncreaseInModelSizeAsWellAsIncreaseInNumberOfGPUs a :ResourceConstraintsStrategy ;
+    rdfs:subPropertyOf :CompressingCommunicationWith1BitAdam .
+```

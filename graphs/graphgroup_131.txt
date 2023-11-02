@@ -1,0 +1,75 @@
+['1.3_Activation_Quantization', 'to_use_activation_quantization*', '1.4_Pruning', 'is_pruning*', '1.4.1_Sparse_Pruning', 'to_use_sparse_pruning*', 'to_use_row_pruning*', 'to_use_head_pruning*', 'to_use_channel_pruning*', '2._Tutorial_for_ZeroQuant__efficient_and_affordable_post-training', 'to_use_ZeroQuant*', '3._Tutorial_for_XTC__simple_yet_effective_compression_pipeline_for', 'to_use_XTC*', 'of_XTC_methods_*_To_accommodate_users_who_do_not_have_a', '3.1_One-bit_or_Two-bit_BERT-base_(12-layer)_with_8-bit_activation', 'Currently_DeepSpeed_Transformer_Kernels_do_not_support_Sparse', '*Integrate_Transformer_Kernel*', 'DeepSpeed_MoE_requires_Pytorch_1.8_or_above._{__.notice--info}', 'Expert_groups_initialization', 'Combining_ZeRO-Offload_and_DeepSpeed_MoE_for_very_large_models', 'Random_Token_Selection']```css
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# 1.3_Activation_Quantization
+<http://ctuning.org/ml-benchmark-ontology> <http://ctuning.org/ml-benchmark-ontology#1.3_Activation_Quantization> rdf:type owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology#1.3_Activation_Quantization> owl:sameAs <http://ctuning.org/ml-benchmark-ontology#to_use_activation_quantization*>.
+
+# 1.4_Pruning
+<http://ctuning.org/ml-benchmark-ontology> <http://ctuning.org/ml-benchmark-ontology#1.4_Pruning> rdf:type owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology#1.4_Pruning> owl:sameAs <http://ctuning.org/ml-benchmark-ontology#is_pruning*>.
+
+# 1.4.1_Sparse_Pruning
+<http://ctuning.org/ml-benchmark-ontology> <http://ctuning.org/ml-benchmark-ontology#1.4.1_Sparse_Pruning> rdf:type owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology#1.4.1_Sparse_Pruning> owl:sameAs <http://ctuning.org/ml-benchmark-ontology#to_use_sparse_pruning*>.
+
+# 1.4.2_Dense_Pruning
+<http://ctuning.org/ml-benchmark-ontology> <http://ctuning.org/ml-benchmark-ontology#1.4.2_Dense_Pruning> rdf:type owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology#1.4.2_Dense_Pruning> owl:sameAs <http://ctuning.org/ml-benchmark-ontology#to_use_dense_pruning*>.
+
+# 2._Tutorial_for_ZeroQuant__efficient_and_affordable_post-training
+<http://ctuning.org/ml-benchmark-ontology> <http://ctuning.org/ml-benchmark-ontology#2._Tutorial_for_ZeroQuant__efficient_and_affordable_post-training> rdf:type owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology#2._Tutorial_for_ZeroQuant__efficient_and_affordable_post-training> owl:sameAs <http://ctuning.org/ml-benchmark-ontology#to_use_ZeroQuant*>.
+
+# 3._Tutorial_for_XTC__simple_yet_effective_compression_pipeline_for
+<http://ctuning.org/ml-benchmark-ontology> <http://ctuning.org/ml-benchmark-ontology#3._Tutorial_for_XTC__simple_yet_effective_compression_pipeline_for> rdf:type owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology#3._Tutorial_for_XTC__simple_yet_effective_compression_pipeline_for> owl:sameAs <http://ctuning.org/ml-benchmark-ontology#to_use_XTC*>.
+
+# of_XTC_methods_*_To_accommodate_users_who_do_not_have_a
+<http://ctuning.org/ml-benchmark-ontology> <http://ctuning.org/ml-benchmark-ontology#of_XTC_methods_*_To_accommodate_users_who_do_not_have_a> rdf:type owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology#of_XTC_methods_*_To_accommodate_users_who_do_not_have_a> owl:sameAs <http://ctuning.org/ml-benchmark-ontology#to_use_XTC*>.
+
+# 3.1_One-bit_or_Two-bit_BERT-base_(12-layer)_with_8-bit_activation
+<http://ctuning.org/ml-benchmark-ontology> <http://ctuning.org/ml-benchmark-ontology#3.1_One-bit_or_Two-bit_BERT-base_(12-layer)_with_8-bit_activation> rdf:type owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology#3.1_One-bit_or_Two-bit_BERT-base_(12-layer)_with_8-bit_activation> owl:sameAs <http://ctuning.org/ml-benchmark-ontology#to_use_DeepSpeed_Transformer*>.
+
+# Currently\_DeepSpeed\_Transformer\_Kernels\_do_not_support\_Sparse
+<http://ctuning.org/ml-benchmark-ontology> <http://ctuning.org/ml-benchmark-ontology#Currently_DeepSpeed_Transformer_Kernels_do_not_support_Sparse> rdf:type owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology#Currently_DeepSpeed_Transformer_Kernels_do_not_support_Sparse> owl:sameAs <http://ctuning.org/ml-benchmark-ontology#to_integrate_Transformer_Kernel*>.
+
+# DeepSpeed\_MoE\_requires\_Pytorch\_1.8\_or_above.*Integrate\_Transformer\_Kernel

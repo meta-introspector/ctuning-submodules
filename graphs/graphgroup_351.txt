@@ -1,0 +1,69 @@
+['Training_Data_Packing', 'Training_Data_for_ResNet50', 'TTT_(Time_to_Train)_Calculation_for_BERT', 'Training_ResNet50', 'TTT_(Time_to_Train)_Calculation_for_ResNet50', 'Supported_Configurations', 'Convert_NumPy_dataset_to_raw_format.', 'Specify_the_preprocessed_data_paths_in_the_training_script.', 'the_Bug*', 'Steps/Code_to_Reproduce_the_Bug*', 'Model_checkpoint', 'Evaluation_thoroughness', '6._Additional_notes', 'NF5**8_(single_node)', 'Checkpoint', 'Prepare_enviroment', 'Dataset', 'Prepare_environment', 'Setup_Conda_Environment_and_Build_Dependencies', 'Run_Benchmark', 'Pretrained_backbone']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:TrainingDataPacking a :Analysis ;
+    hasBenchmark :TrainingResNet50 .
+
+:TrainingDataForResNet50 a :Model ;
+    hasBenchmark :TrainingResNet50 .
+
+:TimeToTrainCalculationForBERT a :Evaluation ;
+    hasBenchmark :TTT_(Time_to_Train)_Calculation_for_BERT .
+
+:TrainingResNet50 a :Model ;
+    hasBenchmark :TrainingResNet50 .
+
+:TimeToTrainCalculationForResNet50 a :Evaluation ;
+    hasBenchmark :TTT_(Time_to_Train)_Calculation_for_ResNet50 .
+
+:SupportedConfigurations a :Configuration ;
+    rdfs:subClassOf :Model .
+
+:ConvertNumPyDatasetToRawFormat a :Process ;
+    hasBenchmark :Convert_NumPy_dataset_to_raw_format. .
+
+:SpecifyPreprocessedDataPathsInTrainingScript a :Analysis ;
+    rdfs:subClassOf :Model .
+
+:Bug* a :Defect ;
+    rdfs:subClassOf :Model .
+
+:StepsCodeToReproduceTheBug* a :Exercise ;
+    rdfs:subClassOf :Defect .
+
+:ModelCheckpoint a :Configuration ;
+    rdfs:subClassOf :Process .
+
+:EvaluationThoroughness a :QualityAssurance ;
+    rdfs:subClassOf :Analysis .
+
+:AdditionalNotes a :Documentation ;
+    rdfs:subClassOf :MLPerfInference .
+
+:SingleNodeNF5**8 a :Configuration ;
+    rdfs:subClassOf :Model .
+
+:Checkpoint a :Process ;
+    hasBenchmark :ModelCheckpoint .
+
+:PrepareEnviroment a :Process ;
+    hasBenchmark :ConvertNumPyDatasetToRawFormat, :SpecifyPreprocessedDataPathsInTrainingScript. .
+
+:Dataset a :Resource ;
+    hasBenchmark :Dataset .
+
+:PrepareEnvironment a :Process ;
+    hasBenchmark :PrepareEnviroment .
+
+:SetupCondaEnvironmentAndBuildDependencies a :Process ;
+    hasBenchmark :ConvertNumPyDatasetToRawFormat, :SpecifyPreprocessedDataPathsInTrainingScript, :PrepareEnviroment. .
+
+:RunBenchmark a :Process ;
+    hasBenchmark :TrainingResNet50, :TimeToTrainCalculationForBERT, :TrainingResNet50, :TimeToTrainCalculationForResNet50, :ModelCheckpoint. .
+
+:PretrainedBackbone a :Model ;
+    hasBenchmark :ConvertNumPyDatasetToRawFormat, :SpecifyPreprocessedDataPathsInTrainingScript, :PrepareEnviroment, :RunBenchmark. .
+```

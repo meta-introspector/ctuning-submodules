@@ -1,0 +1,103 @@
+['GPT3-175B_PT', 'Installing_requirements', 'Prepare_checkpoint', 'Run_GPT3_on_HLS-Gaudi2-N48-PT_system', 'UNet3D', 'do_not_report_security_vulnerabilities_through_public_GitHub', 'Preferred_Languages', 'Model_Tests', 'Contributor_License_Agreement', 'DeepSpeed-Compression', 'DeepSpeed_Software_Suite', 'DeepSpeed_on_Azure', 'DeepSpeed_Adoption', 'Code_of_Conduct', 'Publications', 'this_step_frequently_hangs_when_connected_to_a_VPN_(including', 'Update_the_Readthedocs.io_API_documentation', 'all_processes_must_call_this_method_and_not_just_the', 'DeepSpeed_Configuration', 'Launching_DeepSpeed_Training', 'MPI_and_AzureML_Compatibility']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:GPT3-175B_PT a :Model, :MLPerfInference ;
+    :hasBenchmark mlperfInferencev1.0 .
+
+:Installing_requirements a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:Prepare_checkpoint a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:Run_GPT3_on_HLS-Gaudi2-N48-PT_system a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:UNet3D a :Model, :Benchmark ;
+    :hasBenchmark mlperfInferencev1.0 .
+
+:do_not_report_security_vulnerabilities_through_public_GitHub a owl:Class ;
+    rdfs:subClassOf :Standardization .
+
+:Preferred_Languages a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:Model_Tests a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:Contributor_License_Agreement a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:DeepSpeed-Compression a owl:Class ;
+    rdfs:subClassOf :Standardization .
+
+:DeepSpeed_Software_Suite a owl:Class ;
+    rdfs:subClassOf :Standardization .
+
+:DeepSpeed_on_Azure a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:DeepSpeed_Adoption a owl:Class ;
+    rdfs:subClassOf :Standardization .
+
+:Code_of_Conduct a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:Publications a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:this_step_frequently_hangs_when_connected_to_a_VPN_(including a owl:Class ;
+    rdfs:subClassOf :Issue .
+
+:Update_the_Readthedocs.io_API_documentation a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:all_processes_must_call_this_method_and_not_just_the a owl:Class ;
+    rdfs:subClassOf :Standardization .
+
+:DeepSpeed_Configuration a owl:Class ;
+    rdfs:subClassOf :Standardization .
+
+:Launching_DeepSpeed_Training a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:MPI_and_AzureML_Compatibility a owl:Class ;
+    rdfs:subClassOf :Issue .
+```

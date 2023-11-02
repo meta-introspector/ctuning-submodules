@@ -1,0 +1,70 @@
+['Download_the_Datasets', 'that_you_do_not_need_to_download_the_datasets_or_models_for', 'Downloading_the_Model_files', 'proceeding,_double_check_that_you_have_downloaded_both_the', 'Preprocessing_the_datasets_for_inference', 'your_system_is_not_listed_above,_you_must_add_your_system_to_our', 'Running_your_first_benchmark', 'enter_closed/HPE*._From_now_on,_all_of_the_commands_detailed_in', 'Launching_the_environment', 'notes_/*', 'Building_the_binaries', 'This_command_does_not_need_to_be_run_every_time_you_enter_the', 'Running_the_actual_benchmark', 'you_run_into_issues,_invalid_results,_or_would_like_to_improve_your', 'engines_is_only_required_if*', 'Building_and_running_engines_for_the_"High_Accuracy_Target"', 'META_is_config_valid()', 'META_search_callback()', 'Preprocessing_the_dataset_for_use', 'Downloading_/_obtaining_the_model', 'Optimizations']Based on the headings provided, here are some additional Turtle OWL statements and relationships that can be added to the ontology:
+```turtle
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# New nodes
+:Download the Datasets a owl:Object .
+:that_you_do_not_need_to_download_the_datasets_or_models_for a owl:NamedIndividual .
+:Downloading_the_Model_files a owl:Object .
+:proceeding,_double_check_that_you_have_downloaded_both_the a owl:NamedIndividual .
+:Preprocessing_the_datasets_for_inference a owl:Class ;
+    rdfs:subClassOf :Analysis .
+:your_system_is_not_listed_above,_you_must_add_your_system_to_our a owl:NamedIndividual .
+:Running_your_first_benchmark a owl:Object .
+:enter_closed/HPE*._From_now_on,_all_of_the_commands_detailed_in a owl:Object .
+:Launching_the_environment a owl:Object .
+:notes_* a owl:NamedIndividual .
+:Building_the_binaries a owl:Class ;
+    rdfs:subClassOf :Engineering .
+:This_command_does_not_need_to_be_run_every_time_you_enter_the a owl:Object .
+:Running_the_actual_benchmark a owl:Object .
+:you_run_into_issues,_invalid_results,_or_would_like_to_improve_your a owl:NamedIndividual .
+:engines_is_only_required_if* a owl:NamedIndividual .
+:Building_and_running_engines_for_the_"High_Accuracy_Target" a owl:Object .
+:META_is_config_valid() a owl:Function .
+:META_search_callback() a owl:Function .
+:Preprocessing_the_dataset_for_use a owl:Class ;
+    rdfs:subClassOf :Processing .
+:Downloading_* a owl:Object .
+:Obtaining_the_model a owl:NamedIndividual .
+:Optimizations a owl:Class ;
+    rdfs:subClassOf :Technique .
+```
+In this ontology, we have added new classes and objects related to the downloading, processing, and running of the benchmark. We have also created objects for each of the headings provided in the readmes from ctuning.org. Finally, we have added a new class for optimizations, which is not explicitly mentioned in the headings but could be relevant for improving performance.

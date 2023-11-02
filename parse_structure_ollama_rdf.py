@@ -80,13 +80,19 @@ for f in forest:
     group.append(f)
     count = count + 1
     
-    if len(group)> 40:
-        #print(group)
+    if len(group)> 20:
 
-        name = "group_{count}"
+        name = f"group_{count}"
         count = count + 1
         data = dollm(str(group))
         with open(f"graphs/graph{name}.txt", "w") as f:
             f.write(str(group))
             f.write(data)
         group =[]
+        
+name = f"group_{count}"
+count = count + 1
+data = dollm(str(group))
+with open(f"graphs/graph{name}.txt", "w") as f:
+    f.write(str(group))
+    f.write(data)

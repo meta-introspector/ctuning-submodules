@@ -1,0 +1,63 @@
+['Assess_Accuracy', 'LoadGen_over_the_Network', 'QDL_Additional_Methods', 'Example', 'Setup', 'RNNT', 'One_liner_to_do_an_end-to-end_submission_using_the_reference', 'Please_adjust_the_=target_qps=_value_as_per_your_system_performance', 'Below_we_give_an_/essential/_sequence_of_steps_that_should_result', 'Table_of_Contents', 'CK_can_normally_detect_available_Python_interpreters', 'Install_implicit_dependencies_via_pip', 'These_dependencies_are_/implicit/,_i.e.\xa0CK_will_not_try_to_satisfy', 'Install_explicit_dependencies_via_CK_(also_via_=pip=,_but_register', '3d-unet', 'Retinanet', 'Validate_accuracy_for_ssd-mobilenet_and_ssd-resnet34_benchmarks', 'Datasets', 'This_part_is_only_necessary_if_the_accuracy_check_in_Part_II', 'each_target_accuracy_metric,_the_delta_between_the_two_accuracy', '=generate_final_report.py=']```css
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:Assess_Accuracy a :Analysis .
+:LoadGen_over_the_Network a :Process .
+:QDL_Additional_Methods a :Method .
+:Example a :Model .
+:Setup a :Process .
+:RNNT a :Method .
+:One_liner_to_do_an_end-to-end_submission_using_the_reference a :Command .
+:Please_adjust_the_=target_qps=_value_as_per_your_system_performance a :Instruction .
+:Below_we_give_an_/essential/_sequence_of_steps_that_should_result a :Workflow .
+:Table_of_Contents a :Documentation .
+:CK_can_normally_detect_available_Python_interpreters a :Method .
+:Install_implicit_dependencies_via_pip a :Process .
+:These_dependencies_are_/implicit/,_i.e.\xa0CK_will_not_try_to_satisfy a :Instruction .
+:Install_explicit_dependencies_via_CK_(also_via_=pip=,_but_register a :Process .
+:3d-unet a :Model .
+:Retinanet a :Model .
+:Validate_accuracy_for_ssd-mobilenet_and_ssd-resnet34_benchmarks a :Benchmark .
+:Datasets a :Analysis .
+:This_part_is_only_necessary_if_the_accuracy_check_in_Part_II a :Instruction .
+:each_target_accuracy_metric,_the_delta_between_the_two_accuracy a :Method .
+=generate_final_report.py= a :Command .
+```

@@ -1,0 +1,72 @@
+['Sparse_Pruning', 'Row_Pruning', 'Head_Pruning', 'Channel_Pruning', 'Checkpoint_options', 'Data_Type_options', 'Single-GPU,_Multi-GPU,_and_Multi-Node_Training', 'Pipeline_Parallelism', 'Integration_with_Megatron-LM', 'The_Zero_Redundancy_Optimizer', 'Contiguous_Memory_Optimization_(CMO)', 'ZeRO-Offload', 'Communication_Overlapping', 'Training_Features', 'Automatic_loss_scaling_with_mixed_precision', 'Training_Optimizers', 'Memory-Efficient_Training_with_ZeRO_Optimizer', 'Training_Agnostic_Checkpointing', '1Cycle_Learning_Rate_Schedule', 'Simplified_Data_Loader', 'Communication_Logging']```
+:MLPerfInferencev1.0 a owl:NamedIndividual ;
+	hasBenchmark :mlperfInferencev1.0 .
+
+:Sparse_Pruning a :Exploration,
+    rdfs:subClassOf :Analysis ;
+	hasBenchmark :mlperfInferencev1.0 .
+
+:Row_Pruning a :Exploration,
+    rdfs:subClassOf :Analysis ;
+	hasBenchmark :mlperfInferencev1.0 .
+
+:Head_Pruning a :Exploration,
+    rdfs:subClassOf :Analysis ;
+	hasBenchmark :mlperfInferencev1.0 .
+
+:Channel_Pruning a :Exploration,
+    rdfs:subClassOf :Analysis ;
+	hasBenchmark :mlperfInferencev1.0 .
+
+:Checkpoint_options a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Data_Type_options a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Single-GPU,_Multi-GPU,_and_Multi-Node_Training a owl:NamedIndividual ;
+	hasBenchmark :mlperfInferencev1.0 ,
+	isTypeOf :Workflow .
+
+:Pipeline_Parallelism a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Integration_with_Megatron-LM a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:The_Zero_Redundancy_Optimizer a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Contiguous_Memory_Optimization_(CMO) a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:ZeRO-Offload a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Communication_Overlapping a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Training_Features a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Automatic_loss_scaling_with_mixed_precision a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Training_Optimizers a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Memory-Efficient_Training_with_ZeRO_Optimizer a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Training_Agnostic_Checkpointing a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:1Cycle_Learning_Rate_Schedule a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Simplified_Data_Loader a owl:Class,
+    rdfs:subClassOf :Parameter .
+
+:Communication_Logging a owl:Class,
+    rdfs:subClassOf :Parameter .
+```

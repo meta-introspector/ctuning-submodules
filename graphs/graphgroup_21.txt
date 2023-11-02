@@ -1,0 +1,67 @@
+['we_have_moved_the_main_AE_pages', 'Description', 'Packed_data', 'Running_the_model', 'Example_2', 'Description_of_how_the_=results_text.tar.gz=_file_was_prepared', 'Requirements', '2._Directions', 'Steps_to_download_data', '=dev-clean-wav/=_*_=dev-other-wav/=_*_=test-clean-wav/=_*', 'NVIDIA_DGX_A100_(single_node)', 'Alternative_launch_with_nvidia-docker', 'Hyperparameter_settings', '3._Dataset/Environment', 'Test_data_order', '4._Model', 'Loss_function', '5._Quality', 'Publication/Attribution', 'Steps_to_launch_training_on_multiple_nodes', '3._Quality']
+:Model a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:MainAEPage a :AutomatedDesignSpaceExploration,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Description a :Report,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:PackedData a :PackedData,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:RunningTheModel a :Workflow,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Example2 a :Exploration,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:DescriptionOfHowTheResultsTextTarGzFileWasPrepared a :Report,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Requirements a :Standardization,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:2Directions a :Standardization,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:StepsToDownloadData a :Workflow,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:DevCleanWavAsteriskDevOtherWavAsteriskTestCleanWavAsterisk a :PackedData,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:NVIDIA DGX A100 (single node) a :Standardization,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:AlternativeLaunchWithNVIDIADocker a :Workflow,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:HyperparameterSettings a :Standardization,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:3Directions a :Standardization,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:StepsToLaunchTrainingOnMultipleNodes a :Workflow,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:3Quality a :Standardization,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .

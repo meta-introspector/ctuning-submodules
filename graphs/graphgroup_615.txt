@@ -1,0 +1,25 @@
+['TensorFlow_preprocessing', 'TensorFlow_preprocessing_(*NOT_APPLICABLE!*)', 'Example__universal_OpenCV_preprocessing_(default),_MobileNet', 'Install_the_ResNet_model', 'Run_the_ONNX_Image_Classification_client', 'MobileNet,_NCHW', 'Install_the_quantized_finetuned_model_(courtesy_of', 'Run_the_TensorFlow_(Python)_Object_Detection_client_on_50_images', 'When_using_the_batch_count_of_*N*,_the_program_runs_object', 'Currently_we_have_no_TFLite_1.13.1_prebuilt_packages._Please', 'Install_the_SSD-MobileNet_models_for_TFLite', 'This_TFLite_model_has_been', 'Compile_the_TFLite_Object_Detection_client', 'We_are_working_on_resolving_the_difference_in_mAP_between_the_TF', 'Option_3__user-space_installation_via_CK_(under_=$HOME=_and', 'Install_the_COCO_2017_validation_dataset_(5,000_images)', 'If_you_have_previously_installed_the_COCO_2017_validation_dataset', 'Preprocess_the_COCO_2017_validation_dataset_(first_50_images)', 'COCO_2017_validation_dataset', 'delta_between_the_two_accuracy_metrics_should_be_within_1%_for_the', 'Part_III___Compare_performance_of_TEST04-A_with_TEST04-B']
+* TensorFlow\_preprocessing a :MLPerfInference ;
+	+ hasBenchmark mlperfInferencev1.0 .
+* MobileNet, NCHW a :Model ;
+	+ hasBenchmark mlperfInferencev1.0 .
+* Run\_the\_ONNX\_Image\_Classification\_client a :Process ;
+	+ hasBenchmark mlperfInferencev1.0 .
+* Install\_the\_SSD-MobileNet\_models\_for\_TFLite a :Standardization ;
+	+ hasBenchmark mlperfInferencev1.0 .
+* Compile\_the\_TFLite\_Object\_Detection\_client a :MLPerfInference ;
+	+ hasBenchmark mlperfInferencev1.0 .
+* When\_using\_the\_batch\_count\_of\*N*, the\_program\_runs\_object a :Analysis ;
+	+ hasBenchmark mlperfInferencev1.0 .
+* We\_are\_working\_on\_resolving\_the\_difference\_in\_mAP\_between\_the\_TF a :Standardization ;
+	+ hasBenchmark mlperfInferencev1.0 .
+* Install\_the\_COCO\_2017\_validation\_dataset \_(5,000\_images) a :MLPerfInference ;
+	+ hasBenchmark mlperfInferencev1.0 .
+* If\_you\_have\_previously\_installed\_the\_COCO\_2017\_validation\_dataset a :Exploration ;
+	+ hasBenchmark mlperfInferencev1.0 .
+* Preprocess\_the\_COCO\_2017\_validation\_dataset \_(first\_50\_images) a :Standardization ;
+	+ hasBenchmark mlperfInferencev1.0 .
+* delta\_between\_the\_two\_accuracy\_metrics\_should\_be\_within\_1%\_for\_the a :MLPerfInference ;
+	+ hasBenchmark mlperfInferencev1.0 .
+
+These statements can be added to the existing ontology to further define and relate the different nodes extracted from the readmes. The ontology now includes a total of 25 classes and 4 objects.

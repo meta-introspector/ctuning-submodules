@@ -1,0 +1,176 @@
+['Embedding_Table_Sorting_and_Splitting', 'Instructions_for_Auditors', 'Preprocessing_the_dataset_for_usage', 'Soft_Dropping', 'Goal_of_this_Benchmark', 'Preprocessing_the_dataset', 'Generating_model_binaries_and_running_INT8_calibration', 'Sequence_Splitting', 'Instructions_for_Audits', 'Model_Source', 'Lower_Precision', 'Preprocessing_data', 'Replace_ReLU6_with_ReLU', 'Removal_of_Softmax', 'Calibration', 'TransposedConvolution_->_Convolution_+_PixelShuffle_Conversion', 'Training_(MobileNetV1-SSD)**', 'Quantization_(ResNet50)**', 'enter_closed/NVIDIA*._From_now_on,_all_of_the_commands_detailed', 'Launching_the_environment_on_a_MIG_(Multi-Instance_GPU)_instance', '=g292_z43_q16=']```css
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:Embedding_Table_Sorting_and_Splitting <http://ctuning.org/ml-benchmark-ontology#Embedding_Table_Sorting_and_Splitting> a owl:NamedIndividual ;
+    rdfs:label "Embedding_Table_Sorting_and_Splitting"@en .
+
+:Instructions_for_Auditors <http://ctuning.org/ml-benchmark-ontology#Instructions_for_Auditors> a owl:NamedIndividual ;
+    rdfs:label "Instructions_for_Auditors"@en .
+
+:Preprocessing_the_dataset_for_usage <http://ctuning.org/ml-benchmark-ontology#Preprocessing_the_dataset_for_usage> a owl:NamedIndividual ;
+    rdfs:label "Preprocessing_the_dataset_for_usage"@en .
+
+:Soft_Dropping <http://ctuning.org/ml-benchmark-ontology#Soft_Dropping> a owl:NamedIndividual ;
+    rdfs:label "Soft_Dropping"@en .
+
+:Goal_of_this_Benchmark <http://ctuning.org/ml-benchmark-ontology#Goal_of_this_Benchmark> a owl:NamedIndividual ;
+    rdfs:label "Goal_of_this_Benchmark"@en .
+
+:Preprocessing_the_dataset <http://ctuning.org/ml-benchmark-ontology#Preprocessing_the_dataset> a owl:NamedIndividual ;
+    rdfs:label "Preprocessing_the_dataset"@en .
+
+:Generating_model_binaries_and_running_INT8_calibration <http://ctuning.org/ml-benchmark-ontology#Generating_model_binaries_and_running_INT8_calibration> a owl:NamedIndividual ;
+    rdfs:label "Generating_model_binaries_and_running_INT8_calibration"@en .
+
+:Sequence_Splitting <http://ctuning.org/ml-benchmark-ontology#Sequence_Splitting> a owl:NamedIndividual ;
+    rdfs:label "Sequence_Splitting"@en .
+
+:Instructions_for_Audits <http://ctuning.org/ml-benchmark-ontology#Instructions_for_Audits> a owl:NamedIndividual ;
+    rdfs:label "Instructions_for_Audits"@en .
+
+:Model_Source <http://ctuning.org/ml-benchmark-ontology#Model_Source> a owl:NamedIndividual ;
+    rdfs:label "Model_Source"@en .
+
+:Lower_Precision <http://ctuning.org/ml-benchmark-ontology#Lower_Precision> a owl:NamedIndividual ;
+    rdfs:label "Lower_Precision"@en .
+
+:Preprocessing_data <http://ctuning.org/ml-benchmark-ontology#Preprocessing_data> a owl:NamedIndividual ;
+    rdfs:label "Preprocessing_data"@en .
+
+:Replace_ReLU6_with_ReLU <http://ctuning.org/ml-benchmark-ontology#Replace_ReLU6_with_ReLU> a owl:NamedIndividual ;
+    rdfs:label "Replace_ReLU6_with_ReLU"@en .
+
+:Removal_of_Softmax <http://ctuning.org/ml-benchmark-ontology#Removal_of_Softmax> a owl:NamedIndividual ;
+    rdfs:label "Removal_of_Softmax"@en .
+
+:Calibration <http://ctuning.org/ml-benchmark-ontology#Calibration> a owl:NamedIndividual ;
+    rdfs:label "Calibration"@en .
+
+:Training_(MobileNetV1-SSD)** <http://ctuning.org/ml-benchmark-ontology#Training_(MobileNetV1-SSD)**> a owl:NamedIndividual ;
+    rdfs:label "Training_(MobileNetV1-SSD)**"@en .
+
+:Quantization_(ResNet50)** <http://ctuning.org/ml-benchmark-ontology#Quantization_(ResNet50)**> a owl:NamedIndividual ;
+    rdfs:label "Quantization_(ResNet50)**"@en .
+
+:enter_closed/NVIDIA*._From_now_on,_all_of_the_commands_detailed <http://ctuning.org/ml-benchmark-ontology#enter_closed/NVIDIA*._From_now_on,_all_of_the_commands_detailed> a owl:NamedIndividual ;
+    rdfs:label "enter_closed/NVIDIA*._From_now_on,_all_of_the_commands_detailed"@en .
+
+:Launching_the_environment_on_a_MIG_(Multi-Instance_GPU)_instance <http://ctuning.org/ml-benchmark-ontology#Launching_the_environment_on_a_MIG_(Multi-Instance_GPU)_instance> a owl:NamedIndividual ;
+    rdfs:label "Launching_the_environment_on_a_MIG_(Multi-Instance_GPU)_instance"@en .
+
+:=g292_z43_q16= <http://ctuning.org/ml-benchmark-ontology#=g292_z43_q16=> a owl:NamedIndividual ;
+    rdfs:label "=g292_z43_q16="@en .
+
+Here are some possible turtle OWL statements and relationships based on the extracted nodes:
+```css
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:Model a :MLPerfInference,
+        :Benchmark,
+        owl:NamedIndividual .
+
+:Dataset a :Report .
+<http://ctuning.org/ml-benchmark-ontology/#Embedding_Table_Sorting_and_Splitting> a :Dataset ;
+    rdfs:subClassOf :Sequence_Splitting .
+
+:Preprocessing a :Process,
+        owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Preprocessing_the_dataset_for_usage> a :Preprocessing ;
+    rdfs:subClassOf :Sequence_Splitting .
+
+:Embedding a :Analysis,
+        owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Soft_Dropping> a :Embedding ;
+    rdfs:subClassOf :Sequence_Splitting .
+
+:Sequence_Splitting a :Analysis,
+        owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Sequence_Splitting> a :Sequence_Splitting ;
+    rdfs:subClassOf :Sequence_Splitting .
+
+:Calibration a :Process,
+        owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Generating_model_binaries_and_running_INT8_calibration> a :Calibration ;
+    rdfs:subClassOf :Soft_Dropping .
+
+:Instruction a :Process,
+        owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Instructions_for_Auditors> a :Instruction ;
+    rdfs:subClassOf :Calibration .
+
+:MLPerfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#ReproducibilityReportMLPerfInferencev1.1> a :ReproducibilityReport ;
+    rdfs:subClassOf :MLPerfInferencev1.0 .
+
+:Instructions_for_Auditors a :Process,
+        owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Model_Source> a :Instructions_for_Auditors ;
+    rdfs:subClassOf :ReproducibilityReportMLPerfInferencev1.1 .
+
+:LowerPrecision a :Process,
+        owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Replace_ReLU6_with_ReLU> a :LowerPrecision ;
+    rdfs:subClassOf :Instructions_for_Auditors .
+
+:Removal_of_Softmax a :Process,
+        owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Calibration> a :Removal_of_Softmax ;
+    rdfs:subClassOf :Instructions_for_Auditors .
+
+:TransposedConvolution_->_Convolution_+_PixelShuffle_Conversion a :Analysis,
+        owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Training_(MobileNetV1-SSD)**> a :TransposedConvolution_->_Convolution_+_PixelShuffle_Conversion ;
+    rdfs:subClassOf :Replace_ReLU6_with_ReLU .
+
+:Workflow a owl:Class,
+        rdfs:subClassOf owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Training_(MobileNetV1-SSD)**> a :Workflow ;
+    rdfs:subClassOf :Training_(MobileNetV1-SSD)** .
+
+:Standardization a owl:Class,
+        rdfs:subClassOf owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Generating_model_binaries_and_running_INT8_calibration> a :Standardization ;
+    rdfs:subClassOf :Calibration .
+
+:MLPerfInference a owl:Class,
+        rdfs:subClassOf owl:NamedIndividual .
+<http://ctuning.org/ml-benchmark-ontology/#Calibration> a :MLPerfInference ;
+    rdfs:subClassOf :Training_(MobileNetV1-SSD)** .

@@ -1,0 +1,96 @@
+['Alternative_approach__Host_some_model_weights_in_GPU_memory', 'Model_Scaling_on_1_GPU', 'Impact_of_generation_output_length', 'Using_ZeRO-Inference', 'and_allow_*large_batch_sizes*._Alternative', 'How_to_use_ZeRO-Inference', 'Conclusion', '*_*gradient_accumulation*_*_number_of', '[integer]', 'Optimizer_Parameters', '[dictionary]', 'Scheduler_Parameters', 'Communication_options', '[boolean]', '[float]', 'FP16_training_options', 'BFLOAT16_training_options', 'Automatic_mixed_precision_(AMP)_training_options', 'this_mode_cannot_be_combined_with_the_=fp16=_mode_described', 'params/*__[various]', 'Gradient_Clipping']```less
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Model a owl:Class ;
+    rdfs:subClassOf :MLPerfInference.
+
+:Hosting a owl:Class ;
+    rdfs:subClassOf :Container.
+
+:Weights a owl:Class ;
+    rdfs:subClassOf :Variable.
+
+:GPUMemory a owl:Class ;
+    rdfs:subClassOf :Memory.
+
+:ModelScaling a owl:Class ;
+    rdfs:subClassOf :Exploration.
+
+:GenerationOutputLength a owl:Class ;
+    rdfs:subClassOf :Variable.
+
+:ZeROInference a owl:Class ;
+    rdfs:subClassOf :MLPerfInference.
+
+:BatchSize a owl:Class ;
+    rdfs:subClassOf :Exploration.
+
+:GradientAccumulationNumber a owl:Class ;
+    rdfs:subClassOf :Exploration.
+
+:OptimizerParameters a owl:Class ;
+    rdfs:subClassOf :Exploration.
+
+:SchedulerParameters a owl:Class ;
+    rdfs:subClassOf :Exploration.
+
+:CommunicationOptions a owl:Class ;
+    rdfs:subClassOf :Exploration.
+
+:FP16TrainingOptions a owl:Class ;
+    rdfs:subClassOf :Exploration.
+
+:BFLOAT16TrainingOptions a owl:Class ;
+    rdfs:subClassOf :Exploration.
+
+:AutomaticMixedPrecisionTrainingOptions a owl:Class ;
+    rdfs:subClassOf :Exploration.
+
+:ModelWithHostedWeights a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 .
+
+:ModelWithScaling a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type ModelScaling .
+
+:ModelWithGenerationOutputLength a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type GenerationOutputLength .
+
+:ModelWithZeROInference a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type ZeROInference .
+
+:ModelWithBatchSize a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type BatchSize .
+
+:ModelWithGradientAccumulationNumber a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type GradientAccumulationNumber .
+
+:ModelWithOptimizerParameters a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type OptimizerParameters .
+
+:ModelWithSchedulerParameters a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type SchedulerParameters .
+
+:ModelWithCommunicationOptions a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type CommunicationOptions .
+
+:ModelWithFP16TrainingOptions a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type FP16TrainingOptions .
+
+:ModelWithBFLOAT16TrainingOptions a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type BFLOAT16TrainingOptions .
+
+:ModelWithAutomaticMixedPrecisionTrainingOptions a owl:NamedIndividual ;
+    hasBenchmark mlperfInferencev1.0 ;
+    rdf:type AutomaticMixedPrecisionTrainingOptions .
+```

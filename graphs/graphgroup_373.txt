@@ -1,0 +1,67 @@
+['NVIDIA_DGX_H100_(single_node)', 'Build_the_container_and_push_to_a_docker_registry.', 'Running_training', 'Alternative_launch_with_docker', 'Clean_up', 'Decide_benchmark_name*_|_name_|_framework_|_acc._|_AUC_|_dataset', 'Disclaimer', 'Prerequisites_and_Installation', 'Calibration_set', 'Running_the_benchmark', 'GPU', 'Examples_for_testing', 'Usage', 'License', 'Take_into_account_that_we_only_update_the_published_wheels_after', 'Testing_your_Installation', 'Installation_-_C++', 'Quick_start__Loadgen_Over_the_Network', 'The_MLPerf_spec_is_/always/_right._Please_file_a_LoadGen_bug_so_it', 'Q__How_can_I_file_a_bug?', 'On_GitHub__https_//github.com/mlcommons/inference/issues/new']`<http://ctuning.org/ml-benchmark-ontology#NVIDIA_DGX_H100_(single_node)> rdf:type <http://ctuning.org/ml-benchmark-ontology#Container>. <http://ctuning.org/ml-benchmark-ontology#NVIDIA_DGX_H100_(single_node)>@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+<http://ctuning.org/ml-benchmark-ontology#Container> a owl:Class ;
+    rdfs:subClassOf owl:NamedIndividual .
+
+<http://ctuning.org/ml-benchmark-ontology#Build_the_container_and_push_to_a_docker_registry.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#PushToDockerRegistry>.
+
+<http://ctuning.org/ml-benchmark-ontology#Running_training.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#Training>.
+
+<http://ctuning.org/ml-benchmark-ontology#Alternative_launch_with_docker.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#LaunchWithDocker>.
+
+<http://ctuning.org/ml-benchmark-ontology#Clean_up.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#CleanUp>.
+
+<http://ctuning.org/ml-benchmark-ontology#Decide_benchmark_name*_|_name_|_framework_|_acc._|_AUC_|_dataset.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#BenchmarkName>.
+
+<http://ctuning.org/ml-benchmark-ontology#Disclaimer.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#Disclaimer>.
+
+<http://ctuning.org/ml-benchmark-ontology#Prerequisites_and_Installation.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#PrerequisitesAndInstallation>.
+
+<http://ctuning.org/ml-benchmark-ontology#Calibration_set.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#CalibrationSet>.
+
+<http://ctuning.org/ml-benchmark-ontology#Running_the_benchmark.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#RunBenchmark>.
+
+<http://ctuning.org/ml-benchmark-ontology#GPU.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#GPU>.
+
+<http://ctuning.org/ml-benchmark-ontology#Examples_for_testing.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#TestingExamples>.
+
+<http://ctuning.org/ml-benchmark-ontology#Usage.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#UsageInstructions>.
+
+<http://ctuning.org/ml-benchmark-ontology#License.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#LicenseInfo>.
+
+<http://ctuning.org/ml-benchmark-ontology#Take_into_account_that_we_only_update_the_published_wheels_after.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#TakeIntoAccountUpdates>.
+
+<http://ctuning.org/ml-benchmark-ontology#Testing_your_Installation.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#TestYourInstallation>.
+
+<http://ctuning.org/ml-benchmark-ontology#Installation_-_C++.> a owl:ObjectProperty ;
+    rdfs:domain <http://ctuning.org/ml-benchmark-ontology#Container> ;
+    rdfs:range <http://ctuning.org/ml-benchmark-ontology#InstallationInstructionsC

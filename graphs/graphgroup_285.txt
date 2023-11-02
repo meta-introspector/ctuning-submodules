@@ -1,0 +1,83 @@
+['ZeRO_Optimizations_for_FP16_Training', '*cpu_offload*_is_deprecated_and_will_be_removed_in_future,', 'Parameter_offloading', 'Optimizer_offloading', 'Asynchronous_I/O', 'Logging', 'Autotuning', '[string]', '[int]', 'Flops_Profiler', 'Activation_Checkpointing', 'Sparse_Attention', 'Curriculum_Learning', '[list_of_integer]', 'Monitoring_Module_(TensorBoard,_WandB,_CSV)', 'Elastic_Training_Config_(V0.1_and_V0.2)', 'Compression', '*Compression*_has_seven_different_components,_including_layer', 'Layer_Reduction', 'Weight_Quantization', 'Activation_Quantization']
+Based on the extracted nodes, here are some additional OWL statements and relationships that can be added to the ontology:
+```less
+@prefix ctuning: <http://ctuning.org/> .
+
+# Add classes
+ctuning:ZeRO_Optimizations_for_FP16_Training a owl:Class ;
+    rdfs:subClassOf :OptimizationStrategy .
+
+ctuning:cpu_offload a owl:Class ;
+    rdfs:subClassOf ctuning:ZeRO_Optimizations_for_FP16_Training.
+
+ctuning:Parameter_offloading a owl:Class ;
+    rdfs:subClassOf ctuning:ZeRO_Optimizations_for_FP16_Training.
+
+ctuning:Optimizer_offloading a owl:Class ;
+    rdfs:subClassOf ctuning:ZeRO_Optimizations_for_FP16_Training.
+
+ctuning:Asynchronous_I/O a owl:Class ;
+    rdfs:subClassOf ctuning:ZeRO_Optimizations_for_FP16_Training.
+
+ctuning:Logging a owl:Class ;
+    rdfs:subClassOf ctuning:ZeRO_Optimizations_for_FP16_Training.
+
+ctuning:Autotuning a owl:Class ;
+    rdfs:subClassOf ctuning:ZeRO_Optimizations_for_FP16_Training.
+
+ctuning:Monitoring_Module_(TensorBoard,_WandB,_CSV) a owl:Class ;
+    rdfs:subClassOf ctuning:ZeRO_Optimizations_for_FP16_Training.
+
+ctuning:Elastic_Training_Config_(V0.1_and_V0.2) a owl:Class ;
+    rdfs:subClassOf ctuning:ZeRO_Optimizations_for_FP16_Training.
+
+ctuning:Compression a owl:Class ;
+    rdfs:subClassOf ctuning:ZeRO_Optimizations_for_FP16_Training.
+
+ctuning:Activation_Checkpointing a owl:Class ;
+    rdfs:subClassOf ctuning:Compression.
+
+ctuning:Sparse_Attention a owl:Class ;
+    rdfs:subClassOf ctuning:Compression.
+
+ctuning:Curriculum_Learning a owl:Class ;
+    rdfs:subClassOf ctuning:Compression.
+
+ctuning:Flops_Profiler a owl:Class ;
+    rdfs:subClassOf ctuning:ZeRO_Optimizations_for_FP16_Training.
+
+# Add properties
+ctuning:mlperfInferencev1.0 hasBenchmark mlperfInferencev1.0 .
+
+ctuning:reproducibilityReportMLPerfInferencev1.1 hasBenchmark mlperfInferencev1.0 .
+
+ctuning:ZeRO_Optimizations_for_FP16_Training hasBenchmark mlperfInferencev1.0 .
+
+# Add relationships
+ctuning:cpu_offload isDeprecatedBy ctuning:Parameter_offloading ;
+    rdfs:subClassOf ctuning:cpu_offload.
+
+ctuning:Parameter_offloading hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Optimizer_offloading hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Asynchronous_I/O hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Logging hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Autotuning hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Monitoring_Module_(TensorBoard,_WandB,_CSV) hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Elastic_Training_Config_(V0.1_and_V0.2) hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Compression hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Activation_Checkpointing hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Sparse_Attention hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Curriculum_Learning hasBenchmark mlperfInferencev1.0 .
+
+ctuning:Flops_Profiler hasBenchmark mlperfInferencev1.0 .
+```

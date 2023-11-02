@@ -1,0 +1,60 @@
+['Currently,_DeepSpeed_Sparse_Attention_can_be_used_only_on_NVIDIA', 'Sparse_attention_modules', 'How_to_use_sparse_attention_with_DeepSpeed_launcher', 'For_large_model_training,_see', 'AlexNet', 'the_=lambda=_in_the_middle_of_=layers=_above_is_not_a', 'Inputs_and_Outputs', 'The_pipeline_engine_expects_data_loaders_to_return_a_=tuple=_of', 'out!*_The_pipeline_engine_/pulls/_data_from_an_iterator_instead', 'Advanced_Topics', 'DeepSpeed_now_supports_PreLayerNorm_as_the_default_way_for', 'Fine-tuning_with_DeepSpeed_on_GLUE_Tasks', 'On_08/15/2022_we_have_added_another_BERT', 'Pre-training_Bing_BERT_without_DeepSpeed', '/Downloading_and_pre-processing_instructions_are_coming_soon./', 'Running_the_Bing_BERT_model', 'Enabling_DeepSpeed', 'Training', 'Checkpoints_Saving_&_Loading', 'Start_Training', 'Reproducing_Fastest_BERT_Training_Results_with_DeepSpeed']
+Based on the nodes extracted from the readmes, here are some additional OWL statements and relationships that could be added to the ontology:
+```sql
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:DeepSpeed a :AutomatedDesignSpaceExploration ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:SparseAttentionModule a :Standardization ;
+    rdfs:label "Sparse Attention Module"@en .
+
+:DeepSpeedLauncher a :Workflow ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:LargeModelTraining a :Standardization ;
+    rdfs:label "Large Model Training"@en .
+
+:AlexNet a :Model ;
+    rdfs:subClassOf :DeepLearningModel .
+
+:PreLayerNorm a :Standardization ;
+    rdfs:label "Pre-Layer Norm"@en .
+
+:InputsAndOutputs a :Standardization ;
+    rdfs:label "Inputs and Outputs"@en .
+
+:DataLoader tupleOf a :Model ;
+    rdfs:subClassOf :Evaluation .
+
+:PullingDataFromIterator a :AdvancedTopic ;
+    rdfs:label "Pulling Data from Iterator"@en .
+
+:PreTrainingBingBERTWithoutDeepSpeed a :Standardization ;
+    rdfs:label "Pre-Training Bing BERT without DeepSpeed"@en .
+
+:DownloadingAndPreprocessingInstructions a :Benchmark ;
+    rdfs:subClassOf :Evaluation .
+
+:RunningBingBERTModel a :Standardization ;
+    rdfs:label "Running Bing BERT Model"@en .
+
+:EnablingDeepSpeed a :AdvancedTopic ;
+    rdfs:label "Enabling DeepSpeed"@en .
+
+:Training a :Standardization ;
+    rdfs:label "Training"@en .
+
+:CheckpointsSavingAndLoading a :Standardization ;
+    rdfs:label "Checkpoints Saving and Loading"@en .
+
+:StartTraining a :Benchmark ;
+    rdfs:subClassOf :Evaluation .
+
+:ReproducingFastestBERTTrainingResultsWithDeepSpeed a :Standardization ;
+    rdfs:label "Reproducing Fastest BERT Training Results with DeepSpeed"@en .
+```
+Note that some of these statements and relationships may already exist in the ontology, depending on how they were initially defined. However, based on the nodes extracted from the readmes, it seems like there are several new concepts and relationships that could be added to the ontology to better capture the information being presented.

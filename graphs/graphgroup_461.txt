@@ -1,0 +1,92 @@
+['HPE-NVIDIA_MLPerf_Quantization', 'Make_sure_your_performance_tuning_changes_(i.e.\xa0any_change', 'Difference_system_configurations_that_use_the_same_GPU_configuration', 'that_this_flag_is_only_supported_/_allowed_on_the_following', 'you_wish_to_use_both_start_from_device_and_end_on_device,_you_must', 'in_order_to_use_start_from_device_or_end_on_device_in_a', 'Using_NUMA_configurations', 'Fixing_INVALID_results', 'Tuning_parameters_for_better_performance', 'What_if_I_have_permission_issues_when_I_attempt_to_write_to_the', 'Before_you_continue', 'an_eye_out_for_this_announcement,_as_it_will_also_include_a', 'submission_that_does_not_use_one_of_these_commit_hashes_will_not_be', 'Minimal_Query_Count', 'The_way_audit_tests_function_is_by_placing_an_=audit.conf=', 'Truncating_the_Accuracy_Logs', 'Make_sure_that_no_files_and_directories_exist_in_the_project', 'The', 'Packaging_your_project_for_submission', 'MLPerf_Inference_Policies_and_Terminology', 'that_once_the_scratch_space_is_setup_and_all_the_data,_models,_and']```css
+:MLPerfInferencev1.0 a :MLPerfInference, 
+       owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:make_sure_performance_tuning_changes a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:difference_system_configurations_same_GPU_configuration a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:restricted_on_following_flag a owl:DataType ;
+    owl:datatype xsd:string .
+
+:start_from_device_and_end_on_device a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:in_order_to_use_start_from_device_or_end_on_device a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:using_numa_configurations a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:fixing_invalid_results a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :ReproducibilityReport .
+
+:tuning_parameters_for_better_performance a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:permission_issues_writing_to_project a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:before_you_continue a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:announcement_includes_submission a owl:DataType ;
+    owl:datatype xsd:string .
+
+:submission_does_not_use_one_of_commit_hashes a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:minimal_query_count a owl:DataType ;
+    owl:datatype xsd:int .
+
+:audit_tests_function_placing_audit.conf a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:truncating_accuracy_logs a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:ensure_no_files_and_directories_exist_in_project a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:packaging_submission a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:mlperf_inference_policies_and_terminology a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+
+:scratch_space_setup_data_models_and_all a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Exploration .
+```

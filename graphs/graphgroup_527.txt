@@ -1,0 +1,38 @@
+['Performance', '=g292_z43_q16=_[optional]', 'Power', '=r282_z93_q5=', '=r282_z93_q5=_[optional]', 'precision_fp16', '=r282_z93_q8=', '=r282_z93_q8=_[optional]', 'Fixed_SOC_Pstate_=_P0', 'DF_Common_Options', 'ACPI_SRAT_L3_Cche_As_NUMA_Domain_=_Disabled', 'CPU_Common_Options', 'L2_Up/Down_Prefetcher_=_Auto', 'Management_Firmware_Settings', 'Power_(full)', 'Run_the_below_commands_with_=sudo=_or_as_superuser.', 'Generic', '=g++=', '=r282_z93_q5=__use_QAIC_settings_(ECC_on)', 'Please_detect_only_one_Python_interpreter._We_recommend_Python', 'Python_v3.8']```less
+# Define classes
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+:Model a :MLPerfInference,
+       owl:NamedIndividual .
+
+:Parameter a :MLPerfInferenceParameter ;
+
+:Option a :MLPerfInferenceOption ;
+    rdfs:label "=r282_z93_q5=" ;
+
+:Value a :MLPerfInferenceValue ;
+
+# Define relationships between classes and parameters
+:Model
+  @prefix owl: <http://www.w3.org/2002/07/owl#> .
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+  hasParameter :Parameter .
+  hasOption :Option .
+  hasValue :Value .
+
+# Define relationships between classes and parameters with optional values
+:Model
+  @prefix owl: <http://www.w3.org/2002/07/owl#> .
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+  hasOptionalParameter :Parameter .
+  hasOptionalOption :Option .
+  hasOptionalValue :Value .
+
+# Define relationships between classes and parameters with non-optional values
+:Model
+  @prefix owl: <http://www.w3.org/2002/07/owl#> .
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+  hasMandatoryParameter :Parameter .
+  hasMandatoryOption :Option .
+  hasMandatoryValue :Value .
+```

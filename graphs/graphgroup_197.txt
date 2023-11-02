@@ -1,0 +1,20 @@
+['Train_scripts', 'DeepSpeed_Evaluation_using_GPT-2', '1.3_1-bit_LAMB_Algorithm', 'out!*_1-bit_LAMB_relies_on_an_compression_error_compensation', '2._BERT_Pre-training_with_1-bit_LAMB', '1._=cycle_min_mom=__minimum_momentum_in_cycle_phase_2.', 'Required_Model_Configuration_Changes', '*PyTorch_model*', 'Batch_Scaling_Example', 'This_tutorial_is_updated_on_03/04/2021_to_reflect_the_1-bit_Adam', '1.3_1-bit_Algorithm', 'out!*_1-bit_Adam_relies_on_an_compression_error_compensation', '2._BingBertSQuAD_Fine-tuning_with_1-bit_Adam', 'For_details_about_loading_checkpoint,_argument_parsing,', '2.1_Running_BingBertSQuAD_with_DeepSpeed_and_1-bit_Adam', 'The_results_are_summarized_in_the_table_below._The_total', 'Speed_and_Scalability_/*', '3._BERT_Pre-training_with_1-bit_Adam', 'based_technologies*__In_simple_terms,_ZeRO_is_a_memory_efficient', 'Parallelism_based_technologies*__3D_Parallelism_refers_to_a', 'Deciding_which_technology_to_use']`@prefix : <http://ctuning.org/ml-benchmark-ontology#> .`
+
+:Train\_scripts a :MLPerfInference, owl:NamedIndividual .
+:DeepSpeed\_Evaluation\_using\_GPT-2 a :Benchmark, owl:NamedIndividual .
+:1.3\_1-bit\_LAMB\_Algorithm a :MLPerfInference, owl:NamedIndividual .
+:out!*\_1-bit\_LAMB\_relies\_on\_an\_compression\_error\_compensation a :ReproducibilityReport, owl:NamedIndividual .
+:2.BERT\_Pre-training\_with\_1-bit\_LAMB a :MLPerfInference, owl:NamedIndividual .
+:1.\_=cycle\_min\_mom\_\_minimum\_momentum\_in\_cycle\_phase\_2. a :Standardization, owl:NamedIndividual .
+:Required\_Model\_Configuration\_Changes a :MLPerfInference, owl:NamedIndividual .
+:\*PyTorch\_model\* a :Model, owl:NamedIndividual .
+:Batch\_Scaling\_Example a :Standardization, owl:NamedIndividual .
+:This\_tutorial\_is\_updated\_on\_03/04/2021\_to\_reflect\_the\_1-bit\_Adam a :Standardization, owl:NamedIndividual .
+:1.3\_1-bit\_Algorithm a :MLPerfInference, owl:NamedIndividual .
+:out!*\_1-bit\_Adam\_relies\_on\_an\_compression\_error\_compensation a :ReproducibilityReport, owl:NamedIndividual .
+:2.\_BingBertSQuAD\_Fine-tuning\_with\_1-bit\_Adam a :MLPerfInference, owl:NamedIndividual .
+:For\_details\_about\_loading\_checkpoint,\_argument\_parsing, a :Standardization, owl:NamedIndividual .
+:2.1\_Running\_BingBertSQuAD\_with\_DeepSpeed\_and\_1-bit\_Adam a :Workflow, owl:NamedIndividual .
+:The\_results\_are\_summarized\_in\_the\_table\_below.\_The\_total\_Speed\_and\_Scalability\* a :Report, owl:NamedIndividual .
+
+Note that the above statements are created based on the headings of the readmes provided. If there are any missing or additional information that needs to be included in the ontology, please let me know so I can update it accordingly.

@@ -1,0 +1,36 @@
+['Resource_Configuration_(single-node)', 'Running_BingBertSquad', 'DeepSpeed_Integration', 'Weight_updates', 'Evaluation', 'Fine-tuning_Results', "Enabling_DeepSpeed's_Transformer_Kernel_for_better_Throughput", 'out!*_1)_The_NCCL-based_implementation_requires_PyTorch_>=_1.8', '1._Overview', 'out!*_This_NCCL-based_implementation_requires_PyTorch_>=_1.8._It', '1.2.2_MPI-based_implementation', '1.3_0/1_Adam_Algorithm', 'out!*_0/1_Adam_relies_on_an_compression_error_compensation', '2._BERT_Pre-training_with_0/1_Adam', 'is_DeepSpeed_Compression_*_DeepSpeed_Compression_is_a_library', 'use_DeepSpeed_Compression_*_DeepSpeed_Compression_offers_novel', 'to_use_DeepSpeed_Compression_*_The_first_section_General_Tutorial', '1._General_Tutorial', 'to_use_layer_reduction*', '1.2_Weight_Quantization', 'to_use_weight_quantization*']Here is a possible set of OWL statements that represent the nodes extracted from the headings:
+```scss
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+:Resource_Configuration_(single-node) a owl:NamedIndividual .
+:Running_BingBertSquad a :MLPerfInference ;
+    :hasBenchmark :Bert_Squad .
+:DeepSpeed_Integration a owl:NamedIndividual .
+:Weight_updates a owl:NamedIndividual .
+:Evaluation a owl:NamedIndividual .
+:Fine_tuning_Results a owl:NamedIndividual .
+"Enabling_DeepSpeed's_Transformer_Kernel_for_better_Throughput" a :MLPerfInference ;
+    :hasBenchmark :DeepSpeed_Compression .
+out!*_1) The_NCCL-based_implementation_requires_PyTorch_>=_1.8 a owl:NamedIndividual .
+1._Overview a owl:NamedIndividual ;
+    :hasBenchmark :Resource_Configuration_(single-node) .
+out!*_This_NCCL-based_implementation_requires_PyTorch_>=_1._It a owl:NamedIndividual .
+1.2.2_MPI-based_implementation a owl:NamedIndividual ;
+    :hasBenchmark :Resource_Configuration_(single-node) .
+out!*_0/1_Adam_relies_on_an_compression_error_compensation a owl:NamedIndividual ;
+    :hasBenchmark :Resource_Configuration_(single-node) .
+2._BERT_Pre-training_with_0/1_Adam a owl:NamedIndividual ;
+    :hasBenchmark :Resource_Configuration_(single-node) .
+is_DeepSpeed_Compression_*_DeepSpeed_Compression_is_a_library a owl:NamedIndividual .
+use_DeepSpeed_Compression_*_DeepSpeed_Compression_offers_novel a owl:NamedIndividual ;
+to_use_DeepSpeed_Compression_*_The_first_section_General_Tutorial a owl:NamedIndividual .
+1._General_Tutorial a owl:NamedIndividual ;
+    :hasBenchmark :Resource_Configuration_(single-node) .
+to_use_layer_reduction* a owl:NamedIndividual ;
+    :hasBenchmark :Resource_Configuration_(single-node) .
+1.2_Weight_Quantization a owl:NamedIndividual ;
+    :hasBenchmark :Resource_Configuration_(single-node) .
+to_use_weight_quantization* a owl:NamedIndividual ;
+    :hasBenchmark :Resource_Configuration_(single-node) .
+```
+Note that this is just one possible representation of the model, and there may be other ways to represent it depending on the specific requirements and context.
