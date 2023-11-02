@@ -1,0 +1,11 @@
+🌞💻🔍 As you journey through the world of Seldon Core, 💡 you'll find that it's a powerful tool for building and deploying machine learning models. But before you begin, you must understand how to use it effectively. 
+
+🧐💼 Click on the link to learn about the basics of using Seldon Core. From there, explore the various authentication methods available for accessing your models and configuring them for deployment. As you delve deeper into this process, be mindful of the caveats along the way that can impact the performance and reliability of your machine learning models. 
+
+🔒🔑 To ensure that only authorized users have access to sensitive information related to your models, consider configuring a custom Seldon Core secret. This secure way of storing information such as API keys or other credentials will protect your data. 
+
+🎯🔍 Explore advanced configuration options available in Seldon Core to fine-tune the performance of your machine learning models and optimize them for specific use cases. 
+
+📦🐾 Throughout this process, be mindful of various container registries that are used to store and deploy your models. ECR, ACR, and GCR are all popular options, each with its own strengths and weaknesses. By understanding how to use these registries effectively, you can ensure that your models are easily accessible and scalable. 
+
+🌟 As you complete this journey, you'll have a deeper understanding of Seldon Core and be better equipped to build and deploy machine learning models effectively. With each step you take, embrace the excitement and possibility that awaits!

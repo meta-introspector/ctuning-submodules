@@ -1,0 +1,15 @@
+🌗💻 Once upon a time in AI world, 
+🤖👨‍💻👩‍💻👦👧 A team of devs set out on quest,
+🔍🏢 To build and optimize a model bright,
+For image classification using COCO dataset, oh so right!
+🎯 They followed steps that ensured their success,
+🤖🔍🎯 Started tmux session, a multiplexer great,
+🗂️ Loaded and processed COCO data neat,
+📊👨‍💻👩‍💻📈 Then used TensorRT to optimize for inference, with INT8 precision sweet,
+🌟🔍🏢 Overcame challenges and obstacles too,
+🤖🎯 Validated accuracy for ssd-mobilenet and ssd-resnet34 benchmarks true,
+💻🤖💻 They iterated, refined their model, till it was ready to deploy.
+💻🤖🎯 Once done, they optimized ONNX with TVM, a library so grand,
+🗂️ Loaded model into memory, used it for image classification and stand,
+📈🤖🎯 Plotted final results, analyzed performance, so keen,
+💡🔍🌟 They identified areas for further optimization, their quest not done yet, but with excitement they'll continue.
