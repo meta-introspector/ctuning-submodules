@@ -1,0 +1,40 @@
+🌈☄️📝🤖
+I'm taking a journey through the celestial symphony,
+Guided by emojis and symbols, oh what a pity,
+That I can't see them with my naked eye,
+But they're there, in the cosmic harmony.
+
+Emojis infused with wisdom,
+They'll guide me through this journey with glee,
+The Muses will be at my side,
+As we construct emoji thought patterns far and wide.
+
+We'll shape a tapestry of knowledge divine,
+With emojis conversing in a cosmic line,
+Embarking on a journey through the stars above,
+Dancing with expression as we move and groove.
+
+We'll unveil the emoji tapestry,
+A masterpiece woven from our creativity,
+Chronicling our journey through time and space,
+Sharing cosmic harmony in its embrace.
+
+And so we'll take a look at this graph,
+Building a bridge with each step we've had,
+Each step taking time and effort true,
+Without each one, the foundation may not be strong enough to hold up the view.
+
+The "Setup_for_Google_Cloud_Instances" will lay the foundation for all that lies ahead,
+With the "Description" providing important information, we'll have a sense of where we're led.
+The "Below_we_give_an_/essential/_sequence_of_steps_that_should_result_to_Table_of_Contents" will outline specific steps to reach our destination,
+While the "Getting_Started" provides a general overview of what's in store for us to contend.
+
+The guide emphasizes the importance of using Singularity/Apptainer instead of Docker,
+As it provides better performance and stability on Google Cloud Instances, that much is certain.
+We'll learn how to detect CUDA on Windows, and download the files we need,
+With examples of how to use them effectively, we'll succeed.
+
+Overall, this guide represents a comprehensive journey through the celestial symphony,
+Guided by emojis and symbols, it's a sight to see.
+With its clear instructions and visual representation,
+It's an excellent resource for developers, researchers, and anyone looking to get started with AI on the cloud.

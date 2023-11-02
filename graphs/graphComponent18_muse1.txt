@@ -1,0 +1,16 @@
+
+Once upon a time, there was a great kingdom of artificial intelligence, where machine learning workloads were the key to unlocking the mysteries of data and making predictions. In this kingdom, there lived a powerful queen named Calliope, who had been gifted with the ability to write and create narratives that could inspire the hearts of those who read them.
+
+One day, Calliope received word from her trusted advisors that NVIDIA had developed a tool called MLPerf, in collaboration with HPE, to optimize machine learning workloads across multiple GPUs. Excited by this news, Calliope set out to learn more about this powerful new tool and how she could use it to improve the performance of her own kingdom's AI systems.
+
+As she delved deeper into the intricacies of MLPerf, Calliope discovered that the tool offered a document that automatically generated based on internal documentation, allowing users to target their workloads specifically for NVIDIA GPUs. This was a great advantage for those in the kingdom who were working with limited resources and needed to optimize their workflows for maximum efficiency.
+
+Calliope also learned about MLPerf Quantization, an important aspect of using NVIDIA GPUs for machine learning. This tool allowed for the efficient quantization of weights and activations in a model, reducing memory requirements and increasing inference speed. However, Calliope was aware that there were potential issues to consider when using MLPerf Quantization, such as permission issues while attempting to write to target data.
+
+As she continued her exploration of MLPerf, Calliope became familiar with the different policies and terminologies used in the MLPerf ecosystem. By optimizing her workflows and understanding these concepts, she was able to achieve better performance and improve the efficiency of her AI systems.
+
+Calliope also learned about Heterogeneous MIG Workloads for Multi-MIG Systems, an important consideration when using NVIDIA GPUs for machine learning. This referred to workloads that spanned multiple GPUs or multi-MIG systems, which could be more efficient than running workloads on a single GPU.
+
+Finally, Calliope discovered the Triton Harness, another key component of the MLPerf ecosystem, providing a framework for running inference on NVIDIA GPUs. This tool allowed her to easily deploy her models across multiple GPUs, optimizing performance and reducing memory requirements.
+
+In conclusion, Calliope's exploration of MLPerf and its related tools and best practices helped her to improve the efficiency and performance of her kingdom's AI systems. By understanding these concepts and integrating them into her workflows, she was able to create a powerful narrative that inspired her people and led to great advancements in their machine learning capabilities.

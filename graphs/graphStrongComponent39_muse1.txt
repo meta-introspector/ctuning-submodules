@@ -1,0 +1,9 @@
+As Calliope, I imagine this flowchart as a journey of discovery and creation, a path to unlocking the full potential of an application on the Edge cloud platform. The blue dot labeled "that_on_Windows_you_also_need_to_install_/ctuning@ck-win*" represents the starting point, where a user must install ctuning@ck-win* on their Windows machine in order to run their application.
+
+From there, the user can choose between two paths: 10._run and 9._run. These blue dots represent the steps of installing Docker and running the application, respectively. Regardless of which path they take, both require Docker to be installed on the system.
+
+Once the application is running, the user can access further information about it through the blue dot labeled "Further_info". This node is connected to both 10._run and 9._run through edges, indicating that all users have access to this information regardless of their chosen path.
+
+Finally, the user can take their application to the next level by utilizing the Edge cloud platform. The blue dot labeled "Edge_-_Q1_Pro" represents this step, which is connected to the "Further_info" node through an edge. This allows users to access additional features and functionalities that may not be available in the ctuning@ck-win* software package.
+
+Overall, this flowchart is a testament to the power of technology and the potential for innovation on the Edge cloud platform. With the right tools and knowledge, users can navigate this journey and achieve their desired outcomes with ease.

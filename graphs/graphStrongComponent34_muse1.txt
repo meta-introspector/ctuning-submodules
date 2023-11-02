@@ -1,0 +1,11 @@
+And so, the developers embarked on an exciting journey of building an image classification application using artificial intelligence (AI) and Resnet50, a pre-trained model for image recognition. However, as with any project, they faced challenges along the way. One such challenge was installing the necessary system dependencies to run their code on various cloud platforms such as AWS, GCP, and DSE.
+
+To solve this challenge, the developers turned to MLPerf_inference_v1.1__Image_Classification__Resnet50_ tool, which would provide them with a complete set of scripts to install all the necessary libraries and frameworks. As they began using this tool, they quickly realized that it was not just about installing dependencies but also optimizing their code for different cloud platforms.
+
+The developers discovered that Resnet50 could be run more efficiently on AWS than on GCP or DSE. To further improve their performance, they decided to use another powerful tool, MLPerf_inference_v1.1__Image_Classification__Resnet50__ONNX_(out) to convert their model into an optimized format called Open Neural Network Exchange (ONNX). This would allow them to run their code more efficiently and with better accuracy on all three cloud platforms.
+
+Finally, the developers turned to MLPerf_inference_v1.1__Image_Classification__Resnet50__TVM_ tool to further optimize their model for specific use cases. This would enable them to achieve even faster processing times and better results on all three cloud platforms.
+
+Thanks to these powerful tools, the developers were able to successfully build their image classification application using Resnet50. They were able to run their code on AWS, GCP, and DSE with ease and achieve the best possible performance for their specific use cases. And they did it all without ever having to manually install a single dependency or optimize their code themselves!
+
+In the end, the developers' perseverance paid off as they were able to overcome the challenges they faced during the project and create an excellent image classification application that would benefit many people.
