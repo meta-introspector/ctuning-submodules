@@ -1,0 +1,68 @@
+['Example__Facets_Data_Skew_Visualization', 'Custom_Class*_The', 'Step*_There_are_three_different_steps_in_the_=facets=_integration', 'Disabling_Visualizations', 'Additional_logs*', 'Client_and_server_logs', 'Updated*__October_17,_2023', 'Suggestions_for_Resolving_Dependency_Conflicts', 'Stacks,_Infrastructure,_Authentication', 'Client_Methods', 'Methods*', 'Update,_and_Delete_Methods*', 'Active_User_and_Active_Stack', 'Resource_Models', 'Speeding_up_Docker_builds_for_containerized_components', 'Registering_a_code_repository', 'Tracking_code_version_for_pipeline_runs', 'Available_implementations', 'GitLab', 'Developing_a_custom_code_repository', "for_the_GPU_hardware_to_be_properly_utilized._If_you_don't"]```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:FacetsDataSkewVisualization a :Exploration ;
+    rdfs:label "Example Facets Data Skew Visualization"@en .
+
+:CustomClassThe a :CustomClass ;
+    rdfs:label "Custom Class The"@en .
+
+:StepThereAreThreeDifferentStepsInTheFacetsIntegration a :Workflow ;
+    rdfs:label "Step There Are Three Different Steps In The Facets Integration"@en .
+
+:DisablingVisualizations a :AutomatedDesignSpaceExploration ;
+    rdfs:label "Disabling Visualizations"@en .
+
+:AdditionalLogs a :Benchmark ;
+    rdfs:label "Additional Logs"@en .
+
+:ClientAndServerLogs a :Report ;
+    rdfs:label "Client And Server Logs"@en .
+
+:UpdatedOctober172023 a :ReproducibilityReport ;
+    rdfs:label "Updated October 17, 2023"@en .
+
+:SuggestionsForResolvingDependencyConflicts a :MLPerfInference ;
+    rdfs:label "Suggestions For Resolving Dependency Conflicts"@en .
+
+:StacksInfrastructureAuthentication a :Workflow ;
+    rdfs:label "Stacks, Infrastructure, Authentication"@en .
+
+:ClientMethods a :AutomatedDesignSpaceExploration ;
+    rdfs:label "Client Methods"@en .
+
+:MethodsUpdateAndDelete a :Benchmark ;
+    rdfs:label "Update And Delete Methods"@en .
+
+:ActiveUserAndActiveStack a :Report ;
+    rdfs:label "Active User And Active Stack"@en .
+
+:ResourceModels a :MLPerfInference ;
+    rdfs:label "Resource Models"@en .
+
+:SpeedingUpDockerBuildsForContainerizedComponents a :Benchmark ;
+    rdfs:label "Speeding Up Docker Builds For Containerized Components"@en .
+
+:RegisteringACodeRepository a :AutomatedDesignSpaceExploration ;
+    rdfs:label "Registering A Code Repository"@en .
+
+:TrackingCodeVersionForPipelineRuns a :MLPerfInference ;
+    rdfs:label "Tracking Code Version For Pipeline Runs"@en .
+
+:AvailableImplementations a :Standardization ;
+    rdfs:label "Available Implementations"@en .
+
+:GitLab a :Benchmark ;
+    rdfs:label "GitLab"@en .
+
+:DevelopingACustomCodeRepository a :CustomClass ;
+    rdfs:label "Developing A Custom Code Repository"@en .
+
+:ForTheGPUHardwareToBeProperlyUtilized a :AutomatedDesignSpaceExploration ;
+    rdfs:label "For The GPU Hardware To Be Properly Utilized"@en .
+
+# Add more nodes and relationships as necessary
+```

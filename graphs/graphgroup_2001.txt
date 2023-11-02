@@ -1,0 +1,78 @@
+['0.35.0_(YANKED)', '0.34.0', '0.33.0', '0.32.1', '0.32.0', '0.31.1', '0.31.0', '0.30.0', '0.23.0', '0.22.0', '0.21.1', '0.21.0', '0.20.5', '0.20.4', '0.20.3', '0.20.2', '0.20.0_/_0.20.1', '0.13.2', '0.13.1', '0.13.0', '0.12.0']```
+# Add a new class for the readme version
+@prefix ctuning: <http://ctuning.org/ml-benchmark-ontology#> .
+ctuning:ReadmeVersion a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# Create instances of the new class for each readme version
+ctuning:ReadmeVersion('0.35.0_(YANKED)') .
+ctuning:ReadmeVersion('0.34.0') .
+ctuning:ReadmeVersion('0.33.0') .
+ctuning:ReadmeVersion('0.32.1') .
+ctuning:ReadmeVersion('0.32.0') .
+ctuning:ReadmeVersion('0.31.1') .
+ctuning:ReadmeVersion('0.31.0') .
+ctuning:ReadmeVersion('0.30.0') .
+ctuning:ReadmeVersion('0.23.0') .
+ctuning:ReadmeVersion('0.22.0') .
+ctuning:ReadmeVersion('0.21.1') .
+ctuning:ReadmeVersion('0.21.0') .
+ctuning:ReadmeVersion('0.20.5') .
+ctuning:ReadmeVersion('0.20.4') .
+ctuning:ReadmeVersion('0.20.3') .
+ctuning:ReadmeVersion('0.20.2') .
+ctuning:ReadmeVersion('0.20.0_/_0.20.1') .
+ctuning:ReadmeVersion('0.13.2') .
+ctuning:ReadmeVersion('0.13.1') .
+ctuning:ReadmeVersion('0.13.0') .
+ctuning:ReadmeVersion('0.12.0') .
+
+# Add a relationship between the readme version and the model
+@prefix ctuning: <http://ctuning.org/ml-benchmark-ontology#> .
+ctuning:Model hasBenchmark ctuning:MLPerfInferencev1.0 .
+ctuning:MLPerfInferencev1.0 hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:ReproducibilityReportMLPerfInferencev1.1 .
+ctuning:ReproducibilityReportMLPerfInferencev1.1 hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:Report('0.35.0_(YANKED)') .
+ctuning:Report('0.35.0_(YANKED)') hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:ReproducibilityReportMLPerfInferencev1.1 .
+ctuning:ReproducibilityReportMLPerfInferencev1.1 hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:Report('0.35.0_(YANKED)') .
+ctuning:Report('0.35.0_(YANKED)') hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:ReproducibilityReportMLPerfInferencev1.1 .
+ctuning:ReproducibilityReportMLPerfInferencev1.1 hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:Report('0.35.0_(YANKED)') .
+ctuning:Report('0.35.0_(YANKED)') hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:ReproducibilityReportMLPerfInferencev1.1 .
+ctuning:ReproducibilityReportMLPerfInferencev1.1 hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:Report('0.35.0_(YANKED)') .
+ctuning:Report('0.35.0_(YANKED)') hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:ReproducibilityReportMLPerfInferencev1.1 .
+ctuning:ReproducibilityReportMLPerfInferencev1.1 hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:Report('0.35.0_(YANKED)') .
+ctuning:Report('0.35.0_(YANKED)') hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:ReproducibilityReportMLPerfInferencev1.1 .
+ctuning:ReproducibilityReportMLPerfInferencev1.1 hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:Report('0.35.0_(YANKED)') .
+ctuning:Report('0.35.0_(YANKED)') hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:ReproducibilityReportMLPerfInferencev1.1 .
+ctuning:ReproducibilityReportMLPerfInferencev1.1 hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:Report('0.35.0_(YANKED)') .
+ctuning:Report('0.35.0_(YANKED)') hasStandardization ctuning:Workflow('0.35.0_(YANKED)') .
+ctuning:Workflow('0.35.0_(YANKED)') hasExploration ctuning:Exploration('0.35.0_(YANKED)') .
+ctuning:Exploration('0.35.0_(YANKED)') hasBenchmark ctuning:ReproducibilityReportMLPerfInferencev1.1 .
+ctuning:ReproducibilityReportMLPerfInferencev1.1 hasStandardization ctuning:Workflow('0.35.0_(YANKED)')

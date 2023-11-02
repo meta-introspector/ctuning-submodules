@@ -1,0 +1,60 @@
+['0.11.0', '0.10.0', '0.9.0', '0.8.1', '0.8.0', '🙌_Community_Contributions', '0.7.3', '0.7.2', '0.7.1', '0.7.0', '0.6.3', 'New_Contributors', '0.6.2', '0.6.1', "What's_changed", '0.6.0', '➕_Other_updates,_additions_and_fixes', '0.5.7', 'New_Features', '0.5.5', '0.5.4']Here is a possible set of OWL statements and relationships for the model based on the given nodes:
+```yaml
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+@prefix ctuning: <http://ctuning.org/ml-benchmark-ontology#> .
+ctuning:0.11.0 a ctuning:Model .
+ctuning:0.10.0 a ctuning:Model .
+ctuning:0.9.0 a ctuning:Model .
+ctuning:0.8.1 a ctuning:Model .
+ctuning:0.8.0 a ctuning:Model .
+ctuning: MLPerfInferencev1.0 a ctuning:Benchmark, owl:NamedIndividual .
+ctuning:reproducibilityReportMLPerfInferencev1.1 a ctuning:ReproducibilityReport, owl:NamedIndividual .
+ctuning:Exploration a ctuning:Analysis ;
+    ctuning:subClassOf ctuning:Benchmark .
+ctuning:MLPerfInference a ctuning:Benchmark ;
+    ctuning:subClassOf ctuning:Evaluation .
+ctuning:Report a ctuning:Documentation ;
+    ctuning:subClassOf ctuning:Evaluation .
+ctuning:ReproducibilityReport a ctuning:Report ;
+    ctuning:subClassOf ctuning:Documentation ;
+ctuning:Benchmark a ctuning:Evaluation ;
+    ctuning:subClassOf ctuning:Analysis .
+```

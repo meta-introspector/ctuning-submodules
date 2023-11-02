@@ -1,0 +1,73 @@
+['Accessing_step_information_inside_a_hook', 'Supported_orchestrators', 'Stopping/pausing_a_scheduled_run', 'Step_output_names', 'Configure_steps/pipelines', 'and_caching*', 'Pass_any_kind_of_data_to_your_steps', 'artifacts*_can_be_used_to_pass_values_to_steps_that_are', 'Using_a_custom_step_invocation_ID', 'Enable_or_disable_logs_storing', 'Settings_in_ZenML', 'objects_or_dicts*', 'Utilizing_the_settings', 'Storing_and_retrieving_the_artifact', '(Optional)_How_to_Visualize_the_Artifact', '(Optional)_Which_Metadata_to_Extract_for_the_Artifact', 'Configuring_materializers_at_runtime', 'Basic_example', 'Interaction_with_custom_artifact_stores', 'Example_', 'Visualization_via_Materializers']
+1. :Step a owl:Class ;
+rdfs:subClassOf :ModelComponent .
+2. :Hook a owl:Class ;
+rdfs:subClassOf :Step .
+3. :Orchestrator a owl:Class ;
+rdfs:subClassOf :Hook .
+4. :Run a owl:Class ;
+rdfs:subClassOf :ScheduledProcess .
+5. :Artifact a owl:Class ;
+rdfs:subClassOf :Output .
+6. :StepOutputName a owl:Class ;
+rdfs:subClassOf :StepName .
+7. :CustomStepInvocationID a owl:Class ;
+rdfs:subClassOf :StepName .
+8. :Logs a owl:Class ;
+rdfs:subClassOf :Output .
+9. :Settings a owl:Class ;
+rdfs:subClassOf :Step .
+10. :ZenML a owl:Class ;
+rdfs:subClassOf :Settings .
+11. :Object a owl:Class ;
+rdfs:subClassOf :StepComponent .
+12. :Dict a owl:Class ;
+rdfs:subClassOf :Object .
+13. :Materializer a owl:Class ;
+rdfs:subClassOf :Artifact .
+14. :Visualization a owl:Class ;
+rdfs:subClassOf :Output .
+
+15. :Step hasHook a owl:ObjectProperty ;
+rdfs:domain Step ;
+rdfs:range Hook .
+
+16. :Hook hasOrchestrator a owl:ObjectProperty ;
+rdfs:domain Hook ;
+rdfs:range Orchestrator .
+
+17. :Step hasRun a owl:ObjectProperty ;
+rdfs:domain Step ;
+rdfs:range Run .
+
+18. :Run hasOutputs a owl:ObjectProperty ;
+rdfs:domain Run ;
+rdfs:range Output .
+
+19. :Hook hasSettings a owl:ObjectProperty ;
+rdfs:domain Hook ;
+rdfs:range Settings .
+
+20. :Step hasCustomStepInvocationID a owl:ObjectProperty ;
+rdfs:domain Step ;
+rdfs:range CustomStepInvocationID .
+
+21. :Hook hasLogs a owl:ObjectProperty ;
+rdfs:domain Hook ;
+rdfs:range Logs .
+
+22. :Step hasObjects a owl:ObjectProperty ;
+rdfs:domain Step ;
+rdfs:range Object .
+
+23. :Step hasDicts a owl:ObjectProperty ;
+rdfs:domain Step ;
+rdfs:range Dict .
+
+24. :Hook hasMaterializers a owl:ObjectProperty ;
+rdfs:domain Hook ;
+rdfs:range Materializer .
+
+25. :Run hasVisualizations a owl:ObjectProperty ;
+rdfs:domain Run ;
+rdfs:range Visualization .

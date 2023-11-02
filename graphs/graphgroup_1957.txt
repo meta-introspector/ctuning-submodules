@@ -1,0 +1,107 @@
+['A_warning_with_consequences_for_continued_behavior._No', '3._Temporary_Ban', 'A_temporary_ban_from_any_sort_of_interaction_or_public', '4._Permanent_Ban', 'A_permanent_ban_from_any_sort_of_public_interaction', 'Attribution', 'document._-_[_]_If_my_change_requires_a_change_to', 'Changelog*_', '0.45.4', 'If_you_upgraded_to_ZenML_v0.45.2_or_v0.45.3_and_are', "What's_Changed", '0.45.3', 'If_you_upgraded_to_ZenML_v0.45.2_and_are_experiencing', '0.45.2', 'This_change_disrupts_existing_pipeline_schedules._After', 'Performance_enhancements_(#3207)', '0.44.3', 'Changelog*__https_//github.com/zenml-io/zenml/compare/0.44.2...tes', '0.44.2', '0.44.1', '/0.44.0_was_removed_from_pypi_due_to_an_issue_with_the_alembic']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+# Adding classes and properties
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+# Adding individuals
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+# Adding relationships
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# Adding instances of the classes
+:A_warning_with_consequences_for_continued_behavior._No a :Warning ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:3._Temporary_Ban a :TemporaryBan ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:A_temporary_ban_from_any_sort_of_interaction_or_public a :TemporaryBan ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:4._Permanent_Ban a :PermanentBan ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:A_permanent_ban_from_any_sort_of_public_interaction a :PermanentBan ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Attribution a :Attribution ;
+    rdfs:label "Attribution"@en .
+
+:document._-_[_]_If_my_change_requires_a_change_to a :ChangeRequirement ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Changelog*_ a :Changelog ;
+    rdfs:label "Changelog"@en .
+
+:0.45.4 a :Version ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:If_you_upgraded_to_ZenML_v0.45.2_or_v0.45.3_and_are a :UpgradeInstruction ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:"What's_Changed" a :ChangeLogEntry ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:0.45.3 a :Version ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:If_you_upgraded_to_ZenML_v0.45.2_and_are_experiencing a :UpgradeIssue ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:0.45.2 a :Version ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:"After" a :TimeOfChange ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Performance_enhancements_(#3207) a :Enhancement ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:0.44.3 a :Version ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Changelog*__https_//github.com/zenml-io/zenml/compare/0.44.2...tes a :Changelog ;
+    rdfs:label "Changelog"@en .
+
+:0.44.2 a :Version ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:0.44.1 a :Version ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:'/0.44.0_was_removed_from_pypi_due_to_an_issue_with_the_alembic a :RemovalReason ;
+    hasBenchmark :mlperfInferencev1.0 .
+```

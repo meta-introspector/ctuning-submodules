@@ -1,0 +1,86 @@
+['it_should_use,_the_*default_user_details,*_and_more._The', 'Secret_store_environment_variables', 'Advanced_server_configuration_options', 'Run_the_ZenML_server_with_Docker', 'ZenML_server_with_=docker-compose=', 'Troubleshooting', 'Optional_cluster_services', 'ZenML_Helm_Installation', 'Connect_to_the_deployed_ZenML_server', 'ZenML_Helm_Deployment_Scenarios', 'Use_a_DNS_service_to_map_a_different_hostname_to_the_Ingress', 'Secret_Backends', 'Having_an_existing_NGINX_Ingress_Controller', 'Existing_hosted_SQL_database', 'Configuration_file_templates', 'Cloud-specific_settings', 'Connecting_to_deployed_ZenML', '🚨_Reporting_a_Vulnerability', 'Coding_Conventions', 'A_private,_written_warning_from_community_leaders,', '2._Warning']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+@prefix docker: <http://docs.docker.com/engine/api/types/#/docker>
+@prefix nginx: <http://nginx.org/rdf/nginx#>
+@prefix cloud: <http://example.com/cloud-settings>
+
+:ZenML_server_with_Docker a docker:Container ;
+    docker:hasImage "your-docker-image";
+
+:run_zenml_server_with_docker-compose a docker-compose:Deployment ;
+    docker-compose:uses-image "your-docker-image" ;
+    docker-compose:ports 8080/tcp :ZenML_Ingress_Controller ;
+
+:connect_to_deployed_zenml a docker:Container ;
+    docker:hasImage "your-docker-image";
+    docker:links :run_zenml_server_with_docker-compose . ;
+
+@prefix kubernetes: <https://kubernetes.io/apimachinery/pkg/apis/meta/v1/>
+@prefix monitoring: <http://prometheus.io/api/v1/>
+
+:ZenML_Helm_Installation a docker:Container ;
+    helm:install "zenml-helm" .
+
+:connect_to_deployed_zenml_server a kubernetes:Pod ;
+    kubernetes:name "your-pod-name" ;
+
+:ZenML_Helm_Deployment_Scenarios a docker:Container ;
+    monitoring:query "SELECT * FROM zenml_prometheus_metrics WHERE container='your-container'" ;
+
+:use_a_dns_service_to_map_a_different_hostname_to_the_Ingress a monitoring:query "SELECT * FROM zenml_prometheus_metrics WHERE container='your-container'" .
+
+:secret_store_environment_variables a docker:Container ;
+    environment:VARIABLE=SECRET_KEY VALUE="your-secret-key" ;
+
+:advanced_server_configuration_options a docker:Container ;
+    environment:VARIABLE=OPTION1 VALUE="your-option1" ;
+    environment:VARIABLE=OPTION2 VALUE="your-option2" ;
+
+@prefix git: <http://git-scm.com/book/GIT>
+
+:github_repository a docker:Container ;
+    git:url "https://github.com/your-username/your-repo.git" ;
+
+:coding_conventions a docker:Container ;
+    git:branch "master" ;
+    git:commit "2b3e1f188c56e896ec7a154d7f8dd81c" ;
+```

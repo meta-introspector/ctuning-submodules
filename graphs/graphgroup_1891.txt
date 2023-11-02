@@ -1,0 +1,75 @@
+['1._*Specify_a_CUDA-enabled_parent_image_in_your_=DockerSettings=*', 'If_I_share_my_email,_will_you_spam_me?', 'Version_mismatch_(downgrading)', 'Automate_build_reuse_by_connecting_a_code_repository', 'Customize_the_Docker_building', 'files_get_included*', 'Installing_additional_pip_dependencies_or_apt_packages', 'What_is_already_built_in?', 'How_do_I_use_it?', 'that_allows_you_to_fetch_or_reference_them_in_your_pipelines_and', 'Centralized_secrets_store', 'register_missing_secrets_for_your_stack*', 'Set_scope_for_secrets', 'Recap', 'Deploying_a_ZenML_Server', 'Using_the_ZenML_CLI_to_connect_to_a_deployed_ZenML_Server', 'This_simply_means_that_any_pipeline_you_run_will_be_using_the', 'stack*_as_its_environment._{%_endhint_%}_{%_endtab_%}_{%_endtabs', 'Components_of_a_stack', 'store*.', 'Orchestrator']
+:CUDAImage a :ParentImage ;
+    rdfs:subClassOf :DockerImage .
+
+:parentImageInSettings a owl:ObjectProperty ;
+    rdfs:domain :DockerSettings ;
+    rdfs:range :CUDAImage .
+
+:mailSpam a owl:NamedIndividual ;
+    rdfs:subClassOf :EmailSentiment .
+
+:versionMismatch a owl:NamedIndividual ;
+    rdfs:subClassOf :VersionControl .
+
+:buildReuseByCodeRepository a owl:ObjectProperty ;
+    rdfs:domain :CodeRepository ;
+    rdfs:range :AutomatedBuildProcess .
+
+:customizeDockerBuild a owl:ObjectProperty ;
+    rdfs:domain :DockerImage ;
+    rdfs:range :Customization.
+
+:filesIncluded a owl:ObjectProperty ;
+    rdfs:domain :FileSystem ;
+    rdfs:range :IncludeableFiles .
+
+:pipDependenciesOrPackages a owl:ObjectProperty ;
+    rdfs:domain :SoftwareDependencies ;
+    rdfs:range :InstallableItem .
+
+:alreadyBuiltIn a owl:NamedIndividual ;
+    rdfs:subClassOf :EnvironmentVariable.
+
+:useIt a owl:ObjectProperty ;
+    rdfs:domain :PipelineExecution ;
+    rdfs:range :Utilization .
+
+:fetchOrReferencePipelines a owl:ObjectProperty ;
+    rdfs:domain :PipelineDeployment ;
+    rdfs:range :ReferableItem.
+
+:centralizedSecretsStore a owl:NamedIndividual ;
+    rdfs:subClassOf :SecretStorage .
+
+:registerMissingSecretsForStack a owl:ObjectProperty ;
+    rdfs:domain :StackConfiguration ;
+    rdfs:range :RegistrationTask .
+
+:setScopeForSecrets a owl:ObjectProperty ;
+    rdfs:domain :SecretAccess ;
+    rdfs:range :ScopeDefinition .
+
+:deployZenMLServer a owl:NamedIndividual ;
+    rdfs:subClassOf :ServerDeployment .
+
+:connectToZenMLServerUsingCLI a owl:ObjectProperty ;
+    rdfs:domain :CommandLineInterface ;
+    rdfs:range :ConnectionTask .
+
+:environmentForStack a owl:NamedIndividual ;
+    rdfs:subClassOf :EnvironmentConfiguration .
+
+:stackAsEnvironment a owl:ObjectProperty ;
+    rdfs:domain :PipelineExecution ;
+    rdfs:range :Utilization .
+
+:componentsOfStack a owl:NamedIndividual ;
+    rdfs:subClassOf :StackDefinition .
+
+:storeComponents a owl:ObjectProperty ;
+    rdfs:domain :StorageConfiguration ;
+    rdfs:range :StorableItem .
+
+:orchestrator a owl:NamedIndividual ;
+    rdfs:subClassOf :PipelineCoordination .
