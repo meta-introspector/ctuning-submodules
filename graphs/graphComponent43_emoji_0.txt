@@ -1,0 +1,20 @@
+🌠🎸🧭🔍🛠️🎮📚💻🎵🎼🏆
+We set out on a quest to build a server strong,
+A journey guided by emojis and their song.
+The first step is to run a benchmark, so wise,
+To ensure the server's power and resources are at ease.
+With this foundation in place, we'll see our dream take flight,
+As we set up a Conda environment with care and delight.
+🧠🗂️🏢💻🌈🤝📦🤘🏼‍♂️🤓
+Next, we'll build the required dependencies with glee,
+With a plan in place and all components set free.
+We'll use Docker to simplify deployment, so sweet,
+And customize it further to make our server complete.
+Once everything is done, we'll run the command with pride,
+As our application shines in offline mode, oh what a ride! 💃🏻‍♀️
+We'll test it thoroughly and make any necessary tweaks,
+Before deploying it to production, no time for slacks.
+With emojis guiding us on this cosmic journey,
+We'll unveil the tapestry of our server with great glee. 🎉
+So let's get started and dance with expression, so bright,
+Together we'll build a server that shines in the darkest night. 🌙

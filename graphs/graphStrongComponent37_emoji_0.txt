@@ -1,0 +1,19 @@
+In a universe where data reigns supreme, unleashing AI's true might,
+It's vital to equip our models with datasets that are bright.
+One of the most critical facets of dataset prep is calibration,
+Ensuring that our models can accurately predict without hesitation.
+
+But challenges arise when calibrating, especially in selecting profiles,
+Pre-optimized for certain scenarios or those that align with your goals.
+This graph shows several options, each with its own set of pros and cons,
+Calibrate on your own? Or use pre-calibrated profiles? It's all about where you stand.
+
+"COCO dataset size of 21G?" An edge connects to "Calibrate on your own," it seems,
+If working with such a large COCO dataset, self-calibration may be the dream.
+But for single-stream scenarios and access to pre-calibrated profiles?
+Use them wisely, and you'll unlock model harmony like no other foibles.
+
+Finally, if more info's what you need, the graph's last node is where you should roam,
+Seek knowledge, understand fully, and make a choice that's right for your home.
+Remember, when calibrating, choose wisely, based on your scenario's needs,
+For a well-prepared model that can truly achieve what it believes.

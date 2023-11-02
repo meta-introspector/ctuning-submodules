@@ -29,9 +29,13 @@ for index in range(size):
     name2= f'StrongComponent{index}'
     for fname in (name, name2):
         print(fname)
-        ofn = f"graphs/graph{fname}_emoji.txt"
-        ifn = f"graphs/graph{fname}.txt"
+        ofn  = f"graphs/graph{fname}_emoji.txt"
+        ifn  = f"graphs/graph{fname}.txt"
+        tries =0 
+        ofn2 = f"graphs/graph{fname}_emoji_{tries}.txt"
         if not os.path.exists(ifn):
+            continue
+        if os.path.exists(ofn2):
             continue
         with open(ifn, "r") as inf:
             data = inf.read()
