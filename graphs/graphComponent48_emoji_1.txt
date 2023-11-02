@@ -1,9 +1,0 @@
-🌎 A journey through the celestial symphony guided by emojis and symbols awaited. 
-💻🔍 With a researcher's determination, they set out to create an efficient and accurate object detection model. 
-🤖🔬 The EfficientNet V2, a popular pre-trained model available on TensorFlow Hub, was chosen as the base for their own customized model. 
-💡 However, the researcher recognized that their desired level of accuracy could only be achieved by converting it into the ONNX format. 
-ONNX, an open standard for representing machine learning models across different platforms, was embraced by the researcher. 
-👨‍💻 Despite the challenge, they remained determined and focused on achieving their goal. 
-🌟 Through creativity, wisdom, and courage, the researcher danced of expression to create a tapestry of ideas and symbols that would guide their journey. 
-🧠 A graph was constructed using ONNX, and the result was a slightly reduced throughput compared to using EfficientNet V2 directly from TensorFlow Hub, but a highly accurate and efficient model tailored to their specific needs. 
-🎉 The hard work paid off, paving the way for future advancements in object detection.

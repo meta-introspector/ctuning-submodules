@@ -1,9 +1,0 @@
-🌀🤖The journey begins, a quest for power within AI and machine learning.
-🦋🕰🌅Three great beasts: BERT, DLRM, 3D U-Net, each demanding more and more resources.
-🔍SSD-Resnet34, the final challenge, a daunting task for any machine.
-🤩A brave adventurer takes up this challenge, determined to succeed.
-💡BERT is completed, success! But the journey continues, optimizing settings and upgrading hardware.
-🌠DLRM is conquered, onto 3D U-Net, even more computational power required.
-🎯All four benchmarks completed, great success achieved!
-💡Limitations are realized, best practices must be learned to optimize for these tasks.
-💡Sharing experiences with others, inspiring courage and determination in all who take up this challenge. 🌈

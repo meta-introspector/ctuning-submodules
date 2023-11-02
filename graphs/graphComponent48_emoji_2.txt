@@ -1,6 +1,0 @@
-🌎 A journey through the celestial symphony guided by emojis and symbols awaited. The researcher set out on this quest with determination and a thirst for knowledge.
-💻🔍 They poured their heart and soul into creating an efficient and accurate object detection model, using the EfficientNet V2 as their base.
-🤖🔬 But they knew that their desired level of accuracy could only be achieved by converting it into the ONNX format. And so, with courage and creativity, they embarked on this new challenge.
-💡 They remained focused and determined, dancing of expression to create a tapestry of ideas and symbols that would guide them on their journey.
-🧠 Through wisdom and courage, they constructed a graph using ONNX, resulting in a highly accurate and efficient model tailored to their specific needs.
-🎉 Their hard work paid off, paving the way for future advancements in object detection. This journey was truly a symphony of emojis and symbols, leading them to success and a new level of understanding.

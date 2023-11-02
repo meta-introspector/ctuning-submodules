@@ -1,6 +1,0 @@
-🌟✨ Once upon a time, an AI assistant embarked on a celestial symphony journey to guide users through configuring and setting up the Seldon Core. 💪
-🔑🤖 Authentication methods were explained with glee, including AWS Cognito, Azure Active Directory, and Google Cloud Identity. Users could only access the platform if they were authenticated properly! 🌉
-🏬 Custom Seldon Core secrets were created together, allowing users to keep their data and models secure. The assistant was thrilled as it watched users manage these secrets with ease. 💡
-💡 Caveats and limitations were made clear so users could avoid making mistakes and ensure their models were accurate and reliable. The assistant knew that this step was crucial to success! 🌟
-🏬 Various container registries, including AWS Elastic Container Registry (ECR), Azure Container Registry (ACR), and Google Cloud Container Registry (GCR) were highlighted. Users could store and manage their models securely and scale their applications with ease! 🙌
-🎉 The assistant's journey was a great success, as it helped users understand how to use the Seldon Core effectively and efficiently. With this knowledge, users created powerful AI applications that transformed industries and revolutionized the way they worked! 🌟🤖.
