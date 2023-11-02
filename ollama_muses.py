@@ -30,10 +30,14 @@ for index in range(size):
     for fname in (name, name2):
         print(fname)
         ofn = f"graphs/graph{fname}_emoji.txt"
-        if not os.path.exists(ofn):
-            with open(f"graphs/graph{fname}.txt", "r") as inf:
-                data = inf.read()
-                print(data)
-                with open(f"graphs/graph{fname}_emoji.txt", "w") as of:
+        ifn = f"graphs/graph{fname}.txt"
+        if not os.path.exists(ifn):
+            continue
+        with open(ifn, "r") as inf:
+            data = inf.read()
+            print(data)
+            for tries in range(10):
+                with open(f"graphs/graph{fname}_emoji_{tries}.txt", "w") as of:
                     data2 = dollm(data)
                     of.write(data2)
+                    data = data2

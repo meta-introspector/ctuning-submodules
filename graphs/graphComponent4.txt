@@ -1,2 +1,2 @@
 
-The graph you provided is a visual representation of ideas_to_improve_ML_Systems_DSE", "label": "CK_workflows",
+The graph you provided is a visual representation of ideas_to_improve_ML_Systems_DSE
