@@ -1,0 +1,121 @@
+['Run_the_DLRM_benchmark', 'Run_the_3D_U-Net_benchmark', 'Limitations_and_Best_Practices_for_Running_MLPerf', 'you_add_your_entry_into_config.json*,_you_will_have_to_add_your', 'Different_system_configurations_that_use_the_same_GPU_configuration', 'NUMA_configuration', 'MultiStream', 'Fix_INVALID_results', 'Tune_parameters_for_better_performance', 'Other_performance_tips', 'permission_issue_when_container_tries_to_write_to_local', "get_=useradd__user_'root'_already_exists=_when_running", 'do_I_install_programs_like_valgrind_in_the_container?*', "get_=nvcc_fatal_____Unsupported_gpu_architecture_'compute_80'=_error", 'sure_you_run_the_below_commands_after_=results/=_is_populated_with', 'Truncate_Accuracy_Logs', 'Encrypting_your_project_for_submission', 'The_current_MLPerf_Inference_Results_Chair_is_Guenther', 'Common_issues', 'Run_harness', 'enter_closed/Inspur*._From_now_on,_all_of_the_commands_detailed']
+To continue building the ontology, you can use the given nodes to make additional connections between them as follows:
+```scss
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# Add new classes and relationships
+:DLRMBenchmark a :MLPerfInference ;
+    hasBenchmark ?dlrmModel .
+
+:UNet3DBenchmark a :MLPerfInference ;
+    hasBenchmark ?unetModel .
+
+:LimitationsAndBestPractices a :Report ;
+    hasTitle "Limitations and Best Practices for Running MLPerf" ;
+    hasAuthor "CTuning" .
+
+:Configuration a owl:Class ;
+    rdfs:subClassOf :SystemConfig .
+    hasProperty "gpu" xsd:string .
+    hasProperty "numa" xsd:string .
+
+:Container a owl:Class ;
+    rdfs:subClassOf :SystemConfig .
+    hasProperty "permission" xsd:string .
+    hasProperty "user" xsd:string .
+
+:ProgramsToInstall a owl:Class ;
+    rdfs:subClassOf :Configuration .
+    hasProperty "programs" xsd:string .
+
+:InvalidResultError a owl:Class ;
+    rdfs:subClassOf :InvalidResult .
+    hasMessage "Unsupported GPU architecture 'compute\_80'" .
+
+:ContainerInstallationError a owl:Class ;
+    rdfs:subClassOf :InstallationError .
+    hasMessage "Programs not installed in the container" .
+
+:ContainerWritePermissionError a owl:Class ;
+    rdfs:subClassOf :PermissionError .
+    hasMessage "Container tries to write to local file" .
+
+:UserExistsError a owl:Class ;
+    rdfs:subClassOf :PermissionError .
+    hasMessage "User 'root' already exists when running container" .
+
+:TruncateLogs a owl:Class ;
+    rdfs:subClassOf :Analysis.
+
+:Encryption a owl:Class ;
+    rdfs:subClassOf :Report ;
+    hasTitle "Encrypting your project for submission" ;
+    hasAuthor "CTuning" .
+
+:MLPerfInferenceResultsChair a owl:NamedIndividual ;
+    hasName "Guenther" .
+
+:CommonIssues a owl:Class ;
+    rdfs:subClassOf :Report ;
+    hasTitle "Common issues with MLPerf benchmarks" ;
+    hasAuthor "CTuning" .
+
+# Define relationships between classes
+:DLRMBenchmark hasBenchmark ?dlrmModel .
+:UNet3DBenchmark hasBenchmark ?unetModel .
+:LimitationsAndBestPractices hasTitle "Limitations and Best Practices for Running MLPerf" .
+:LimitationsAndBestPractices hasAuthor "CTuning" .
+:Configuration hasProperty "gpu" xsd:string .
+:Configuration hasProperty "numa" xsd:string .
+:Container hasProperty "permission" xsd:string .
+:Container hasProperty "user" xsd:string .
+:ProgramsToInstall hasProperty "programs" xsd:string .
+:InvalidResultError hasMessage "Unsupported GPU architecture 'compute\_80'" .
+:ContainerInstallationError hasMessage "Programs not installed in the container" .
+:ContainerWritePermissionError hasMessage "Container tries to write to local file" .
+:UserExistsError hasMessage "User 'root' already exists when running container" .
+:TruncateLogs hasSubClassOf :Analysis.
+:Encryption hasTitle "Encrypting your project for submission" .
+:Encryption hasAuthor "CTuning" .
+:MLPerfInferenceResultsChair hasName "Guenther" .
+:CommonIssues hasTitle "Common issues with MLPerf benchmarks" .
+:CommonIssues hasAuthor "CTuning" .
+
+Note that some properties, such as "user", may not have a standard URIs and should be redefined. Additionally, the properties for programs to install could be defined in a separate class or ontology for easier maintenance.

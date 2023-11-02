@@ -1,0 +1,31 @@
+['Use_ONNX', 'Scenario__Accuracy__Single_Stream', 'model,image-classification,mlperf,onnx,resnet50,v1.5-opset-11', 'Scenario__Performance__Single_Stream', 'CK_workflows_for_image_classification_with_TensorFlow', 'CK_workflows_for_object_detection_with_TFLite', 'CK_workflows_for_object_detection_with_ONNX', 'CK_workflows_for_object_detection_with_TensorRT', 'CK_workflows_for_the_MLPerf_inference_benchmark', 'CK_workflows_for_language_(NLP)_with_ONNX', 'Install_SSD-ResNet34_1200x1200_non-quantized_fp32_for_ONNX_opset-8', 'Benchmark', 'Record_benchmarking_results_to_the_CK_repository', 'Analyze_experimental_results', 'Start_Docker_while_mounting_CK_repository_with_experiments_', 'Integration_with_web_services_and_CI_platforms', 'Questions_and_feedback', 'Record_results_to_the_CK_repository', 'PyTorch-based_models_for_CPU', 'CK_workflows_for_medical_imaging_(3d-unet_and_BraTS)_with_ONNX', 'CK_workflows_for_image_classification_with_TVM']You have already extracted relevant nodes from the headings of readmes on ctuning.org, which can be used to create further OWL statements and relationships for the model. Here are some additional suggestions:
+
+1. Define a class for the model:
+```arduino
+<http://ctuning.org/ml-benchmark-ontology>#SSDResNet34_1200x1200_non-quantized_fp32_for_ONNX> a <http://ctuning.org/ml-benchmark-ontology>#Model .
+```
+2. Define a relationship between the model and its evaluation:
+```arduino
+<http://ctuning.org/ml-benchmark-ontology>#SSDResNet34_1200x1200_non-quantized_fp32_for_ONNX> <http://ctuning.org/ml-benchmark-ontology>#hasBenchmark <http://ctuning.org/ml-benchmark-ontology>#MLPerfInferencev1.5 .
+```
+3. Define a relationship between the model and its workflow:
+```arduino
+<http://ctuning.org/ml-benchmark-ontology>#SSDResNet34_1200x1200_non-quantized_fp32_for_ONNX> <http://ctuning.org/ml-benchmark-ontology>#hasWorkflow <http://ctuning.org/ml-benchmark-ontology>#CK_workflows_for_image_classification_with_TVM> .
+```
+4. Define a relationship between the model and its exploration:
+```arduino
+<http://ctuning.org/ml-benchmark-ontology>#SSDResNet34_1200x1200_non-quantized_fp32_for_ONNX> <http://ctuning.org/ml-benchmark-ontology>#hasExploration <http://ctuning.org/ml-benchmark-ontology>#CK_workflows_for_image_classification_with_TVM> .
+```
+5. Define a relationship between the model and its documentation:
+```arduino
+<http://ctuning.org/ml-benchmark-ontology>#SSDResNet34_1200x1200_non-quantized_fp32_for_ONNX> <http://ctuning.org/ml-benchmark-ontology>#hasDocumentation <http://ctuning.org/ml-benchmark-ontology>#CK_workflows_for_image_classification_with_TVM> .
+```
+6. Define a relationship between the model and its evaluation results:
+```arduino
+<http://ctuning.org/ml-benchmark-ontology>#SSDResNet34_1200x1200_non-quantized_fp32_for_ONNX> <http://ctuning.org/ml-benchmark-ontology>#hasBenchmarkResults <http://ctuning.org/ml-benchmark-ontology>#Record_benchmarking_results_to_the_CK_repository> .
+```
+7. Define a relationship between the model and its experiments:
+```arduino
+<http://ctuning.org/ml-benchmark-ontology>#SSDResNet34_1200x1200_non-quantized_fp32_for_ONNX> <http://ctuning.org/ml-benchmark-ontology>#hasExperiments <http://ctuning.org/ml-benchmark-ontology>#Start_Docker_while_mounting_CK_repository_with_experiments_> .
+```
+Note that these statements and relationships are just suggestions based on the information provided in the readmes. You may need to modify or add more statements depending on the specific requirements of your model and use case.

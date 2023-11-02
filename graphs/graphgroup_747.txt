@@ -1,0 +1,46 @@
+['virtualenv*', 'your_model*', 'Run_select_task', 'The_cost_of_this_service_depends_on_the_instance_you_choose_and', 'Creating_EC2_instance', 'Open_EC2_ports_to_receive_requests', 'Setting_up_AWS_environment', 'This_service_is_free.', 'Creating_user', 'Creating_S3_bucket', 'The_cost_for_this_service_depends_on_the_size_of_the_files_that', 'Creating_ECS_execution_role', 'Creating_ECS_cluster', 'Create_SQS_queue', 'Starting_the_app', 'Foldes_contents', 'Resources_folder', 'Checking_output_format', 'Run_Fast_api_swagger', 'Test_your_endpoints', 'Removed']
+From the given nodes, we can infer that they are related to a process of creating an environment for running machine learning models on the Amazon Web Services (AWS) platform. Here's how we can represent these in the ontology:
+```yaml
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+@prefix ctuning: <http://ctuning.org/ml-benchmark-ontology#> .
+<http://ctuning.org/ml-benchmark-ontology>
+```

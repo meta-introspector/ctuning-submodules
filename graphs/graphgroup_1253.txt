@@ -1,0 +1,106 @@
+['Transformation*__This_flag_primarily_defines_various_offsets', 'Malformed_Boxes_by_+1*__Some_legacy_implementations_of_ROI', 'Additional_Resources', '-_[[https_//arxiv.org/abs/1506.04579][ParseNet_Paper]]\\\\', 'Anchors_Input_(Optional)', 'Dynamic_Shape_Support', 'Limitations', 'Using_the_Fused_Box_Decoder', '-_[[https_//arxiv.org/abs/1512.02325][SSD__Single_Shot', '=t_w=_and_=t_h=_from_the_input_remain_unchanged.', '-_[[https_//arxiv.org/abs/1612.08242][YOLOv2_paper]]', '-_[[https_//arxiv.org/pdf/2010.04159.pdf][Deformable_DETR]]', '-_[[https_//arxiv.org/abs/1504.08083][Original_ROI', '-_[[https_//arxiv.org/abs/1504.08083][ROI_Pooling', '-_[[https_//arxiv.org/abs/1810.04805][BERT]]', '-_[[https_//arxiv.org/abs/1706.03762][Transformer]]', '-_[[https_//arxiv.org/abs/1506.01497][Faster_R-CNN]]', 'This_code_is_almost_the_same_to_=CodeTypeSSD__CENTER_SIZE=_using', '=inputOrder=', 'Of_Contents*_-_[[#coordconvacplugin][coordConvACPlugin]]_-', 'What_if_the_limit_is_zero?']```bash
+:MLPerfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:Transformation flag_offsets_definition a :Flag ;
+    hasValue "Transformation*__This_flag_primarily_defines_various_offsets" ;
+    isPartOf :Exploration .
+
+:Malformed_Boxes_by_1 legacy_implementation_of_ROI a :LegacyImplementation ;
+    isPartOf :Exploration .
+
+:Additional_Resources resource_links a :ResourceLink ;
+    hasValue "https://arxiv.org/pdf/2010.04159.pdf" ;
+    isPartOf :Exploration .
+
+:ParseNet_Paper paper_link a :PaperLink ;
+    hasValue "https://arxiv.org/abs/1506.04579" ;
+    isPartOf :Additional_Resources .
+
+:Anchors_Input_(Optional) optional_anchors_input a :Flag ;
+    hasValue "Anchors_Input_(Optional)" ;
+    isPartOf :Exploration .
+
+:Dynamic_Shape_Support dynamic_shape_support a :Flag ;
+    hasValue "Dynamic_Shape_Support" ;
+    isPartOf :Exploration .
+
+:Limitations limitations a :Flag ;
+    hasValue "Limitations" ;
+    isPartOf :Exploration .
+
+:Using_the_Fused_Box_Decoder using_fused_box_decoder a :Flag ;
+    hasValue "Using_the_Fused_Box_Decoder" ;
+    isPartOf :Exploration .
+
+:SSD__Single_Shot single_shot_SSD a :Model ;
+    hasBenchmark :mlperfInferencev1.0 ;
+    isPartOf :Workflow .
+
+:=t_w=_and_=t_h=_from_the_input_remain_unchanged. t_w_and_t_h a :Flag ;
+    hasValue "=t_w=_and_=t_h=_from_the_input_remain_unchanged." ;
+    isPartOf :SSD__Single_Shot .
+
+:YOLOv2_paper YOLOv2_paper a :Model ;
+    hasBenchmark :mlperfInferencev1.0 ;
+    isPartOf :Workflow .
+
+:=t_w=_and_=t_h=_from_the_input_remain_unchanged. t_w_and_t_h a :Flag ;
+    hasValue "=t_w=_and_t_h=_from_the_input_remain_unchanged." ;
+    isPartOf :YOLOv2_paper .
+
+:Deformable_DETR deformable_DETR a :Model ;
+    hasBenchmark :mlperfInferencev1.0 ;
+    isPartOf :Workflow .
+
+:=t_w=_and_=t_h=_from_the_input_remain_unchanged. t_w_and_t_h a :Flag ;
+    hasValue "=t_w=_and_t_h=_from_the_input_remain_unchanged." ;
+    isPartOf :Deformable_DETR .
+
+:Original_ROI original_ROI a :Model ;
+    hasBenchmark :mlperfInferencev1.0 ;
+    isPartOf :Workflow .
+
+:ROI_Pooling roi_pooling a :Model ;
+    hasBenchmark :mlperfInferencev1.0 ;
+    isPartOf :Workflow .
+
+:BERT bert a :Model ;
+    hasBenchmark :mlperfInferencev1.0 ;
+    isPartOf :Workflow .
+
+:Transformer transformer a :Model ;
+    hasBenchmark :mlperfInferencev1.0 ;
+    isPartOf :Workflow .
+
+:Faster_R

@@ -1,0 +1,39 @@
+['Supported_and_Tested_OS', 'Detect_CUDA_on_Windows', 'ONNX,_CPU', 'Other_Input_Options_', 'Use_modular_Docker_container_with_the_CM_API', 'Open_discussions_and_developments', 'Contact_us', '=[--docker_os,_--docker_os_version,_--cm_repo_and_--script_tags]=_are', 'Choices_(flags)', 'Example__MLPerf_inference_-_Python_-_RetinaNet_FP32_-_Open_Images_-', 'CLI', 'Detect_llvm_with_non-standard_name', 'Force_new_detection_even_if_llvm_is_already_found_and_cached', 'Preprocess_the_dataset_with_=Channel=_component_at_beginning', 'Input_Variables_coming_from_Dependencies', 'Set_up', 'Docker_Setup', 'Run_Commands', 'Using_ARMNN_with_NEON', 'Further_analysis_of_results', 'Download_the_needed_files']```vbnet
+:Supported_and_Tested_OS a :MLPerfInference .
+:Detect_CUDA_on_Windows a :MLPerfInference .
+:ONNX,_CPU a :MLPerfInference .
+:Other_Input_Options_ a :MLPerfInference .
+:Use_modular_Docker_container_with_the_CM_API a :MLPerfInference .
+:Open_discussions_and_developments a :MLPerfInference .
+:Contact_us a :MLPerfInference .
+
+<!-- Add the following nodes to the model -->
+
+:Docker_OS a :MLPerfInference .
+:Docker_OS_Version a :MLPerfInference .
+:CM_Repo a :MLPerfInference .
+:Script_Tags a :MLPerfInference .
+
+<!-- Add the following nodes to the model -->
+
+:Choices_(flags) a :MLPerfInference .
+:Example__MLPerf_inference_-_Python_-_RetinaNet_FP32_-_Open_Images_- a :MLPerfInference .
+:CLI a :MLPerfInference .
+
+<!-- Add the following nodes to the model -->
+
+:Detect_llvm_with_non-standard_name a :MLPerfInference .
+:Force_new_detection_even_if_llvm_is_already_found_and_cached a :MLPerfInference .
+:Preprocess_the_dataset_with_=Channel=_component_at_beginning a :MLPerfInference .
+:Input_Variables_coming_from_Dependencies a :MLPerfInference .
+
+<!-- Add the following nodes to the model -->
+
+:Set_up a :Workflow .
+:Docker_Setup a :Workflow .
+:Run_Commands a :Workflow .
+
+<!-- Add the following nodes to the model -->
+
+:Using_ARMNN_with_NEON a :AutomatedDesignSpaceExploration .
+```

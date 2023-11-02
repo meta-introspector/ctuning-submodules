@@ -1,0 +1,100 @@
+['v0.3.15_(2022-01-18)', 'v0.3.14_(2021-10-14)', 'v0.3.13_(2021-09-21)', 'v0.3.12_(2021-08-24)', 'v0.3.11_(2021-07-14)', 'v0.3.10_(2021-05-20)', 'v0.3.9_(2021-04-20)', 'v0.3.8_(2021-04-15)', 'v0.3.7_(2021-03-31)', 'v0.3.6_(2021-03-27)', 'v0.3.5_(2021-03-24)', 'v0.3.4_(2021-03-10)', 'v0.3.3_(2021-03-04)', 'v0.3.2_(2021-02-13)', 'v0.3.1_(2021-02-12)', 'v0.3.0_(2021-02-12)', 'v0.2.9_(2021-02-01)', 'v0.2.8_(2020-10-08)', 'v0.2.7_(2020-09-29)', 'v0.2.6_(2020-09-25)', 'v0.2.5_(2020-09-21)']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# Define the version of the model
+@prefix mlperf: <http://ctuning.org/ml-benchmark-ontology#mlperf/> .
+:MLPerfVersion a mlperf:Version ;
+    owl:value "v0.3.15_(2022-01-18)" .
+
+# Define the versions of the benchmarks
+@prefix benchmark: <http://ctuning.org/ml-benchmark-ontology#benchmark/> .
+:MLPerfBenchmarkVersion a benchmark:Version ;
+    owl:value "v0.3.15_(2022-01-18)" .
+
+@prefix version: <http://ctuning.org/ml-benchmark-ontology#version/> .
+:MLPerfBenchmarkVersions a benchmark:Versions ;
+    @prefix version: <http://ctuning.org/ml-benchmark-ontology#version/> .
+    version:include version:v0.3.15_(2022-01-18) ;
+    version:exclude version:v0.3.14_(2021-10-14) .
+
+@prefix release: <http://ctuning.org/ml-benchmark-ontology#release/> .
+:MLPerfRelease a benchmark:Release ;
+    rdfs:label "v0.3.15_(2022-01-18)" @lang en .
+
+# Define the automated design space exploration for the model
+@prefix exploration: <http://ctuning.org/ml-benchmark-ontology#exploration/> .
+:AutomatedDesignSpaceExploration a exploration:Exploration ;
+    rdfs:label "automated design space exploration" @lang en .
+
+# Define the standardization for the model
+@prefix standardization: <http://ctuning.org/ml-benchmark-ontology#standardization/> .
+:Standardization a exploration:Standardization ;
+    rdfs:label "standardization" @lang en .
+
+# Define the workflow for the model
+@prefix workflow: <http://ctuning.org/ml-benchmark-ontology#workflow/> .
+:Workflow a exploration:Workflow ;
+    rdfs:label "workflow" @lang en .
+
+# Define the benchmarks for the model
+@prefix benchmark-v0315: <http://ctuning.org/ml-benchmark-ontology#benchmark-v0315/> .
+:MLPerfBenchmark a benchmark-v0315:Benchmark ;
+    rdfs:label "benchmark for v0.3.15_(2022-01-18)" @lang en .
+
+# Define the evaluation for the benchmarks
+@prefix evaluation: <http://ctuning.org/ml-benchmark-ontology#evaluation/> .
+:Benchmark a evaluation:Evaluation ;
+    rdfs:label "benchmark" @lang en .
+
+# Define the documentation for the evaluation
+@prefix documentation: <http://ctuning.org/ml-benchmark-ontology#documentation/> .
+:Report a documentation:Documentation ;
+    rdfs:label "evaluation report" @lang en .
+
+# Define the reproducibility report for the evaluation
+@prefix reproducibility: <http://ctuning.org/ml-benchmark-ontology#reproducibility/> .
+:ReproducibilityReport a reproducibility:ReproducibilityReport ;
+    rdfs:label "reproducibility report" @lang en .
+
+# Define the ontology namespace and prefixes
+@prefix ontology: <http://ctuning.org/ml-benchmark-ontology/>
+@prefix benchmark-v0315: <http://ctuning.org/ml-benchmark-ontology#benchmark-v0315/>
+@prefix documentation: <http://ctuning.org/ml-benchmark-ontology#documentation/>
+@prefix reproducibility: <http://ctuning.org/ml-benchmark-ontology#reproducibility/>

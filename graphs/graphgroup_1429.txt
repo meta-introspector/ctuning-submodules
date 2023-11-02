@@ -1,0 +1,21 @@
+['Prepare_submission', '2023', 'Artifacts_reusable_(pilot_project_with_MLCommons)', 'Distinguished_artifact_award', 'can_skip_this_step_if_you_want_to_share_your_artifacts_without_the', 'Making_artifacts_available_to_evaluators', 'if*_they_have_been_placed_on_any_publicly_accessible_archival', 'Submitting_artifacts', 'Models', 'Please_check_the', 'How_to_deal_with_numerical_accuracy_and_instability?', 'V1.0.0', 'Prototyping_phase', 'Reproduce_results_from_ACM/IEEE/NeurIPS_papers', 'Project_coordinators', 'doc', 'Maintainers', 'any', 'uid', 'reindex', '[[../README.md][TOC]]_]*']
+:AutomatedDesignSpaceExploration a owl:Class ;
+hasProcess :Prepare\_submission .
+hasProcess :2023 .
+hasArtifacts :Artifacts\_reusable\_(pilot\_project\_with\_MLCommons) .
+hasArtifact :Distinguished\_artifact\_award .
+canSkipStep :can\_skip\_this\_step\_if\_you\_want\_to\_share\_your\_artifacts\_without\_the .
+makeArtifactsAvailable :Making\_artifacts\_available\_to\_evaluators .
+ifPlacedOnPubliclyAccessibleArchival :if\*\_they\_have\_been\_placed\_on\_any\_publicly\_accessible\_archival .
+submitArtifact :Submitting\_artifacts .
+models :Models .
+checkAccuracyInstability :Please\_check\_the\_How\_to\_deal\_with\_numerical\_accuracy\_and\_instability\? .
+v100 :V1.0.0 .
+prototypingPhase :Prototyping\_phase .
+reproduceResults :Reproduce\_results\_from\_ACM/IEEE/NeurIPS\_papers .
+projectCoordinators :Project\_coordinators .
+doc :doc .
+maintainers :Maintainers .
+any :uid .
+reindex :reindex .
+[[../README.md][TOC]]\* :[[../README.md][TOC]]

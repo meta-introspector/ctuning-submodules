@@ -1,0 +1,27 @@
+['Extra_system_requirements_for_Nvidia_GPU', 'MLCommons_CM_automation_language', 'Install_ONNX_runtime_for_CPU', 'Download_Bert-large_model_(FP32,_ONNX_format)', 'fp32', 'Acknowledgments', 'Install_virtual_environment', 'MLPerf_inference_-_Python_-_ResNet50_FP32_-_ImageNet_-_TVM_-_CPU_-', 'Stage/*_##_Run_Commands_###_Quick_submission_run_(short_run)', 'Customizations', 'Run_experiments', 'Second_approach__adding_CM_interface_to_your_research_project', 'Git_project', 'Adding_CM_script_to_prepare_and_run_your_experiment', 'MLPerf_inference_-_Python_-_RetinaNet_FP32_-_Open_Images_-_ONNX_-', 'MLPerf_inference_-_C++_-_RetinaNet_FP32_-_Open_Images_-_ONNX_-_GPU_-', 'MLPerf_inference_-_Python_-_RetinaNet_FP32_-_Open_Images_-_PyTorch_-', 'CUDA', 'Backend_(ML_framework)', 'TVM_ONNX_(Python)', 'Power_measurements']
+:Model a owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:FP32 a rdfs:Datatype ;
+    rdfs:datatypeName "float"@xsd:decimal .
+
+:ImageNet a owl:NamedIndividual ;
+    hasMLPerfInference :RetinaNet_FP32.
+
+:OpenImages a owl:NamedIndividual ;
+    hasMLPerfInference :RetinaNet_FP32.
+
+:ResNet50 a owl:NamedIndividual ;
+    hasMLPerfInference :ResNet50_FP32.
+
+:MLCommons_CM_automation_language a owl:NamedIndividual ;
+    isAutomatedDesignSpaceExploration :Standardization.
+
+:Nvidia_GPU a owl:NamedIndividual ;
+    requires :AutomatedDesignSpaceExploration .
+
+:ONNX_runtime_for_CPU a owl:NamedIndividual ;
+    requires :AutomatedDesignSpaceExploration .
+
+:Bert-large_model_(FP32,_ONNX_format) a owl:NamedIndividual ;
+    isBenchmark :mlperfInferencev1.0.

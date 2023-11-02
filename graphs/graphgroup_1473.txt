@@ -1,0 +1,43 @@
+['Install_COCO_2017_val_dataset_(5000_images)_and', 'Setup_for_EdgeTPU_(Host__RPi_4)', 'MLPerf_inference_v1.1__Image_Classification__Resnet50__ONNX_(out', 'Reproducibility_report__benchmarking', 'Adaptive_CK_container_for_MLPerf™_Inference_v1.0_-_Object_Detection_-', 'Run_a_container_and_record_experiments_locally', 'MLPerf_inference_v1.1__Image_Classification__Resnet50_', 'Install_TFLite_model_(MobileNet_v2__Large__Minimalistic__224__1.0_', 'MLPerf™_Inference_v1.0_-_Object_Detection_-_TFLite', 'Setup_for_RPi4_CPU', 'Run_experiments_(via_cmdgen)', 'MLPerf_inference_v1.1__Image_Classification__Resnet50__TVM__AWS', 'Reproducibility_reports__MLPerf™_inference_benchmark_v1.1', 'by_the', 'Reproducing_MLPerf™_inference_benchmarks_(v0.7_and_v1.0)', 'Using_CK_adaptive_containers_(to_be_tested!)', 'Other_reproducibility_studies', 'MLPerf™_Inference_v1.0_-_Image_Classification_-_TFLite_2.5.0_RUY_(x86)', 'Preprocess_using_OpenCV_(better_accuracy_but_may_fail_on_some', 'Optional__install_reduced_ImageNet_2012_val_dataset_with_the_first', 'Performance__Single_Stream_(500_samples)']
+1. :Install\_COCO\_2017\_val\_dataset\_(5000\_images) a owl:Class ;
+	rdfs:label "Install COCO-2017 val dataset" .
+2. :Setup\_for\_EdgeTPU\_(Host\_\_RPi\_4) a owl:Class ;
+	rdfs:label "Setup for Edge TPU (Host RPi 4)" .
+3. :MLPerfInferencev1.1 a owl:NamedIndividual ;
+	rdfs:label "MLPerf Inference v1.1" .
+4. :reproducibilityReportMLPerfInferencev1.1 a owl:Class ;
+	rdfs:label "Reproducibility Report (MLPerf Inference v1.1)" .
+5. :Exploration a owl:Class ;
+	rdfs:subClassOf :Analysis .
+6. :MLPerfInference a owl:Class ;
+	rdfs:subClassOf :Benchmark .
+7. :Report a owl:Class ;
+	rdfs:subClassOf :Documentation .
+8. :ReproducibilityReport a owl:Class ;
+	rdfs:subClassOf :Report .
+9. :Benchmark a owl:Class ;
+	rdfs:subClassOf :Evaluation .
+10. Install\_COCO\_2017\_val\_dataset\_(5000\_images) hasBenchmark MLPerfInferencev1.1 .
+11. Setup\_for\_EdgeTPU\_(Host\_\_RPi\_4) hasBenchmark MLPerfInferencev1.1 .
+12. MLPerfInferencev1.1 isStandardized.
+13. MLPerfInferencev1.1 is a Workflow.
+14. MLPerfInferencev1.1 hasReproducibilityReport reproducibilityReportMLPerfInferencev1.1 .
+15. Install\_COCO\_2017\_val\_dataset\_(5000\_images) hasExploration Exploration .
+16. Setup\_for\_EdgeTPU\_(Host\_\_RPi\_4) hasExploration Exploration .
+17. MLPerfInferencev1.1 is a Benchmark.
+18. ReproducibilityReport a owl:Class ;
+	rdfs:label "Reproducibility Report" .
+19. Run\_a\_container\_and\_record\_experiments\_locally a owl:NamedIndividual ;
+	rdfs:label "Run a container and record experiments locally" .
+20. Reproducing\_MLPerf™\_inference\_benchmarks\_(v0.7\_and\_v1.0) a owl:Class ;
+	rdfs:label "Reproducing MLPerf™ inference benchmarks (v0.7 and v1.0)" .
+21. Using\_CK\_adaptive\_containers\_(to\_be\_tested!) a owl:NamedIndividual ;
+	rdfs:label "Using CK adaptive containers (to be tested!)" .
+22. Performance\_Single\_Stream\_(500\_samples) a owl:Class ;
+	rdfs:label "Performance Single Stream (500 samples)" .
+23. Preprocess\_using\_OpenCV\_(better\_accuracy\_but\_may\_fail\_on\_some) a owl:NamedIndividual ;
+	rdfs:label "Preprocess using OpenCV (better accuracy but may fail on some)" .
+24. Optional\_\_install\_reduced\_ImageNet\_2012\_val\_dataset\_with\_the\_first a owl:Class ;
+	rdfs:label "Optional install reduced ImageNet 2012 val dataset with the first" .
+25. Performance\_Multi\_Stream\_(500\_samples) a owl:Class ;
+	rdfs:label "Performance Multi Stream (500 samples)" .

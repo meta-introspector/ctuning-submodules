@@ -1,0 +1,57 @@
+['If_you_wanted_to_train_your_own_model_and_then_perform_inference', 'Of_Contents*_-_[[#tensorrt-command-line-wrapper-trtexec][TensorRT', 'network*_-_If_you_have_a_model_saved_as_a_UFF_file,_ONNX', 'engine_generation*_-_If_you_generate_a_saved_serialized', 'Building_=trtexec=', 'Example_6__Tune_throughput_with_multi-streaming', 'Tool_command_line_arguments', 'Specifying_the_=--safe=_parameter_turns_the_safety_mode_switch', 'Models_other_than_ResNet-50_with_custom_configuration', 'per-tensor_dynamic_range_*_-', "It's_important_to_preprocess_the_data_and_convert_it_to_the", 'Enabling_proto2_features', 'Generated_code', 'Extensions', 'APIs', 'Serialization_performance', 'The_cpp_performance_can_be_improved_by_using', 'To_iterate_over_all_oneofs', 'Updating_Reflection', 'Programming_Languages', 'C#__https_//silentorbit.com/protobuf/_*_C#/.NET/WCF/VB_']```turtle
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:Training a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:ModelSaving a owl:Class ;
+    rdfs:subClassOf :Training .
+
+:InferenceGeneration a owl:Class ;
+    rdfs:subClassOf :EngineGeneration .
+
+:NetworkConfiguration a owl:Class ;
+    rdfs:subClassOf :Model .
+
+:MultiStreaming a owl:Class ;
+    rdfs:subClassOf :NetworkConfiguration .
+
+:Proto2Features a owl:Class ;
+    rdfs:subClassOf :InferenceGeneration .
+
+:GeneratedCode a owl:Class ;
+    rdfs:subClassOf :Extensions .
+
+:APIs a owl:Class ;
+    rdfs:subClassOf :Extensions .
+
+:SerializationPerformance a owl:Class ;
+    rdfs:subClassOf :APIs .
+
+:CppPerformance a owl:Class ;
+    rdfs:subClassOf :ProgrammingLanguages .
+
+:OneofsIteration a owl:Class ;
+    rdfs:subClassOf :Extensions .
+
+:ReflectionUpdating a owl:Class ;
+    rdfs:subClassOf :Extensions .
+
+:ToolCommandLineArguments a owl:Class ;
+    rdfs:subClassOf :Model .
+
+:SafetyModeSwitch a owl:Class ;
+    rdfs:subClassOf :ToolCommandLineArguments .
+
+:CustomConfiguration a owl:Class ;
+    rdfs:subClassOf :NetworkConfiguration .
+
+:DataPreprocessing a owl:Class ;
+    rdfs:subClassOf :Model .
+
+:Proto2FeaturesEnabled a owl:Class ;
+    rdfs:subClassOf :InferenceGeneration .
+```

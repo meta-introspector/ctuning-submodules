@@ -1,0 +1,64 @@
+['Command-line_Toolkit', 'Python_API', 'Examples', 'To_help_you_get_started_with_the_API,_you_can_use_the', 'Backends', 'Runners_may_reuse_their_output_buffers._Thus,_if_you_need', 'Writing_A_Custom_Runner', 'Comparator', 'The_Comparator_is_designed_for_scenarios_where_you_need_to', 'Data_Loaders', 'Polygraphy_provides_a_default_=DataLoader=_class_that_uses_numpy', 'Logger', 'Building_Python_API_Documentation_Locally', 'Deprecation_Policy', 'Modifying_Input_Shapes_In_An_ONNX_Model', 'Reducing_Failing_ONNX_Models', "For_CLI_run,_please_go_to_the_cloned_repository's_root_directory", '2._Data_preparation', 'B._Conversion_to_tfrecord', 'Workflow', '2.2._TensorRT_Inference']```css
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:CommandLineToolkit a owl:NamedIndividual ;
+    rdfs:label "Command-line Toolkit"@en .
+
+:PythonAPI a owl:NamedIndividual ;
+    rdfs:label "Python API"@en .
+
+:Examples a owl:NamedIndividual ;
+    rdfs:label "Examples"@en .
+
+:ToHelpGetStartedWithTheAPI a owl:NamedIndividual ;
+    rdfs:label "To help you get started with the API,"@en .
+
+:Backends a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:RunnersMayReuseOutputBuffers a owl:ObjectProperty ;
+    rdfs:domain :Backend ;
+    rdfs:range :Runner .
+
+:WritingACustomRunner a owl:NamedIndividual ;
+    rdfs:label "Writing a custom runner"@en .
+
+:Comparator a owl:NamedIndividual ;
+    rdfs:label "The Comparator is designed for scenarios where you need to,"@en .
+
+:DataLoaders a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:PolygraphyDataLoader a owl:NamedIndividual ;
+    rdfs:label "Polygraphy provides a default DataLoader = DataLoader\_class that uses numpy,"@en .
+
+:Logger a owl:NamedIndividual ;
+    rdfs:label "Building Python API documentation locally"@en .
+
+:DeprecationPolicy a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ModifyingInputShapesInAnONNXModel a owl:NamedIndividual ;
+    rdfs:label "Modifying input shapes in an ONNX model"@en .
+
+:ReducingFailingONNXModels a owl:NamedIndividual ;
+    rdfs:label "Reducing failing ONNX models"@en .
+
+:CLIRun a owl:NamedIndividual ;
+    rdfs:label "For CLI run, please go to the cloned repository's root directory"@en .
+
+:DataPreparation a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:ConversionToTfrecord a owl:NamedIndividual ;
+    rdfs:label "B. Conversion to tfrecord"@en .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:TensorRTInference a owl:NamedIndividual ;
+    rdfs:label "2.2. TensorRT Inference"@en .
+```

@@ -1,0 +1,61 @@
+['note_from_the_community_*_A_valid_SingleStream_performance_run', 'Performance__Offline_(500_samples)', 'note_from_the_community_*_A_valid_Offline_performance_run', 'MLPerf™_Inference_v0.5_-_Image_Classification_-_OpenVino_2019_R3', 'MLPerf_inference_v1.1__Image_Classification__Resnet50__TVM__GCP', 'MLPerf™_Inference_v1.0_-_Image_Classification_-_TFLite_2.4.1', 'Preprocess_using_pillow_(slightly_worse_accuracy_but_works_most_of', 'Install_reduced_ImageNet_2012_val_dataset_with_the_first_500_images', 'Install_framework_TFLite_2.4.1_with_RUY', 'ResNet-50_(no-argmax)', 'Run_MLPerf™_benchmark', 'MLPerf™_Inference_v1.0_-_Object_Detection_-_TFLite_2.4.1_with_RUY', 'System_packages', 'Install_Collective_Knowledge_(CK)_and_Virtual_Environment', 'MLPerf™_Inference_v0.7_-_Image_Classification_-_Nvidia_Jetson_Xavier', 'MLPerf™_Inference_v1.0_-_Image_Classification_-_TFLite_2.4.1_(x86)', 'Adaptive_CK_container_for_MLPerf™_Inference_v1.0_-_Image', 'Linux', 'Run_a_container_with_external_ImageNet', 'MLPerf_inference_v1.1__Image_Classification__Resnet50__TVM_', '20210723']Assuming that the above nodes are representing entities in the ontology, I can make the following suggestions to add more relationships to the ontology:
+```less
+# Create a subclass relationship between MLPerfInference and Benchmark
+:MLPerfInference rdfs:subClassOf :Benchmark .
+
+# Create a relationship between MLPerfInferencev1.0 and MLPerfInference, where MLPerfInference is a specific version of MLPerfInference
+:mlperfInferencev1.0 owl:sameAs :MLPerfInference .
+
+# Create a relationship between ReproducibilityReport and Report, where ReproducibilityReport is a specific type of Report
+:reproducibilityReportMLPerfInferencev1.1 owl:sameAs :ReproducibilityReport .
+```
+These relationships can be added to the ontology as follows:
+```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# Create a subclass relationship between MLPerfInference and Benchmark
+:MLPerfInference rdfs:subClassOf :Benchmark .
+
+# Create a relationship between MLPerfInferencev1.0 and MLPerfInference, where MLPerfInference is a specific version of MLPerfInference
+:mlperfInferencev1.0 owl:sameAs :MLPerfInference .
+
+# Create a relationship between ReproducibilityReport and Report, where ReproducibilityReport is a specific type of Report
+:reproducibilityReportMLPerfInferencev1.1 owl:sameAs :ReproducibilityReport .
+```

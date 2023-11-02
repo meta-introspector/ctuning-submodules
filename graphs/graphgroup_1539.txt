@@ -1,0 +1,37 @@
+['Rapsberry_Pi_4_with_Ubuntu_Server_20.04.2_LTS_64-bit_with_Coral_Edge', 'x8664-based_generic_platforms_with_Ubuntu', 'Example_of_CK_dashboards_for_ML_Systems_DSE', 'View_CK_dashboard_in_your_browser', 'Demo_of_a_Docker_with_MLPerf™_dashboards_for_ML_Systems_DSE_(Linux', 'Analyse_MLPerf™_inference_results', 'Download_and_install_MLPerf™_inference_results_via_CK', 'Available_results', 'v1.0', '[[../README.md][Back_to_TOC]]_]*', 'Shortcuts', 'TF_SSD_Mobilenet-v1_non-quantized', 'Convert_COCO_to_1200x1200', 'Preprocess_using_Pillow_(slightly_worse_accuracy_but_works_most_of', 'Plug_in_full_ImageNet_2012_val_dataset_with_50000_images', 'Automated_design_space_exploration_of_ML/SW/HW_stacks', 'CK_based_object_detection_DSE', 'CK_workflows_for_speech_recognition_with_PyTorch', 'CK_workflows_for_medical_imaging_(3d-unet_and_BraTS)_with_PyTorch', 'MLPerf_tasks', 'TBD']Based on the given nodes, here are some additional OWL statements and relationships that can be added to the ontology:
+```bash
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+# Add a relationship between Raspberry Pi 4 with Ubuntu Server and MLPerf benchmark
+:AutomatedDesignSpaceExploration(<https://www.ctuning.org/ml-benchmark-ontology/Rapsberry_Pi_4_with_Ubuntu_Server_20.04.2_LTS_64-bit_with_Coral_Edge>)
+    owl:hasBenchmark(<https://www.ctuning.org/ml-benchmark-ontology/mlperfInferencev1.0>) .
+
+# Add a relationship between x8664-based generic platforms and MLPerf benchmark
+:AutomatedDesignSpaceExploration(<https://www.ctuning.org/ml-benchmark-ontology/x8664-based_generic_platforms_with_Ubuntu>)
+    owl:hasBenchmark(<https://www.ctuning.org/ml-benchmark-ontology/mlperfInferencev1.0>) .
+
+# Add a relationship between CK dashboards and MLPerf benchmark for various systems
+:Standardization(<https://www.ctuning.org/ml-benchmark-ontology/Example_of_CK_dashboards_for_ML_Systems_DSE>)
+    owl:hasBenchmark(<https://www.ctuning.org/ml-benchmark-ontology/mlperfInferencev1.0>) .
+
+# Add a relationship between MLPerf dashboards and reproducibility report
+:ReproducibilityReport(<https://www.ctuning.org/ml-benchmark-ontology/Demo_of_a_Docker_with_MLPerf™_dashboards_for_ML_Systems_DSE_(Linux)>)
+    owl:hasBenchmark(<https://www.ctuning.org/ml-benchmark-ontology/mlperfInferencev1.0>) .
+
+# Add a relationship between MLPerf inference results and analysis
+:MLPerfInference(<https://www.ctuning.org/ml-benchmark-ontology/Analyse_MLPerf™_inference_results>)
+    owl:hasBenchmark(<https://www.ctuning.org/ml-benchmark-ontology/mlperfInferencev1.0>) .
+
+# Add a relationship between MLPerf inference results and CK dashboard for analysis
+:Analysis(<https://www.ctuning.org/ml-benchmark-ontology/Download_and_install_MLPerf™_inference_results_via_CK>)
+    owl:hasBenchmark(<https://www.ctuning.org/ml-benchmark-ontology/mlperfInferencev1.0>) .
+
+# Add a relationship between MLPerf inference results and reproducibility report for analysis
+:ReproducibilityReport(<https://www.ctuning.org/ml-benchmark-ontology/Analyse_MLPerf™_inference_results>)
+    owl:hasBenchmark(<https://www.ctuning.org/ml-benchmark-ontology/mlperfInferencev1.0>) .
+
+# Add a relationship between MLPerf inference results and benchmark for various systems
+:Benchmark(<https://www.ctuning.org/ml-benchmark-ontology/Available_results>)
+    owl:hasBenchmark(<https://www.ctuning.org/ml-benchmark-ontology/mlperfInferencev1.0>) .
+```
+Note that some of these relationships are not explicitly stated in the provided nodes, and may require additional context or assumptions to be made.

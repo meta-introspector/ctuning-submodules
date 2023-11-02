@@ -1,0 +1,60 @@
+['Download_Model', '2._SW_requirements', 'Steps_to_run_DLRM', 'Run_command', 'Setup_with_docker', 'Setup_with_Docker', 'dataset_', '2.Start_a_container', '2._into_container', '3.Run_SSD-Resnet34', '4._Run_command_for_server_and_offline_mode', 'model_', '2.Start_and_log_into_a_container', '(2)_into_container', '3.Run_DLRM', 'Install_Dependencies_for_Resnet50', '2.load_images', '4.Run_Resnet50', 'Steps_to_run_RNNT', 'Note_on_Server_scenario', 'To_verify_accuracy_of_your_workload,_run_your_command_with']Based on the provided headings, here are some additional OWL statements and relationships that can be added to the ontology:
+```less
+:DownloadModel a :Benchmark ;
+    rdfs:label "Download Model" .
+
+:SWRequirements a :Standardization ;
+    rdfs:subClassOf :Requirement.
+
+:StepsToRunDLRM a :AutomatedDesignSpaceExploration ;
+    owl:hasBenchmark :DownloadModel .
+
+:RunCommand a :Workflow ;
+    rdfs:label "Run Command" .
+
+:SetupWithDocker a :AutomatedDesignSpaceExploration ;
+    rdfs:subClassOf :Technology.
+
+:Dataset a :Benchmark ;
+    owl:hasBenchmark :DownloadModel .
+
+:StartAContainer a :Workflow ;
+    rdfs:label "Start a Container" .
+
+:RunSSDResnet34 a :AutomatedDesignSpaceExploration ;
+    owl:hasBenchmark :Dataset .
+
+:SetupWithServerAndOfflineMode a :Standardization ;
+    rdfs:subClassOf :Technology.
+
+:LoadImages a :Standardization ;
+    rdfs:subClassOf :Technology.
+
+:RunResnet50 a :AutomatedDesignSpaceExploration ;
+    owl:hasBenchmark :Dataset .
+
+:RunDLRM a :AutomatedDesignSpaceExploration ;
+    owl:hasBenchmark :Dataset .
+
+:InstallDependenciesForResnet50 a :Standardization ;
+    rdfs:subClassOf :Technology.
+
+:2StartAndLogIntoAContainer a :Workflow ;
+    rdfs:label "2. Start and log into a container" .
+
+:3RunDLRM a :AutomatedDesignSpaceExploration ;
+    owl:hasBenchmark :Dataset .
+
+:4RunCommandForServerAndOfflineMode a :Standardization ;
+    rdfs:subClassOf :Technology.
+
+:Model a :MLPerfInference,
+      owl:namedIndividual :mlperfInferencev1.0 .
+
+:Report a :Benchmark ;
+    rdfs:label "Report" .
+
+:ReproducibilityReport a :Benchmark ;
+    rdfs:subClassOf :Report .
+```
+These statements and relationships extend the provided ontology by adding more classes and objects to represent various components of the machine learning model, such as datasets, benchmarks, workflows, and dependencies. They also include specific examples of commands and steps for running and verifying the accuracy of the workload.

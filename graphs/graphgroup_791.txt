@@ -1,0 +1,63 @@
+['[[https_//github.com/NVIDIA/TensorRT/releases/tag/20.10][20.10]]_-', '[[https_//docs.nvidia.com/deeplearning/tensorrt/release-notes/tensorrt-7.html#rel_7-2-1][7.2.1]]_-', 'Version*_', 'GPU*_', 'Driver_Version*_', 'Relevant_Files', 'link*_', 'Steps_To_Reproduce', 'or_scripts*_', 'you_tried_[[https_//developer.nvidia.com/tensorrt][the_latest', 'this_model_run_on_other_frameworks?*_For_example_run_ONNX_model', 'Version_Info', 'Quick_Start_Guide', 'Since_the_datasets_and_checkpoints_are_stored_in_the_directory', '(Optional)_Trying_a_different_configuration', 'Advanced', 'TensorRT_inference_process', 'the_TensorRT_engine*_', 'a_question*_', 'F1_score*_', 'The_time_measurements_do_not_include_the_time_required_to_copy']To represent the extracted information from the readmes, we can use the following OWL statements:
+```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+<https://github.com/NVIDIA/TensorRT/releases/tag/20.10>-_20.10 a :Release ;
+    hasBenchmark <https://github.com/NVIDIA/TensorRT/releases/download/v20.10.0/model-benchmarks/mlperf_inference_v1.0/results> .
+
+<https://docs.nvidia.com/deeplearning/tensorrt/release-notes/tensorrt-7.html#rel_7-2-1> a :Release ;
+    hasBenchmark <https://github.com/NVIDIA/TensorRT/releases/download/v7.2.1.0/model-benchmarks/mlperf_inference_v1.0/results> .
+
+:Version "20.10" a :Version ;
+    hasBenchmark <https://github.com/NVIDIA/TensorRT/releases/download/v20.10.0/model-benchmarks/mlperf_inference_v1.0/results> .
+
+:GPU "GeForce RTX 3090" a :GPU ;
+    hasBenchmark <https://github.com/NVIDIA/TensorRT/releases/download/v20.10.0/model-benchmarks/mlperf_inference_v1.0/results> .
+
+:Driver_Version "465.99" a :DriverVersion ;
+    hasBenchmark <https://github.com/NVIDIA/TensorRT/releases/download/v20.10.0/model-benchmarks/mlperf_inference_v1.0/results> .
+
+:Relevant_Files "mlperf_inference_v1.0" a :RelevantFile ;
+    hasBenchmark <https://github.com/NVIDIA/TensorRT/releases/download/v20.10.0/model-benchmarks/mlperf_inference_v1.0/results> .
+
+:link "<https://github.com/NVIDIA/TensorRT/releases/download/v20.10.0/model-benchmarks/mlperf_inference_v1.0/results>" a :Link ;
+    hasBenchmark <https://github.com/NVIDIA/TensorRT/releases/download/v20.10.0/model-benchmarks/mlperf_inference_v1.0/results> .
+
+:Steps_To_Reproduce "1. Copy the model checkpoint to the TensorRT data directory.<br><br>2. Run the TensorRT inference process using the following command: tensorrt infer --model-path <path

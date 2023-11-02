@@ -1,0 +1,53 @@
+['7._Verify_download', 'Run_Hello_World_MLCube_example', 'Setup_Docker', 'Workspace', 'MNIST_MLCube_directory_structure_summary', 'docs-site_Action_Development_documentation', 'python-publish_action', 'On_Windows', 'NEW__The_KiTS23_Challenge_is_Underway!', 'KiTS19', 'Labeling_Errors', 'Challenge_Results_and_References', 'FileSet', 'RecordSet', 'Field', 'DataSource', 'extract', 'fileProperty', '[[https_//schema.org/Text][sc_Text]]', 'column', 'jsonPath']```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+# Define classes
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+# Define objects
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+# Define properties
+:AutomatedDesignSpaceExploration hasBenchmark :mlperfInferencev1.0 .
+:Standardization hasBenchmark :mlperfInferencev1.0 .
+:Workflow hasBenchmark :mlperfInferencev1.0 .
+
+:Exploration hasBenchmark :mlperfInference .
+:MLPerfInference hasBenchmark :mlperfInference .
+:Report hasBenchmark :mlperfInference .
+:ReproducibilityReport hasBenchmark :mlperfInference .
+:Benchmark hasBenchmark :mlperfInference .
+
+# Define literals
+"Verify download" ^ "7._Verify_download" .
+"Run Hello World MLCube example" ^ "Run_Hello_World_MLCube_example" .
+"Setup Docker" ^ "Setup_Docker" .
+"Workspace" ^ "Workspace" .
+"MNIST_MLCube_directory_structure_summary" ^ "MNIST_MLCube_directory_structure_summary" .
+"docs-site_Action_Development_documentation" ^ "docs-site_Action_Development_documentation" .
+"python-publish_action" ^ "python-publish_action" .
+"On Windows" ^ "NEW__The_KiTS23_Challenge_is_Underway!" .
+"KiTS19" ^ "KiTS19" .
+"Labeling Errors" ^ "Labeling_Errors" .
+"Challenge Results and References" ^ "Challenge_Results_and_References" .
+"FileSet" ^ "FileSet" .
+"RecordSet" ^ "RecordSet" .
+"Field" ^ "Field" .
+"DataSource" ^ "DataSource" .
+"extract" ^ "extract" .
+"fileProperty" ^ "fileProperty" .
+"[[https_//schema.org/Text][sc_Text]]" ^ "[[https_//schema.org/Text][sc_Text]]" .
+"column" ^ "column" .
+"jsonPath" ^ "jsonPath" .
+```

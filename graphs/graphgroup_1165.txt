@@ -1,0 +1,48 @@
+['Benchmark_TensorRT_Engine', 'Depending_on_the_saved_model_exporter,_some_EfficientNet_V1', 'Inference_in_Python', 'Please_make_sure_that_the_=onnx-graphsurgeon=_module_installed', 'Model_Conversion', 'TFOD_EfficientDet_models_will_have_a_slightly_reduced_throughput', '3._TFHub_Models', 'Sample_--help_options', 'In_order_to_proceed,_you_need_to_re-export_the_saved_model._If', 'If_you_receive_any_error_messages_about_non_sufficient_workspace', 'Mask_R-CNN', 'R-CNN*,_default_is_0.5.', 'TF_vs_TRT_Comparison', 'onnx_resnet50', '-_[[https_//arxiv.org/pdf/1512.03385.pdf][Deep_Residual', '3._Application_Samples', 'Known_Limitations', 'Of_Contents*_-', 'Additional_preprocessing_needs_to_be_applied_to_the_data_before', 'Layer*_-_[[https_//arxiv.org/abs/1807.03247][Arxiv_paper_by', '-_[[https_//github.com/onnx/onnx][GitHub__ONNX]]_-']
+:Benchmark\_TensorRT\_Engine a :Benchmark ;
+hasBenchmark :mlperfInferencev1.0 .
+
+:EfficientNet\_V1 a :Model ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Python a owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:onnx-graphsurgeon a owl:Module ;
+hasBenchmark :mlperfInferencev1.0 .
+
+:SavedModelExporter a owl:Class ;
+    rdfs:subClassOf :Exportation .
+
+:MLConversion a owl:Class ;
+    rdfs:subClassOf :Conversion .
+
+:TFOD\_EfficientDet\_models a owl:Class ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:TRT\_Comparison a owl:Class ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:onnx\_resnet50 a :Model ;
+hasBenchmark :mlperfInferencev1.0 .
+
+:Deep\_Residual a owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Application\_Samples a owl:Class ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Known\_Limitations a owl:Class ;
+hasBenchmark :mlperfInferencev1.0 .
+
+:Arxiv\_Paper\_by a owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:GitHub\_ONNX a owl:Module ;
+hasBenchmark :mlperfInferencev1.0 .
+
+:Mask\_R\_CNN a owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:R\_CNN a owl:NamedIndividual ;
+    hasBenchmark :mlperfInferencev1.0 .

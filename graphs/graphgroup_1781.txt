@@ -1,0 +1,82 @@
+['Auto-configuration', 'Local_and_remote_availability', 'Register_Service_Connectors', 'Service_Connector_Verification', 'Configure_local_clients', 'ACR_container_registry', 'Azure_Access_Token', 'ECR_container_registry', 'AWS_Federation_Token', 'Base_Abstraction_3__=Flavor=', 'Implementing_a_Custom_Stack_Component_Flavor', 'Interactive_stack_deployment', 'Displaying_Terraform_outputs_for_stacks_deployed_with_mlstacks', 'Container_Registry', '7)_Create_Stack', "And_you're_already_done!", 'Trackers*', 'Stores*', 'Registries*', 'Other_configuration', 'Model_Registry_Flavors']
+1. Automated Design Space Exploration
+The nodes "Auto-configuration" and "Interactive stack deployment" suggest that this process involves designing a configuration, but it is not clear whether it is automated or manual. To clarify this, we can add the following statement:
+```css
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+```
+1. Local and Remote Availability
+The nodes "Local\_and\_remote\_availability" suggest that this process involves making models available on both local and remote systems. We can add the following statement to clarify this:
+```css
+:LocalAndRemoteAvailability a owl:Class ;
+    rdfs:subClassOf :Availability .
+```
+1. Register Service Connectors
+The nodes "Register\_Service\_Connectors" suggest that this process involves registering service connectors to enable communication between different systems. We can add the following statement to clarify this:
+```css
+:ServiceConnectorRegistration a owl:Class ;
+    rdfs:subClassOf :ConnectorRegistration .
+```
+1. Service Connector Verification
+The nodes "ServiceConnectorVerification" suggest that this process involves verifying the service connectors to ensure that they are working correctly. We can add the following statement to clarify this:
+```css
+:ServiceConnectorVerification a owl:Class ;
+    rdfs:subClassOf :ConnectorVerification .
+```
+1. Configure Local Clients
+The node "Configure\_local\_clients" suggests that this process involves configuring local clients to work with the system. We can add the following statement to clarify this:
+```css
+:LocalClientConfiguration a owl:Class ;
+    rdfs:subClassOf :ClientConfiguration .
+```
+1. ACR\_container\_registry, Azure\_Access\_Token, ECR\_container\_registry, AWS\_Federation\_Token
+These nodes suggest that the system uses different container registries and access tokens to manage containers and communicate with different systems. We can add the following statements to clarify this:
+```css
+:ACRContainerRegistry a owl:Class ;
+    rdfs:subClassOf :ContainerRegistry .
+
+:AzureAccessToken a owl:Class ;
+    rdfs:subClassOf :AccessToken .
+
+:ECRContainerRegistry a owl:Class ;
+    rdfs:subClassOf :ContainerRegistry .
+
+:AWSFederationToken a owl:Class ;
+    rdfs:subClassOf :AccessToken .
+```
+1. Base Abstraction 3\_\=Flavor=
+The node "Base\_Abstraction\_3\_\=Flavor=" suggests that the system uses a specific abstraction flavor to interact with containers. We can add the following statement to clarify this:
+```css
+:ContainerAbstractionFlavor a owl:Class ;
+    rdfs:subClassOf :AbstractionFlavor .
+```
+1. Implementing a Custom Stack Component Flavor
+The node "Implementing\_a\_Custom\_Stack\_Component\_Flavor" suggests that the system allows users to implement their own custom abstraction flavors for stack components. We can add the following statement to clarify this:
+```css
+:CustomAbstractionFlavor a owl:Class ;
+    rdfs:subClassOf :ContainerAbstractionFlavor .
+```
+1. Container Registry
+The node "Container\_Registry" suggests that the system uses a container registry to manage containers. We can add the following statement to clarify this:
+```css
+:ContainerRegistry a owl:Class ;
+    rdfs:subClassOf :ContainerManager .
+```
+1. Displaying Terraform Outputs for Stacks Deployed with mlstacks
+The node "Displaying\_Terraform\_outputs\_for\_stacks\_deployed\_with\_mlstacks" suggests that the system displays outputs from Terraform for stacks deployed using mlstacks. We can add the following statement to clarify this:
+```css
+:TerraformOutputs a owl:Class ;
+    rdfs:subClassOf :CloudConfigurationOutput .
+```
+1. Other Configuration
+The node "Other\_configuration" suggests that the system uses other configuration options in addition to the ones mentioned above. We can add the following statement to clarify this:
+```css
+:OtherConfiguration a owl:Class ;
+    rdfs:subClassOf :SystemConfig .
+```
+1. Model Registry Flavors
+The node "Model\_Registry\_Flavors" suggests that the system uses different flavors for storing and managing models in the registry. We can add the following statement to clarify this:
+```css
+:ModelRegistryFlavor a owl:Class ;
+    rdfs:subClassOf :ModelRepository .
+```

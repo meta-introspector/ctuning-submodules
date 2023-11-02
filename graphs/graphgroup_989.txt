@@ -1,0 +1,108 @@
+['v0.13.0_(2020-03-17)', 'v0.12.0_(2020-03-06)', 'v0.11.3_(2020-02-25)', 'v0.11.2_(2020-02-11)', 'v0.11.1_(2020-02-11)', 'v0.11.0_(2020-01-28)', 'v0.10.6_(2019-12-11)', 'v0.10.5_(2019-12-9)', 'v0.10.4_(2019-12-4)', 'v0.10.3_(2019-11-18)', 'v0.10.2_(2019-11-11)', 'v0.10.1_(2019-10-31)', 'v0.10.0_(2019-10-28)', 'v0.9.8_(2019-10-24)', 'v0.9.7_(2019-10-18)', 'v0.9.6_(2019-10-15)', 'v0.9.5_(2019-10-9)', 'v0.9.4_(2019-10-7)', 'v0.9.3_(2019-10-1)', 'v0.9.2_(2019-10-1)', 'v0.9.1_(2019-10-1)']
+* Add the class and subclass relationship between AutomatedDesignSpaceExploration, Exploration, and Analysis:
+```
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+```
+* Add the class relationship between MLPerfInference and Benchmark:
+```
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+```
+* Add the subclass relationships for v0.x.x (versions) and ReproducibilityReport:
+```
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:AutomatedDesignSpaceExploration@prefix :<http://ctuning.org/ml-benchmark-ontology#> . @prefix owl: <http://www.w3.org/2002/07/owl#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+<http://ctuning.org/ml-benchmark-ontology>@prefix : <http://ctuning.org/ml-benchmark-ontology#> . @prefix owl: <http://www.w3.org/2002/07/owl#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:AutomatedDesignSpaceExploration@prefix :<http://ctuning.org/ml-benchmark-ontology#> . @prefix owl: <http://www.w3.org/2002/07/owl#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:AutomatedDesignSpaceExploration@prefix :<http://ctuning.org/ml-benchmark-ontology#> . @prefix owl: <http://www.w3.org/2002/07/owl#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:AutomatedDesignSpaceExploration@prefix :<http://ctuning.org/ml-benchmark-ontology#> . @prefix owl: <http://www.w3.org/2002/07/owl#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .

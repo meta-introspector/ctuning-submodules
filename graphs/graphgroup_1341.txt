@@ -1,0 +1,20 @@
+['WMT_German-English', 'Speed*__(2.1s_step-time,_3.4K_wps)_on_/Nvidia_K40m/_&_(0.7s', 'WMT_English-German_---_Full_Comparison', 'Standard_HParams', 'Other_resources', 'Reproduced_papers', 'List_of_all_sorted_CM_scripts', 'Third_level_files', 'Differentiating_ML_artifacts', 'Environment_variables', 'rename', 'CM_internal_automations', 'default,_CM_will_pull_Git_repositories_and_cache_installations_and', 'Ubuntu,_Debian', 'that_you_must_set_up_virtual_env_on_Ubuntu_23+_before_using_any', 'Red_Hat', 'CM_CLI_testing', 'Reusable_automation_actions', 'Show/clean_CM_cache_with_all_installations', '2022', '2021-2023_[[https_//mlcommons.org][MLCommons]]']
+* WMT\_German-English is a machine translation task.
+* Speed\_\_\_\_\_\_\_2.1s\_step-time,\_3.4K\_wps) on /Nvidia\_K40m/ is the execution time and throughput for the WMT\_German-English task on the Nvidia K40m GPU.
+* Standard\_HParams is a set of hyperparameters used in the machine translation model.
+* Other\_resources refers to additional resources required to run the machine translation model, such as pre-trained word embeddings or language models.
+* Reproduced\_papers are papers that have successfully reproduced the results of the machine translation model.
+* List\_of\_all\_sorted\_CM\_scripts is a list of all the CM scripts used in the machine translation model, sorted by some criteria such as version number or date of creation.
+* Third\_level\_files refer to files that are three levels down from the root directory of the machine translation model and contain configuration or data files required for the model's operation.
+* Differentiating\_ML\_artifacts refers to identifying which files or components of the machine translation model are specific to different models or tasks, allowing them to be selectively used or modified as needed.
+* Environment\_variables refer to system-wide settings that affect the behavior of the machine translation model, such as the path to the GPU drivers or the amount of available memory.
+* rename refers to renaming a file or directory in the machine translation model for better organization or to avoid naming conflicts.
+* CM\_internal\_automations are automation actions used by the Continuous Modeling (CM) system to streamline the development and testing process for the machine translation model.
+* default, CM\_will\_pull\_Git\_repositories\_and\_cache\_installations\_and refers to the default settings for the CM system when it is first set up.
+* Ubuntu, Debian are operating systems that are commonly used for running machine learning models and need to be set up with virtual environments before using any machine translation model.
+* that\_you\_must\_set\_up\_virtual\_env\_on\_Ubuntu\_23\+\_before\_using\_any refers to the fact that virtual environments must be set up on Ubuntu 23+ before using any machine learning models, including the machine translation model.
+* Red\_Hat refers to a specific vendor of virtualization and containerization software.
+* CM\_CLI\_testing refers to command-line interface (CLI) testing of the Continuous Modeling (CM) system.
+* Reusable\_automation\_actions are automation actions that can be reused across different machine learning models or tasks, reducing development time and improving efficiency.
+* Show/clean\_CM\_cache\_with\_all\_installations refers to the process of displaying or cleaning up the cache used by the Continuous Modeling (CM) system for all installed models.
+* 2022, 2021-2023\_[[https\_//mlcommons.org][MLCommons]] refer to specific time periods during which the machine translation model was developed or tested.

@@ -1,0 +1,71 @@
+['Results', 'Megatron_Large_with_Sparsity', 'Inference_performance__NVIDIA_A30', 'Software_Versions', 'TensorRT_inference_benchmark', 'Types_of_changes', '[1.3.4]_-_2023-02-02', 'note_that_due_to_end-of-life,_Python_<=_3.6_is_no_longer', 'File_Structure', 'Ubuntu_20.04_on_x86-64_with_cuda-11.6.2_(default)*', 'Step_1__PyTorch_model_to_ONNX_model', 'Install_required_packages', 'Running_demoDiffusion', '=getPluginCreator()_could_not_find_Plugin_<operator_name>_version_1=', 'Custom_Layer_Support', 'TensorRT_8.5_GA_Release_-_2022-11-2', 'Deprecated', 'TensorRT_8.4_GA_Release_-_2022-6-6', 'Fixes', 'TensorRT_8.2_GA_Release_-_2021-11-23', 'TensorRT_8.2_EA_Release_-_2021-10-04']
+From the given nodes, we can see that the model is a machine learning benchmark using TensorRT, which has different versions. The model is also sparsity-aware and includes custom layers. The file structure and software versions are specified. The inference performance is measured for NVIDIA A30. The model is compatible with PyTorch and can be converted to ONNX format.
+
+We can create the following OWL statements and relationships for this model:
+```
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:Model a owl:NamedIndividual ;
+    owl:sameAs :Megatron_Large_with_Sparsity .
+
+:Version a rdfs:Datatype ;
+    owl:datatype xsd:decimal ;
+    rdfs:label 'TensorRT_8.5_GA_Release_-_2022-11-2' .
+
+:Version2 a rdfs:Datatype ;
+    owl:datatype xsd:decimal ;
+    rdfs:label '[1.3.4]_-_2023-02-02' .
+
+:InferencePerformance a :MLPerfInference,
+        owl:NamedIndividual ;
+    owl:sameAs :Inference_performance__NVIDIA_A30 .
+
+:CustomLayerSupport a owl:Class ;
+    rdfs:subClassOf :LayerSupport .
+
+:SpatialPool a owl:Class ;
+    rdfs:subClassOf :Layer .
+
+:ModelFileStructure a owl:NamedIndividual ;
+    owl:sameAs 'Ubuntu_20.04_on_x86-64_with_cuda-11.6.2_(default)*' .
+
+:PyTorchModelToONNX a owl:Class ;
+    rdfs:subClassOf :Conversion .
+
+:TensorRTInferenceBenchmark a owl:NamedIndividual ;
+    owl:sameAs 'TensorRT_inference_benchmark' .
+
+:TypesOfChanges a owl:NamedIndividual ;
+    rdfs:label 'Custom Layer Support' .
+
+:PythonVersion a owl:Class ;
+    rdfs:subClassOf :SoftwareVersion .
+    rdfs:label '[1.3.4]_-_2023-02-02' .
+
+:CompatibleWithPyTorch a owl:Class ;
+    rdfs:subClassOf :MLModel .
+    rdfs:label 'PyTorch' .
+
+:ConvertToONNX a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :PyTorchModelToONNX .
+
+:SparsityAware a owl:Class ;
+    rdfs:subClassOf :SpatialPool .
+
+:HasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :InferencePerformance ;
+    rdfs:range :MLPerfInference .
+```
+The `:Model` class is the main class representing the model. The `:Version` and `:Version2` classes are used to specify the different versions of TensorRT that are available. The `:InferencePerformance` class represents the inference performance for NVIDIA A30.
+
+The `:CustomLayerSupport` class is used to represent custom layer support, which is a type of change that can be made to the model. The `:SpatialPool` class represents spatial pools, which are layers in the model that handle spatial information.
+
+The `:ModelFileStructure` class represents the file structure of the model. The `:PyTorchModelToONNX` class represents the conversion process from PyTorch to ONNX format. The `:TensorRTInferenceBenchmark` class represents the benchmark for TensorRT inference performance.
+
+The `:TypesOfChanges` class is used to label different types of changes that can be made to the model, such as adding custom layers or converting the model to a different format. The `:PythonVersion` class is used to specify the version of Python that is required for the model.
+
+The `:CompatibleWithPyTorch` class represents models that are compatible with PyTorch. Finally, the `:HasBenchmark` property is used to link the inference performance to the model itself.

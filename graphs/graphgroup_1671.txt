@@ -1,0 +1,17 @@
+['CM_script_automation_help', 'CM_CLI', 'CM_modular_Docker_container', 'Customization', 'CLI_flags_can_be_used_in_the_Python_CM_API_as_follows_*', 'Default_environment', 'Script_workflow,_dependencies_and_native_scripts', 'How_to_use', '=[DOCKER_OS_VERSION]=_is_one_of_=18.04=,_=20.04=,_=22.04=_for_=ubuntu=', 'Versions', 'New_environment_keys_(filter)', 'Script_flags_mapped_to_environment', 'New_environment_keys_auto-detected_from_customize', 'Default_variations', 'Script_output', 'Valid_variation_combinations_checked_by_the_community', 'Managing_the_configuration_files', 'When_custom_config_files_are_generated_they_override_the', 'Information', 'Setup_for_Google_Cloud_Instances', 'System_dependencies']
+* `:MLPerfInferencev1.0` is a specific version of `:MLPerfInference`.
+	+ `:reproducibilityReportMLPerfInferencev1.1` is a report that describes the reproducibility of the results from running `:mlperfInferencev1.0`.
+* `:Exploration` is an instance of `:Analysis`, which represents a process for evaluating different designs or configurations.
+* `:Benchmark` is a specific type of evaluation that measures the performance of a machine learning model on a given task.
+* `:Report` is a document that describes the results of an experiment or analysis.
+* `:ReproducibilityReport` is a subtype of `:Report` that specifically focuses on the reproducibility of the results.
+* `:Script_workflow`, `:dependencies_and_native_scripts`, and `:Script_output` are all related to the use of scripts in the model.
+	+ `:hasBenchmark` is an object property that relates a script or workflow to the benchmarks that it evaluates.
+* `Customization` and `CLI_flags_can_be_used_in_the_Python_CM_API_as_follows_*` are related to the ability to customize the model using command-line flags.
+* `Default_environment`, `New_environment_keys_(filter)`, `Script_flags_mapped_to_environment`, and `New_environment_keys_auto-detected_from_customize` are related to configuring the environment used by the model.
+	+ `:Standardization` is a class that represents the process of standardizing the environment used in the model.
+* `Default_variations` are specific configurations or settings that are used as a default for the model.
+* `Valid_variation_combinations_checked_by_the_community` is a property that describes which combinations of configurations are known to work well for the model.
+* `Managing_the_configuration_files` and `When_custom_config_files_are_generated_they_override_the` are related to managing the configuration files used by the model.
+* `Setup_for_Google_Cloud_Instances` is a specific configuration for using the model on Google Cloud instances.
+* `System_dependencies` are the system-level dependencies required for running the model.

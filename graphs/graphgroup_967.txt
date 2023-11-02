@@ -1,0 +1,69 @@
+['v0.20.11_(2020-09-25)', 'v0.20.10_(2020-09-23)', 'v0.20.9_(2020-09-22)', 'v0.20.8_(2020-09-22)', 'v0.20.7_(2020-09-22)', 'v0.20.6_(2020-09-18)', 'v0.20.5_(2020-09-16)', 'v0.20.4_(2020-09-14)', 'v0.20.3_(2020-09-11)', 'v0.20.2_(2020-09-11)', 'v0.20.1_(2020-09-09)', 'v0.20.0_(2020-09-08)', 'v0.17.0_(2020-07-20)', 'v0.16.0_(2020-06-11)', 'v0.15.0_(2020-05-05)', 'v0.14.1_(2020-04-17)', 'v0.14.0_(2020-04-09)', 'v0.13.4_(2020-03-25)', 'v0.13.3_(2020-03-20)', 'v0.13.2_(2020-03-20)', 'v0.13.1_(2020-03-17)']```turtle
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+# New nodes and relationships
+@prefix version: <http://ctuning.org/ml-benchmark-ontology/version#> .
+version:v0.20 a owl:NamedIndividual,
+                  :MLPerfInference ;
+    version:hasVersion [value "0.20"] .
+version:v0.17 a owl:NamedIndividual,
+                  :MLPerfInference ;
+    version:hasVersion [value "0.17"] .
+version:v0.16 a owl:NamedIndividual,
+                  :MLPerfInference ;
+    version:hasVersion [value "0.16"] .
+version:v0.15 a owl:NamedIndividual,
+                  :MLPerfInference ;
+    version:hasVersion [value "0.15"] .
+version:v0.14.1 a owl:NamedIndividual,
+                  :MLPerfInference ;
+    version:hasVersion [value "0.14.1"] .
+version:v0.13.2 a owl:NamedIndividual,
+                  :MLPerfInference ;
+    version:hasVersion [value "0.13.2"] .
+version:v0.13.1 a owl:NamedIndividual,
+                  :MLPerfInference ;
+    version:hasVersion [value "0.13.1"] .
+
+version:v0.20 hasBenchmark mlperfInferencev1.0 .
+version:v0.17 hasBenchmark mlperfInferencev1.0 .
+version:v0.16 hasBenchmark mlperfInferencev1.0 .
+version:v0.15 hasBenchmark mlperfInferencev1.0 .
+version:v0.14.1 hasBenchmark mlperfInferencev1.0 .
+version:v0.13.2 hasBenchmark mlperfInferencev1.0 .
+version:v0.13.1 hasBenchmark mlperfInferencev1.0 .
+```

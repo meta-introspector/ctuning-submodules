@@ -1,0 +1,100 @@
+['Updated', 'TensorRT_8.0_Release_-_2021-07-02', '21.05_Container_Release_-_2021-05-17', '21.03_Container_Release_-_2021-03-09', '21.02_Container_Release_-_2021-01-18', '20.12_Container_Release_-_2020-12-17', 'TensorRT_7.2.1_Release_-_2020-10-20', 'Version*__*ONNX-TensorRT_Version_/_Branch*__*GPU_Type*_', 'Driver_Version*__*CUDA_Version*__*CUDNN_Version*__*Operating', 'or_Container_(if_container_which_image_+_tag)*_', 'Full_Dimensions_+_Dynamic_Shapes', 'Supported_Operators', 'InstanceNormalizaiton_Performance', 'Executable_Usage', 'Python_Modules', 'ONNX-TensorRT_Python_Backend_Usage', 'Tests', 'Pre-trained_Models', 'Add_PyConfig.h', 'Build_Python_bindings', 'GA_build*_*']```turtle
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:TensorRT_8.0_Release_-_2021-07-02 a :Container_Release,
+        owl:NamedIndividual .
+
+:21.05_Container_Release_-_2021-05-17 a :Container_Release,
+        owl:NamedIndividual .
+
+:21.03_Container_Release_-_2021-03-09 a :Container_Release,
+        owl:NamedIndividual .
+
+:21.02_Container_Release_-_2021-01-18 a :Container_Release,
+        owl:NamedIndividual .
+
+:20.12_Container_Release_-_2020-12-17 a :Container_Release,
+        owl:NamedIndividual .
+
+:TensorRT_7.2.1_Release_-_2020-10-20 a :Container_Release,
+        owl:NamedIndividual .
+
+:Version*__*ONNX-TensorRT_Version_/_Branch*__*GPU_Type*_ a :Model ;
+    rdfs:label 'ONNX-TensorRT' .
+
+:Driver_Version*__*CUDA_Version*__*CUDNN_Version*__*Operating a :Standardization ;
+    rdfs:subClassOf :Process .
+
+:or_Container_(if_container_which_image_+_tag)*_ a :Instance ;
+    rdfs:label 'OR' .
+
+:Full_Dimensions_+_Dynamic_Shapes a :Instance ;
+    rdfs:subClassOf :Analysis .
+
+:Supported_Operators a :MLPerfInference ;
+    rdfs:subClassOf :Benchmark .
+
+:InstanceNormalizaiton_Performance a :MLPerfInference ;
+    rdfs:subClassOf :Benchmark .
+
+:Executable_Usage a :Report ;
+    rdfs:label 'executable_usage' .
+
+:Python_Modules a :Model ;
+    rdfs:subClassOf :Instance .
+
+:ONNX-TensorRT_Python_Backend_Usage a :Report ;
+    rdfs:label 'python_backend_usage' .
+
+:Tests a :MLPerfInference ;
+    rdfs:subClassOf :Benchmark .
+
+:Pre_trained_Models a :Model ;
+    rdfs:subClassOf :Instance .
+
+:Add_PyConfig.h a :Standardization ;
+    rdfs:subClassOf :Process .
+
+:Build_Python_bindings a :Report ;
+    rdfs:label 'python_binding_build' .
+
+:GA_build*_* a :Model ;
+    rdfs:subClassOf :Instance .
+```

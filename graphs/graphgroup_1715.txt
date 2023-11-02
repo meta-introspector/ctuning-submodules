@@ -1,0 +1,68 @@
+['New_state', 'Detect_python_with_non-standard_name', 'Force_new_detection_even_if_python_is_already_found_and_cached', 'Using_Docker', 'Future_work', 'Private_challenges', 'Copyright', 'CK_components_can_be_found_at', 'Author', 'Option_2_-_Execute_the_whole_ML_pipeline_from_a_Python_script_', '_dart__Dashboard', '🗺_Overview', '🖥_Run_the_example', '▶️_Run_the_Code', 'CLI_Commands_for_the_Label_Studio_Integration', '🧽_Clean_up', '📜_Learn_more', 'SOON_*_We_also_recommend_you_check_out_our', '🧰_How_the_example_is_implemented', '🖥_Run_it_locally', 'ZenML_Test_Environments']```less
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+
+:NewState a :Benchmark ;
+    :hasModel 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:DetectPythonWithNonStandardName a :MLPerfInference,
+        owl:NamedIndividual ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:ForceNewDetectionEvenIfPythonIsAlreadyFoundAndCached a :Exploration ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:UsingDocker a :Workflow ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:FutureWork a :Exploration ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:PrivateChallenges a :Standardization ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:Copyright a :Report ;
+    :hasDocumentation 'https://www.ctuning.org/ml-benchmark-ontology' .
+
+:CKComponentsCanBeFoundAt a :MLPerfInference,
+        owl:NamedIndividual ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:Author a :Report ;
+    :hasDocumentation 'https://www.ctuning.org/ml-benchmark-ontology' .
+
+:Option2ExecuteTheWholeMLPipelineFromAPythonScript_ a :Workflow ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+'_dart__Dashboard' a :Benchmark ;
+    :hasModel 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:'🗺_Overview' a :Report ;
+    :hasDocumentation 'https://www.ctuning.org/ml-benchmark-ontology' .
+
+:'🖥_Run_the_example' a :Exploration ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:'▶️_Run_the_Code' a :Option2ExecuteTheWholeMLPipelineFromAPythonScript_ ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:CLICommandsForTheLabelStudioIntegration a :Exploration ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:'🧽_Clean_up' a :Standardization ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:'📜_Learn_more' a :Workflow ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:SOON_*_We_also_recommend_you_check_out_our a :FutureWork ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:HowTheExampleIsImplemented a :Exploration ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:RunItLocally a :Workflow ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.json' .
+
+:ZenMLTestEnvironments a :Standardization ;
+    :hasBenchmark 'https://github.com/ZenML/zenml/blob/master/examples/image_classification/resnet50.jpg' .
+```

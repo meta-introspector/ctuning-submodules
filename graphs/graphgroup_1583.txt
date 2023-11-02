@@ -1,0 +1,39 @@
+['CK_workflows_for_image_classification_with_OpenVino', 'CK_workflows_for_image_classification_with_PyTorch', 'CK_workflows_for_object_detection_with_TVM', 'CK_workflows_for_image_classification_with_ONNX', 'CK_workflows_for_image_classification_with_TFLite', 'MLPerf™', 'Upgrade_the_CK_framework', 'Logging_infrastructure', 'MLCube™_project', 'Run_benchmark', 'CK_automation', 'Continuous_integration_for_CK_workflows', '[[../reproduce/README.md#][Back_to_MLPerf_v1.1_reproducibility', 'MLPerf_inference_v1.1_reproducibility_report_for_the_OctoML', 'Install_PyTorch_model_(Resnet50__int8__quantized)', 'and_simplifying_MLPerf', 'Authors', 'Use_reduced_ImageNet_to_test_the_MLPerf_workflow', 'Install_CK_workflow_Python_dependencies', 'CK_components_for_ML_Systems_(automation_recipes)', 'Automated_workflows']
+* :Benchmark hasBenchmark mlperfInferencev1.0 .
+* :ReproducibilityReport hasReproducibilityReport reproducibilityReportMLPerfInferencev1.1 .
+* :Exploration hasStandardization .
+* :MLPerf hasAutomatedDesignSpaceExploration .
+* :ImageClassificationWithOpenVino a CK\_workflow ;
+    hasBenchmark benchmark\_imageClassificationWithOpenVino .
+* :ImageClassificationWithPyTorch a CK\_workflow ;
+    hasBenchmark benchmark\_imageClassificationWithPyTorch .
+* :ObjectDetectionWithTVM a CK\_workflow ;
+    hasBenchmark benchmark\_objectDetectionWithTVM .
+* :ImageClassificationWithONNX a CK\_workflow ;
+    hasBenchmark benchmark\_imageClassificationWithONNX .
+* :ImageClassificationWithTFLite a CK\_workflow ;
+    hasBenchmark benchmark\_imageClassificationWithTFLite .
+* :MLPerfInference a MLPerfInference v1.0 ;
+    hasBenchmark benchmark\_MLPerfInference .
+* :AutomatedDesignSpaceExploration isAutomated .
+* :hasAutomatedDesignSpaceExploration has Automated Design Space Exploration ;
+* :Standardization is Standardized ;
+* :Workflow is Workflow ;
+* :LoggingInfrastructure a CK\_framework\_component ;
+    isPartOf CK\_automation ;
+* :MLCube™_project a CK\_framework\_component ;
+    isPartOf CK\_automation .
+* :RunBenchmark is Run Benchmark ;
+* :CK\_workflows\_for\_image\_classification\_with\_OpenVino is CK\_workflow ;
+    hasWorkflow imageClassificationWithOpenVino ;
+* :CK\_workflows\_for\_object\_detection\_with\_TVM is CK\_workflow ;
+    hasWorkflow objectDetectionWithTVM .
+* :CK\_workflows\_for\_image\_classification\_with\_ONNX is CK\_workflow ;
+    hasWorkflow imageClassificationWithONNX .
+* :CK\_workflows\_for\_image\_classification\_with\_TFLite is CK\_workflow ;
+    hasWorkflow imageClassificationWithTFLite .
+* :CK\_automation is CK\_framework\_component ;
+    isPartOf CK\_workflow .
+* :ContinuousIntegrationForCKWorkflows is Continuous Integration for CK Workflows ;
+* :BackToMLPerfV11Reproducibility is Back to MLPerf v1.1 Reproducibility ;
+* :OctoML has MLPerf\_inference\_v1.1\_reproducibility\_report\_for\_the\_OctoML .

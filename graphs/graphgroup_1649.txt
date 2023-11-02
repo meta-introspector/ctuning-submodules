@@ -1,0 +1,104 @@
+['Tensorflow_backend', 'Tensorflow_backend_(Reference_implementation)', 'test', 'Platform_information', 'show', 'list_files_recursively', 'add', 'replay', 'CM_script_execution_flow', 'If_a_script_is_already_cached,_then_the_=preprocess=,_=run_file=_and', 'Dynamic_variations', 'ENV_flow_during_CM_script_execution', 'Special_env_keys', 'Script_Meta', 'Special_keys_in_script_meta', 'How_cache_works?', 'prepare', 'Caching_output_of_CM_scripts', 'Assembling_pipeline_to_compile_and_run_image_corner_detection', 'Customizing_sub-dependencies_in_a_pipeline', 'Using_Python_virtual_environments']Based on the extracted nodes, I can suggest the following OWL statements and relationships to represent the model in the given ontology:
+```turtle
+@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
+
+:AutomatedDesignSpaceExploration a owl:Class ;
+    rdfs:subClassOf :Exploration .
+
+:Standardization a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:Workflow a owl:Class ;
+    rdfs:subClassOf :Process .
+
+:hasBenchmark a owl:ObjectProperty ;
+    rdfs:domain :Model ;
+    rdfs:range :Benchmark .
+
+:mlperfInferencev1.0 a :MLPerfInference,
+        owl:NamedIndividual .
+
+:reproducibilityReportMLPerfInferencev1.1 a :ReproducibilityReport,
+        owl:NamedIndividual .
+
+:Exploration a owl:Class ;
+    rdfs:subClassOf :Analysis .
+
+:MLPerfInference a owl:Class ;
+    rdfs:subClassOf :Benchmark .
+
+:Report a owl:Class ;
+    rdfs:subClassOf :Documentation .
+
+:ReproducibilityReport a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Benchmark a owl:Class ;
+    rdfs:subClassOf :Evaluation .
+
+:Tensorflow_backend a :MLPerfInference ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Tensorflow_backend_(Reference_implementation) a :Exploration ;
+    rdfs:label "Reference implementation" .
+
+:test a :Exploration ;
+    rdfs:label "Test" .
+
+:Platform_information a :Standardization ;
+    rdfs:label "Platform information" .
+
+:show a :MLPerfInference ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:list_files_recursively a :Exploration ;
+    rdfs:label "List files recursively" .
+
+:add a :Standardization ;
+    rdfs:label "Add" .
+
+:replay a :MLPerfInference ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:CM_script_execution_flow a :Workflow ;
+    rdfs:label "CM script execution flow" .
+
+:If_a_script_is_already_cached,_then_the_=preprocess,_=run_file=_and a :Exploration ;
+    rdfs:label "If a script is already cached, then the preprocess and run\_file are and" .
+
+:Dynamic_variations a :MLPerfInference ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:ENV_flow_during_CM_script_execution a :Workflow ;
+    rdfs:label "ENV flow during CM script execution" .
+
+:Special_env_keys a :MLPerfInference ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Script_Meta a owl:Class ;
+    rdfs:subClassOf :Report .
+
+:Special_keys_in_script_meta a :Report ;
+    rdfs:label "Special keys in script meta" .
+
+:How_cache_works? a :Exploration ;
+    rdfs:label "How cache works?" .
+
+:prepare a :MLPerfInference ;
+    hasBenchmark :mlperfInferencev1.0 .
+
+:Caching_output_of_CM_scripts a :Standardization ;
+    rdfs:label "Caching output of CM scripts" .
+
+:Assembling_pipeline_to_compile_and_run_image_corner_detection a :Workflow ;
+    rdfs:label "Assembling pipeline to compile and run image corner detection" .
+
+:Customizing_sub-dependencies_in_a_pipeline a :Standardization ;
+    rdfs:label "Customizing sub-dependencies in a pipeline" .
+
+:Using_Python_virtual_environments a :MLPerfInference ;
+    hasBenchmark :mlperfInferencev1.0 .
+```
