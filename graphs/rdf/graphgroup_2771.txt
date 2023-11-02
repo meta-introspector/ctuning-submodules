@@ -1,4 +1,3 @@
-['Parse_results_and_create_all_the_plots', 'Everyone_else_', 'Abbreviated_building_instructions_', 'Tutorial_Videos_&_Slides', 'Performance_Mode_vs.\xa0Energy_Mode', 'Hardware_Setup', 'Only_attempt_this_if_you_are_very_comfortable_with_the', 'Energy_Mode_Hardware', 'NOTE__Only_ONE_power_supply_is_allowed_to_supply_the_DUT', 'Software_Setup', '2__The_Runner_will_look_in_the_subfolder_defined_in_the_firmware.', 'Selecting_Energy_Mode', 'Unlike_Performance_Mode,_you_cannot_talk_directly_to_the_DUT', 'Custom_Configuration', 'Sometimes_a_device_is_not_detected_when_hot-plugged._The', 'Standard_debug_protocol_for_device_detection_issues', 'Fractured_Messages_from_the_IO_Manager', 'Bill_of_Materials', 'Flutter_may_not_work_correctly_if_your_temp_directory_is_located', 'Tested_environment', 'that_VS_Code_=preLaunchTask=_hook_will_not_run_this_command_when']```
 <http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
 
 :AutomatedDesignSpaceExploration a owl:Class ;

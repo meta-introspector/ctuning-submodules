@@ -1,4 +1,3 @@
-['WMT_German-English', 'Speed*__(2.1s_step-time,_3.4K_wps)_on_/Nvidia_K40m/_&_(0.7s', 'WMT_English-German_---_Full_Comparison', 'Standard_HParams', 'Other_resources', 'Reproduced_papers', 'List_of_all_sorted_CM_scripts', 'Third_level_files', 'Differentiating_ML_artifacts', 'Environment_variables', 'rename', 'CM_internal_automations', 'default,_CM_will_pull_Git_repositories_and_cache_installations_and', 'Ubuntu,_Debian', 'that_you_must_set_up_virtual_env_on_Ubuntu_23+_before_using_any', 'Red_Hat', 'CM_CLI_testing', 'Reusable_automation_actions', 'Show/clean_CM_cache_with_all_installations', '2022', '2021-2023_[[https_//mlcommons.org][MLCommons]]']
 * WMT\_German-English is a machine translation task.
 * Speed\_\_\_\_\_\_\_2.1s\_step-time,\_3.4K\_wps) on /Nvidia\_K40m/ is the execution time and throughput for the WMT\_German-English task on the Nvidia K40m GPU.
 * Standard\_HParams is a set of hyperparameters used in the machine translation model.

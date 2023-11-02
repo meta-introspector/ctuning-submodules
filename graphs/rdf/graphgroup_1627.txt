@@ -1,4 +1,3 @@
-['Collective_Knowledge_framework_(CK)', 'Tutorials', 'Releases', 'Stable_versions', 'Current_projects', 'Other_use_cases', 'CK_portal', 'Organizers', 'Initial_discussion_and_materials', 'Generate_and_upload_MLPerf_submission', 'Questions?_Suggestions?', 'Generate_MLPerf_submission', 'Use_=--submitter=<Your_name>=_if_your_organization_is_an_official', 'Challenge', 'Test_CUDA_installation', 'Install_Python_virtual_environment', 'Push_the_results_to_GitHub_repo', 'Try_PyTorch_backend', 'Test_composable_ML_benchmark_with_other_models,_data_sets,_frameworks', 'Generate_actual_submission_tree', 'Pytorch_backend']Here are some additional OWL statements and relationships for the given nodes:
 ```turtle
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

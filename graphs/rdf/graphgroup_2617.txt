@@ -1,4 +1,3 @@
-['GCS_for_simple_task_signaling', 'versions*_of_the_official_models_targeting_releases_of', 'Running_the_models', 'Pre-trained_model', 'Compute_Devices', 'From_Docker', 'The_current_data_generation_pipeline_is_run_on_CPU_and_is', 'Training_data_order', 'Evaluation_results', 'Detailed_instructions', 'Model_Definition', '[[file_model/attention_layer.py][attention_layer.py]]__Defines_the', 'BLEU_computation', 'Term_definitions', 'Recommended_setup', 'one_can_control_which_GPUs_are_used_with_the_NV_GPU_variable', 'Learning_rate_schedule', '4._Dataset/Environment', 'Run_and_Time', 'Steps_to_launch_training', 'MLCommons_Inference']Here are some OWL statements and relationships that can be added to the ontology based on the extracted nodes from the headings:
 ```sql
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .

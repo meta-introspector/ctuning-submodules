@@ -1,4 +1,3 @@
-['Examples_', 'ImageNet_validation_dataset_(required_for_calibration)', 'Using_Python_3_is_recommended.', 'We_now_have_=ck-env_package_lib-python-cython=_but_it_does_not', 'Build_warning', 'Refresh_all_CK_repositories_after_any_updates_(e.g.\xa0bug_fixes)_', 'See_the_quotes_magic_explained', 'Run_the_default_command', 'Set_up_environment_variables', 'This_is_equivalent_to_the_default_run_command_', 'Gory_details', 'Copy_the_results_to_a_machine_for_analysis', 'You_may_need_to_run_commands_below_with_=sudo=,_unless_you', 'Prepare_repository', 'Build_(Linux_or_Windows)', 'Latest', 'Other_Dependencies', 'Programs', 'target_space_id,_is_character_level,', 'Data_', 'Putting_it_all_together']
 :AutomatedDesignSpaceExploration a owl:Class ;
 hasBenchmark mlperfInferencev1.0 .
 

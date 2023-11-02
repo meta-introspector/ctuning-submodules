@@ -1,4 +1,3 @@
-['we_have_moved_the_main_AE_pages', 'Description', 'Packed_data', 'Running_the_model', 'Example_2', 'Description_of_how_the_=results_text.tar.gz=_file_was_prepared', 'Requirements', '2._Directions', 'Steps_to_download_data', '=dev-clean-wav/=_*_=dev-other-wav/=_*_=test-clean-wav/=_*', 'NVIDIA_DGX_A100_(single_node)', 'Alternative_launch_with_nvidia-docker', 'Hyperparameter_settings', '3._Dataset/Environment', 'Test_data_order', '4._Model', 'Loss_function', '5._Quality', 'Publication/Attribution', 'Steps_to_launch_training_on_multiple_nodes', '3._Quality']
 :Model a owl:Class ;
     rdfs:subClassOf :Evaluation .
 

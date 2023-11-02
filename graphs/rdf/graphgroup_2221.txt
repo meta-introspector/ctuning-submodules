@@ -1,4 +1,3 @@
-['to_Triton_Inference_Server_and_want_do_just_deploy_your_model', 'Create_A_Model_Repository', 'Verify_Triton_Is_Running_Correctly', 'Send_an_Inference_Request', 'A_clear_and_concise_description_of_what_the_bug_is.', 'Information*_What_version_of_Triton_are_you_using?', 'Reproduce*_Steps_to_reproduce_the_behavior.', 'RELEASE__You_are_currently_on_the_main_branch_which_tracks', 'Serve_a_Model_in_3_Easy_Steps', 'Client_Support_and_Examples', 'Extend_Triton', 'Additional_Documentation', 'Contributing', 'A_demo_to_query_inception_model', 'Helm_v3', 'Model_Repository', 'Helm_v2', 'GCS_Permissions', 'Deploy_Prometheus_and_Grafana', 'AWS_Model_Repository', 'Supported_flavors']Based on the given nodes, we can make the following additional OWL statements:
 ```lua
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .

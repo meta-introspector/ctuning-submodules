@@ -1,4 +1,3 @@
-['=[HR]=_Compile_the_workloads_on_the_host_and_copy_to_the_device', 'F._Expected_Results_from_Set_up_QAIC_SDKs', '=[D]=_Verify_with_a_quick_run', 'Appendix__Arguments', '=DOCKER_DEVICE_TYPE=', 'Appendix__Info', 'Launch_a_Docker_container_on_the_client_side_(=pf002=)', 'Scenarios', 'BERT-99', 'Run_the_client_program_(=pf002=)', 'BERT-99.9', 'The_final_tarball_should_not_include_hidden_files._This_can', 'Submit_your_submission', 'MLPerf_Quantization', 'Apply_Perf_Optmization', '10._run', 'Get_started_with_DLRM', 'This_mode_is_supported_only_with_CK_≤_v1.17.0_or_≥_v2.6.0_', '"All-in-one"', 'Note_that_unlike_[[#mobilenet_v1][MobileNet-v1]],', 'prepare_env']```less
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

@@ -1,4 +1,3 @@
-['Help', 'SSD_ResNet34_int8', 'ONNXRuntime_PTQ', '[[https_//github.com/krai/ck-mlperf/tree/master/program/generate-target-latency][Estimate', 'Accuracy', 'OpenCL', 'Compliance', 'Use_a_uniform_target_latency', 'Benchmark_via_the_"neoclassical"_CK_interface', '=model-tflite-mlperf-efficientnet-lite4=', '[[https_//github.com/arm-software/armnn-mlperf#preprocess-on-an-x86-machine-and-detect-on-an-arm-dev-board][Detect', 'Benchmark_performance_via_the_"classical"_CK_interface', 'AutoSinian', 'Benchmarks', 'Inside_the_Docker_container,_[[file_closed/Alibaba]]_will_be', 'Prerequisites', 'Run_harness_on_engines', 'Notes_on_runtime_and_performance', 'Run_Calibration', 'Steps_to_do_calibration_for_RNNT', 'Install_Python_and_IPex']```less
 # Model class
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 :Model a :Model ;

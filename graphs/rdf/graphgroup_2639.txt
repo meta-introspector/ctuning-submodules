@@ -1,4 +1,3 @@
-['training*', 'Mixed_Precision_(AMP)*', 'rate_decay*', 'logger*', 'Repository_content', 'Abstractions', 'Note_', 'Finetuning_from_Detectron_weights_on_custom_datasets', 'Steps_to_run_benchmark.', '2*', 'note_that_all_command_instructions_provided_in_this_README_are', 'note_that_all_the_commands_in_the_following_sections_are', 'Downloading_the_dataset', 'COCO-2014', 'Downloading_the_checkpoints', 'Multi-node_(with_SLURM)', 'Benchmark_details', 'COCO_2014', 'The_Model', 'CLIP', 'Reference_runs']```
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

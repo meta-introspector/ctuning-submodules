@@ -1,4 +1,3 @@
-['*MaxRoiPool*', '*MaxUnpool*', '*Mean*', '*MeanVarianceNormalization*', '*MelWeightMatrix*', '*Min*', '*Mish*', '*Mod*', '*Mul*', '*Multinomial*', '*Neg*', '*NegativeLogLikelihoodLoss*', '*NonMaxSuppression*', '*NonZero*', '*Not*', '*OneHot*', '*Optional*', '*OptionalGetElement*', '*OptionalHasElement*', '*Or*', '*PRelu*']```turtle
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 
 :AutomatedDesignSpaceExploration a owl:Class ;

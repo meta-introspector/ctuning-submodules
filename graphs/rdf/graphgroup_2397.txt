@@ -1,4 +1,3 @@
-['View_MLPerf_inference_v3.1_result', 'Major_Features_and_Improvements', 'Release_1.0.0', 'Release_0.2.2', 'Bug_Fixes', 'Release_0.2.1', 'Release_0.2.0', 'Release_0.1.0', 'Start_the_Sax_GPU_model_server', 'Use_Sax', 'Install_Python_packages_(in_user-space)', 'Prevent_running_out_of_memory', 'The_dependencies_are_needed_for_', 'Install_via_=ck=', 'Use_(CUDA_8_and_GCC_5)_or_(CUDA_9_and_GCC_6).', 'Detect_Python,_Keras', 'Use_Python_3.', 'TensorFlow_[=x86_64=]', 'Use_Python_3,_(CUDA_8_and_GCC_5),_cuDNN_6.', 'TensorFlow_[build_from_sources]', 'Use_Java_1.8,_Bazel_0.8,_Python_3,_(CUDA_8_and_GCC_5)_or_(CUDA_9']
 Based on the provided nodes, I can infer some additional ontology elements. Here are some possible OWL statements that could be made:
 ```python
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .

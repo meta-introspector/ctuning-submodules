@@ -1,4 +1,3 @@
-["Version_4_of_the_'ai.onnx.ml'_operator_set", 'on_model_validation*', 'on_language_in_this_and_all_related_documents*_', 'Exploring_an_ONNX_file*', 'Model_Semantics', 'As_of_the_publication_of_this_document,_no_ONNX_implementation_is', 'Operators', 'Version_and_Later*', 'External_Tensor_Data', 'Standard_data_types', 'Representation', 'Tensor_Element_Types', 'Static_tensor_shapes', 'Attribute_Types', 'Training_Related_Information', 'Adding_Experimental_Operators_[Deprecated_-_as_of_v1.5_experimental', 'Submit_an_Issue_with_a_proposal_explaining_the_motivation_and_plan._It', 'graph*.', 'Input,_Output,_Node,_Initializer,_Attributes', 'can_be_defined_as_a_set_of_operators._A_few_operators_in_this', 'Supported_Types']```less
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

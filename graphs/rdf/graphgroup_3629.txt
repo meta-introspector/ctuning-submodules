@@ -1,4 +1,3 @@
-['*Pad*', '*Pow*', '*QLinearConv*', '*QLinearMatMul*', '*QuantizeLinear*', '*RNN*', '*RandomNormal*', '*RandomNormalLike*', '*RandomUniform*', '*RandomUniformLike*', '*Range*', '*Reciprocal*', '*ReduceL1*', '*ReduceL2*', '*ReduceLogSum*', '*ReduceLogSumExp*', '*ReduceMax*', '*ReduceMean*', '*ReduceMin*', '*ReduceProd*', '*ReduceSum*']```turtle
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

@@ -1,4 +1,3 @@
-['7._Verify_download', 'Run_Hello_World_MLCube_example', 'Setup_Docker', 'Workspace', 'MNIST_MLCube_directory_structure_summary', 'docs-site_Action_Development_documentation', 'python-publish_action', 'On_Windows', 'NEW__The_KiTS23_Challenge_is_Underway!', 'KiTS19', 'Labeling_Errors', 'Challenge_Results_and_References', 'FileSet', 'RecordSet', 'Field', 'DataSource', 'extract', 'fileProperty', '[[https_//schema.org/Text][sc_Text]]', 'column', 'jsonPath']```
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 
 # Define classes

@@ -1,4 +1,3 @@
-['Checkpoint_Zarr_format', 'How_to_run', '6._Other', 'Access_details', 'Model_conversion_from_Paxml_checkpoints', 'Supervised_finetuning', 'Reader_Training', 'Files_in_./results_directory_', 'Generate_the_TFRecords_for_Wiki_dataset', 'It_is_extremely_critical_to_set_the_value_of_=random_seed=_to', 'TFRecord_Features', 'Some_stats_of_the_generated_tfrecords_', 'Stopping_criteria', 'Example_evaluation_frequency', 'MD5sums_of_provided_files_', 'WikiExtractor.py_replaces_some_of_the_tags_present_in_XML_such', 'Clean_up_and_dataset_seperation', 'From_Source', '3._Model', 'study_mode_currently_requires_the_C++_Minigo_engine.*', 'Vs_mode']`@prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 :Checkpoint_Zarr_format a :Exploration ;
     rdfs:subClassOf :Standardization .
 

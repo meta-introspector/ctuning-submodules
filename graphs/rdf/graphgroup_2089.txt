@@ -1,4 +1,3 @@
-['WMT', 'FastMRI', 'Librispeech', 'Coding_your_submission', 'Run_your_submission', 'to_score_your_submission_on_a_workload,_from_the', 'Pytorch_DDP', 'Run_your_submission_in_a_Docker_container', 'Docker_Tips', 'Score_your_submission', '0.0.16_/(Last_updated_28_April_2023)/', 'Introduction', 'Submission_functions', 'Data_selection', 'Evaluation_during_training', 'Software_dependencies', 'Tuning', 'To_estimate_the_variance_of_the_results,_this_tuning_will_be', 'Self-tuning_ruleset', 'Workloads', 'Qualification_set']```
 # Adding new classes and properties
 :AutomatedDesignSpaceExploration a owl:Class ;
     rdfs:subClassOf :Exploration .

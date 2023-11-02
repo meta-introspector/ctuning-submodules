@@ -1,4 +1,3 @@
-['Alternative_approach__Host_some_model_weights_in_GPU_memory', 'Model_Scaling_on_1_GPU', 'Impact_of_generation_output_length', 'Using_ZeRO-Inference', 'and_allow_*large_batch_sizes*._Alternative', 'How_to_use_ZeRO-Inference', 'Conclusion', '*_*gradient_accumulation*_*_number_of', '[integer]', 'Optimizer_Parameters', '[dictionary]', 'Scheduler_Parameters', 'Communication_options', '[boolean]', '[float]', 'FP16_training_options', 'BFLOAT16_training_options', 'Automatic_mixed_precision_(AMP)_training_options', 'this_mode_cannot_be_combined_with_the_=fp16=_mode_described', 'params/*__[various]', 'Gradient_Clipping']```less
 :AutomatedDesignSpaceExploration a owl:Class ;
     rdfs:subClassOf :Exploration .
 

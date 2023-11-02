@@ -1,4 +1,3 @@
-['option_1__build_docker', '3.b_Option_2__build_docker', 'NEUCHIPS_Submission', 'System_Preprocessing', 'Running_NEUCHIPS_DLRM_benchmark', 'The_closed-power_would_need_additional_setup_for_power', 'Closed', 'Running_the_close-power_benchmark', 'How_do_I_know_the_run_is_finished?', 'Compilation_for_15w_AEDKs_(edge_category)', 'Compilation_for_datacenter_category_16_NSP_PCIe', 'Benchmarking', 'Example_Command_related_to_this_Scenario_and_Workload', 'Recipe', 'ResNet50_Offline_-_ONNXRuntime', 'BERT-Large', 'Sinian', 'Alibaba_Submission', 'Weights', 'Additional_Details', 'Install_loadgen']```less
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

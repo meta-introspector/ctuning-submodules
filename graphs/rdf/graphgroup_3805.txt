@@ -1,4 +1,3 @@
-['Preparing_an_MLCube_for_hosting', 'Direct_download_links_of_files_on_GitHub', 'Synapse_hosting', 'Docker_or_Singularity', 'Install_MedPerf', 'Submit_the_MLCube', '3._Request_Participation', 'How_to_proceed_after_requesting_association', '4._Execute_the_Benchmark', 'Metrics_MLCube', '5._Host_the_Demo_Dataset', 'Choose_the_Container_Runner', "What's_Next?", 'Model_MLCube*,_and_the_*Metrics_MLCube*._Each_type_has_a_specific', 'Data_Preparator_MLCube', 'Download_the_Necessary_files', '1._Train_a_GaNDLF_Model', 'Prepare_your_Dockerfile', 'The_=mlcube=_folder', 'model_weights', 'Configure_your_MLCube']```less
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

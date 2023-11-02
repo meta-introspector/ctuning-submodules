@@ -1,4 +1,3 @@
-['How_to_get_started?', 'What_happened_to_the_old_nnU-Net?', 'Acknowledgements', 'Stats_(On_the_development_set)', 'Minimal_CK_installation', 'Install_or_detect_ImageNet_dataset', 'Install_TF', 'example_is_currently_not_compatible_with_the_latest_MedPerf', 'data_prep', 'Get_the_data', 'Run_cube_on_a_local_machine_with_Docker_runner', 'prep__Data_Preparation_MLCube', 'Supported_=.json=_File_Structure_', 'Task_=sanity_check=', "a_csv_file_doesn't_have_a_corresponding_folder_in_the_=frames=_folder,", 'surg_prep', 'Task_=infer=', 'An_output_folder_is_created_(=predictions=)_*_For_each_video,_a_csv', 'to_the_Broad_Community_*', 'What_is_a_benchmark_in_the_MedPerf_perspective?', '=additional_files.tar.gz=_(Optional)']
 First, we can define classes for the readme headings as follows:
 ```
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .

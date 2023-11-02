@@ -1,4 +1,3 @@
-['On_desktop_', 'Reducing_variance_between_runs_on_Android.', 'Load_and_run_a_model_in_C++', 'Load_and_run_a_model_in_Python', 'Python_pip_Package', 'Metrics', 'Binary_Size', 'Machine_learning_at_the_edge', 'Get_started', 'March_6th,_2019*', 'Usability', 'AutoML_mobile_models', 'Object_detection', 'Pose_estimation', 'Image_segmentation', 'Smart_reply', 'Objective-C', 'Bazel_developers', 'Import_the_library', 'How_do_I_inspect_a_=.tflite=_file?', 'Models_&_Operations']```bash
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

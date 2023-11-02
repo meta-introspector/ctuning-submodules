@@ -1,4 +1,3 @@
-['Embedding_Table_Sorting_and_Splitting', 'Instructions_for_Auditors', 'Preprocessing_the_dataset_for_usage', 'Soft_Dropping', 'Goal_of_this_Benchmark', 'Preprocessing_the_dataset', 'Generating_model_binaries_and_running_INT8_calibration', 'Sequence_Splitting', 'Instructions_for_Audits', 'Model_Source', 'Lower_Precision', 'Preprocessing_data', 'Replace_ReLU6_with_ReLU', 'Removal_of_Softmax', 'Calibration', 'TransposedConvolution_->_Convolution_+_PixelShuffle_Conversion', 'Training_(MobileNetV1-SSD)**', 'Quantization_(ResNet50)**', 'enter_closed/NVIDIA*._From_now_on,_all_of_the_commands_detailed', 'Launching_the_environment_on_a_MIG_(Multi-Instance_GPU)_instance', '=g292_z43_q16=']```css
 <http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
 
 :AutomatedDesignSpaceExploration a owl:Class ;

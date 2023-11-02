@@ -1,4 +1,3 @@
-['virtualenv*', 'your_model*', 'Run_select_task', 'The_cost_of_this_service_depends_on_the_instance_you_choose_and', 'Creating_EC2_instance', 'Open_EC2_ports_to_receive_requests', 'Setting_up_AWS_environment', 'This_service_is_free.', 'Creating_user', 'Creating_S3_bucket', 'The_cost_for_this_service_depends_on_the_size_of_the_files_that', 'Creating_ECS_execution_role', 'Creating_ECS_cluster', 'Create_SQS_queue', 'Starting_the_app', 'Foldes_contents', 'Resources_folder', 'Checking_output_format', 'Run_Fast_api_swagger', 'Test_your_endpoints', 'Removed']
 From the given nodes, we can infer that they are related to a process of creating an environment for running machine learning models on the Amazon Web Services (AWS) platform. Here's how we can represent these in the ontology:
 ```yaml
 <http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .

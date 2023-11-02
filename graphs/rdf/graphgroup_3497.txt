@@ -1,4 +1,3 @@
-['Updating_an_existing_operator', 'Checklist', 'Removing_operator_or_function', 'ai.onnx.preview.training', 'ai.onnx_(default)', 'Sample_Implementation', '*Acos*', '*Acosh*', '*Add*', '*AffineGrid*', '*And*', '*ArgMax*', '*ArgMin*', '*Asin*', '*Asinh*', '*Atan*', '*Atanh*', '*AveragePool*', '*BatchNormalization*', '*Bernoulli*', '*BitShift*']```sql
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

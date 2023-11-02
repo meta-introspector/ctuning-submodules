@@ -1,4 +1,3 @@
-['Use', 'Checkpointing', 'Installation', '[Experimental]_Windows', 'Custom_C++/CUDA_Extensions_and_Install_Options', '[[https_//github.com/NVIDIA/apex/tree/master/examples/FP16_Optimizer_simple/distributed_apex][Simple', 'CPU_path', 'Important_arguments', 'Transform_unstructured_sparsity_to_structured_sparsity_(as_in_Figure', 'References', 'Test_your_own_range!', 'Performance_Comparisons', 'Build_and_deploy_HabanaLabs_MLPERF_training_3.0_container_in_the', 'Resnet50', 'Run_and_time_PyTorch_Resnet50', 'Bert_TF', 'to_download_Dataset_and_Checkpoint_*', 'Preparation_*_In_order_to_use_dataset_one_needs_to_preprocess', 'Run_and_time', 'Bert_PT', 'Scaling_out_the_training_to_64_Gaudi2']
 Assuming that the extracted nodes correspond to properties and objects in the ontology, I can create the following turtle OWL statements and relationships:
 ```
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .

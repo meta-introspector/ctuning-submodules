@@ -1,4 +1,3 @@
-['Download_Model', '2._SW_requirements', 'Steps_to_run_DLRM', 'Run_command', 'Setup_with_docker', 'Setup_with_Docker', 'dataset_', '2.Start_a_container', '2._into_container', '3.Run_SSD-Resnet34', '4._Run_command_for_server_and_offline_mode', 'model_', '2.Start_and_log_into_a_container', '(2)_into_container', '3.Run_DLRM', 'Install_Dependencies_for_Resnet50', '2.load_images', '4.Run_Resnet50', 'Steps_to_run_RNNT', 'Note_on_Server_scenario', 'To_verify_accuracy_of_your_workload,_run_your_command_with']Based on the provided headings, here are some additional OWL statements and relationships that can be added to the ontology:
 ```less
 :DownloadModel a :Benchmark ;
     rdfs:label "Download Model" .

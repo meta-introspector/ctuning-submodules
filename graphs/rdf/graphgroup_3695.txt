@@ -1,4 +1,3 @@
-['*Sum*', '*Tan*', '*Tanh*', '*TfIdfVectorizer*', '*ThresholdedRelu*', '*Tile*', '*TopK*', '*Transpose*', '*Trilu*', '*Unique*', '*Unsqueeze*', '*Upsample*_(deprecated)', '*Where*', '*Xor*', '*ai.onnx.preview.training.Adam*', '*ai.onnx.preview.training.Gradient*', '*ai.onnx.preview.training.Momentum*', '*_In_release_branch_update_the_version_number_in_file', 'Distribution*_*_Make_sure_all_the_git_submodules_are_updated_*', 'onnx/onnx-operator.pb.h_*_onnx/onnx.pb.cc_*_onnx/onnx.pb.h_*_If_they', 'Validation*']```
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

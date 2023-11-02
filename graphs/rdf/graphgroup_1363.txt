@@ -1,4 +1,3 @@
-['[[../LICENSE.md][Apache_2.0]]', 'Collective_Mind_automation_language_(CM)', 'Power_Measurement_Setup', 'Reproducing_the_Nvidia_Jetson_AGX_Orin_Submission', 'Full_run', 'Other_backends', 'Run_benchmarks_and_submit_results', 'Measure_power', 'Debug_benchmarks', 'Add_new_data_set', 'Participate_in_reproducibility_and_optimization_challenges', 'BERT-99.9%__MobileBERT_Offline_-_DeepSparse', 'ResNet50', 'System_requirements_to_run_MLPerf_on_Nvidia_GPU', 'MLCommons_CM_automation_meta-framework', 'Compile_MLPerf_loadgen', 'CM_automation_for_the_MLPerf_benchmark', 'Prepare_MLPerf_submission', 'Trying_deepsparse_backend', 'Run_Command', 'Run_ResNet50_TFLite_via_CM']```less
 # Adding new classes
 :PowerMeasurementSetup a :Benchmark ;
     rdfs:subClassOf :Process .

@@ -1,4 +1,3 @@
-['Release_1.12.2', 'Release_1.13.0', 'Release_1.12.0', 'Release_1.11.0', 'Release_1.10.1', 'Release_1.10.0', 'Release_1.9.0', 'Release_1.8.0', 'Release_1.7.0', 'Release_1.6.0', 'Release_1.5.0', 'Release_1.4.1', 'Release_1.4.0', 'Release_1.3.0', 'Release_1.2.1', 'Release_1.2.0', 'Release_1.1.0', 'Release_1.0.1', 'Breaking_Changes_to_the_API', '=tf.mul=,_=tf.sub=_and_=tf.neg=_are_deprecated_in_favor_of', 'Release_0.12.0']```turtle
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

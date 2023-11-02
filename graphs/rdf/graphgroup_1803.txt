@@ -1,4 +1,3 @@
-['How_to_use_it', 'List_of_available_parameters', 'Register_models_via_the_CLI', 'allow_you_to_send_messages_to_chat_services_(like_Slack,', 'Alerter_Flavors', 'DISCORD_TOKEN', 'How_to_Use_the_Discord_Alerter', 'Configuring_a_Custom_Seldon_Core_Secret*', 'How_do_you_use_it?', 'Caveats', 'with_various_tools_for_each_category._Once_code_is', 'Available_integrations', 'In_a_ZenML_Step', 'Secret_Schemas', 'Configuration_use-case__GCP_Service_Connector_with_different', 'Configuring_the_stack', 'to_delete_a_scheduled_pipeline*', 'Additional_configuration', 'Infrastructure_Deployment', 'job_->_S3*', 'Enabling_CUDA_for_GPU-backed_hardware']
 Based on the given nodes, here are some additional Turtle OWL statements that can be added to describe the provided model:
 ```bash
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .

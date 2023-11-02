@@ -1,4 +1,3 @@
-['Convert_a_tf.Keras_model', 'Quantization', 'Use_"dummy-quantization"_to_try_out_quantized_inference_on_a_float', 'Specifying_input_and_output_arrays', 'Specifying_subgraphs', 'Example_applications_and_guides', 'How_it_works', 'Location', 'Starter_model', 'Output', 'Customize_model', 'Recognize_image', 'Display_results', 'Process_results', 'Screenshot', 'What_is_image_classification?', 'Uses_and_limitations', 'Choose_a_different_model', 'Architecture', 'Sample_application', 'Energy_Efficiency']```less
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

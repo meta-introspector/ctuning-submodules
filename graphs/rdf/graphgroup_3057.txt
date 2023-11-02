@@ -1,4 +1,3 @@
-['Exported_TensorFlow_Lite_Model.', 'Caveat', 'Run_on_macOS', 'Deploy_to_Arduino', 'Build_the_library', 'Load_and_run_the_example', 'Deploy_to_SparkFun_Edge', "If_you're_using_the", 'Deploy_to_STM32F746', 'Build_the_code', 'Building_the_library', 'Debugging_Image_Capture', 'Additional_Apollo3_Instructions', 'Building_for_the_Eta_Compute_ECM3531_EVB_using_Make', 'CMSIS-NN_optimized_kernels_(---under_development---)', 'Goals', 'Test_that_the_model_produces_sensible_outcomes', 'Measure_on-device_latency', 'Debug_Mode', 'Preprocessing_the_minival_dataset', 'Direct_usage']```
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 <http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .

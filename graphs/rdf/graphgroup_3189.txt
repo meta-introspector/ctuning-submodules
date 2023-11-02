@@ -1,4 +1,3 @@
-['Example__TFExampleDecoder', 'Data_Provision', 'Working_Example__Specifying_the_VGG16_Layers', 'Training_Models', 'Working_Example__Training_the_VGG16_Model', 'Fine-Tuning_Existing_Models', 'Fine-Tuning_a_Model_on_a_different_task', 'Evaluating_Models.', 'Evaluation_Loop', 'located_in', 'object,_keyed_by_request_index_(uint32_t),_stores_it', 'method_basically_does_2_things_', 'using_the_request_index_which_is_the_immediate', 'Additional_design_notes', 'Block_Sparsity', 'Adding_pruning_ops_to_the_training_graph', 'Removing_pruning_ops_from_the_trained_graph', 'Example__Pruning_and_training_deep_CNNs_on_the_cifar10_dataset', 'As_tensorflow.contrib_is_being', 'ConstrainedOptimization_(TFCO)', 'Proxy_Constraints']```less
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

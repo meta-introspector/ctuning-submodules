@@ -1,4 +1,3 @@
-['Build_benchmark_images', 'Create_TFRecord_for_ADE20K', 'Train', 'Evaluate_pb', 'Evaluate_TFLite', 'Run_TFLite_evaluation', 'Quantization-aware_training', 'Generate_data_for_post-training_quantization', 'Run_post-training_quantization', 'Mobilenet_EdgeTPU_latency', 'Pretrained_models', 'Edge_TPU_checkpoints_', 'Mobilenet_V2_Imagenet_Checkpoints', 'V2', 'accuracy_target', 'Evaluate_accuracy_on_Android_devices', '[[file_models_and_code/checkpoints/mobilenet_edgetpu_224_1.0][mobilenet_edgetpu_224_1.0]]', 'Generating_non-TFLite_specific_files_(export_inference_graph.py)', 'of_the_repo_*_1._*Hardware_Requirements*_-_Container_images,', 'Hardware_requirements', 'The_jobfile_should_look_like_']```less
 # Create a new ontology for the ctuning.org model
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .

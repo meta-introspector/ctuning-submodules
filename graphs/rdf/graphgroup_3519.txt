@@ -1,4 +1,3 @@
-['(i.e.,_Numpy-style)_broadcasting*__for_more_details', 'Version', '*BitwiseAnd*', '*BitwiseNot*', '*BitwiseOr*', '*BitwiseXor*', '*BlackmanWindow*', '*Cast*', '*CastLike*', '*Ceil*', '*Celu*', '*CenterCropPad*', '*Clip*', '*Col2Im*', '*Compress*', '*Concat*', '*ConcatFromSequence*', '*Constant*', '*ConstantOfShape*', '*Conv*', '*ConvInteger*']```less
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 <http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .

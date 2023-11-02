@@ -1,4 +1,3 @@
-['Updated', 'TensorRT_8.0_Release_-_2021-07-02', '21.05_Container_Release_-_2021-05-17', '21.03_Container_Release_-_2021-03-09', '21.02_Container_Release_-_2021-01-18', '20.12_Container_Release_-_2020-12-17', 'TensorRT_7.2.1_Release_-_2020-10-20', 'Version*__*ONNX-TensorRT_Version_/_Branch*__*GPU_Type*_', 'Driver_Version*__*CUDA_Version*__*CUDNN_Version*__*Operating', 'or_Container_(if_container_which_image_+_tag)*_', 'Full_Dimensions_+_Dynamic_Shapes', 'Supported_Operators', 'InstanceNormalizaiton_Performance', 'Executable_Usage', 'Python_Modules', 'ONNX-TensorRT_Python_Backend_Usage', 'Tests', 'Pre-trained_Models', 'Add_PyConfig.h', 'Build_Python_bindings', 'GA_build*_*']```turtle
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

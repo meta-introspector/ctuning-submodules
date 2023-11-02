@@ -1,4 +1,3 @@
-['Other_types', 'What_is_an_opset_version?', 'Loop', 'Extensibility', 'Operator_as_function', 'Tricks_learned_from_experience', 'Build_the_markdown_documentation', 'Data_Serialization', 'Initializer,_default_value', 'Scan', 'Functions', 'A_function_with_attributes', 'Parsing', 'Evaluate_a_custom_node', 'LabelEncoder', '💔No_Cover_Common_Operators', 'ZipMap_(call_for_test_cases)', '💚Covered_Experimental_Operators', '💔No_Cover_Experimental_Operators', 'Model_Test_Coverage', 'Listing_and_inspecting_Models_']1. Other\_types a owl:Class ;
 	rdfs:subClassOf :ML\_PerfInference .
 2. Opset\_version a owl:Class ;
 	rdfs:subClassOf :Other\_types .

@@ -1,4 +1,3 @@
-['v0.2.4_(2020-09-14)', 'v0.2.3_(2020-06-17)', 'v0.2.2_(2020-06-17)', 'v0.2.1_(2020-06-10)', 'v0.2.0_(2020-04-15)', 'v0.1.3_(2020-02-26)', 'v0.1.2_(2020-02-19)', 'v0.1.1_(2020-02-11)', 'v0.1.0_(2020-02-11)', 'Tensor', 'example_constant_tensor_from_ResNet50_*', 'Node', 'example_ReLU_node_from_ResNet50_*', 'Graph', 'Exporters', 'v0.0.7_(2022-08-10)', 'v0.0.6_(2020-07-21)', 'v0.0.5_(2020-07-21)', 'v0.0.4_(2020-07-18)', 'v0.0.3_(2020-07-15)', 'v0.0.2_(2020-07-05)']`@prefix ctuning: <http://ctuning.org/ml-benchmark-ontology#> .
 
 :MLPerfInferencev1.0 ctuning:hasBenchmark :reproducibilityReportMLPerfInferencev1.1 .
 :reproducibilityReportMLPerfInferencev1.1 ctuning:hasBenchmark :mlperfInferencev1.0 .

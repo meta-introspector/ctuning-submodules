@@ -1,4 +1,3 @@
-['[[./d3-geo/stream.md][Streams]]', '[[./d3-geo/math.md][Spherical_math]]', '[[./d3-hierarchy.md][d3-hierarchy]]', '[[./d3-interpolate/zoom.md][Zoom_interpolation]]', '[[./d3-path.md][d3-path]]', '[[./d3-scale/point.md][Point_scales]]', '[[./d3-scale-chromatic.md][d3-scale-chromatic]]', '[[./d3-scale-chromatic/sequential.md][Sequential]]', '[[./d3-selection.md][d3-selection]]', '[[./d3-selection/namespaces.md][Namespaces]]', '[[./d3-shape.md][d3-shape]]', '[[./d3-shape/stack.md][Stacks]]', '[[./d3-time.md][d3-time]]', '/pack/(/root/)_{#_pack}', '/pack/.radius(/radius/)', '/delaunay/.inedges', 'Delaunay.from(/points/,_/fx/,_/fy/,_/that/)', '/voronoi/.xmin/voronoi/.ymin/voronoi/.xmax/voronoi/.ymax', '/voronoi/.contains(/i/,_/x/,_/y/)', "(based_on_Vladimir_Agafonkin's_excellent", 'd3-array']`@prefix : <http://ctuning.org/ml-benchmark-ontology#> .`
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

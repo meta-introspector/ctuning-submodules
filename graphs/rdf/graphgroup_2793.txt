@@ -1,4 +1,3 @@
-['Android', 'Pull_Request_Checklist', 'How_to_become_a_contributor_and_submit_your_own_code', 'Optional', 'Building_the_MLPerf_app_with_the_QTI_backend', 'Videos/*_parallax_supported.', '[[https_//free.nkdev.info/jarallax/][Demo]]', 'Package_managers', 'Set_up_your_HTML', 'Additional_styles', 'Call_the_plugin', 'C._jQuery_way', 'Video_Usage_Examples', 'Options_For_Video', 'Events', 'onScroll_event', 'Methods', 'B._jQuery_way', 'No_conflict', 'you_can_rename_plugin._###_A._JavaScript_way', 'Real_Usage_Examples']```vbnet
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

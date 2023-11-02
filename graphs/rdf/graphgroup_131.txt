@@ -1,4 +1,3 @@
-['1.3_Activation_Quantization', 'to_use_activation_quantization*', '1.4_Pruning', 'is_pruning*', '1.4.1_Sparse_Pruning', 'to_use_sparse_pruning*', 'to_use_row_pruning*', 'to_use_head_pruning*', 'to_use_channel_pruning*', '2._Tutorial_for_ZeroQuant__efficient_and_affordable_post-training', 'to_use_ZeroQuant*', '3._Tutorial_for_XTC__simple_yet_effective_compression_pipeline_for', 'to_use_XTC*', 'of_XTC_methods_*_To_accommodate_users_who_do_not_have_a', '3.1_One-bit_or_Two-bit_BERT-base_(12-layer)_with_8-bit_activation', 'Currently_DeepSpeed_Transformer_Kernels_do_not_support_Sparse', '*Integrate_Transformer_Kernel*', 'DeepSpeed_MoE_requires_Pytorch_1.8_or_above._{__.notice--info}', 'Expert_groups_initialization', 'Combining_ZeRO-Offload_and_DeepSpeed_MoE_for_very_large_models', 'Random_Token_Selection']```css
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 <http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
 

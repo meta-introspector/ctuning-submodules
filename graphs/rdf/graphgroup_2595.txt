@@ -1,4 +1,3 @@
-['Kiosk_mode', 'Technical_discussion', 'Update_messages', 'Synchronizing_stdout_and_stderr', 'Steps_to_download_and_verify_data', 'Observations', 'Third_run,_Minigo,_model_250-...,_Jan_20th-Feb_1st_(ish)', 'v5_changelog_', 'v7a,_first_week_of_May', 'This_is_NOT_an_official_version_of_AlphaGo', 'Goals_of_the_Project', 'Automated_Tests', 'Basics', 'Playing_Against_Minigo', 'Training_Minigo', 'Validating_on_a_different_set_of_data', 'Retraining_a_model', "this_is_a_one-way_operation._Once_you_=eject=,_you_can't_go", '=npm_run_build=_fails_to_minify', 'cc_gtp', 'Running_the_unit_tests']
 Here are some further OWL statements and relationships for the given model nodes:
 ```scss
 <http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .

@@ -1,4 +1,3 @@
-['*Shape*', '*Shrink*', '*Sigmoid*', '*Sign*', '*Sin*', '*Sinh*', '*Size*', '*Slice*', '*Softmax*', '*SoftmaxCrossEntropyLoss*', '*Softplus*', '*Softsign*', '*SpaceToDepth*', '*Split*', '*SplitToSequence*', '*Sqrt*', '*Squeeze*', '*StringConcat*', '*StringNormalizer*', '*StringSplit*', '*Sub*']```vbnet
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

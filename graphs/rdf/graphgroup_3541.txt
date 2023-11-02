@@ -1,4 +1,3 @@
-['*ConvTranspose*', '*Cos*', '*Cosh*', '*CumSum*', '*DFT*', '*DeformConv*', '*DepthToSpace*', '*DequantizeLinear*', '*Det*', '*Div*', '*Dropout*', '*DynamicQuantizeLinear*', '*Einsum*', '*Elu*', '*Equal*', '*Erf*', '*Exp*', '*Expand*', '*EyeLike*', '*Flatten*', '*Floor*']```
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

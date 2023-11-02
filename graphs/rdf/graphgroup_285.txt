@@ -1,4 +1,3 @@
-['ZeRO_Optimizations_for_FP16_Training', '*cpu_offload*_is_deprecated_and_will_be_removed_in_future,', 'Parameter_offloading', 'Optimizer_offloading', 'Asynchronous_I/O', 'Logging', 'Autotuning', '[string]', '[int]', 'Flops_Profiler', 'Activation_Checkpointing', 'Sparse_Attention', 'Curriculum_Learning', '[list_of_integer]', 'Monitoring_Module_(TensorBoard,_WandB,_CSV)', 'Elastic_Training_Config_(V0.1_and_V0.2)', 'Compression', '*Compression*_has_seven_different_components,_including_layer', 'Layer_Reduction', 'Weight_Quantization', 'Activation_Quantization']
 Based on the extracted nodes, here are some additional OWL statements and relationships that can be added to the ontology:
 ```less
 @prefix ctuning: <http://ctuning.org/> .

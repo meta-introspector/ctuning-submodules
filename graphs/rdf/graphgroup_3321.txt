@@ -1,4 +1,3 @@
-['ColMajor_1st_dimension__channels_(of_size_d)_2nd_dimension__rows_(of', '=<Operation>_____eval()=', 'Representation_of_scalar_values', 'Run_benchmark_with_SLURM_for_NVIDIA_DGXA100_(_8_nodes_)', 'Run_benchmark_with_SLURM_for_NVIDIA_DGXA100', 'Run_benchmark_with_SLURM_for_NVIDIA_DGXA100_(_224_nodes_)', 'output_metric*', 'work*', 'BERT', 'OPEN', 'Submission_Rules', 'Bare_metal_installation', 'Container', 'easePoly.exponent(/e/)', 'easeQuad', 'easeQuadInOut', 'easeCubic', 'easeCubicInOut', 'easeSin', 'easeSinInOut', 'easeExp']
 Given:
 ```swift
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .

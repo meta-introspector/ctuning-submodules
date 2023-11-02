@@ -1,4 +1,3 @@
-['Auto-configuration', 'Local_and_remote_availability', 'Register_Service_Connectors', 'Service_Connector_Verification', 'Configure_local_clients', 'ACR_container_registry', 'Azure_Access_Token', 'ECR_container_registry', 'AWS_Federation_Token', 'Base_Abstraction_3__=Flavor=', 'Implementing_a_Custom_Stack_Component_Flavor', 'Interactive_stack_deployment', 'Displaying_Terraform_outputs_for_stacks_deployed_with_mlstacks', 'Container_Registry', '7)_Create_Stack', "And_you're_already_done!", 'Trackers*', 'Stores*', 'Registries*', 'Other_configuration', 'Model_Registry_Flavors']
 1. Automated Design Space Exploration
 The nodes "Auto-configuration" and "Interactive stack deployment" suggest that this process involves designing a configuration, but it is not clear whether it is automated or manual. To clarify this, we can add the following statement:
 ```css

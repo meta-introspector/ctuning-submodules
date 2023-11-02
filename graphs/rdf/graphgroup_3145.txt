@@ -1,4 +1,3 @@
-['Supported_Ops', 'iOS_(ObjC++)', 'Advanced_Usage', 'iOS', 'Tips_and_Tricks', 'Latency_and_accuracy_results', 'Choice_of_tool', 'Step_3._Build_and_run', 'iOS_(with_XCode)', 'Step_5._Release_mode.', 'Trying_the_GPU_Delegate_on_your_own_model', 'Supported_Models_and_Ops', 'Tweak_the_number_of_threads', 'Convert_to_a_C_array', 'Model_architecture_and_training', 'Generate_project_files', 'Portable_reference_code', 'Micro_Vision_example', 'Run_inference', 'Obtain_the_output', 'Exporting_the_concrete_function']
 * :Supported\_Ops a owl:Class ;
 	+ rdfs:subClassOf <http://ctuning.org/ml-benchmark-ontology#DesignSpaceExploration> .
 	+ hasBenchmark mlperfInferencev1.0 .

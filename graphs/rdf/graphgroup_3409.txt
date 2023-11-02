@@ -1,4 +1,3 @@
-['Operator_Changelog', '*ai.onnx.ml.Binarizer-1*', '*ai.onnx.ml.CastMap-1*', '*ai.onnx.ml.CategoryMapper-1*', '*ai.onnx.ml.DictVectorizer-1*', '*ai.onnx.ml.FeatureVectorizer-1*', '*ai.onnx.ml.Imputer-1*', '*ai.onnx.ml.LabelEncoder-1*', '*ai.onnx.ml.LinearClassifier-1*', '*ai.onnx.ml.LinearRegressor-1*', '*ai.onnx.ml.Normalizer-1*', '*ai.onnx.ml.OneHotEncoder-1*', '*ai.onnx.ml.SVMClassifier-1*', '*ai.onnx.ml.SVMRegressor-1*', '*ai.onnx.ml.Scaler-1*', '*ai.onnx.ml.TreeEnsembleClassifier-1*', '*ai.onnx.ml.TreeEnsembleRegressor-1*', '*ai.onnx.ml.ZipMap-1*', "Version_2_of_the_'ai.onnx.ml'_operator_set", "Version_3_of_the_'ai.onnx.ml'_operator_set", '*ai.onnx.ml.TreeEnsembleRegressor-3*']
 Here are some additional OWL statements that could be added to the ontology based on the information provided:
 ```vbnet
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .

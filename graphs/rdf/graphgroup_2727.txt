@@ -1,4 +1,3 @@
-['attribute(s)_targeted_in_the_images_*', 'Contact_the_organizers', 'Benchmarks_for_Data-Centric_AI_Development*,', 'Contributing_to_the_DataPerf_Benchmark_Suite', 'Adversarial_Nibbler', 'Participating_in_the_DataPerf_Challenges', '*Current_version_*_beta', 'MLCube_execution', 'Execute_complete_pipeline', 'Guidelines_v0.5', 'Closed_Division__Offline_evaluation_of_a_submission', 'Baselines', 'Started_*_Jump_to_[[#getting-started][our_introductory_colab', 'Evaluation_Metric', '/M/_is_user_defined,_but_Dynabench_will_host_two_leaderboards_per', 'Submission', 'Files', 'Optional_Files', 'Using_.wav_Files_for_Selection', 'Optional_MLCube_Workflow', 'Imagenet_for_resnet50']```
 :hasImageData a owl:ObjectProperty ;
     rdfs:domain :Model ;
     rdfs:range :ImageData .

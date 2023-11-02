@@ -1,4 +1,3 @@
-['DCO', 'CI_Pipelines', 'Mac', 'Verify_Installation', 'CMake_variables', 'Common_Errors', 'Testing', 'Eligibility_for_voting', 'Candidacy_process', 'Voting_platform', 'Election_officers_and_Steering_Committee_emeritus_members', 'Member_Companies', 'Organizational_Structure', 'SIG_-_Special_Interest_Groups', 'Decision_making', 'WG_-_Working_Groups', 'Repository_Guidelines', 'Setting_the_correct_number_of_Workers_for_data_augmentation', 'Installation_instructions', 'from_nnU-Net_v1_can_be_converted_to_V2_by_running', 'Experiment_planning_and_preprocessing']```
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

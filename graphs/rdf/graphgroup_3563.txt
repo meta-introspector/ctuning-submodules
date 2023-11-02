@@ -1,4 +1,3 @@
-['*GRU*', '*Gather*', '*GatherElements*', '*GatherND*', '5*', '*Gelu*', '*Gemm*', 'broadcasting*_(tensor_C_should_be_unidirectional', '*GlobalAveragePool*', '*GlobalLpPool*', '*GlobalMaxPool*', '*Greater*', '*GreaterOrEqual*', '*GridSample*', '*GroupNormalization*', '*HammingWindow*', '*HannWindow*', '*HardSigmoid*', '*HardSwish*', '*Hardmax*', '*Identity*']```css
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

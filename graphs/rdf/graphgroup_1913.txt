@@ -1,4 +1,3 @@
-['store*_and_then_loaded_from_there_when_the_next_step_needs', 'Registering_a_stack', 'List_Pipelines_via_CLI', 'Runs', 'Component-Specific_Metadata', 'Steps', 'Step_Information', 'Artifacts', 'Artifact_Visualizations', 'Code_Example', 'set_caching_to_=False=_on_steps_that_depend_on_*external', 'Configuring_caching_behavior_of_your_pipelines', 'is_a_Python_package_that_can_be_installed_directly_via_=pip=_', 'Install_with_the_dashboard', 'is_an_extensible,_open-source_MLOps_framework_for_creating', '1._Development', 'Parameters_&_Settings', '2._Execution', 'tailored_to_specific_use_cases/tools._With_ZenML_installed,', 'Stack_Switching', '3._Management']```less
 <http://ctuning.org/ml-benchmark-ontology> a owl:Ontology .
 
 :AutomatedDesignSpaceExploration a owl:Class ;

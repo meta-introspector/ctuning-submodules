@@ -1,4 +1,3 @@
-['Build_your_MLCube', 'Add_model_weights', 'Modify_=mlcube.py=', 'Run_your_MLCube', 'Using_the_Example_with_GPUs', 'FeTS_Challenge', 'Pilot_Studies', 'institutions*', 'POC_2_-_Pancreas_Segmentation', 'POC_3_-_Surgical_Workflow_Phase_Recognition', 'POC_4_-_Cloud_Experiments', 'How_to_Use_MedPerf', 'Prepare_checkpoints', 'Prune_models_and_test_the_accuracy_on_GLUE/SQuAD_benchmarks', 'Longterm_there_are_no_explicit_restrictions_on_what_devices_can_be', 'or_*eval_data//train/*._Note_that_in_MLPerf_Tiny_we', 'Detailed_Usage', 'Dependency', '10*.', 'Software_packages', 'Push_the_datatsets_to_the_device']
 From the given nodes, we can extract the following concepts:
 
 * `:Build_your_MLCube`: A process of building an ML Cube.

@@ -1,4 +1,3 @@
-['CPU', 'Amazon_Linux_2', 'Set_up_user-space_dependencies', 'Download_URLs_for_a_particular_category', 'Download_images_for_a_given_category', 'Program-specific_preprocessing', 'Images_dataset', 'Neon_backend', '224', 'Currently_only_TensorFlow_packages_provide_env_variable_giving', 'Program_parameters', 'Initial_checkpoint', '4._Quality', 'Evaluation_frequency', '5._Steps_to_run_the_model', 'On_Google_Cloud_TPU', '6._Software_versions', 'Steps_to_run_and_time', 'Preprocessed_data_download', 'BF16_training', 'Checkpoint_Parameters']```css
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .

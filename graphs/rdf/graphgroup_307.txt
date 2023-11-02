@@ -1,4 +1,3 @@
-['Sparse_Pruning', 'Row_Pruning', 'Head_Pruning', 'Channel_Pruning', 'Checkpoint_options', 'Data_Type_options', 'Single-GPU,_Multi-GPU,_and_Multi-Node_Training', 'Pipeline_Parallelism', 'Integration_with_Megatron-LM', 'The_Zero_Redundancy_Optimizer', 'Contiguous_Memory_Optimization_(CMO)', 'ZeRO-Offload', 'Communication_Overlapping', 'Training_Features', 'Automatic_loss_scaling_with_mixed_precision', 'Training_Optimizers', 'Memory-Efficient_Training_with_ZeRO_Optimizer', 'Training_Agnostic_Checkpointing', '1Cycle_Learning_Rate_Schedule', 'Simplified_Data_Loader', 'Communication_Logging']```
 :MLPerfInferencev1.0 a owl:NamedIndividual ;
 	hasBenchmark :mlperfInferencev1.0 .
 

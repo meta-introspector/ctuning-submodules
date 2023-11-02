@@ -1,4 +1,3 @@
-['=llvm_-mcpu=cortex-a72_-mfloat-abi=hard=', 'SingleStream_scenario', 'Prepare_your_submission', 'See_all_installed_packages_and_detected_components', 'Resources', 'WIP__DEFINE_PROD_AWS_ACCOUNT_OWNER_ID_=_{prod_aws_account_owner_id}', 'Task_Owner_Setup', 'Filling_in_the_rest_of_the_config', 'Filling_in_=eval_config=', '2_*_Install_mlsphere_utility_and_download_the_image.', 'Run', '[NOTICE]_POSSIBLY_OUTDATED', 'Web_Interface', 'Running_the_API_server', 'Frontend', 'Concrete_example_that_illustrates_the_different_components_', 'to_inform_their_work_or_research._The_way_a_given_task_is', 'Codebase', "If_any_linter_doesn't_pass,_your_pull_request_is_not_going_to_be", 'Migrations', 'docker*']```
 @prefix : <http://ctuning.org/ml-benchmark-ontology#> .
 
 :AutomatedDesignSpaceExploration a owl:Class ;

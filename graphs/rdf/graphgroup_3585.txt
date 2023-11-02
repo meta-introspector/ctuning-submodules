@@ -1,4 +1,3 @@
-['*If*', '*ImageDecoder*', 'Portable_image_format_(PBM,_PGM,_PPM,_PXM,_PNM)_Decoded_images_follow', '*InstanceNormalization*', '*IsInf*', '*IsNaN*', '*LRN*', '*LSTM*', '*LayerNormalization*', '*LeakyRelu*', '*Less*', '*LessOrEqual*', '*Log*', '*LogSoftmax*', '*Loop*', '*LpNormalization*', '*LpPool*', '*MatMul*', '*MatMulInteger*', '*Max*', '*MaxPool*']It seems that you have provided a list of nodes from the headings of readmes on ctuning.org. Based on this information, I can make some assumptions about the structure of the model.
 
 Assuming that each node represents an operation in the model, we can create a relationship between them to represent their sequence. We can also create relationships between the operations and the benchmark to identify which operations are used in the evaluation.
 
